@@ -1,5 +1,5 @@
 # IGNOU Tutor
-
+# Developed by Jason J Pulikkottil
 Application for Indira Gandhi National Open University students.
 It includes syllabus, study materials, and question papers of various courses of IGNOU.
 IGNOU Tutor provides access to assignment answers if available.
