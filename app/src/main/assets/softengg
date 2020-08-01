@@ -1,0 +1,1525 @@
+SOFTWARE ENGINEERING
+"Software Engineering is the application of a systematic, disciplined, quantifiable approach to the development, operation and maintenance of the software applying engineering techniques."
+UNIT - I
+Introduction to Software Engineering
+* Introduction
+* Characteristics of software
+* Introduction to SE, Components and Goals
+* Software process and process model
+* Characteristics of Software Process
+* Software products and types
+* SDLC models
+* SE Challenges
+* Risk management
+* Professional Ethical responsibility
+* Process Visibility
+Software Engineering:
+* It is a branch of CS that creates practical, cost effective solutions to computing by applying systematic scientific knowledge.
+* Software is a set of instructions - Today it comprises of Source code, Executables, Design Documents, Operations, system manual and Installation and Implementation manuals.
+Classification:
+* System software: Operates the h/w and a platform to run s/w
+* Operating system, assembler, debugger, compiler and utilities
+* Application software: specific task
+o Word processor
+o databases
+o games
+Essential attributes of good software:
+Product characteristic
+Description
+Maintainability
+Software should be written in such a way so that it can evolve to meet the changing needs of customers. This is a critical attribute because software change is an inevitable requirement of a changing business environment.
+Dependability and security
+Software dependability includes a range of characteristics including reliability, security and safety. Dependable software should not cause physical or economic damage in the event of system failure. Malicious users should not be able to access or damage the system.
+Efficiency
+Software should not make wasteful use of system resources such as memory and processor cycles. Efficiency therefore includes responsiveness, processing time, memory utilisation, etc.
+Acceptability
+Software must be acceptable to the type of users for which it is designed. This means that it must be understandable, usable and compatible with other systems that they use.
+Components of SE:
+* Software Development Life Cycle(SDLC): various stages.
+* Software Quality Assurance(SQA): customer/ user satisfaction.
+* Software Project Management(SPM): Principals of Project Management.
+* Software Management(SM): s/w maintenance.
+* Computer Aided Software Engineering (CASE): requires automated tools.
+* Types of software product
+o Generic: stand alone systems, commercial off the self software, maintain proper interface and be flexible. Eg. Word processor
+o Customized: Specific user group, controlled by the customer. Eg. Air traffic control, Payroll MS
+o Software process
+* Process modelling is an aspect of business system modelling which focuses on the flows of information and flows of control through a system.
+* A software process model is an abstract representation of a process.
+* The process models are Waterfall model, Evolutionary model and Spiral model.
+* Waterfall model
+* It resembles a cascade.
+* It is known as the classic life cycle model.
+* Here output of one phase flows as input to another phase.
+Waterfall model:
+Phases :
+1.Requirement analysis - requirement is documented and is known as software requirement specification documentation.
+2.System and software designing - It includes the architectural design, Abstractions and relationships are designed.
+3.Implementation and unit testing- Implemented and tested.
+4.Intergration and system testing-programs are integrated and tested.
+Operation and Maintenance-keep the software operational after delivery.
+Advantages:
+? Simple and systematic.
+? Easy to maintain.
+? Provide clarity to software Engineers.
+Disadvantages:
+* Each phase must be frozen before the next phase.
+* Difficult to incorporate changes.
+* Product is available only at the last stage.
+Iterative waterfall model:
+* It introduces feedback paths to the previous phases.
+System Development life cycle (SDLC) Phases:
+* Feasibility - provide project plan and budget.
+* Requirement analysis - study business needs.
+* Design - Crucial stage where software's overall structure is defined.
+* Implementation - programming tools are used.
+* Testing - A detailed testing is performed, where the interfaces b/w modules are also tested.
+* Maintenance - accommodate changes.
+Advantages:
+? Linear model.
+? Systematic and sequential
+? Proper documentation is done.
+Disadvantages:
+? Difficult to define all the requirements at the start.
+? Not suitable for changes.
+? Inflexible partitioning
+Evolutionary development model
+* Does not require usable product at the end of each cycle.
+* Developing initial implementation, exposing to the user, refining until it becomes an acceptable system.
+* Characteristics :
+* Phases are interleaved.
+* Feedback is used throughout the entire process.
+* Software products goes through many versions.
+Types of ED model:
+1. Exploratory Development :
+Development is in parts; new features are added to the product and process continues until acceptable product.
+2. Throw-away Prototyping :
+Development is in parts; gets more refined but this prototype is thrown away and actual system development starts from stratch.
+Advantages:
+? Requirements are not frozen in the beginning.
+When it is impossible to express specifications at the beginning.
+Disadvantages:
+? Poor structured system-Changes are made till the last stage; may lose structure.
+? Need highly skilled s/w engineers.
+? Invisible process - difficult to produce deliverables after each stage.
+Bohiemia's spiral model
+? Proposed by Boehm.
+? Combination of Iterative nature of prototyping and systematic aspects of waterfall model.
+? Risk management is incorporated.
+? Each loop in the spiral represents a phase of s/w process.
+? Inner most loop represents feasibility, next system requirement, next design and finally testing.
+? Thus it can be described as a risk driven model and a cyclic approach for incrementally growing system while decreasing its degree of risk.
+Each loop is further divided into 4 sectors:
+1. Objective setting : Objectives and constrains are identified, detailed plan, Risks are identified.
+2. Risk assessment and Reduction : Analysis is done on the risks and steps are taken to reduce the risk.
+3. Development and validation : After evaluation, development model is guided by risk factors.
+Planning : Reviewing the results, plans are made for the next phase.
+Advantages:
+* Begins with elaborating the objective.
+* Development process begins only when the risk evaluated.
+* Encompasses other process models.
+* Risks are explicitly assessed and resolved throughout the process.
+Disadvantages:
+* Complex system; difficult to follow.
+* Only applicable for large systems.
+* Risk assessment is costly.
+* Need expertise in risk evaluation.
+Risk management
+* RISK is the impact of an event with the potential to influence achievement of an organization's objectives.
+* Effective risk management requires an informed understanding of relevant risks, an assessment of their relative priority and a rigorous approach to monitoring and controlling them.
+* Risk management
+* An organization may use risk assumption, risk avoidance, risk retention, risk transfer or any other strategy in proper management of future events.
+* RISK means 'potential danger, insecurity, threat or harm of a future event"
+* Objective is 'to maximize the potential of success and minimize the probability of future losses'.
+* Concept of risk management
+* Risks can come from uncertainty in financial markets, project failures, legal liabilities, credit risk, accidents, natural causes and disasters.
+* An unbiased study on technical risk management measures adopted and followed will help the management. insurance practices
+* Insurers can evaluate risk of insurance policies at a much higher accuracy.
+Types of risks:
+* Product Risk:
+o Fail to satisfy the customers expectations.
+o Unsatisfactory functionality of the s/w.
+o S/w is unreliable and fails frequently.
+o Result in major functional damage.
+o Low quality software.
+o Cause financial damage.
+Types of risks:
+ Business Risk:
+o Lower than expected profits/ loss.
+o It is influenced by sales volume, unit price, input costs, competition, overall economy, govt. regulation.
+ Internal risk:
+o Risk due to events that takes place within the organization such as Human factors (strike/talent), physical factors ( fire, theft, damage), operational factors (access to credit, cost cutting, ads)
+ External risk:
+o Due to outside environment such as economic factors (market risk, pricing), natural factors (floods, etc), political factors (govt. regulations, etc)
+Professional and ethical responsibilities
+S/W engineers are ethically responsible.
+? Issues:
+* Confidentiality
+* Competence - don't accept outside competence level
+* Intellectual property rights
+* Computer misuse- do not use the skills to misuse someone's system.
+Process visibility:
+? Waterfall model - Good - Each activity produces some deliverables.
+? Evolutionary model - Poor - Uneconomic to produce documents during rapid iteration.
+? Formal transformations - Good - Documents must be produced from each phase.
+? Reuse-oriented development - Moderate - not possible to produce documents describing reuse.
+? Spiral model - Good - Each segment and each ring of the spiral should produce some document.
+Software Engineering
+? Introduction
+? System and their environment
+? System Procurement
+? System Engineering process
+? System Architecture modelling
+? Human factors
+? System Reliability Engineering
+Software engineering:
+? Software engineering is the activity of specifying, implementing, validating, installing and maintaining system as a whole. (interconnected components working together)
+? Emergent properties: Overall weight of the system, reliability of the system, usability of the system.
+Environment:
+? It affects functioning and performance.
+? System inside a system is known as subsystem.
+? System hierarchies - levels of systems
+System procurement:
+? Acquiring a system for an organization.
+? Deciding on the system specification and architectural design is essential.
+? Developing a system from scratch/buy commercial off the shelf system.
+Model of system procurement:
+System requirement definition:
+* Consult with customers and endusers
+* Basic function is described at the abstact level
+* Non functional system properties such Specify what the system should not do.
+System Design process:
+* Analyse the partition requirements
+* Identify the sub system that can meet the requirements
+* Assign the requirement to each identified sub systems.
+* Specific functions provided by each sub system are specified.
+* Define the interfaces that are provided and expected by each sub system.
+Sub system development:
+* Sub system development activity involves developing each sub system.
+* If sub system is a software system, a software process involving requirements, design, implementation and so on.
+* Commercial Off the shelf (COTS) systems may not meet the requirement exactly but it can be modified.
+* Sub systems are usually developed in parallel.
+System Integration:
+* Putting them together to make up a complete system is integration.
+* Big bang method integrated all the sub systems all at the same time.
+* Incremental integration does it one system at a time.
+* Scheduling the development of the sub systems at the same time is impossible.
+* II reduces the cost.
+System installation:
+* Installing the system in the environment in which it is intended to operate.
+* Problems can be that due to
+* ---Environment assumption may be incorrect.
+* ---Human resistance to new systems
+* ---System has to coexist with the existing system for some time
+* --Problems with physical installation
+* Operator training
+Human factors:
+? User Interface is essential for effective system operaation.
+? Process changes - training is required for workers to cope with new system. But organization is face resistance from staff initially.
+? Job Changes - New and faster systems will require to change the way the worker work.
+? Organizational changes - Changes in
+the political power structure.
+System reliability engineering
+? Components of the system are dependent and failure in one components.
+? Affect the operation of other components.
+Types:
+-Hardware: The probability of a hardware components failing is proportional to reliability.
+-Software : Software component producing incorrect output.
+-Operator: Error can be made by the operator.
+? Introduction
+? Functional and Non-functional and Domain Requirements
+? Software Requirement Specification(SRS) Document
+? Requirement Engineering process
+? Requirement Management
+? Requirement Management Planning
+? System Models
+Software Requirement Analysis and Specification
+? A software requirement provides a Blueprint for the development of a software product.
+? The degree of understanding, accuracy and description provided by SRS document is directly proportional to the degree of quality of the derived product.
+Classification of system requirements
+? Functional requirements describe system services or functions
+? Non-functional requirements is a constraint on the system or on the development process
+? User requirements - Statements in natural language (NL) plus diagrams of the services the system provides and its operational constraints. Written for customers
+? System requirements - A structured document setting out detailed descriptions of the system services. Written as a contract between client and contractor
+Functional requirements
+? The functional requirements for a system describe the functionalities or services that the system is expected to provide.
+? They provide how the system should react to particular inputs and how the system should behave in a particular situation.
+Non-Functional requirements
+? These are constraints on the services or functionalities offered by the system.
+? They include timing constraints, constraints on the development process, standards etc.
+? These requirements are not directly concerned with the specific function delivered by the system.
+? They may relate to such system properties such as reliability, response time, and storage.
+? They may define the constraints on the system such as capabilities of I/O devices and the data representations used in system interfaces.
+Non-Functional requirements classifications
+Non-functional classifications:
+* Product requirements
+o Requirements which specify that the delivered product must behave in a particular way e.g. execution speed, reliability, etc.
+* Organisational requirements
+o Requirements which are a consequence of organisational policies and procedures e.g. process standards used, implementation requirements, etc.
+* External requirements
+o Requirements which arise from factors which are external to the system and its development process e.g. interoperability requirements, legislative requirements, etc.
+Requirements for srs Software requirement specification document
+1. It should specify only external system behaviour.
+2. It should specify constraints on the implementation.
+3. It should be easy to change.
+4. It should serve as a reference tool for system maintainers.
+5. It should record forethought about the life cycle of the system.
+6. It should characterize acceptable response to undesired events.
+Characteristics of an SRS:
+* Correct: An SRS is correct if every requirement included in the SRS represents something required in the final system.
+* Complete: An SRS is complete if everything software is supposed to do and the responses of the software to all classes of input data are specified in the SRS.
+* Unambiguous: An SRS is unambiguous or clear cut if and only if every requirement stated has one and only one interpretation.
+* Verifiable: An SRS is verifiable if and only if every specified requirement is verifiable i.e. there exists a procedure to check that final software meets the Requirement.
+* Consistent: An SRS is consistent if there is no requirement that conflicts with another.
+* Traceable: An SRS is traceable if each requirement in it must be uniquely identified to a source.
+* Modifiable: An SRS is modifiable if its structure and style are such that any necessary change can be made easily while preserving completeness and consistency.
+* Ranked: An SRS is ranked for importance and/or stability if for each requirement the importance and the stability of the requirements are indicated.
+Components of an SRS:
+* Functionality
+? What is the software supposed to do?
+* External interfaces
+? How does the software interact with people, the system's hardware, other hardware, and other software?
+? What assumptions can be made about these external entities?
+* Required Performance
+? What is the speed, availability, response time, recovery time of various software functions, and so on?
+* Quality Attributes
+? What are the portability, correctness, maintainability, security, and other considerations?
+* Design constraints imposed on an implementation
+? Are there any required standards in effect, implementation language, policies for database integrity, resource limits, operating environment(s) and so on?
+* Project development plans
+o E.g. cost, staffing, schedules, methods, tools, etc
+? Lifetime of SRS is until the software is made obsolete
+? Lifetime of development plans is much shorter
+* Product assurance plans
+o Configuration Management, Verification & Validation, test plans, Quality Assurance, etc
+? Different audiences
+? Different lifetimes
+* Designs
+o Requirements and designs have different audiences
+o Analysis and design are different areas of expertise
+? I.e. requirements analysts shouldn't do design!
+o Except where application domain constrains the design
+? e.g. limited communication between different subsystems for security reasons.
+Requirement Engineering Process
+? The requirements engineering process includes a feasibility study, requirements
+elicitation and analysis, requirements specification and requirements management.
+Requirement engineering process:
+The process of understanding and defining what services are required from the system and identifying the constraints on the system's operation and development.
+? Feasibility study - on current hardware, software technologies, cost effectiveness, etc
+? Requirement elicitation and analysis - involve the development of one or more system models and prototypes.
+? Requirement specification - detailed description in the form of document
+? Requirement validation - checks the requirement for realism, consistency and completeness.
+Feasibility Study
+* A feasibility study decides whether or not the proposed system is worthwhile.
+* The input to the feasibility study is an outline description of the system and the output recommends whether the requirement engineering process should be initiated.
+* It is the cost benefit analysis which involves information collection and report writing.
+* Information is extracted from managers, SE's, technical experts and end users.
+* It may propose scope budget and schedule of the system.
+Questions for people in the organisation:
+Objective ? Acceptable? Affordable?
+Feasible ? Significance?
+How it is better than current system?
+How will the business be better?
+Elicitation and analysis
+* Sometimes called requirements discovery
+* Involves technical staff working with customers and end users (stakeholders) to find out about
+the application domain
+>Activities involves are:
+? Requirement discovery: interacting with stakeholders
+? Requirement classification and organization: use a model of the system architecture, organize subsystems and relations
+? Requirements prioritization and negotiation: negotiate when there are conflicts among stakeholders
+? Requirement specification: documented
+It is an iterative process with feedback.
+Techniques for Requirements elicitation and analysis:
+VViieewwppooiinntt oorriieenntteedd eelliicciittaattiioonn::
+All the previous requirements sources can be represented as system viewpoints.
+o Viewpoints are a way of structuring the requirements to represent the perspectives of different stakeholders. Stakeholders and other sources may be classified under different viewpoints.
+o This multi-perspective analysis is important as there is no single correct way to analyse system requirements.
+ATM stakeholders, Domain and interacting System
+Stakeholders:
+* Bank customers
+* Representatives of other banks
+* Bank managers
+* Counter staff
+* Database administrators
+* Security managers
+* Marketing department
+* Hardware and software maintenance engineers
+* Banking regulators
+* Moreover, we have already seen that requirements may come from the application Domain and from other System that interact with the application being specified.
+Types of viewpoint:
+* Interactor viewpoints
+o People or other systems that interact directly with the system. In an ATM, the customer's and the account database are interactor VPs.
+* Indirect viewpoints
+o Stakeholders who do not use the system themselves but who influence the requirements. In an ATM, management and security staff are indirect viewpoints.
+* Domain viewpoints
+o Domain characteristics and constraints that influence the requirements. In an ATM, an example would be standards for inter-bank communications.
+Requirements discovery and scenarios:
+* People usually find it easier to relate to real-life examples than to abstract description.
+* They can understand and critique a scenario of how they can interact with the system.
+* That is, scenario can be particularly useful for adding detail to an outline requirements description:
+o they are description of example interaction sessions;
+o each scenario covers one or more possible interaction;
+Several forms of scenarios have been developed, each of which provides different types of information at different level of detail about the system.
+Requirements discovery and scenarios:
+? Scenarios are real-life examples of how a system can be used.
+? They should include
+* A description of the starting situation;
+* A description of the normal flow of events;
+* A description of what can go wrong;
+* Information about other concurrent activities;
+* A description of the state when the scenario finishes.
+Social and organisational factors Ethnography
+? Software systems are used in a social and organisational context. This can
+influence or even dominate the system requirements.
+? Social and organisational factors are not a single viewpoint but are influences on all viewpoints.
+? Good analysts should immerse him or herself in the working environment where the system will be used and must be sensitive to these factors
+? Currently no systematic way to tackle their analysis.
+Ethnography:
+* An expert in social branch spends a considerable time observing and analysing how people actually work.
+* In this way it is possible to discover implicit system requirements.
+* People do not have to explain or articulate detail about their work. In fact people often find it difficult to detail their works because it is second nature to them.
+* An unbiased observer may be suitable to find out social and important organisational factors (that are not obvious to individuals).
+* Ethnographic studies have shown that work is usually richer and more complex than suggested by simple system models.
+Ethnography and prototyping:
+Scope of ethnography:
+To summarize the discussion, we can say that ethnography is particularly effective at discovering two type of requirement:
+* Requirements that are derived from the way that people actually work rather than the way I which process definitions suggest that they ought to work.
+* Requirements that are derived from cooperation and awareness of other people's activities.
+Requirements validation:
+* Concerned with demonstrating that the requirements define the system that the customer really wants.
+* Requirements validation covers a part of analysis in that it is concerned with finding problems with requirements.
+* Requirements error costs are high so validation is very important
+o Fixing a requirements error after delivery may cost up to 100 times the cost of fixing an implementation error.
+o In fact, a change to the requirements usually means that the system design and the implementation must also be changed and the testing has to be performed again.
+Checks required during the requirements validation process:
+* Validity checks. Does the system provide the functions which best support the customer's needs? ( Other functions maybe identified by a further analysis )
+* Consistency checks. Are there any requirements conflicts?
+* Completeness checks. Are all the requirements needed to define all functions required by the customer sufficiently specified?
+* Realism checks. Can the requirements be implemented given available budget, technology and schedule?
+* Verifiability. Can the requirements be checked?
+Requirements validation techniques:
+The following techniques can be used individually or in conjunction.
+* Requirements reviews
+o Systematic manual analysis of the requirements performed by a team of reviewers
+* Prototyping
+o Using an executable model of the system to check requirements. Covered in later Chapters.
+* Test-case generation
+o Developing tests for requirements to check testability.
+o If the test is difficult to design, usually the related requirements are difficult to implement.
+Requirements reviews
+* A requirements review is a manual process that involves both client and contractor staff should be involved in reviews.
+* In other words these people should discuss.
+* Regular reviews should be held while the requirements definition is being formulated.
+* Reviews may be formal (with completed documents) or informal. Good communications between developers, customers and users can resolve problems at an early stage.
+Formal and informal reviews
+? Informal reviews simply involve contractors discussing requirements with as many system stakeholders as possible;
+? Formal reviews the development team should "take" the client through
+* the system requirements and
+* explaining the implications of each requirements.
+Checks that should be performed by reviews:
+* Verifiability. Is the requirement realistically testable?
+* Comprehensibility. Is the requirement properly understood?
+* Traceability. Is the origin of the requirement clearly stated? It might be necessary to go back to the source of a requirement to assess the impact of the change.
+* Adaptability. Can the requirement be changed without a large impact on other requirements?
+Requirements management:
+* The requirements for large systems are frequently changing.
+* In fact, during the software process, the stakeholders' understanding of the problem is constantly changing.
+* Requirements management is the process of managing changing requirements during the requirements engineering process and system development.
+* Requirements are inevitably incomplete and inconsistent
+o New requirements emerge during the process as business needs change and a better understanding of the system is developed;
+o Different viewpoints have different requirements and these are often contradictory.
+Requirements management:
+? It is hard for the users and customers to anticipate what effects the new system will have on the organization.
+? Often, only when the system has been deployed, new requirements inevitably emerge.
+? This is mainly due to the fact that, when the end-users have experience of the new system, they discover new needs and priority.
+Requirements change:
+? The priority of requirements from different viewpoints changes during the development process. Conflicts have to inevitably converge in a compromise.
+? System customers may specify requirements from a business perspective that conflict with end-user requirements.
+? The business and technical environment of the system changes during its development.
+? New hardware, new interface, business priority, new regulations, etc.
+Requirement changes and the requirements management:
+The requirements management is the process of identifying, understanding and controlling changes to system requirements.
+* It might be useful to keep track of individual requirements and maintain links between dependent requirements so that you can asset the impact of requirements changes.
+* The process of requirements management should start as soon as a draft a version of the requirement document is available.
+Requirements evolution:
+Enduring and volatile requirements
+* From an evolution perspective, requirements fall into two classes:
+* Enduring requirements. Stable requirements derived from the core activity of the customer organisation and relate directly to the domain of the system.
+o E.g., In a hospital, requirements will always relate to doctors, nurses, etc.
+o These requirements may be derived from a domain conceptual models that show entities and relations between them.
+* Volatile requirements. Requirements which change during development or when the system is in use.
+o E.g., In a hospital, requirements derived from healthcare policy;
+A possible classification of volatile requirements
+Requirement Type
+Description
+Mutable requirements
+Requirements that change because of changes to the environment in which the organisation is operating. For example, in hospital systems, the funding of patient care may change and thus require different treatment information to be collected.
+Emergent requirements
+Requirements that emerge as the customer's understanding of the system develops during the system development. The design process may reveal new emergent requirements.
+Consequential requirements
+Requirements that result from the introduction of the computer system. Introducing the computer system may change the organisations processes and open up new ways of working which generate new system requirements
+Compatibility requirements
+Requirements that depend on the particular systems or business processes within an organisation. As these change, the compatibility requirements on the commissioned or delivered system may also have to evolve.
+Requirements management planning:
+* Since the RE process is very expensive, it might be useful to establish a planning.
+* In fact, during the requirements engineering process, you have to plan:
+o Requirements identification
+? How requirements are individually identified; they should be uniquely identified in order to keep a better traceability.
+o A change management process
+? The process followed when requirements change: the set of activities that estimate the impact and cost of changes.
+o Traceability policies
+? The policy for managing the amount of information about relationships between requirements and between system design and requirements that should be maintained (e.g., in a Data Base)
+o CASE tool support
+? The tool support required to help manage requirements change; tolls can range from specialist requirements management systems to simple data base systems.
+System modelling:
+* System modelling helps the analyst to understand the functionality of the system and models are used to communicate with customers.
+* Different models present the system from different perspectives
+o External perspective showing the system's context or environment;
+o Behavioural perspective showing the behaviour of the system;
+o Structural perspective showing the system or data architecture.
+Model types:
+* Data processing model showing how the data is processed at different stages.
+* Composition model showing how entities are composed of other entities.
+* Architectural model showing principal sub-systems.
+* Classification model showing how entities have common characteristics.
+* Stimulus/response model showing the system's reaction to events.
+Context models:
+* Context models are used to illustrate the operational context of a system - they show what lies outside the system boundaries.
+* Social and organisational concerns may affect the decision on where to position system boundaries.
+* Architectural models show the system and its relationship with other systems.
+The context of an ATM system
+Behavioural models:
+? Behavioural models are used to describe the overall behaviour of a system.
+? Two types of behavioural model are:
+* Data processing models that show how data is processed as it moves through the system;
+* State machine models that show the systems response to events.
+? These models show different perspectives so both of them are required to describe the system's behaviour.
+Data-processing models:
+? Data flow diagrams (DFDs) may be used to model the system's data processing.
+? These show the processing steps as data flows through a system.
+? DFDs are an intrinsic part of many analysis methods.
+? Simple and intuitive notation that customers can understand.
+? Show end-to-end processing of data.
+Data flow diagrams:
+? DFDs model the system from a functional perspective.
+? Tracking and documenting how the data associated with a process is helpful to develop an overall understanding of the system.
+? Data flow diagrams may also be used in showing the data exchange between a system and other systems in its environment.
+State machine models:
+* These model the behaviour of the system in response to external and internal events.
+* They show the system's responses to stimuli so are often used for modelling real-time systems.
+* State machine models show system states as nodes and events as arcs between these nodes. When an event occurs, the system moves from one state to another.
+* Statecharts are an integral part of the UML and are used to represent state machine models.
+Microwave oven model
+Semantic data models:
+* Used to describe the logical structure of data processed by the system.
+* An entity-relation-attribute model sets out the entities in the system, the relationships between these entities and the entity attributes
+* Widely used in database design. Can readily be implemented using relational databases.
+* No specific notation provided in the UML but objects and associations can be used.
+Object models
+* Object models describe the system in terms of object classes and their associations.
+* An object class is an abstraction over a set of objects with common attributes and the services (operations) provided by each object.
+* Various object models may be produced
+o Inheritance models;
+o Aggregation models;
+o Interaction models.
+Object models:
+? Natural ways of reflecting the real-world entities manipulated by the system
+? More abstract entities are more difficult to model using this approach
+? Object class identification is recognised as a difficult process requiring a deep understanding of the application domain
+? Object classes reflecting domain entities are reusable across systems
+Inheritance models
+* Organise the domain object classes into a hierarchy.
+* Classes at the top of the hierarchy reflect the common features of all classes.
+* Object classes inherit their attributes and services from one or more super-classes. these may then be specialised as necessary.
+* Class hierarchy design can be a difficult process if duplication in different branches is to be avoided.
+Library class hierarchy
+Object aggregation
+? An aggregation model shows how classes that are collections are composed of other classes.
+? Aggregation models are similar to the part-of relationship in semantic data models.
+Object behaviour modelling
+? A behavioural model shows the interactions between objects to produce some particular system behaviour that is specified as a use-case.
+? Sequence diagrams (or collaboration diagrams) in the UML are used to model interaction between objects.
+
+Unit - II
+SSooffttwwaarree PPrroottoottyyppiinngg
+SSooffttwwaarree DDeessiiggnn
+Introduction
+* This Technique is used to reduce the cost and risk
+* Because Requirement engineering is a problem
+* Of 56% of errors - 83% is during req. and design stages
+* Early user participation in shaping and evaluating system functionality
+* Feedback to refine the emerging system providing a working version that is ready for testing.
+* "Prototyping is a technique for providing a reduced functionality or a limited performance version of a software system early in development"
+* Need for prototyping in software development
+* Prototyping is required when it is difficult to obtain exact requirements.
+* User keeps giving feedback and once satisfied a report is prepared.
+* Once the process is over SRS is prepared.
+* Now any model can be used for development.
+* Prototyping will expose functional, behavioural aspects as well as implementation.
+Process of Prototyping
+* It takes s/w functional specifications as input, which is simulated, analyzed or directly executed.
+* User evaluations can then be incorporated as a feedback to refine the emerging specifications and design.
+* A continual refining of the input specification is done.
+* Phases of prototyping development are,
+? Establishing prototyping objectives
+? Defining prototype functionality
+? Develop a prototype
+? Evaluation of the prototype
+Prototyping process:
+EstablishprototypeobjectivesDefineprototypefunctionalityDevelopprototypeEvaluateprototypePrototypingplanOutlinedefinitionExecutableprototypeEvaluationreport
+* Users point out defects and offer suggestions for improvement.
+* This increases the flexibility of the development process.
+* prototyPING MODEL
+* PM is a system development method(SDM) in which a Prototype is built, tested and then reworked as necessary until an acceptable prototype is finally achieved.
+* It is an iterative, trial and error process that takes place between the developers and the users.
+Prototyping model:
+* It is an attractive idea for complicated and large systems for which there is no manual process or existing system to help determining the requirements.
+* The goal is to provide a system with overall functionality.
+* Types of prototyping approach
+* There are two variants of prototyping:
+* Throwaway prototyping and
+* (ii)evolutionary prototyping.
+* Throwaway prototyping is used with the objective that prototype will be discarded after the requirements have been identified.
+* In evolutionary prototyping, the idea is that prototype will be eventually converted in the final system.
+o Gradually the increments are made to the prototype by taking into the consideration the feedback of clients and users.
+Approaches to prototyping:
+Evolutionary prototyping EvolutionaryprototypingThrow-awayPrototypingDeliveredsystemExecutable Prototype +System SpecificationOutlineRequirements
+Evolutionary prototyping:
+It is the only way to develop the system where it is difficult to establish a detailed system specification.
+But this approach has following limitations:
+(i)Prototype evolves so quickly that it is not cost effective to produce system documentation.
+(ii) Continual changes tend to corrupt the structure of the prototype system. So maintenance is likely to be difficult and costly.
+Throw-away prototyping:
+* The principal function of the prototype is to clarify the requirements.
+* After evaluation the prototype is thrown away as shown in figure.
+* Customers and end users should resist the temptation to turn the throwaway prototype into a delivered system.
+The reason for this are: (limitations)
+(i) Important system characteristics such as performance, security, reliability may have been ignored during prototype development so that a rapid implementation could be developed. It may be impossible to turn the prototype to meet these non-functional requirements.
+(ii) The changes made during prototype development will probably have degraded the system structure. So the maintenance will be difficult and expensive.
+prototyping techniques
+Various techniques may be used for rapid development
+Build prototypesystemDevelop abstractspecificationUse prototypesystemDeliversystemSystemadequate?YESNOutlinerequirementsDevelopprototypeEvaluateprototypeSpecifysystemDevelopsoftwareValidatesystemDeliveredsoftwaresystemReusablecomponents
+(i) Dynamic high-level language development
+(ii) Database programming
+(iii) Component and application assembly
+* These are not exclusive techniques - they are often used together
+* Visual programming is an inherent part of most prototype development systems
+* Dynamic high-level languages
+* Languages which include powerful data management facilities
+* Need a large run-time support system. Not normally used for large system development
+* Some languages offer excellent UI development facilities
+* Some languages have an integrated support environment whose facilities may be used in the prototype
+* Database programming languages
+* Domain specific languages for business systems based around a database management system
+* Normally include a database query language, a screen generator, a report generator and a spreadsheet.
+* May be integrated with a CASE toolset
+* The language + environment is sometimes known as a fourth-generation language (4GL)
+* Cost-effective for small to medium sized business systems
+Database programming:
+Component and application assembly:
+* Prototypes can be created quickly from a set of reusable components plus some mechanism to 'glue' these component together
+* The composition mechanism must include control facilities and a mechanism for component communication
+* The system specification must take into account the availability and functionality of existing components
+* User interface prototyping
+* It is impossible to pre-specify the look and feel of a user interface in an effective way. prototyping is essential
+* UI development consumes an increasing part of overall system development costs
+* User interface generators may be used to 'draw' the interface and simulate its
+DBprogramminglanguageInterfacegeneratorSpreadsheetReportgeneratorDatabase management systemFourth-generation language
+functionality with components associated with interface entities
+* Web interfaces may be prototyped using a web site editor
+Software design
+Introduction:
+* It is a process to transform user requirements into some suitable form which will help coding and implementation.
+* First step we take from problem to solution.
+* Good design is the key to engineering.
+"Software design is the process of defining the architecture, components, interfaces and characteristics of a system and planning for a solution to the problem"
+Basic Design Process:
+* The design process develops several models of the software system at different levels of abstraction.
+o Starting point is an informal "boxes and arrows" design
+o Add information to make it more consistent and complete
+o Provide feedback to earlier designs for improvement
+Design Phases:
+* Architectural design: Identify sub-systems.
+* Abstract specification: Specify sub-systems.
+* Interface design: Describe sub-system interfaces.
+* Component design: Decompose sub-systems into components.
+* Data structure design: Design data structures to hold problem data.
+* Algorithm design: Design algorithms for problem functions.
+Phases in the Design Process
+Design principles:
+* The design process is a sequence of steps that enable the designer to describe all aspects of the software to be built.
+* Design software follows a set of iterative steps.
+* The principles of design are
+* Problem partitioning
+* Abstraction
+* Modularity
+* Top-Down or Bottom -Up
+Problem partitioning
+Complex program is divided into sub program.
+Eg : 3 partitions
+1. Input
+2. Data Transformation
+3. Output
+Advantages:
+? Easier to test
+? Easier to maintain
+? Propagation of fewer side effects
+? Easier to add new features
+Abstraction
+Abstraction is the method of describing a program function.
+Types :
+1. Data Abstraction :
+A named collection of data that describes a data object. Data abstraction for door would
+be a set of attributes that describes the door. (e.g. door type, swing direction, weight, dimension)
+2. Procedural Abstraction :
+A named sequence of instructions that has a specific & limited or a particular function. Eg: Word OPEN for a door.
+3.Control Abstraction :
+It controls the program without specifying internal details.
+Eg. Room is stuffy.
+Modularity:
+* Modularity is a logical partitioning of the software design that allows complex software to be managed for purpose of implementation and maintenance.
+* Modules can be compiled and stored separately in a library and can be included in the program whenever required.
+Modularity:
+5 criteria to evaluate a design method with respect to its modularity:
+Modular Decomposability
+Complexity of the overall problem can be
+reduced if the design method provides a
+systematic mechanism to decompose a
+problem into sub problems
+Modular understandability
+module should be understandable as a standalone unit (no need to refer to other modules)
+Modularity:
+Modular continuity
+If small changes to the system requirements result in
+changes to individual modules, rather than system wide
+changes, the impact of side effects will be minimized
+Modular protection
+? If an error occurs within a module then those errors are localized and not spread to other modules.
+Design stategies
+The most commonly used software design strategies are
+* Functional Design
+* Object Oriented Design
+Functional design:
+* Designed from a functional viewpoint.
+* The functions are designed as actions such as scan, build, analyze, generate etc.,
+Object oriented design:
+* Viewed as a collection of objects.
+* Objects are usually members of an object class whose definition defines attributes and operations of class members.
+Design quality
+* A good design - efficient code.
+* Adapt changes - add new functionality and modify existing functionality.
+* Design Quality is based on Quality Characteristics:
+? Cohesion
+? Coupling
+? Understandability
+? Adaptability
+Cohesion
+* It is a measure of the closeness of the relationship between its components.
+* Components are encapsulated into single unit.
+* So no need it modify individual components.
+Various levels of cohesion are,
+? Coincidental cohesion: Components are not related but bundle together
+? Logical: components that perform similar function are put together.
+? Temporal: Component's function that a particular time are grouped together.
+? Communicational: Components that operate on the same input data are grouped.
+? Procedural: Based on the procedure it is grouped.
+? Sequential: Grouped based on the sequence.
+? Functional: Components that are necessary for a single function are grouped together.
+Coupling
+* It measures the Strength of interconnections between components.
+* Strength depends on the interdependence.
+* Tight coupling: Have very strong interconnections because they share variables and the program unit is dependent on each other.
+* Loose Coupling: Components are independent which in turns reduces the ripple effect(one change leading to another).
+Tight Coupling
+Module AModule BModule CModule DShared dataarea
+Loose Coupling
+Domain-specific architectures
+* Architectural models which are specific to some application domain
+* Two types of domain-specific model
+? Generic models which are abstractions from a number of real systems and which encapsulate the principal characteristics of these systems
+? Reference models which are more abstract, idealised model. Provide a means of information about that class of system and of comparing different architectures
+* Generic models are usually bottom-up models; Reference models are top-down models
+Generic models
+* Compiler model is a well-known example although other models exist in more specialised application domains
+* Lexical analyser
+* Symbol table
+* Syntax analyser
+* Syntax tree
+* Semantic analyser
+* Code generator
+* Generic compiler model may be organised according to different architectural models
+Compiler model
+Language processing system
+LexicalanalysisSyntacticanalysisSemanticanalysisCodegenerationSymboltable
+Reference architectures
+* Reference models are derived from a study of the application domain rather than from existing systems
+* May be used as a basis for system implementation or to compare different systems. It acts as a standard against which systems can be evaluated
+* OSI model is a layered model for communication systems
+OSI reference model
+ApplicationPresentationSessionTransportNetworkData linkPhysical7654321Communications mediumNetworkData linkPhysicalApplicationPresentationSessionTransportNetworkData linkPhysical
+OBJECT ORIENTED DESIGN FUNCTION ORIENTED DESIGN USER INTERFACE DESIGN
+Unit - III
+Object-oriented development:
+* Object-oriented analysis, design and programming are related but distinct
+* OOA is concerned with developing an object model of the application domain
+* OOD is concerned with developing an object-oriented system model to implement requirements
+* OOP is concerned with realising or coding an OOD using an OO programming language such as Java or C++
+* Objects and object classes
+* Objects are entities in a software system which represent instances of real-world and system entities.
+* Object classes are templates for objects. They may be used to create objects.
+* Object classes may inherit attributes and services from other object classes.
+Objects - Definition
+An object is an entity which has a state and a defined set of operations which operate on that state. The state is represented as a set of object attributes. The operations associated with the object provide services to other objects (clients) which request these services when some computation is required.
+Objects are created according to some object class definition. An object class definition serves as a template for objects. It includes declarations of all the attributes and services which should be associated with an object of that class.
+Employee object class
+Generalisation and inheritance
+* Objects are members of classes which define attribute types and operations
+* Classes may be arranged in a class hierarchy where one class (a super-class) is a generalisation of one or more other classes (sub-classes)
+* A sub-class inherits the attributes and operations from its super class and may add new methods or attributes of its own
+A generalisation hierarchy
+Advantages & Disadvantages of inheritance
+* It is an abstraction mechanism which may be used to classify entities
+* It is a reuse mechanism at both the design and the programming level
+* The inheritance graph is a source of organisational knowledge about domains and systems
+o Object classes are not self-contained. they cannot be understood without reference to their super-classes
+o Designers have a tendency to reuse the inheritance graph created during analysis. Can lead to significant inefficiency
+o The inheritance graphs of analysis, design and implementation have different functions and should be separately maintained
+Inheritance and OOD
+* There are differing views as to whether inheritance is fundamental to OOD.
+o View 1. Identifying the inheritance hierarchy or network is a fundamental part of object-oriented design. Obviously this can only be implemented using an OOPL.
+o View 2. Inheritance is a useful implementation concept which allows reuse of attribute and operation definitions. Identifying an inheritance hierarchy at the design stage places unnecessary restrictions on the implementation
+* Inheritance introduces complexity and this is undesirable, especially in critical systems
+An association model
+? Relationship is denoted using a line that is optionally annotated with information about the association.
+Concurrent objects
+* The nature of objects as self-contained entities make them suitable for concurrent implementation where execution takes place as a parallel process.
+* The message-passing model of object communication can be implemented directly if objects are running on separate processors in a distributed system.
+Types:
+* servers -suspends itself and waits for a request to serve.
+* Active objects - never suspends itself.
+An object-oriented design process
+* Step1: Analyze the project, Define the context and modes of use of the system
+* Step2: Design the system architecture
+* Step3: Identify the principal system objects
+* Step4: Generate or Develop design models
+(known as refinement of architecture)
+* Step5: Specify suitable object interfaces
+Weather system description
+A weather data collection system is required to generate weather maps on a regular basis using data collected from remote, unattended weather stations and other data sources such as weather observers, balloons and satellites. Weather stations transmit their data to the area computer in response to a request from that machine.
+The area computer validates the collected data and integrates it with the data from different sources. The integrated data is archived and, using data from this archive and a digitised map database a set of local weather maps is created. Maps may be printed for distribution on a special-purpose map printer or may be displayed in a number of different formats.
+Weather station description
+A weather station is a package of software controlled instruments which collects data, performs some data processing and transmits this data for further processing. The instruments include air and ground thermometers, an anemometer, a wind vane, a barometer and a rain gauge. Data is collected every five minutes.
+When a command is issued to transmit the weather data, the weather station processes and summarises the collected data. The summarised data is transmitted to the mapping computer when a request is received.
+Layered architecture
+System context and models of use
+* Develop an understanding of the relationships between the software being designed and its external environment
+* System context
+o A static model that describes other systems in the environment. Use a subsystem model to show other systems. Following slide shows the systems around the weather station system.
+* Model of system use
+o A dynamic model that describes how the system interacts with its environment. Use lower-cases to show interactions
+Subsystems in the weather mapping system:
+Object identification
+* Identifying objects (or object classes) is the most difficult part of object oriented design
+* There is no 'magic formula' for object identification. It relies on the skill, experience and domain knowledge of system designers
+* Object identification is an iterative process. You are unlikely to get it right first time
+Approaches to identification
+* Use a grammatical approach based on a natural language description of the system (used in Hood method)
+* Base the identification on tangible things in the application domain
+* Use a behavioural approach and identify objects based on what participates in what behaviour
+* Use a scenario-based analysis. The objects, attributes and methods in each scenario are identified
+Weather station object classes
+* Ground thermometer, Anemometer, Barometer
+o Application domain objects that are 'hardware' objects related to the instruments in the system
+* Weather station
+o The basic interface of the weather station to its environment. It therefore reflects the interactions identified in the use-case model
+* Weather data
+o Encapsulates the summarised data from the instruments
+Weather station object classes
+A function-oriented view of design
+Functional design process
+* Data-flow design
+o Model the data processing in the system using data-flow diagrams
+* Structural decomposition
+o Model how functions are decomposed to sub-functions using graphical structure charts
+* Detailed design
+o The entities in the design and their interfaces are described in detail. These may be recorded in a data dictionary and the design expressed using a PDL
+Explain in detail giving your project DFD as an example.
+Design principles
+* User familiarity
+o The interface should be based on user-oriented terms and concepts rather than computer concepts. For example, an office system should use concepts such as letters, documents, folders etc. rather than directories, file identifiers, etc.
+* Consistency
+o The system should display an appropriate level of consistency. Commands and menus should have the same format, command punctuation should be similar, etc.
+* Minimal surprise
+o If a command operates in a known way, the user should be able to predict the operation of comparable commands
+Design principles
+* Recoverability
+o The system should provide some resilience to user errors and allow the user to recover from errors. This might include an undo facility, confirmation of destructive actions, 'soft' deletes, etc.
+* User guidance
+o Some user guidance such as help systems, on-line manuals, etc. should be supplied
+* User diversity
+o Interaction facilities for different types of user should be supported. For example, some users have seeing difficulties and so larger text should be available
+User-system interaction
+* Two problems must be addressed in interactive systems design
+o How should information from the user be provided to the computer system?
+o How should information from the computer system be presented to the user?
+* User interaction and information presentation may be integrated through a coherent framework such as a user interface metaphor
+Interaction styles
+* Command language
+* Form fill-in
+* Natural language
+* Menu selection
+* Direct manipulation
+Command interfaces
+* User types commands to give instructions to the system e.g. UNIX
+* May be implemented using cheap terminals.
+* Easy to process using compiler techniques
+* Commands of arbitrary complexity can be created by command combination
+* Concise interfaces requiring minimal typing can be created
+Problems with command interfaces
+* Users have to learn and remember a command language. Command interfaces are therefore unsuitable for occasional users
+* Users make errors in command. An error detection and recovery system is required
+* System interaction is through a keyboard so typing ability is required
+Command languages
+* Often preferred by experienced users because they allow for faster interaction with the system
+* Not suitable for casual or inexperienced users
+* May be provided as an alternative to menu commands (keyboard shortcuts). In some cases, a command language interface and a menu-based interface are supported at the same time
+Form-based interface
+Natural language interfaces
+* The user types a command in a natural language. Generally, the vocabulary is limited and these systems are confined to specific application domains (e.g. timetable enquiries)
+* NL processing technology is now good enough to make these interfaces effective for casual users but experienced users find that they require too much typing
+TitleAuthorPublisherEditionClassificationDate ofpurchaseISBNPricePublicationdateNumber ofcopiesLoanstatusOrderstatusNEWBOOK
+Control panel interface
+Menu systems
+* Users make a selection from a list of possibilities presented to them by the system
+* The selection may be made by pointing and clicking with a mouse, using cursor keys or by typing the name of the selection
+* May make use of simple-to-use terminals such as touchscreens
+Advantages of menu systems
+* Users need not remember command names as they are always presented with a list of valid commands
+* Typing effort is minimal
+* User errors are trapped by the interface
+* Context-dependent help can be provided. The user's context is indicated by the current menu selection
+Problems with menu systems
+* Actions which involve logical conjunction (and) or disjunction (or) are awkward to represent
+* Menu systems are best suited to presenting a small number of choices. If there are many choices, some menu structuring facility must be used
+* Experienced users find menus slower than command language
+Information presentation
+* Static information
+o Initialised at the beginning of a session. It does not change during the session
+o May be either numeric or textual
+* Dynamic information
+o Changes during a session and the changes must be communicated to the system user
+o May be either numeric or textual
+Alternative information presentations
+Direct manipulation advantages
+* Users feel in control of the computer and are less likely to be intimidated by it
+* User learning time is relatively short
+* Users get immediate feedback on their actions so mistakes can be quickly detected and corrected
+Direct manipulation problems
+* The derivation of an appropriate information space model can be very difficult
+* Given that users have a large information space, what facilities for navigating around that space should be provided?
+* Direct manipulation interfaces can be complex to program and make heavy demands on the computer system
+USER GUIDANCE
+* Refers to error messages, alarms, prompts, labels etc.,
+* It covers system messages, documentation, online help
+* Provides faster task performance, fewer errors and greater user satisfaction.
+* Preventing and correcting.
+* Directly or indirectly guide users.
+* Design consistency
+* Immediate feedback to users.
+Interface evaluation
+* Some evaluation of a user interface design should be carried out to assess its suitability
+* Full scale evaluation is very expensive and impractical for most systems
+* Ideally, an interface should be evaluated against a usability specification. However, it is rare for such specifications to be produced
+01000200030004000JanFebMarAprilMayJuneJan2842Feb2851Mar3164April2789May1273June2835
+Usability attributes
+Simple evaluation techniques
+* Questionnaires for user feedback
+* Video recording of system use and subsequent tape evaluation.
+* Instrumentation of code to collect information about facility use and user errors.
+* The provision of a grip button for on-line user feedback.
+AttributeDescriptionLearnability How long does it take a new user tobecome productive with the system?Speed of operation How well does the system response matchthe user's work practice?Robustness How tolerant is the system of user error?Recoverability How good is the system at recovering fromuser errors?Adaptability How closely is the system tied to a singlemodel of work?
+RREELLIIAABBIILLIITTYY AANNDD RREEUUSSAABBIILLIITTYY
+Unit-IV
+Reliability metrics
+* Reliability metrics are units of measurement of system reliability.
+* System reliability is measured by counting the number of operational failures and, where appropriate, relating these to the demands made on the system and the time that the system has been operational
+* A long-term measurement programme is required to assess the reliability of critical systems
+Reliability metrics
+Probability of failure on demand
+* This is the probability that the system will fail when a service request is made. Useful when demands for service are intermittent and relatively infrequent.
+* Appropriate for protection systems where services are demanded occasionally and where there are serious consequence if the service is not delivered.
+* Relevant for many safety-critical systems with exception management components.
+o Emergency shutdown system in a chemical plant
+Rate of fault occurrence (ROCOF)
+* Reflects the rate of occurrence of failure in the system
+* ROCOF of 0.002 means 2 failures are likely in each 1000 operational time units e.g. 2 failures per 1000 hours of operation
+* Relevant for operating systems, transaction processing systems where the system has to process a large number of similar requests that are relatively frequent.
+o Credit card processing system, airline booking system
+Mean time to failure
+* Measure of the time between observed failures of the system. Is the reciprocal of ROCOF for stable systems
+* MTTF of 500 means that the mean time between failures is 500 time units
+* Relevant for systems with long transactions i.e. where system processing takes a long time. MTTF should be longer than transaction length
+o Computer-aided design systems where a designer will work on a design for several hours, word processor systems
+Steps to a reliability specification
+* For each sub-system, analyse the consequences of possible system failures.
+* From the system failure analysis, partition failures into appropriate classes.
+* For each failure class identified, set out the reliability using an appropriate metric.
+* Different metrics may be used for different reliability requirements
+* Identify functional reliability requirements to reduce the chances of critical failures
+Bank auto-teller system
+* Each machine in a network is used 300 times a day
+* Bank has 1000 machines
+* Lifetime of software release is 2 years
+* Each machine handles about 200, 000 transactions
+* About 300, 000 database transactions in total per day
+Examples of a reliability spec:
+* Statistical testing
+* Testing software for reliability rather than fault detection
+* Measuring the number of errors allows the reliability of the software to be predicted. Note that, for statistical reasons, more errors than are allowed for in the reliability specification must be induced
+* An acceptable level of reliability should be specified and the software tested and amended until that level of reliability is reached
+Reliability modelling
+* A reliability growth model is a mathematical model of the system reliability change as it is tested and faults are removed
+* Used as a means of reliability prediction by extrapolating from current data
+* Simplifies test planning and customer negotiations
+* Depends on the use of statistical testing to measure the reliability of a system version
+Equal-step reliability growth
+Observed reliability growth
+* Simple equal-step model but does not reflect reality
+* Reliability does not necessarily increase with change as the change can introduce new faults
+* The rate of reliability growth tends to slow down with time as frequently occurring faults are discovered and removed from the software
+* A random-growth model may be more accurate
+Random-step reliability growth
+Growth model selection
+* Many different reliability growth models have been proposed
+* No universally applicable growth model
+* Reliability should be measured and observed data should be fitted to several models
+* Best-fit model should be used for reliability prediction
+Reliability prediction
+Programming for Reliability
+Programming techniques for building reliable software systems.
+Software reliability
+ In general, software customers expect all software to be reliable. However, for non-critical applications, they may be willing to accept some system failures
+ Some applications, however, have very high reliability requirements and special programming techniques must be used to achieve this three strategies
+Fault avoidance
+* The software is developed in such a way that it does not contain faults
+Fault detection
+* The development process is organised so that faults in the software are detected and repaired before delivery to the customer
+Fault tolerance
+* The software is designed so that faults in the delivered software do not result in complete system failure
+Fault avoidance
+* Current methods of software engineering now allow for the production of fault-free software.
+* Fault-free software means software which conforms to its specification. It does
+NOT mean software which will always perform correctly as there may be specification errors.
+* The cost of producing fault free software is very high. It is only cost-effective in exceptional situations. May be cheaper to accept software faults
+Fault-free software development
+*  Needs a precise (preferably formal) specification.
+*  Information hiding and encapsulation in software design is essential
+*  A programming language with strict typing and run-time checking should be used
+*  Extensive use of reviews at all process stages
+*  Requires an organizational committment to quality.
+*  Careful and extensive system testing is still necessary
+Structured programming
+*  Programming without gotos
+*  While loops and if statements as the only control statements.
+*  Top-down design.
+*  Important because it promoted thought and discussion about programming.
+Error-prone constructs
+ Floating-point numbers
+? Inherently imprecise. The imprecision may lead to invalid comparisons
+ Pointers
+? Pointers referring to the wrong memory areas can corrupt data. Aliasing can make programs difficult to understand and change
+ Dynamic memory allocation
+? Run-time allocation can cause memory overflow
+ Parallelism
+? Can result in subtle timing errors because of unforeseen interaction between parallel processes
+ Recursion
+? Errors in recursion can cause memory overflow
+ Interrupts
+? Interrupts can cause a critical operation to be terminated and make a program difficult to execute
+* Information hiding
+ Information should only be exposed to those parts of the program which need to access it. This involves the creation of objects or abstract data types which maintain state and operations on that state
+* Data typing
+ Each program component should only be allowed access to data which is needed to implement its function
+ The representation of a data type should be concealed from users of that type
+ Ada, Modula-2 and C++ offer direct support for information hiding
+* Generics
+Generics are a way of writing generalised, parameterised ADTs and objects which may be instantiated later with particular types
+Fault tolerance
+*  In critical situations, software systems must be fault tolerant.
+*  Fault tolerance means that the system can continue in operation in spite of software system failure
+*  Even if the system has been demonstrated to be fault-free, it must also be fault tolerant as there may be specification errors or the validation may be incorrect
+Fault tolerance actions
+*  Failure detection
+* The system must detect that a failure has occurred.
+*  Damage assessment
+* The parts of the system state affected by the failure must be detected.
+*  Fault recovery
+* The system must restore its state to a known safe state.
+*  Fault repair
+* The system may be modified to prevent recurrence of the fault. As many software faults are transitory, this is often unnecessary.
+Software analogies
+*  N-version programming
+* The same specification is implemented in a number of
+different versions. All versions compute simultaneously and
+the majority output is selected.
+This is the most commonly used approach e.g. in Airbus
+320. However, it does not provide fault tolerance if there are
+specification errors.
+*  Recovery blocks
+* Versions are executed in sequence. The output which
+conforms to an acceptance test is selected. The weakness
+in this system is writing an appropriate acceptance test.
+N-version programming
+*  The different system versions are designed and
+implemented by different teams. It is assumed that
+there is a low probability that they will make the
+same mistakes
+*  However, there is some empirical evidence that
+teams commonly misinterpret specifications in the
+same way and use the same algorithms i their
+systems
+Recovery blocks
+*  Force a different algorithm to be used for each version so they reduce the probability of common errors
+*  However, the design of the acceptance test is difficult as it must be independent of the computation used
+*  Like N-version programming, susceptible to specification errors
+Exception handling
+*  A program exception is an error or some unexpected event such as a power failure.
+*  Exception handling constructs allow for such events to be handled without the need for continual status checking to detect exceptions.
+*  Using normal control constructs to detect exceptions in a sequence of nested procedure calls needs many additional statements to be added to the program and adds a significant timing overhead.
+Defensive programming
+*  An approach to program development where it is assumed that undetected faults may exist in Programs.
+*  The program contains code to detect and recover from such faults.
+*  Does NOT require a fault-tolerance controller yet can provide a significant measure of fault Tolerance.
+Failure prevention
+*  Type systems allow many potentially corrupting failures to be detected at compile-time
+*  Range checking and exceptions allow another significant group of failures to be detected at run-time
+*  State assertions may be developed and included as checks in the program to catch a further class of system failures
+Damage assessment
+*  Analyse system state to judge the extent of corruption caused by a system failure
+*  Must assess what parts of the state space have been affected by the failure
+*  Generally based on 'validity functions' which can be applied to the state elements to assess if their value is within an allowed range
+Damage assessment techniques
+*  Checksums are used for damage assessment in data transmission
+*  Redundant pointers can be used to check the integrity of data structures
+*  Watch dog timers can check for non-terminating processes. If no response after a certain time, a problem is assumed
+Fault recovery
+*  Forward recovery
+* Apply repairs to a corrupted system state
+*  Backward recovery
+* Restore the system state to a known safe state
+*  Forward recovery is usually application specific
+- domain knowledge is required to compute
+possible state corrections
+*  Backward error recovery is simpler. Details of a
+safe state are maintained and this replaces the
+corrupted system state
+Fault recovery
+*  Corruption of data coding
+* Error coding techniques which add redundancy to coded
+data can be used for repairing data corrupted during
+transmission
+* Redundant pointers
+* When redundant pointers are included in data structures (e.g. two-way lists), a corrupted list or filestore may be rebuilt if a sufficient number of pointers are uncorrupted
+* Often used for database and file system repair
+Software reusability
+Software reuse
+* We need to reuse our software assets rather than redevelop the same software.
+* Component reuse- just not reusing the code, reuse specifications and designs
+* Different level of reuse software
+o Application system reuse- application system may be reused; portable in various platforms.
+o Sub-system are reused
+o Module or object reuse - collection of functions
+o Function reuse - single functions
+Reuse-based software engineering
+* Application system reuse
+o The whole of an application system may be reused either by incorporating it without change into other systems (COTS reuse) or by developing application families
+* Component reuse
+o Components of an application from sub-systems to single objects may be reused
+* Function reuse
+o Software components that implement a single well-defined function may be reused
+Four aspects of software reuse
+* Software development with reuse: Develop software with reusable components
+* Software development for reuse - components are generalized
+* Generator based reuse - application generators support
+* Application system reuse - implementation strategies
+S/w development with reuse
+* Reduces the development cost
+* Steps are Design system architecture, specify component, search for reusable components, incorporate discovered components.
+* First search for reusable components and their designs then reuse them.
+Conditions for reuse:
+o To find appropriate components; catalogued and documented components, keep the cost of finding low
+o Maintain quality and reliability
+o Reuser must understand and adapt them, also be aware of the problems it may cause.
+The reuse landscape
+* Range of levels from simple functions to full application:
+o Design patterns, Components based development, Application framework, legacy system wrapping, service oriented systems, product lines, COTS integration, configurable vertical applications, program libraries, program generators, etc
+Generator-based reuse
+* Program generators involve the reuse of standard patterns and algorithms
+* These are embedded in the generator and parameterised by user commands. A program is then automatically generated
+* Generator-based reuse is possible when domain abstractions and their mapping to executable code can be identified
+* A domain specific language is used to compose and control these abstractions
+Types of program generators
+* Parser generators for language processing
+* Code generators
+Application system reuse: reusing entire application integrating more systems
+* COTS product reuse - eg. Flipkart and firstcry or mailserver
+* Software product line - The core system is specifically designed to suit the specific needs of different customers.
+Software product lines
+* A product line is set of applications with a common application specific architecture.
+* Platform specialization: versions of the application are developed for different platforms.
+* Environment specialization: for particular OS or I/O devices.
+* Functional specialization: different version like a library automation system.
+* Process specialization: like centralized ordering or distributed ordering.
+* Deployment time configuration: developed as a generic system but also has the customer specifications
+Unit - V
+SOFTWARE TESTING BASICS
+Software testing is a process, which is used to identify the correctness, completeness and quality of software.
+Software testing is often used in association with the terms verification and validation.
+Verification refers to checking or testing of items, including software, for conformance
+and consistency with an associated specification. For verification, techniques like reviews, analysis, inspections and walkthroughs are commonly used. While validation refers to the process of checking that the developed software is according the requirements specified by the user.
+b) Testing in Software Development Life Cycle (SDLC): Software testing comprises of
+a set of activities, which are planned before testing begins. These activities are carried out for detecting errors that occur during various phases of SDLC. The role of testing in software development life cycle is listed in Table.
+(c) Bugs, Error, Fault and Failure: The purpose of software testing is to find bugs,
+errors, faults, and failures present in the software. Bug is defined as a logical mistake,
+which is caused by a software developer while writing the software code. Error is defined
+as the difference between the outputs produced by the software and the output desired by the user (expected output). Fault is defined as the condition that leads to malfunctioning of the software. Malfunctioning of software is caused due to several reasons, such as change in the design, architecture, or software code. Defect that causes error in operation or negative impact is called failure. Failure is defined as the state in which software is unable to perform a function according to user requirements. Bugs, errors, faults, and failures prevent software from performing efficiently and hence, cause the software to produce unexpected outputs. Errors can be present in the software due to the reasons listed below:
+* Programming errors: Programmers can make mistakes while developing the source code.
+* Unclear requirements: The user is not clear about the desired requirements or the developers are unable to understand the user requirements in a clear and concise manner.
+* Software complexity: The complexity of current software can be difficult to comprehend for someone who does not have prior experience in software development.
+* Changing requirements: The user may not understand the effects of change. If there are minor changes or major changes, known and unknown dependencies among parts of the project are likely to interact and cause problems. This may lead to complexity of keeping track of changes and ultimately may result in errors.
+* Time pressures: Maintaining schedule of software projects is difficult. When deadlines are not met, the attempt to speed up the work causes errors.
+* Poorly documented code: It is difficult to maintain and modify code that is badly written or poorly documented. This causes errors to occur.
+Principles of Software Testing
+There are certain principles that are followed during software testing. These principles act as a standard to test software and make testing more effective and efficient. The commonly used software testing principles are listed below:
+Define the expected output: When programs are executed during testing, they may
+or may not produce the expected outputs due to different types of errors present in the
+software. To avoid this, it is necessary to define the expected output before software
+testing begins. Without knowledge of the expected results, testers may fail to detect an
+erroneous output.
+* Inspect output of each test completely: Software testing should be performed once
+the software is complete in order to check its performance and functionality. Also,
+testing should be performed to find the errors that occur in various phases of software
+development.
+Include test cases for invalid and unexpected conditions: Generally, software produces correct outputs when it is tested using accurate inputs. However, if unexpected input is given to the software, it may produce erroneous outputs. Hence, test cases that detect errors even when unexpected and incorrect inputs are specified should be developed.
+* Test the modified program to check its expected performance: Sometimes, when
+certain modifications are made in software (like adding of new functions) it is possible
+that software produces unexpected outputs. Hence, software should be tested to verify
+that it performs in the expected manner even after modifications.
+5.2.2 Testability
+The ease with which a program is tested is known as testability. Testability can be defined as the degree to which a program facilitates the establishment of test criteria and execution of tests to determine whether the criteria have been met or not. There are several characteristics of testability, which are listed below:
+* Easy to operate: High quality software can be tested in a better manner. This is because if software is designed and implemented considering quality, then comparatively fewer errors will be detected during the execution of tests.
+* Observability: Testers can easily identify whether the output generated for certain input is accurate or not simply by observing it.
+* Decomposability: By breaking software into independent modules, problems can be easily isolated and the modules can be easily tested.
+* Stability: Software becomes stable when changes made to the software are controlled and when the existing tests can still be performed.
+* Easy to understand: Software that is easy to understand can be tested in an efficient manner. Software can be properly understood by gathering maximum information about it. For example, to have a proper knowledge of software, its documentation can be used, which provides complete information of software code thereby increasing its clarity and making testing easier. Note that documentation should be easily accessible, well organised, specific, and accurate.
+TEST PLAN
+A test plan describes how testing would be accomplished. A test plan is defined as a document that describes the objectives, scope, method, and purpose of software testing.This plan identifies test items, features to be tested, testing tasks and the persons involved in performing these tasks. It also identifies the test environment and the test design and measurement techniques that are to be used. Note that a properly defined test plan is an agreement between testers and users describing the role of testing in software.
+A complete test plan helps people outside the test group to understand the 'why' and 'how' of product validation. Whereas an incomplete test plan can result in a failure to check how the software works on different hardware and operating systems or when software is used with other software. To avoid this problem, IEEE states some components that should be covered in a test plan. These components are listed in Table.
+Steps in Development of Test Plan: A carefully developed test plan facilitates effective test execution, proper analysis of errors, and preparation of error report. To develop a test plan, a number of steps are followed, which are listed below:
+1. Set objectives of test plan: Before developing a test plan, it is necessary to understand its purpose. The objectives of a test plan depend on the objectives of software. For example, if the objective of software is to accomplish all user requirements, then a test plan is generated to meet this objective. Thus, it is necessary to determine the objective of software before identifying the objective of test plan.
+2. Develop a test matrix: Test matrix indicates the components of software that are to be tested. It also specifies the tests required to test these components. Test matrix is also used as a test proof to show that a test exists for all components of software that require testing. In addition, test matrix is used to indicate the testing method which is used to test the entire software.
+3. Develop test administrative component: It is necessary to prepare a test plan within a fixed time so that software testing can begin as soon as possible. The test administrative component of test plan specifies the time schedule and resources (administrative people involved while developing the test plan) required to execute the test plan. However, if implementation plan (a plan that describes how the processes in software are carried out) of software changes, the test plan also changes. In this case, the schedule to execute the test plan also gets affected.
+4. Write the test plan: The components of test plan, such as its objectives, test matrix, and administrative component are documented. All these documents are then collected together to form a complete test plan. These documents are organised either in an informal or formal manner. In informal manner, all the documents are collected and kept together. The testers read all the documents to extract information required for
+testing software. On the other hand, in formal manner, the important points are extracted from the documents and kept together. This makes it easy for testers to extract important information, which they require during software testing.
+Overview: Describes the objectives and functions of the software to be performed. It also describes the objectives of test plan, such as defining responsibilities, identifying test environment and giving a complete detail of the sources from where the information is gathered to develop the test plan.
+* Test scope: Specifies features and combination of features, which are to be tested. These features may include user manuals or system documents. It also specifies the features and their combinations that are not to be tested.
+* Test methodologies: Specifies types of tests required for testing features and combination of these features, such as regression tests and stress tests. It also provides description of sources of test data along with how test data is useful to ensure that testing is adequate, such as selection of boundary or null values. In addition, it describes the procedure for identifying and recording test results.
+* Test phases: Identifies various kinds of tests, such as unit testing, integration testing and provides a brief description of the process used to perform these tests. Moreover, it identifies the testers that are responsible for performing testing and provides a detailed description of the source and type of data to be used. It also describes the procedure of evaluating test results and describes the work products, which are initiated or completed in this phase.
+* Test environment: Identifies the hardware, software, automated testing tools, operating system, compliers, and sites required to perform testing. It also identifies the staffing and training needs.
+* Schedule: Provides detailed schedule of testing activities and defines the responsibilities to respective people. In addition, it indicates dependencies of testing activities and the time frames for them.
+Approvals and distribution: Identifies the individuals who approve a test plan and its results. It also identifies the people to whom test plan document(s) is distributed.
+TEST CASE DESIGN
+A test case is a document that describes an input, action, or event and its expected result, in order to determine whether the software or a part of the software is working correctly or not. IEEE defines test case as "a set of input values, execution preconditions, expected results and execution post conditions, developed for a particular objective or test condition, such as to exercise a particular program path or to verify compliance with a specific requirement". Generally, a test case contains particulars, such as test case
+identifier, test case name, its objective, test conditions/setup, input data requirements, steps, and expected results.
+Incomplete and incorrect test cases lead to incorrect and erroneous test outputs. To avoid this, a test case should be developed in such a manner that it checks software with all possible inputs. This process is known as exhaustive testing and the test case, which is able to perform exhaustive testing, is known as ideal test case. Generally, a test case is unable to perform exhaustive testing therefore, a test case that gives satisfactory results is selected. In order to select a test case, certain questions should be addressed.
+* How to select a test case?
+* On what basis certain elements of program are included or excluded from a test case?
+To provide an answer to the above-mentioned questions, a test selection criterion is used. For a given program and its specifications, a test selection criterion specifies the conditions that should be satisfied by a set of test cases. For example, if the criterion is that all the control statements in a program are executed at least once during testing, then a set of test cases which ensures that the specified condition is met, should be selected.
+(a) Test Case Generation: The process of generating test cases helps in locating problems in the requirements or design of software. To generate a test case, initially a criterion that evaluates a set of test cases is specified. Then, a set of test cases that satisfy the specified criterion is generated. There are two methods used to generate test cases, which are listed below:
+* Code based test case generation: This approach, also known as structure based test case generation is used to analyse the entire software code to generate test cases. It considers only the actual software code to generate test cases and is not concerned with the user requirements. Test cases developed using this approach are generally used for unit testing. These test cases can easily test statements, branches, special values, and symbols present in the unit being tested.
+* Specification based test case generation: This approach uses specifications, which indicate the functions that are produced by software to generate test cases. In other words, it considers only the external view of software to generate test cases. Specification based test case generation is generally used for integration testing and system testing to ensure that software is performing the required task. Since this approach considers only the external view of the software, it does not test the design decisions and may not cover all statements of a program. Moreover, as test cases are derived from specifications, the errors present in these specifications may remain uncovered.
+Several tools known as test case generators are used for generating test cases. In addition to test case generation, these tools specify the components of software that are to be tested. An example of test case generator is 'astra quick test', which captures business processes in the visual map and generates data driven tests automatically.
+(b) Test Case Specifications: The test plan is not concerned with the details of testing a unit. Moreover, it does not specify the test cases to be used for testing units. Thus, test case specification is done in order to test each unit separately. Depending on the testing method specified in test plan, features of unit that need to be tested are ascertained. The overall approach stated in test plan is refined into specific test methods and into the criteria to be used for evaluation. Based on test methods and criteria, test cases to test the unit are specified.
+For each unit being tested, these test case specifications provide test cases, inputs to be used in test cases, conditions to be tested by tests cases and outputs expected from test cases. Generally, test cases are specified before they are used for testing. This is because, testing has many limitations and effectiveness of testing is highly dependent on the nature of test cases.
+Test case specifications are written in the form of a document. This is because the quality of test cases needs to be evaluated. To evaluate the quality of test cases, test case review is done for which a formal document is needed. The review of test case document ensures that test cases satisfy the chosen criteria and are consistent with the policy specified in the test plan. The other benefit of specifying test cases formally is that it helps testers to select a good set of test cases.
+SOFTWARE TESTING STRATEGIES
+Software testing strategies can be considered as various levels of testing that are performed to test the software. The first level starts with testing of individual units of software. Once the individual units are tested, they are integrated and checked for interfaces established between them. After this, entire software is tested to ensure that the output produced is according to user requirements. As shown in Figure 5.6, there are four levels of software testing, namely, unit testing, integration testing, system testing, and acceptance testing.
+5.5.1 Unit Testing
+Unit testing is performed to test the individual units of software. Since software is made of a number of units/modules, detecting errors in these units is simple and consumes less time, as they are small in size. However, it is possible that the outputs produced by one unit become input for another unit. Hence, if incorrect output produced by one unit is provided as input to the second unit, then it also produces wrong output. If this process is not corrected, the entire software may produce unexpected outputs. To avoid this, all the units in software are tested independently using unit testing.
+Unit level testing is not just performed once during the software development, rather it is repeated whenever software is modified or used in a new environment. The other points noted about unit testing are listed below:
+* Each unit is tested in isolation from other parts of a program.
+* The developers themselves perform unit testing.
+* Unit testing makes use of white box testing methods.
+Unit testing is used to verify the code produced during software coding and is responsible for assessing the correctness of a particular unit of source code. In addition, unit testing performs the functions listed below:
+* Tests all control paths to uncover maximum errors that occur during the execution of conditions present in the unit being tested.
+* Ensures that all statements in the unit are executed at least once.
+* Tests data structures (like stacks, queues) that represent relationships among individual data elements.
+* Checks the range of inputs given to units. This is because every input range has a maximum and minimum value and the input given should be within the range of these values.
+* Ensures that the data entered in variables is of the same data type as defined in the unit.
+* Checks all arithmetic calculations present in the unit with all possible combinations of input values.
+(a) Types of Unit Testing: A series of stand-alone tests are conducted during unit testing. Each test examines an individual component that is new or has been modified. A unit test is also called a module test because it tests the individual units of code that form part of the program and eventually the software. In a conventional structured programming language, such as C, the basic unit is a function or sub-routine while, in object-oriented language such as C++ the basic unit is a class.
+The various tests that are performed as a part of unit testing are listed below:
+* Module interface: These are tested to ensure that information flows in a proper manner into and out of the 'unit' under test. Note that test of data flow (across a module interface) is required before any other test is initiated.
+* Local data structure: These are tested to ensure that the temporarily stored data maintains its integrity while an algorithm is being executed.
+Boundary conditions: These are tested to ensure that the module operates as desired within the specified boundaries.
+* All independent paths: These are tested to ensure that all statements in a module have been executed at least once. Note that in this testing, the entire control structure should be exercised.
+* Error handling paths: After successful completion of the various tests, error-handling paths are tested.
+(b) Unit Test Case Generation: Various unit test cases are generated to perform unit testing. Test cases are designed to uncover errors that occur due to erroneous computations, incorrect comparisons, and improper control flow. A proper unit test case ensures that unit testing is performed efficiently. To develop test cases, the following points should be considered.
+* Expected functionality: A test case is created for testing all functionalities present in the unit being tested. For example, structured query language (SQL) query is given that creates Table_A and alters Table_B. A test case is developed to make sure that 'Table_A' is created and 'Table_B' is altered.
+* Input values: Test cases are developed to check various aspects of inputs, which are listed below:
+?? Every input value: A test case is developed to check every input value, which is accepted by the unit being tested. For example, if a program is developed to print a table of five, then a test case is developed which verifies that only five is entered as input.
+?? Validation of input: Before executing software, it is important to verify whether all inputs are valid or not. For this purpose, a test case is developed which verifies the validation of all inputs. For example, if a numeric field accepts only positive values,
+then a test case is developed to verify that the numeric field is accepting only positive values.
+?? Boundary conditions: Generally, software fails at the boundaries of input domain (maximum and minimum value of the input domain). Thus, a test case is developed, which is capable of detecting errors that caused software to fail at the boundaries of input domain. For example, errors may occur while processing the last element of an array. In this case, a test case is developed to check whether error occurs while processing the last element of the array or not.
+?? Limitation of data types: Variable that holds data types has certain limitations. For example, if a variable with data type 'long' is executed then a test case is developed to ensure that the input entered for the variable is within the acceptable limit of 'long' data type.
+* Output values: A test case is developed to check whether the unit is producing the expected output or not. For example, when two numbers, '2' and '3' are entered as input in a program that multiplies two numbers, then a test case is developed to verify that the program produces the correct output value, that is, '6'.
+* Path coverage: There can be many conditions specified in a unit. For executing all these conditions, many paths have to be traversed. For example, when a unit consists of nested 'if' statements and all of them are to be executed, then a test case is developed to check whether all these paths are traversed or not.
+* Assumptions: For a unit to execute properly, certain assumptions are made. Test cases are developed by considering these assumptions. For example, a unit may need a database to be open. Then a test case is written to check that the unit reports errors, if such assumptions are not met.
+Abnormal terminations: A test case is developed to check the behaviour of a unit in case of abnormal termination. For example, when a power cut results in termination of a program due to shutting down of the computer, a test case is developed to check the behaviour of a unit as a result of abnormal termination of program.
+* Error messages: Error messages that appear when software is executed should be short, precise, self explanatory, and free from grammatical mistakes. For example, if 'print' command is given when a printer is not installed, error message that appears should be 'Printer not installed' instead of 'Problem has occurred as no printer is installed and hence unable to print'. In this case, a test case is developed to check whether the error message is according to the condition occurring in the software or not.
+(c) Unit Testing Procedure: Unit tests can be designed before coding begins or after the code is developed. Review of this design information guides the creation of test cases, which are used to detect errors in various units. Since a component is not an independent program, two modules, drivers and stubs are used to test the units
+independently. Driver is a module that passes input to the unit to be tested. It accepts test case data and then passes the data to the unit being tested. After this, driver prints the output produced. Stub is a module that works as unit referenced by the unit being tested. It uses the interface of the subordinate unit, does minimum data manipulation, and returns control back to the unit being tested.
+Integration Testing
+Once unit testing is complete, integration testing begins. In integration testing, the units validated during unit testing are combined to form a sub system. The purpose of integration testing is to ensure that all the modules continue to work in accordance with user/customer requirements even after integration.
+The objective of integration testing is to take all the tested individual modules, integrate them, test them again, and develop the software, which is according to design specifications.
+The other points that are noted about integration testing are listed below:
+* Integration testing ensures that all modules work together properly, are called correctly, and transfer accurate data across their interfaces.
+* Testing is performed with an intention to expose defects in the interfaces and in the interactions between integrated components or systems.
+* Integration testing examines the components that are new, changed, affected by a change, or needed to form a complete system.
+The big bang approach and incremental integration approach are used to integrate modules of a program. In big bang approach, initially, all modules are integrated and then the entire program is tested. However, when the entire program is tested, it is possible that a set of errors is detected. It is difficult to correct these errors since it is difficult to isolate the exact cause of the errors when program is very large. In addition, when one set of errors is corrected, new sets of errors arise and this process continues indefinitely.
+To overcome the above problem, incremental integration is followed. This approach tests program in small increments. It is easier to detect errors in this approach because only a small segment of software code is tested at a given instance of time. Moreover, interfaces can be tested completely if this approach is used. Various kinds of approaches are used for performing incremental integration testing, namely, top-down integration testing, bottomup integration testing, regression testing, and smoke testing.
+(a) Top-down Integration Testing: In this testing, software is developed and tested by integrating the individual modules, moving downwards in the control hierarchy. In topdown integration testing, initially only one module known as the main control module is tested. After this, all the modules called by it are combined with it and tested. This process continues till all the modules in the software are integrated and tested. It is also possible that a module being tested calls some of its subordinate modules. To simulate the activity of these subordinate modules, a stub is written. Stub replaces modules that are subordinate to the module being tested. Once, the control is passed to the stub, it does minimal data manipulation, provides verification of entry, and returns control back to the module being tested.
+To perform top-down integration testing, a number of steps are followed, which are listed below:
+1. The main control module is used as a test driver and stubs are used to replace all the other modules, which are directly subordinate to the main control module.
+2. Subordinate stubs are then replaced one at a time with actual modules. The manner in which the stubs are replaced depends on the approach (depth first or breadth first) used for integration.
+3. Every time a new module is integrated, tests are conducted.
+4. After tests are complete, another stub is replaced with the actual module.
+5. Regression testing is conducted to ensure that no new errors are introduced.
+Top-down integration testing uses either depth-first integration or breath-first integration for integrating the modules. In depth-first integration, the modules are integrated starting from left and then moves down in the control hierarchy. As shown in Figure 5.12(a), initially, modules 'A1', 'A2', 'A5' and 'A7' are integrated. Then, module 'A6' integrates with module 'A2'. After this, control moves to the modules present at the centre of control hierarchy, that is, module 'A3' integrates with module 'A1' and then module 'A8' integrates with module 'A3'. Finally, the control moves towards right, integrating module 'A4' with module 'A1'.
+In breadth-first integration, initially, all modules at the first level are integrated moving downwards, integrating all modules at the next lower levels. As shown in Figure 5.12 (b), initially, modules 'A2', 'A3', and 'A4' are integrated with module 'A1' and then it moves down integrating modules 'A5' and 'A6' with module 'A2' and module 'A8' with module 'A3'. Finally, module 'A7' is integrated with module 'A5'.
+(b) Bottom-up Integration Testing: In this testing, individual modules are integrated starting from the bottom and then moving upwards in the hierarchy. That is, bottom-up integration testing combines and tests the modules present at the lower levels proceeding towards the modules present at higher levels of control hierarchy. Some of the low-level modules present in software are integrated to form clusters or builds
+(collection of modules). After clusters are formed, a driver is developed to co-ordinate test case input and output and then, the clusters are tested. After this, drivers are removed and clusters are combined moving upwards in the control hierarchy.
+Figure 5.13 shows modules, drivers, and clusters in bottom-up integration. The low-level modules 'A4', 'A5', 'A6', and 'A7' are combined to form cluster 'C1'. Similarly, modules 'A8', 'A9', 'A10', 'A11', and 'A12' are combined to form cluster 'C2'. Finally, modules 'A13' and 'A14' are combined to form cluster 'C3'. After clusters are formed, drivers are developed to test these clusters. Drivers 'D1', 'D2', and 'D3' test clusters 'C1', 'C2', and 'C3' respectively. Once these clusters are tested, drivers are removed and clusters are integrated with the modules. Cluster 'C1' and cluster 'C2' are integrated with module 'A2'. Similarly, cluster 'C3' is integrated with module 'A3'. Finally, both the modules 'A2' and 'A3' are integrated with module 'A1'.
+(c) Regression Testing: Software undergoes changes every time a new module is added as part of integration testing. Changes can occur in the control logic or input/output media, and so on. It is possible that new data flow paths are established as a result of these changes, which may cause problems in the functioning of some parts of the software that was previously working perfectly. In addition, it is also possible that new errors may surface during the process of correcting existing errors. To avoid these problems, regression testing is used.
+Regression testing 're-tests' the software or part of it to ensure that no previously working components, functions, or features fail as a result of the error correction process and integration of modules. Regression testing is considered an expensive but a necessary activity since it is performed on modified software to provide knowledge that changes do not adversely affect other system components. Thus, regression testing can be viewed as a quality control tool that ensures that the newly modified code still complies with its specified requirements and that unmodified code has not been affected by the change.
+Integration Test Documentation: To understand the overall procedure of software integration, a document known as test specification is prepared. This document provides information in the form of test plan, a test procedure, and actual test results.
+* Scope of testing: Provides overview of the specific functional, performance, and design characteristics that are to be tested. In addition, scope describes the completion criteria for each test phase and keeps record of the constraints that occur in the schedule.
+* Test plan: Describes the strategy for integration of software. Testing is divided into phases and builds. Phases describe distinct tasks that involve various sub-tasks. On the other hand, builds are group of modules that correspond to each phase. Both phases and builds address specific functional and behavioural characteristics of the software. Some of the common test phases that require integration testing include user interaction, data manipulation and analysis, display outputs, database management, and so on. Every test phase consists of a functional category within the software. Generally, these phases can be related to a specific domain within the architecture of software. The criteria commonly considered for all test phases include interface integrity, functional validity, information content, and performance.
+Note that a test plan should be customised to local requirements, however it should contain an integration strategy (in the Test Plan) and testing details (in Test Procedure).
+Test plan should also include the following:
+?? A schedule for integration, which should include the start and end dates given for each phase.
+?? A description of overhead software, concentrating on those that may require special effort.
+?? A description of the testing environment.
+* Test procedure 'n': Describes the order of integration and unit tests for modules. Order of integration provides information about the purpose and the modules to be tested. Unit tests are conducted for the modules that are built along with the description of tests for these modules. In addition, test procedure describes the development of overhead software, expected results during integration testing, and description of test case data. The test environment and tools or techniques used for testing are also mentioned in test procedure.
+* Actual test results: Provides information about actual test results and problems that are recorded in the test report. With the help of this information, it is easy to carry out software maintenance.
+* References: Describes the list of references that are used for preparing user documentation. Generally, references include books and websites.
+* Appendices: Provides information about integration test document. Appendices are in the form of supplementary material that is provided at the end of the document.
+System Testing
+Software is integrated with other elements, such as hardware, people, and database to form a computer-based system. This system is then checked for errors using system testing. IEEE defines system testing as "a testing conducted on a complete, integrated system to evaluate the system's compliance with its specified requirements". System testing compares the system with the non-functional system requirements, such as security, speed, accuracy, and reliability. The emphasis is on validating and verifying the functional design specifications and examining how modules work together. This testing also evaluates external interfaces to other applications and utilities or the operating environment. During system testing, associations between objects (like fields), control and infrastructure (like time management, error handling), feature interactions or problems that occur when multiple features are used simultaneously and compatibility between previously working software releases and new releases are tested.
+System testing also tests some properties of the developed software, which are essential for users. These properties are listed below:
+* Usable: Verifies that developed software is easy to use and is understandable.
+* Secure: Verifies that access to important or sensitive data is restricted even for those individuals who have authority to use software.
+* Compatible: Verifies that developed software works correctly in conjunction with existing data, software and procedures.
+* Documented: Verifies that manuals that give information about developed software are complete, accurate and understandable.
+* Recoverable: Verifies that there are adequate methods for recovery in case of failure. System testing requires many test runs because it entails feature-by-feature validation of behaviour using a wide range of both normal and erroneous test inputs and data. Test plan plays an important role in system testing because it contains descriptions of the test cases, the sequence in which the tests must be executed, and the documentation needed to be collected in each run. When an error or defect is discovered, previously executed system tests must be rerun after the repair is made to make sure that the modifications do not lead to other problems.
+Validation Testing
+Validation testing, also known as acceptance testing is performed to determine whether software meets all the functional, behavioural, and performance requirements or not. IEEE defines acceptance testing as a "formal testing with respect to user needs, requirements, and business processes conducted to determine whether or not a system satisfies the acceptance criteria and to enable the user, customers or other authorised entity to determine whether or not to accept the system".
+During validation testing, software is tested and evaluated by a group of users either at the developer's site or user's site. This enables the users to test the software themselves and analyse whether it is meeting their requirements or not. To perform validation testing, a predetermined set of data is given to software as input. It is important to know
+the expected output before performing validation testing so that outputs produced by software as a result of testing can be compared with them. Based on the results of tests, users decide whether to accept or reject the software. That is, if both outputs (expected and produced) match, then software is considered to be correct and is accepted, otherwise, it is rejected.
+Since the software is intended for large number of users, it is not possible to perform acceptance testing with all the users. Therefore, organisations engaged in software development use alpha and beta testing as a process to detect errors by allowing a limited number of users to test the software.
+(a) Alpha Testing: Alpha testing is conducted by the users at the developer's site. In other words, this testing assesses the performance of software in the environment in which it is developed. On completion of alpha testing, users report the errors to software developers so that they can correct them. Note that alpha testing is often employed as a form of internal acceptance testing.
+The advantages of alpha testing are listed below:
+* Identifies all the errors present in the software.
+* Checks whether all the functions mentioned in the requirements are implemented properly in software or not.
+(b) Beta Testing: Beta testing assesses performance of software at user's site. This testing is 'live' testing and is conducted in an environment, which is not controlled by the developer. That is, this testing is performed without any interference from the developer. Beta testing is performed to know whether the developed software satisfies the user requirements and fits within the business processes or not.
+Often limited public tests known as beta-versions are released to groups of people so that further testing can ensure that the end product has few faults or bugs. Sometimes, beta-versions are made available to the open public to increase the feedback.
+The advantages of beta testing are listed below:
+* Evaluates the entire documentation of software. For example, it examines the detailed description of software code, which forms a part of documentation of software.
+* Checks whether software is operating successfully in user environment or not.
+TESTING TECHNIQUES
+Once the software is developed it should be tested in a proper manner before the system is delivered to the user. For this, two techniques that provide systematic guidance for designing tests are used. These techniques are listed below:
+* Once the internal working of software is known, tests are performed to ensure that all internal operations of software are performed according to specifications. This is referred to as white box testing.
+* Once the specified function for which software has been designed is known, tests are performed to ensure that each function is working properly. This is referred to as black box testing.
+White Box Testing
+White box testing, also known as structural testing is performed to check the internal structure of a program. To perform white box testing, tester should have a thorough knowledge of the program code and the purpose for which it is developed. The basic strength of this testing is that the entire software implementation is included while testing is performed. This facilitates error detection even when the software specification is vague or incomplete.
+The objective of white box testing is to ensure that the test cases (developed by software testers by using white box testing) exercise each path through a program. That is, test cases ensure that all internal structures in the program are developed according to design specifications. The test cases also ensure that:
+* All independent paths within the program have been executed at least once.
+* All internal data structures are exercised to ensure validity.
+* All loops (simple loops, concatenated loops, and nested loops) are executed at their boundaries and within operational bounds.
+* All the segments present between the control structures (like 'switch' statement) are executed at least once.
+* Each branch (like 'case' statement) is exercised at least once.
+* All the branches of the conditions and the combinations of these conditions are executed at least once. Note that for testing all the possible combinations, a 'truth table' is used where all logical decisions are exercised for both true and false paths. The software tester to generate test cases in order to develop a logical complexity measure of a component-based design (procedural design). This measure is used to specify the basis set of execution paths. Here, logical complexity refers to the set of paths required to execute all statements present in the program. Note that test cases are
+generated to make sure that every statement in a program has been executed at least once.
+Creating Flow Graph Flow graph is used to show the logical control flow within a program. To represent the control flow, flow graph uses a notation which is shown in Figure. Flow graph uses different symbols, namely, circles and arrows to represent various statements and flow of control within the program. Circles represent nodes, which are used to depict the procedural statements present in the program. A series of process boxes and a decision diamond in a flow chart can be easily mapped into a single node. Arrows represent edges or links, which are used to depict the flow of control within the program. It is necessary for every edge to end in a node irrespective of whether it represents a procedural statement or not. In a flow graph, area bounded by edges and nodes is known as a region. While counting regions, the area outside the graph is also considered as a region. Flow graph can be easily understood with the help of a diagram. For example, in Figure 5.23(a) a flow chart has been depicted, which has been represented as a flow graph.
+Finding Independent Paths: A path through the program, which specifies a new condition or a minimum of one new set of processing statements, is known as an independent path.
+For example, in nested 'if' statements there are several conditions that represent independent paths. Note that a set of all independent paths present in the program is known as basis set.
+A test case is developed to ensure that all the statements present in the program are executed at least once during testing. For example, all the independent paths in Figure 5.23(b) are listed below:
+P1: 1 - 9
+P2: 1 - 2 - 7 - 8 - 1 - 9
+P3: 1 - 2 - 3 - 4 - 6 - 8 - 1 - 9
+P4: 1 - 2 - 3 - 5 - 6 - 8 - 1 - 9
+where 'P1', 'P2', 'P3', and 'P4' represents different independent paths present in the program. The number of independent paths present in the program is calculated using cyclomatic complexity, which is defined as the software metric that provides quantitative measure of the logical complexity of a program. This software metric also provides information about the number of tests required to ensure that all statements in the program are executed at least once.
+Cyclomatic complexity can be calculated by using any of the three methods listed below:
+1. The total number of regions present in the flow graph of a program represents the cyclomatic complexity of the program. For example, in Figure 5.23(b), there are four regions represented by 'R1', 'R2', 'R3', and 'R4', hence, the cyclomatic complexity is four.
+2. Cyclomatic complexity can be calculated according to the formula given below:
+CC = E - N + 2
+where, 'CC' represents the cyclomatic complexity of the program, 'E' represents the number of edges in the flow graph, and 'N' represents the number of nodes in the flow graph. For example, in Figure 5.23(b), 'E' = '11', 'N' = '9'.
+Therefore,
+CC = 11 - 9 + 2 = 4.
+3. Cyclomatic complexity can be also calculated according to the formula given below:
+CC = P + 1
+where 'P' is the number of predicate nodes inhe flow graph. For example, in Figure, P = 3. Therefore,
+CC = 3 + 1 = 4.
+Deriving Test Cases: In this, basis path testing is presented as a series of steps and test cases are developed to ensure that all statements present in the program are executed during testing. While performing basis path testing, initially the basis set (independent paths in the program) is derived. The basis set can be derived using the steps given below:
+1. Draw the flow graph of the program: A flow graph is constructed using symbols previously discussed. For example, a program to find the greater of two numbers is listed below:
+procedure greater;
+integer: a, b, c = 0;
+1 enter the value of a;
+2 enter the value of b;
+3 if a > b then
+4 c = a;
+else
+5 c = b;
+6 end greater
+Flow graph for the above program is shown in Figure.
+2. Determine the cyclomatic complexity of the program using flow graph: The cyclomatic complexity for flow graph depicted in 6.26 can be calculated as follows:
+CC = 2 regions
+Or
+CC = 6 edges - 6 nodes + 2 = 2
+Or
+CC = 1 predicate node + 1 = 2
+3. Determine all the independent paths present in the program using flow graph: For the flow graph shown in Figure 5.24, the independent paths are listed below:
+P1 = 1 - 2 - 3 - 4 - 6
+P2 = 1 - 2 - 3 - 5 - 6
+4. Prepare test cases: Test cases are prepared to implement the execution of all the independent paths in the basis set. Each test case is executed and compared with the desired results.
+Black Box Testing
+Black box testing, also known as functional testing, checks the functional requirements and examines the input and output data of these requirements. The functionality is determined by observing the outputs to corresponding inputs. For example, when black box testing is used, the tester should only know the 'legal' inputs and what the expected outputs should be, but not how the program actually arrives at those outputs.
+The black box testing is used to find errors listed below:
+* Interface errors, such as functions, which are unable to send or receive data to/from other software.
+* Incorrect functions that lead to undesired output when executed.
+* Missing functions and erroneous data structures.
+* Erroneous databases, which lead to incorrect outputs when software uses the data present in these databases for processing.
+* Incorrect conditions due to which the functions produce incorrect outputs when they are executed.
+* Termination errors, such as certain conditions due to which function enters a loop that forces it to execute indefinitely.
+In this testing, various inputs are exercised and the outputs are compared against specification to validate the correctness. Note that test cases are derived from these specifications without considering implementation details of the code. The outputs are compared with user requirements and if they are as specified by the user, then the software is considered to be correct, else the software is tested for the presence of errors in it.
+The various methods used in black box testing are equivalence class partitioning, boundary value analysis, orthogonal array testing, and cause effect graphing. In equivalence class partitioning the test inputs are classified into equivalence classes such that one input checks (validates) all the input values in that class. In boundary value analysis the boundary values of the equivalence classes are considered and tested. In orthogonal array testing faults in the logic of the software component are considered and tested. In cause-effect graphing, causeeffect graphs are used to design test cases, which provides all the possible combinations of inputs to the program.
+(a) Equivalence Class Partitioning: Equivalence class partitioning method tests the validity of outputs by dividing the input domain into different classes of data (known as equivalence classes) using which test cases can be easily generated. Test cases are designed with the purpose of covering each partition at least once. If a test case is able to detect all the errors in the specified partition, then the test case is said to be an ideal test case.
+An equivalence class depicts valid or invalid states for the input condition. An input condition can be either a specific numeric value, a range of values, a Boolean condition, or a set of values. Generally, guidelines that are followed for generating the equivalence classes are listed below:
+* If an input condition is Boolean, then there will be two equivalence classes: one valid and one invalid class.
+* If input consists of a specific numeric value, then there will be three equivalence classes: one valid and two invalid classes.
+* If input consists of a range, then there will be three equivalence classes: one valid and two invalid classes.
+* If an input condition specifies a member of a set, then there will be one valid and one invalid equivalence class.
+(b) Boundary Value Analysis: Boundary value analysis (BVA) is a black box test design technique where test cases are designed based on boundary values (that is, test cases are designed at the edge of the class). Boundary value can be defined as an input value or output value, which is at the edge of an equivalence partition or at the smallest incremental distance on either side of an edge, for example the minimum or maximum value of a range.
+BVA is used since it has been observed that a large number of errors occur at the boundary of the given input domain rather than at the middle of the input domain. Note that boundary value analysis complements the equivalence partitioning method. The only difference is that in BVA, test cases are derived for both input domain and output domain while in equivalence partitioning, test cases are derived only for input domain.
+Generally, the test cases are developed in boundary value analysis using certain guidelines, which are listed below:
+* If input consists of a range of certain values, then test cases should be able to exercise both the values at the boundaries of the range and the values that are just above and below boundary values. For example, for the range - 0.5 = X = 0.5, the input values for a test case can be '- 0.4', '- 0.5', '0.5', '0.6'.
+* If an input condition specifies a number of values, then test cases are generated to exercise the minimum and maximum numbers and values just above and below these limits.
+* If input consists of a list of numbers, then the test case should be able to exercise the first and the last elements of the list.
+* If input consists of certain data structures (like arrays), then the test case should be able to execute all the values present at the boundaries of the data structures, such as the maximum and minimum value of an array.
+Gray Box Testing
+Gray box testing does not require full knowledge of the internals of the software that is to be tested instead it is a test strategy, which is based partly on the internals. This testing technique is often defined as a mixture of black box testing and white box testing techniques.
+Gray box testing is especially used in web applications, because these applications are built around loosely integrated components that connect through relatively well-defined interfaces.
+Testing in this methodology is done from the outside of the software similar to black box testing. However, testing choices are developed through the knowledge of how the underlying components operate and interact. Some points noted in gray box testing are listed below:
+* Gray box testing is platform and language independent.
+* The current implementation of gray box testing is heavily dependent on the use of a host platform debugger(s) to execute and validate the software under test.
+* Gray box testing can be applied in real-time systems.
+* Gray box testing utilises automated software-testing tools to facilitate the generation of
+test cases.
+* Module drivers and stubs are created by automation means thus, saving time of testers.
+Software Management
+BASICS OF COST ESTIMATION
+Cost estimation is the process of approximating the costs involved in the software project. Cost estimation should be done before software development is initiated since it helps the project manager to know about resources required and the feasibility of the project.
+Accurate software cost estimation is important for the successful completion of a software project. However, the need and importance of software cost estimation is underestimated due to the reasons listed below:
+* Analysis of the software development process is not considered while estimating cost.
+* It is difficult to estimate software cost accurately, as software is intangible and intractable.
+There are many parameters (also called factors), such as complexity, time availability, and reliability, which are considered during cost estimation process. However, software size is considered as one of the most important parameters for cost estimation.
+Cost estimation can be performed during any phase of software development. The accuracy of cost estimation depends on the availability of software information (requirements, design, and source code). It is easier to estimate the cost in the later stages, as more information is available during these stages as compared to the information available in the initial stages of software development.
+SOFTWARE COST ESTIMATION PROCESS
+To lower the cost of conducting business, identify and monitor cost and schedule risk factors, and to increase the skills of key staff members, software cost estimation process is followed. This process is responsible for tracking and refining cost estimate throughout the project life cycle. This process also helps in developing a clear understanding of the factors which influence software development costs.
+Cost of estimating software varies according to the nature and type of the product to be developed. For example, the cost of estimating an operating system will be more than the cost estimated for an application program. Thus, in the software cost estimation process, it is important to define and understand the software, which is to be estimated.
+In order to develop a software project successfully, cost estimation should be well planned, review should be done at regular intervals, and process should be continually improved and updated. The basic steps required to estimate cost are shown in Figure.
+(a) Project Objectives and Requirements: In this phase, the objectives and requirements for the project are identified, which is necessary to estimate cost accurately and accomplish user requirements. The project objective defines the end product, intermediate steps involved in delivering the end product, end date of the project, and individuals involved in the project.
+This phase also defines the constraints/limitations that affect the project in meeting its objectives. Constraints may arise due to the factors listed below:
+* Start date and completion date of the project.
+* Availability and use of appropriate resources.
+* Policies and procedures that require explanations regarding their implementation.
+Project cost can be accurately estimated once all the requirements are known. However, if all requirements are not known, then the cost estimate is based only on the known requirements. For example, if software is developed according to the incremental
+development model, then the cost estimation is based on the requirements that have been defined for that increment.
+(b) Plan Activities: Software development project involves different set of activities, which helps in developing software according to the user requirements. These activities are performed in fields of software maintenance, software project management, software quality assurance, and software configuration management. These activities are arranged in the work breakdown structure according to their importance.
+Work breakdown structure (WBS) is the process of dividing the project into tasks and ordering them according to the specified sequence. WBS specifies only the tasks that are performed and not the process by which these tasks are to be completed. This is because WBS is based on requirements and not the manner in which these tasks are carried out.
+(c) Estimating Size: Once the WBS is established, product size is calculated by estimating the size of its components. Estimating product size is an important step in cost estimation as most of the cost estimation models usually consider size as the major input factor. Also, project managers consider product size as a major technical performance indicator or productivity indicator, which allows them to track a project during software development.
+(d) Estimating Cost and Effort: Once the size of the project is known, cost is calculated by estimating effort, which is expressed in terms of person-month (PM). Various models (like COCOMO, COCOMO II, expert judgement, top-down, bottom-up, estimation by analogy, Parkinson's principal, and price to win) are used to estimate effort. Note that for cost estimation, more than one model is used, so that cost estimated by one model can be verified by another model.
+(e) Estimating Schedule: Schedule determines the start date and end date of the project. Schedule estimate is developed either manually or with the help of automated tools. To develop a schedule estimate manually, a number of steps are followed, which are listed below:
+1. The work breakdown structure is expanded, so that the order in which functional elements are developed can be determined. This order helps in defining the functions, which can be developed simultaneously.
+2. A schedule for development is derived for each set of functions that can be developed independently.
+3. The schedule for each set of independent functions is derived as the average of the estimated time required for each phase of software development.
+4. The total project schedule estimate is the average of the product development, which includes documentation and various reviews.
+Manual methods are based on past experience of software engineers. One or more software engineers, who are experts in developing application, develop an estimate for schedule.
+However, automated tools (like COSTAR, COOLSOFT) allow the user to customise schedule in order to observe the impact on cost.
+( f ) Risk Assessment: Risks are involved in every phase of software development therefore, risks involved in a software project should be defined and analysed, and the impact of risks on the project costs should also be determined. Ignoring risks can lead to adverse effects, such as increased costs in the later stages of software development.
+(g) Inspect and Approve: The objective of this phase is to inspect and approve estimates in order to improve the quality of an estimate and get an approval from top-level management.
+The other objectives of this step are listed below:
+* Confirm the software architecture and functional WBS.
+* Verify the methods used for deriving the size, schedule, and cost estimates.
+* Ensure that the assumptions and input data used to develop the estimates are correct.
+* Ensure that the estimate is reasonable and accurate for the given input data.
+* Confirm and record the official estimates for the project.
+Once the inspection is complete and all defects have been removed, project manager, quality assurance group, and top-level management sign the estimate. Inspection and approval activities can be formal or informal as required but should be reviewed independently by the people involved in cost estimation.
+(h) Track Estimates: Tracking estimate over a period of time is essential, as it helps in comparing the current estimate to previous estimates, resolving any discrepancies with previous estimates, comparing planned cost estimates and actual estimates. This helps in keeping track of the changes in a software project over a period of time. Tracking also allows the development of a historical database of estimates, which can be used to adjust various cost models or to compare past estimates to future estimates.
+(i) Process Measurement and Improvement: Metrics should be collected (in each step) to improve the cost estimation process. For this, two types of process metrics are used namely, process effective metrics and process cost metrics. The benefit of collecting these metrics is to specify a reciprocal relation that exists between the accuracy of the estimates and the cost of developing the estimates.
+* Process effective metrics: Keeps track of the effects of cost estimating process. The objective is to identify elements of the estimation process, which enhance the estimation
+process. These metrics also identify those elements which are of little or no use to the planning and tracking processes of a project. The elements that do not enhance the accuracy of estimates should be isolated and eliminated.
+* Process cost metrics: Provides information about implementation and performance cost incurred in the estimation process. The objective is to quantify and identify different ways to increase the cost effectiveness of the process. In these metrics, activities that cost-effectively enhance the project planning and tracking process remain intact, while activities that have negligible affect on the project are eliminated.
+COST ESTIMATION MODELS
+Estimation models use derived formulas to predict effort as a function of LOC or FP. Various estimation models are used to estimate cost of a software project. In these models, cost of software project is expressed in terms of effort required to develop the software successfully.
+These cost estimation models are broadly classified into two categories, which are listed below:
+* Algorithmic models: Estimation in these models is performed with the help of
+mathematical equations, which are based on historical data or theory. In order to estimate cost accurately, various inputs are provided to these algorithmic models. These inputs include software size and other parameters. To provide accurate cost estimation, most of the algorithmic cost estimation models are calibrated to the specific software environment. The various algorithmic models used are COCOMO, COCOMO II, and software equation.
+* Non-algorithmic models: Estimation in these models depends on the prior experience and domain knowledge of project managers. Note that these models do not use mathematical equations to estimate cost of software project. The various non-algorithmic cost estimation models are expert judgement, estimation by analogy, and price to win.
+Note: We will discuss algorithmic models only.
+2.7.1 Constructive Cost Model
+In the early 80's, Barry Boehm developed a model called COCOMO (COnstructive Cost MOdel) to estimate total effort required to develop a software project. COCOMO model is commonly used as it is based on the study of already developed software projects. While
+estimating total effort for a software project, cost of development, management, and other support tasks are included. However, cost of secretarial and other staff are excluded. In this model, size is measured in terms of thousand of delivered lines of code (KDLOC).
+In order to estimate effort accurately, COCOMO model divides projects into three categories listed below:
+Organic projects: These projects are small in size (not more than 50 KDLOC) and
+thus easy to develop. In organic projects, small teams with prior experience work
+together to accomplish user requirements, which are less demanding. Most people
+involved in these projects have thorough understanding of how the software under
+development contributes in achieving the organization objectives. Examples of organic projects include simple business system, inventory management system, payroll management system, and library management system.
+* Embedded projects: These projects are complex in nature (size is more than 300
+KDLOC) and the organizations have less experience in developing such type of projects.
+Developers also have to meet stringent user requirements. These software projects are developed under tight constraints (hardware, software, and people). Examples of embedded systems include software system used in avionics and military hardware.
+* Semi-detached projects: These projects are less complex as the user requirements are less stringent compared to embedded projects. The size of semi-detached project is not more than 300 KDLOC. Examples of semi-detached projects include operating system, compiler design, and database design.
+The various advantages and disadvantages associated with COCOMO model
+Constructive cost model is based on the hierarchy of three models, namely, basic model, intermediate model, and advance model.
+(a) Basic Model: In basic model, only the size of project is considered while calculating effort. To calculate effort, use the following equation (known as effort equation):
+E = A x (size)B ...(5)
+where E is the effort in person-months and size is measured in terms of KDLOC. The values of constants 'A' and 'B' depend on the type of the software project. In this model, values of constants ('A' and 'B') for three different types of projects are listed in Table
+For example, if the project is an organic project having a size of 30 KDLOC, then effort is
+calculated using equation (5):
+E = 2.4 x (30)1.05
+E = 85 PM
+(b) Intermediate Model: In intermediate model, parameters like software reliability and software complexity are also considered along with the size, while estimating effort. To
+estimate total effort in this model, a number of steps are followed, which are listed below:
+1. Calculate an initial estimate of development effort by considering the size in terms of KDLOC.
+2. Identify a set of 15 parameters, which are derived from attributes of the current project.
+All these parameters are rated against a numeric value, called multiplying factor. Effort adjustment factor (EAF) is derived by multiplying all the multiplying factors with each other.
+3. Adjust the estimate of development effort by multiplying the initial estimate calculated in step 1 with EAF.
+To understand the above-mentioned steps properly, let us consider an example. For simplicity reasons, an organic project whose size is 45 KDLOC is considered. In intermediate model, the values of constants (A and B) are listed in Table 2.11. To estimate total effort in this model, a number of steps are followed, which are listed below:
+1. An initial estimate is calculated with the help of effort equation (5). This equation shows the relationship between size and the effort required to develop a software project. This relationship is given by the following equation:
+Ei = A x (size) B ...(6)
+where Ei is the estimate of initial effort in person-months and size is measured in terms of KDLOC. The value of constants 'A' and 'B' depend on the type of software project (organic, embedded, and semi-detached). In this model, values of constants for different types of projects are listed in Table
+Using the equation (6) and the value of constant for organic project, initial effort can be calculated as follows:
+Ei = 3.2 x (45)1.05 = 174 PM
+(c) Advance Model: In advance model, effort is calculated as a function of program size and a set of cost drivers for each phase of software engineering. This model incorporates all characteristics of the intermediate model and provides procedure for adjusting the phase wise distribution of the development schedule.
+There are four phases in advance COCOMO model namely, requirements planning and product design (RPD), detailed design (DD), code and unit test (CUT), and integration and test (IT). In advance model, each cost driver is rated as very low, low, nominal, high, and very high. For all these ratings, cost drivers are assigned multiplying factors. Multiplying factors for analyst capability (ACAP) cost driver for each phase of advanced model are listed in Table. Note that multiplying factors yield better estimates because the cost driver ratings differ during each phase.
+Software Equation
+In order to estimate effort in a software project, software equation assumes specific distribution of efforts over the useful life of the project. Software equation is a multivariable model, which can be derived from data obtained by studying several existing projects. To calculate effort, use the following equation:
+E = [Size x B0.333/P] 3 x (1/t4)
+where,
+P = productivity parameter. Productivity parameter indicates the maturity of overall process and management practices. This parameter also indicates the level of programming language used, skills and experience of software team, and complexity of software application.
+E = efforts in person-months or person-years.
+t = project duration in months or years.
+B = special skills factor. The value of B increases over a period of time as the importance and need for integration, testing, quality assurance, documentation, and management increases. For small programs with sizes between 5 KDLOC and 15 KDLOC, the value of B is 0.16 and for programs with sizes greater than 70 KDLOC, the value of B is 0.39.
+Note that in the above given equation, there are two independent parameters namely, an estimate of size in KDLOC and project duration in calendar months or years.

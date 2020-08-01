@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/SPL1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.victor.loading.book.BookLoading
+            android:id="@+id/bookAnimation"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@color/Transparent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/SPL2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/splashText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/Transparent"
+            android:gravity="center"
+            android:text="LOADING"
+            android:textColor="#F44336"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/SPL3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.victor.loading.newton.NewtonCradleLoading
+            android:id="@+id/newton_cradle_loading"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/Transparent">
+
+        </com.victor.loading.newton.NewtonCradleLoading>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/SPL4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/SplashText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/Transparent"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:text="JDots Lab"
+            android:textColor="#2B5326"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

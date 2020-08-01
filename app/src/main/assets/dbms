@@ -1,0 +1,1783 @@
+DBMS NOTES
+(UNIT -1
+A database management system (DBMS) is a collection of programs that enables you to store, modify, and extract information from a database. 
+There are many different types of DBMSs, ranging from small systems that run on personal computers to huge systems that run on mainframes. 
+The following are examples of database applications:
+1.Computerized library systems
+2.Automated teller machines
+3.Flight reservation systems
+4.Computerized parts inventory systems
+Fig:-database management system
+DATA VS INFORMATION
+Data and information are interrelated. In fact, they are often mistakenly used interchangeably. Data is considered to be raw data. It represents values of qualitative or quantitative variables, belonging to a set of items.' It may be in the form of numbers, letters, or a set of characters. It is often collected via measurements. In data computing or data processing, data is represented by in a structure, such as tabular data, data tree, a data graph, etc.
+Data usually refers to raw data, or unprocessed data. It is the basic form of data, data that hasn't been analyzed or processed in any manner. Once the data is analyzed, it is considered as information.
+Information is "knowledge communicated or received concerning a particular fact or circumstance." Information is a sequence of symbols that can be interpreted as a message. It provides knowledge or insight about a certain matter. Information can be recorded as signs, or transmitted as signals.
+Basically, information is the message that is being conveyed, whereas data are plain facts. Once the data is processed, organized, structured or presented in a given context, it can become useful. Then data will become information, knowledge.
+Data in itself is fairly useless, until it is interpreted or processed to get meaning, to get information. In computing, it can be said that data is the computer's language. It is the output that the computer gives us. Whereas, information is how we interpret or translate the language or data. It is the human representation of data.
+Some differences between data and information:
+Data is used as input for the computer system. Information is the output of data.
+Data is unprocessed facts figures. Information is processed data.
+Data doesn't depend on Information. Information depends on data.
+Data is not specific. Information is specific.
+Data is a single unit. A group of data which carries news are meaning is called Information.
+Data doesn't carry a meaning. Information must carry a logical meaning.
+Data is the raw material. Information is the product.
+DATA HIERARCHY
+Data are the principal resources of an organization. Data stored in computer systems form a hierarchy extending from a single bit to a database, the major record-keeping entity of a firm. Each higher rung of this hierarchy is organized from the components below it.
+Data are logically organized into:
+1. Bits (characters)
+2. Fields
+3. Records
+4. Files
+5. Databases
+Bit (Character) - a bit is the smallest unit of data representation (value of a bit may be a 0 or 1). Eight bits make a byte which can represent a character or a special symbol in a character code.
+Field - a field consists of a grouping of characters. A data field represents an attribute (a characteristic or quality) of some entity (object, person, place, or event).
+Record - a record represents a collection of attributes that describe a real-world entity. A record consists of fields, with each field describing an attribute of the entity.
+File - a group of related records. Files are frequently classified by the application for which they are primarily used (employee file). A primary key in a file is the field (or fields) whose value identifies a record among others in a data file.
+Database - is an integrated collection of logically related records or files. A database consolidates records previously stored in separate files into a common pool of data records that provides data for many applications. The data is managed by systems software called database management systems (DBMS). The data stored in a database is independent of the application programs using it and of the types of secondary storage devices on which it is stored.
+DATA DICTIONARY
+A data dictionary is a collection of descriptions of the data objects or items in a data model for the benefit of programmers and others who need to refer to them. A first step in analyzing a system of objects with which users interact is to identify each object and its relationship to other objects. This process is called data modeling and results in a picture of object relationships.
+After each data object or item is given a descriptive name, its relationship is described (or it becomes part of some structure that implicitly describes relationship), the type of data (such as text or image or binary value) is described, possible predefined values are listed, and a brief textual description is provided. This collection can be organized for reference into a book called a data dictionary.
+When developing programs that use the data model, a data dictionary can be consulted to understand where a data item fits in the structure, what values it may contain, and basically what the data item means in real-world terms. For example, a bank or group of banks could model the data objects involved in consumer banking.
+They could then provide a data dictionary for a bank's programmers. The data dictionary would describe each of the data items in its data model for consumer banking (for example, "Account holder" and ""Available credit").
+A metadata (also called the data dictionary) is the data about the data. It is the self describing nature of the database that provides program-data independence. It is also called as the System Catalog. It holds the following information about each data element in the databases, it normally includes:
++ Name
++ Type
++ Range of values
++ Source
++ Access authorization
++ Indicates which application programs use the data so that, when a change in a data structure is contemplated, a list of the affected programs can be generated.
+Data dictionary is used to actually control the database operation, data integrity and accuracy. Metadata is used by developers to develop the programs, queries, controls and procedures to manage and manipulate the data. Metadata is available to database administrators (DBAs), designers and authorized user as on-line system documentation. This improves the control of database administrators (DBAs) over the information system and the user's understanding and use of the system.
+TYPE OF DATA DICITONARY
+1. Active and
+2.Passive Data Dictionaries
+Data dictionary may be either active or passive. An active data dictionary (also called integrated data dictionary) is managed automatically by the database management software. Consistent with the current structure and definition of the database. Most of the relational database management systems contain active data dictionaries that can be derived from their system catalog.
+The passive data dictionary (also called non-integrated data dictionary) is the one used only for documentation purposes. Data about fields, files, people and so on, in the data processing environment are. Entered into the dictionary and cross-referenced. Passive dictionary is simply a self-contained application. It is managed by the users of the system and is modified whenever the structure of the database is changed.
+Since this modification must be performed manually by the user, it is possible that the data dictionary will not be current with the current structure of the database. However, the passive data dictionaries may be maintained as a separate database. Thus, it allows developers to remain independent from using a particular relational database management system. It may be extended to contain information about organizational data that is not computerized.
+Importance of Data Dictionary
+Data dictionary is essential in DBMS because of the following reasons:
+* Data dictionary provides the name of a data element, its description and data structure in which it may be found.
+* Data dictionary provides great assistance in producing a report of where a data element is used in all programs that mention it.
+* It is also possible to search for a data name, given keywords that describe the name. For example, one might want to determine the name of a variable that stands for net pay. Entering keywords would produce a list of possible identifiers and their definitions. Using keywords one can search the dictionary to locate the proper identifier to use in a program.
+These days, commercial data dictionary packages are available to facilitate entry, editing and to use the data elements.
+DBA ROLE & FUNCTIONS IN DBMS
+A database administrator (DBA) is an IT professional responsible for the installation, configuration, upgrading, administration, monitoring, maintenance, and security of databases in an organization
+The role includes the development and design of database strategies, system monitoring and improving database performance and capacity, and planning for future expansion requirements. They may also plan, co-ordinate and implement security measures to safeguard the database.[
+Duties
+A database administrator's responsibilities can include the following tasks
+1.Installing and upgrading the database server and application tools
+2.Allocating system storage and planning future storage requirements for the database system
+3.Modifying the database structure, as necessary, from information given by application developers
+4.Enrolling users and maintaining system security
+5.Ensuring compliance with database vendor license agreement
+6.Controlling and monitoring user access to the database
+7.Monitoring and optimizing the performance of the database
+8.Planning for backup and recovery of database information
+9.Maintaining archived data
+10.Backing up and restoring databases
+11.Contacting database vendor for technical support
+12.Generating various reports by querying from database as per need
+Functions of a Database Administrator
+One of the main reasons for using DBMS is to have a central control of both data and the programs accessing those data. A person who has such control over the system is called a Database Administrator(DBA). The following are the functions of a Database administrator
+Schema Definition
+Storage structure and access method definition
+Schema and physical organization modification.
+Granting authorization for data access.
+Routine Maintenance
+Schema Definition
+The Database Administrator creates the database schema by executing DDL statements. Schema includes the logical structure of database table(Relation) like data types of attributes,length of attributes,integrity constraints etc.
+1.Storage structure and access method definition
+Database tables or indexes are stored in the following ways: Flat files,Heaps,B+ Tree etc..
+2.Schema and physical organization modification
+The DBA carries out changes to the existing schema and physical organization.
+3.Granting authorization for data access
+The DBA provides different access rights to the users according to their level. Ordinary users might have highly restricted access to data, while you go up in the hierarchy to the administrator ,you will get more access rights.
+4.Routine Maintenance
+Some of the routine maintenance activities of a DBA is given below.
+5.Taking backup of database periodically
+6.Ensuring enough disk space is available all the time.
+7.Monitoring jobs running on the database.
+8. Ensure that performance is not degraded by some expensive task submitted by some users.
+9. Performance Tuning
+TRADITIONAL FILE ORIENTED APPROACH
+The traditional file-oriented approach to information processing has for each application a separate master file and its own set of personal files. COBOL language supported these file-oriented applications. It was used for developing applications such as of payroll, inventory, and financial accounting.
+However, in general an organization needs flow of information across these applications also and this requires sharing of data, which is very difficult to implement in the traditional file approach. In addition, a major limitation of file-based approach is that the programs are dependent on the files and the files are dependent upon the programs.
+These file-based approaches, which came into being as the first commercial applications of computers, suffered from the following significant disadvantages:
+Data Redundancy: In a file system if an information is needed by two distinct applications, then it may be stored in two or more files. For example, the particulars of an employee may be
+stored in payroll and leave record applications separately. Some of this information may be changing, such as the address, the pay drawn, etc. It is therefore quite possible that while the address in the master file for one application has been updated the address in the master file for second application may have not been. Sometimes, it may not be easy to find that in how many files the repeating items such as the address has occurred. The solution, therefore, is to avoid this data redundancy by storing the address at just one place physically, and making it accessible to all applications.
+Program/Data Dependency: In the traditional file oriented approach if a data field (attribute) is to be added to a master file, all such programs that access the master file would have to be changed to allow for this new field that would have been added to the master record. This is referred to as data dependence.
+Lack of Flexibility: Since the data and programs are strong coupled in a traditional system, most information retrieval requests would be limited to well anticipated and pre-determined. The system would normally be capable of producing scheduled records and queries that it has been programmed to create. In the fast moving and competent business environment of today, apart from such regularly scheduled records, there is a need for responding to un-anticipatory queries and some kind of investigative analysis that could not have been envisaged professionally.
+THE DATABASE APPROACH
+A database is defined to be a collection of related information stored in a manner that many users share it for different purposes. The content of a database is obtained by integrating data from all the different sources at a centralized location (in general) in an organization.
+Such data is made available to all users as per his/her requirements and redundant data can be eliminated or at least minimized. The Data Base Management System (DBMS) governs to create an environment in which end user have better access to more and better managed data than they did before the DBMS become the data management standard.
+Some of the common database applications are student database system, business inventory, accounting information, organisation data etc. There can be a database, which stores new paper articles, magazines, books, and comics. There is already a well-defined market for specific information using databases for highly selected group of users on almost all subjects. MEDLINE is a well-known database service providing medical information for doctors and similarly WESTLAW is a computer based information service catering to the requirements of lawyers.
+The key to making all this possible is the manner in which the information in the database is managed.
+Some commercially available DBMS are INGRES, ORACLE, DB2, Sybase etc. A database management system, therefore, is a combination of hardware and software that can be used to set up and monitor a database, and can manage the updating and retrieval of database that has been stored in it. Most database management systems support the following facilities/capabilities:
+(a) Creation, modification and deletion of data file/s;
+(b) Addition, modification, deletion of data;
+(c) Retrieving of data collectively or selectively.
+(d) Sorting or Indexing of data.
+(e) Creation of input forms and output reports. There may be either standardized
+forms/reports or that may be specifically generated according to specific user definition.
+(f) Manipulation of stored data with some mathematical functions, support for concurrent transactions
+(g) To maintain data integrity and security.
+(h) To create an environment for Data warehousing and Data mining.
+The DBMS interprets and processes users requests to retrieve information from a database. Figure 1 shows that a DBMS serves as an interface to various types of interactions. The user may key in a retrieval query directly from a terminal, or it may be coded in a high-level language program to be submitted for interactive or batch processing. In most cases, a query request will have to penetrate several layers of software in the DBMS and operating system before the physical database can be accessed.
+The DBMS responds to a query by invoking the appropriate subprograms, each of which performs its special function to interpret the query, or to locate the desired data in the database and present it in the desired order as desired by the user. Thus, the DBMS shields database users from the programming they would have to do to organize data for storage, or to gain access to it once it was stored.
+Thus, the role of the DBMS is an intermediary between the users and the database, which is very much, like the function of a salesperson in a consumers distributor system. A consumer specifies desired items by filling out an order form, which is submitted to a salesperson at the counter. The salesperson presents the specified items to consumer after they have been retrieved from the storage room. Consumers who place orders have no idea of where and how
+the items are stored; they simply select the desired items from an alphabetical list in a catalogue. However, the logical order of goods in the catalogue bears no relationship to the actual physical arrangement of the inventory in the storage room. Similarly, the database user needs to know only what data he or she requires; the DBMS will take care of retrieving it.
+SOME BASIC CONCEPTS
+Data-items: The term data item is the word for what has traditionally been called the field in data processing and is the smallest unit of data that has meaning to its users. The phrase data element or elementary item is also sometimes used. Data items are grouped together to form aggregates described by various names. For example, the data record is used to refer to a group of data items and a program usually reads or writes the whole records. The data items could occasionally be further broken down into what may be called an automatic level for processing purposes.
+For example, a data item such as a date would be a composite value comprising the day, month, and year. But for doing date arithmetic these may have to be first separated before the calculations are performed. Similarly an identification number may be a data item but it may contain further information embedded in it.
+For example, the IGNOU uses a 9-digit enrollment number. The first two digits of this number reflect the year of admission, the next two digits refer to the Regional Center where the student has first opted for admission, the next four digits are simple sequence numbers, and the last digit is a check digit. For purposes of processing, it may sometimes be necessary to split the data item.
+Standardisation of data items can become a fairly serious problem in large organisations with several divisions. Each such unit tends to have its own ways of referring to the data items related to personal accounting, engineering, sales, production, purchase activities, etc. It would be extremely desirable if at the stage of adopting the database approach a commitment from the top management were acquired for prospective standardisation across the enterprise for schemas of the data items.
+Entities and Attributes: The real world consists of occasionally tangible objects such as an employee object; a component in an inventory or it may be intangible such as an event, a job
+description, identification numbers, or an abstract construct. All such items about which relevant information is stored in the database are called Entities.
+The qualities of the entity that we store as information are called the attributes. An attribute may be expressed as a number or as a text. It may even be a scanned picture, a sound sequence, and a moving picture that is now possible in some visual and multi-media databases.
+Data processing normally concerns itself with a collection of similar entities and records information about the same attributes of each of them. In the traditional approach, a programmer usually maintains a record about each entity and a data item in each record relates to each attribute. Similar records are grouped into files and such a 2-dimensional array is sometimes referred to as a flat file.
+Logical and Physical Data: One of the key features of the database approach is to bring about a distinction between the logical and the physical structures of the data. The term logical structure refers to the way the programmers see it and the physical structure refers to the way data are actually recorded on the storage medium. For example, in distributed databases some records may physically be located at significantly remote places, yet are part of the overall database.
+Schema and Subschema: The database does not focus on the logical organization and decouples it from the physical representation of data; it is useful to have a term to describe the logical database description. A schema is a logical database description and is drawn as a chart of the types of data that are used. It gives the names of the entities and attributes, and specifies the relationships between them. It is a framework into which the values of the data item can be fitted. Like an information display system such as that giving arrival and departure time at airports and railway stations, the schema will remain the same though the values displayed in the system will change from time to time.
+The term schema is used to mean an overall chart of all the data item types and record-types stored in a database. The term sub schema refers to the some view of the data-item of a record types which a particular user application. Therefore, many different sub schemas can be derived from one schema. A simple analysis to distinguish between the schema and the sub schema may be that if the schema represented a road map of Delhi showing major historical sites, educational institutions, railway stations, roadway stations and airports, a sub schema could be a similar map showing one route each from the railway station or the airport to the IGNOU campus at Maidan Garhi.
+Data Dictionary: It holds detailed information about the different structures and data types: the details of the logical structure that are mapped into the different structure, details of relationship between data items, details of all users privileges and access rights, performance of resource with details.
+.
+ADVANTAGES AND DISADVANTAGES OF DATABASE MANAGEMENT SYSTEM
+One of the main advantages of using a database system is that the organization can exert, via the Database Administrator (DBA), centralized management and control over the data. The database administrator is the focus of the centralized control. Any application requiring a change in the structure of a data record requires an arrangement with the DBA, who makes the necessary modifications. Such modifications do not effect other applications or users of the record in question. Therefore, these changes meet another requirement of the DBMS: data independence. The following are the important advantages of DBMS:
+Advantages
+> Reduction of Redundancies
+Centralized control of data by the DBA avoids unnecessary duplication of data and effectively reduces the total amount of data storage required. It also eliminates the extra processing necessary to trace the required data in a large storage of data. Another advantage of avoiding duplication is the elimination of the inconsistencies that tend to be present in redundant data files. Any redundancies that exist in the DBMS are controlled and the system ensures that these multiple copies are consistent.
+> Sharing Data
+A database allows the sharing of data under its control by any number of application programs or users.
+> Data Integrity
+Centralized control can also ensure that adequate checks are incorporated in the DBMS to provide data integrity. Data integrity means that the data contained in the database is both accurate and consistent. Therefore, data values being entered for storage could be checked to ensure that they fall within a specified range and are of the correct format. For example, the value for the age of an employee may be in the range of 16 and 75.
+Another integrity check that should be incorporated in the database is to ensure that if there is a reference to certain object, that object must exist. In the case of an automatic teller machine, for example, a user is not allowed to transfer funds from a nonexistent saving account to a checking account.
+> Data Security
+Data is of vital importance to an organization and may be confidential. Unauthorized persons must not access such confidential data. The DBA who has the ultimate responsibility for the data in the DBMS can ensure that proper access procedures are followed, including proper authentication schemes for access to the DBMS and additional checks before permitting access to sensitive data.
+Different levels of security could be implemented for various types of data and operations. The enforcement of security could be data value dependent (e.g., a manager has access to the salary details of employees in his or her department only), as well as data-type dependent (but the manager cannot access the medical history of any employees, including those in his or her department).
+> Conflict Resolution
+Since the database is under the control of the DBA, she or he should resolve the conflicting requirements of various users and applications. In essence, the DBA chooses the best file structure and access method to get optimal Performance for the response-critical applications, while permitting less critical applications to continue to use the database, albeit with a relatively slower response.
+> Data Independence
+Data independence is usually considered from two points of view: physical data independence and logical data independence. Physical data independence allows changes in the physical storage devices or organization of the files to be made without requiring changes in the conceptual view or any of the external views and hence in the application programs using the database. Thus, the files may migrate from one type of physical media to another or the file structure may change without any need for changes in the application programs.
+Logical data independence implies that application programs need not be changed if fields are added to an existing record; nor do they have to be changed if fields not used by application programs are deleted. Logical data independence indicates that the conceptual schema can be changed without affecting the existing external schemas. Data independence is advantageous in the database environment since it allows for changes at one level of the database without affecting other levels. These changes are absorbed by the mappings between the levels. (Please refer to next section for details on the terms used in this para). Logical data independence is more difficult to achieve than physical data independence. Since application programs are heavily dependent on the logical structure of the data they access.
+The concept of data independence is similar in many respects to the concept of abstract data type in modern programming languages like C++. Both hide implementation details from the users. This allows users to concentrate on the general structure rather than low-level implementation details.
+Disadvantages of DBMS
+A significant disadvantage of the DBMS system is cost. In addition to the cost of purchasing or developing the software, the hardware has to be upgraded to allow for the extensive programs and the workspaces required for their execution and storage. The processing overhead introduced by the DBMS to implement security, integrity, and sharing of the data causes a degradation of the response and through-put times. An additional cost is that of migration from a traditionally separate application environment to an integrated one.
+While centralization reduces duplication, the lack of duplication requires that the database be adequately backed up so that in the case of failure the data can be recovered. Backup and
+recovery operations are fairly complex in a DBMS environment, and this is exacerbated in a concurrent multi-user database system. Furthermore, a database system requires a certain amount of controlled redundancies and duplication to enable access to related data items.
+Centralization also means that the data is accessible from a single sourc namely the database. This increases the potential severity of security breaches and disruption of the operation of the organization because of downtimes and failures. The replacement of a monolithic centralized database by a federation of independent and cooperating distributed databases resolves some of the problems resulting from failures and downtimes.
+DBMS NOTES
+UNIT-2
+Three-level architecture
+The objective of the three-level architecture is to separate the users' view(s) of the database from the way that it is physically represented. This is desirable since:
+* It allows independent customized user views: Each user should be able to access the same data, but have a different customized view of the data. These should be independent: changes to one view should not affect others.
+* It hides the physical storage details from users: Users should not have to deal with physical database storage details. They should be allowed to work with the data itself, without concern for how it is physically stored.
+* The database administrator should be able to change the database storage structures without affecting the users' views: From time to time rationalisations or other changes to the structure of an organisation's data will be required.
+* The internal structure of the database should be unaffected by changes to the physical aspects of the storage: For example, a changeover to a new disk.
+* The database administrator should be able to change the conceptual or global structure of the database without affecting the users: This should be possible while still maintaining the desired individual users' views.
+Implementations of the architecture at the external and conceptual levels were held back for decades by the lack of a SQL mechanism to create updateable views. Around 1998, database vendors offered triggers to support updateable views - finally allowing the implementation of a true three layer architecture to support database applications. Grabczewski (2005) describes such an implementation in the United Kingdom.
+Standard approach
+Another illustration of three levels.
+A standard three level approach to database design has been agreed upon:
+* External level
+* Conceptual level
+* Internal level (includes physical data storage)
+The Three Level Architecture has the aim of enabling users to access the same data but with a personalised view of it. The distancing of the internal level from the external level means that users do not need to know how the data is physically stored in the database. This level separation also allows the Database Administrator (DBA) to change the database storage structures without affecting the users' views.
+* External Level (User Views): A user's view of the database describes a part of the database that is relevant to a particular user. It excludes irrelevant data as well as data which the user is not authorised to access.
+*
+* Conceptual Level: The conceptual level is a way of describing what data is stored within the whole database and how the data is inter-related. The conceptual level does not specify how the data is physically stored.
+Some important facts about this level are:
+1. DBA works at this level.
+2. Describes the structure of all users
+3. .3.Only DBA can define this level.
+4. Global view of database.
+5. 5.Independent of hardware and software.
+* Internal Level: The internal level involves how the database is physically represented on the computer system. It describes how the data is actually stored in the database and on the computer hardware.
+Database schemas
+There are three different types of schema corresponding to the three levels in the ANSI-SPARC architecture.
+* The external schemas describe the different external views of the data and there may be many external schemas for a given database.
+* The conceptual schema describes all the data items and relationships between them, together with integrity constraints (later). There is only one conceptual schema per database.
+* The internal schema at the lowest level contains definitions of the stored records, the methods of representation, the data fields, and indexes. There is only one internal schema per database.
+The overall description of a database is called the database schema
+
+Data Independence
+Logical data independence
+* Immunity of external models to changes in the logical model
+* Occurs at user interface level
+Physical data independence
+* Immunity of logical model to changes in internal model
+Occurs at logical interface level
+DATA MODELS
+A database model is a type of data model that determines the logical structure of a database and fundamentally determines in which manner data can be stored, organized, and manipulated. The most popular example of a database model is the relational model, which uses a table-based format.
+Common logical data models for databases include:
+* Hierarchical database model
+* Network model
+* Relational model
+* Entity-relationship model
+HIERARCHICAL DATABASE MODEL
+A hierarchical database model is a data model in which the data is organized into a tree-like structure. The data is stored as records which are connected to one another through links. A record is a collection of fields, with each field containing only one value. The entity type of a record defines which fields the record contains.
+Example of a hierarchical model
+A record in the hierarchical database model corresponds to a row (or tuple) in the relational database model and an entity type corresponds to a table (or relation).
+The hierarchical database model mandates that each child record has only one parent, whereas each parent record can have one or more child records. In order to retrieve data from a hierarchical database the whole tree needs to be traversed starting from the root node. This model is recognized as the first database model created by IBM in the 1960s[citation needed].
+History
+The hierarchical structure was used in early mainframe DBMS. Records' relationships form a treelike model. This structure is simple but inflexible because the relationship is confined to a one-to-many relationship. The IBM Information Management System (IMS) and the RDM Mobile are examples of a hierarchical database system with multiple hierarchies over the same data. RDM Mobile is a newly designed embedded database for a mobile computer system.[citation needed]
+The hierarchical data model lost traction as Codd's relational model became the de facto standard used by virtually all mainstream database management systems. A relational-database implementation of a hierarchical model was first discussed in published form in 1992[1] (see also nested set model). Hierarchical data organization schemes resurfaced with the advent of XML in the late 1990s[2] (see also XML database). The hierarchical structure is used primarily today for storing geographic information and file systems.[citation needed]
+Currently hierarchical databases are still widely used especially in applications that require very high performance and availability such as banking and telecommunications. One of the most
+widely used commercial hierarchical databases is IMS.
+[3] Another example of the use of hierarchical databases is Windows Registry in the Microsoft Windows operating systems.
+Examples of hierarchical data represented as relational table
+An organization could store employee information in a table that contains attributes/columns such as employee number, first name, last name, and Department number. The organization provides each employee with computer hardware as needed, but computer equipment may only be used by the employee to which it is assigned. The organization could store the computer hardware information in a separate table that includes each part's serial number, type, and the employee that uses it. The tables might look like this:
+In this model, the employee data table represents the "parent" part of the hierarchy, while the computer table represents the "child" part of the hierarchy. In contrast to tree structures usually found in computer software algorithms, in this model the children point to the parents. As shown, each employee may possess several pieces of computer equipment, but each individual piece of computer equipment may have only one employee owner.
+Consider the following structure:
+EmpNo
+Designation
+ReportsTo
+10
+Director
+20
+Senior Manager
+10
+30
+Typist
+20
+40
+Programmer
+20
+In this, the "child" is the same type as the "parent". The hierarchy stating EmpNo 10 is boss of 20, and 30 and 40 each report to 20 is represented by the "ReportsTo" column. In Relational database terms, the ReportsTo column is a foreign key referencing the EmpNo column. If the "child" data type were different, it would be in a different table, but there would still be a foreign key referencing the EmpNo column of the employees table.
+This simple model is commonly known as the adjacency list model, and was introduced by Dr. Edgar F. Codd after initial criticisms surfaced that the relational model could not model hierarchical data.The Windows Registry is a hierarchical database that stores configuration settings and options on Microsoft Windows operating systems.
+2.RELATIONAL DATA MODEL
+EmpNo
+First Name
+Last Name
+Dept. Num
+100
+Sally
+Baker
+10-L
+101
+Jack
+Douglas
+10-L
+102
+Sarah
+Schultz
+20-B
+103
+David
+Drachmeier
+20-B
+Serial Num
+Type
+User EmpNo
+3009734-4
+Computer
+100
+3-23-283742
+Monitor
+100
+2-22-723423
+Monitor
+100
+232342
+Printer
+100
+The relational model for database management is a database model based on first-order predicate logic, first formulated and proposed in 1969 by Edgar F. Codd.[1][2] In the relational model of a database, all data is represented in terms of tuples, grouped into relations. A database organized in terms of the relational model is a relational database.
+Diagram of an example database according to the Relational model.[3]
+In the relational model, related records are linked together with a "key".
+The purpose of the relational model is to provide a declarative method for specifying data and queries: users directly state what information the database contains and what information they want from it, and let the database management system software take care of describing data structures for storing the data and retrieval procedures for answering queries.
+Most relational databases use the SQL data definition and query language; these systems implement what can be regarded as an engineering approximation to the relational model. A table in an SQL database schema corresponds to a predicate variable; the contents of a table to a
+relation; key constraints, other constraints, and SQL queries correspond to predicates. However, SQL databases
+deviate from the relational model in many details, and Codd fiercely argued against deviations that compromise the original principles
+Overview
+The relational model's central idea is to describe a database as a collection of predicates over a finite set of predicate variables, describing constraints on the possible values and combinations of values. The content of the database at any given time is a finite (logical) model of the database, i.e. a set of relations, one per predicate variable, such that all predicates are satisfied. A request for information from the database (a database query) is also a predicate.
+Relational model concepts.
+Alternatives to the relational model
+Other models are the hierarchical model and network model. Some systems using these older architectures are still in use today in data centers with high data volume needs, or where existing systems are so complex and abstract it would be cost-prohibitive to migrate to systems employing the relational model; also of note are newer object-oriented databases.
+Implementation[edit]
+There have been several attempts to produce a true implementation of the relational database model as originally defined by Codd and explained by Date, Darwen and others, but none have been popular successes so far. Rel is one of the more recent attempts to do this.
+The relational model was the first database model to be described in formal mathematical terms. Hierarchical and network databases existed before relational databases, but their specifications were relatively informal. After the relational model was defined, there were many attempts to compare and contrast the different models, and this led to the emergence of more rigorous descriptions of the earlier models; though the procedural nature of the data manipulation interfaces for hierarchical and network databases limited the scope for formalization.[citation needed]
+History
+The relational model was invented by E.F. (Ted) Codd as a general model of data, and subsequently maintained and developed by Chris Date and Hugh Darwen among others. In The Third Manifesto (first published in 1995) Date and Darwen show how the relational model can accommodate certain desired object-oriented features.
+Relational model topics
+The model
+The fundamental assumption of the relational model is that all data is represented as mathematical n-ary relations, an n-ary relation being a subset of the Cartesian product of n domains. In the mathematical model, reasoning about such data is done in two-valued predicate logic, meaning there are two possible evaluations for each proposition: either true or false (and in particular no third value such as unknown, or not applicable, either of which are often associated with the concept of NULL). Data are operated upon by means of a relational calculus or relational algebra, these being equivalent in expressive power.
+The relational model of data permits the database designer to create a consistent, logical representation of information. Consistency is achieved by including declared constraints in the database design, which is usually referred to as the logical schema. The theory includes a process of database normalization whereby a design with certain desirable properties can be selected from a set of logically equivalent alternatives. The access plans and other implementation and operation details are handled by the DBMS engine, and are not reflected in the logical model. This contrasts with common practice for SQL DBMSs in which performance tuning often requires changes to the logical model.
+The basic relational building block is the domain or data type, usually abbreviated nowadays to type. A tuple is an ordered set of attribute values. An attribute is an ordered pair of attribute name and type name. An attribute value is a specific valid value for the type of the attribute. This can be either a scalar value or a more complex type.
+A relation consists of a heading and a body. A heading is a set of attributes. A body (of an n-ary relation) is a set of n-tuples. The heading of the relation is also the heading of each of its tuples.
+A relation is defined as a set of n-tuples. In both mathematics and the relational database model, a set is an unordered collection of unique, non-duplicated items, although some DBMSs impose an order to their data. In mathematics, a tuple has an order, and allows for duplication. E.F. Codd originally defined tuples using this mathematical definition.[2] Later, it was one of E.F. Codd's great insights that using attribute names instead of an ordering would be so much more convenient (in general) in a computer language based on relations[citation needed]. This insight is still being used today. Though the concept has changed, the name "tuple" has not. An immediate and important consequence of this distinguishing feature is that in the relational model the Cartesian product becomes commutative.
+A table is an accepted visual representation of a relation; a tuple is similar to the concept of a row.
+A relvar is a named variable of some specific relation type, to which at all times some relation of that type is assigned, though the relation may contain zero tuples.
+The basic principle of the relational model is the Information Principle: all information is represented by data values in relations. In accordance with this Principle, a relational database is a set of relvars and the result of every query is presented as a relation.
+The consistency of a relational database is enforced, not by rules built into the applications that use it, but rather by constraints, declared as part of the logical schema and enforced by the DBMS for all applications. In general, constraints are expressed using relational comparison operators, of which just one, "is subset of" (?), is theoretically sufficient[citation needed]. In practice, several useful shorthands are expected to be available, of which the most important are candidate key (really, superkey) and foreign key constraints.
+Interpretation
+To fully appreciate the relational model of data it is essential to understand the intended interpretation of a relation.
+The body of a relation is sometimes called its extension. This is because it is to be interpreted as a representation of the extension of some predicate, this being the set of true propositions that can be formed by replacing each free variable in that predicate by a name (a term that designates something).
+There is a one-to-one correspondence between the free variables of the predicate and the attribute names of the relation heading. Each tuple of the relation body provides attribute values to instantiate the predicate by substituting each of its free variables. The result is a proposition that is deemed, on account of the appearance of the tuple in the relation body, to be true. Contrariwise, every tuple whose heading conforms to that of the relation, but which does not appear in the body is deemed to be false. This assumption is known as the closed world assumption: it is often violated in practical databases, where the absence of a tuple might mean that the truth of the corresponding proposition is unknown. For example, the absence of the tuple ('John', 'Spanish') from a table of language skills cannot necessarily be taken as evidence that John does not speak Spanish.
+For a formal exposition of these ideas, see the section Set-theoretic Formulation, below.
+Application to databases
+A data type as used in a typical relational database might be the set of integers, the set of character strings, the set of dates, or the two boolean values true and false, and so on. The corresponding type names for these types might be the strings "int", "char", "date", "boolean", etc. It is important to understand, though, that relational theory does not dictate what types are to be supported; indeed, nowadays provisions are expected to be available for user-defined types in addition to the built-in ones provided by the system.
+Attribute is the term used in the theory for what is commonly referred to as a column. Similarly, table is commonly used in place of the theoretical term relation (though in SQL the term is by no means synonymous with relation). A table data structure is specified as a list of column definitions, each of which specifies a unique column name and the type of the values that are permitted for that column. An attribute value is the entry in a specific column and row, such as "John Doe" or "35".
+A tuple is basically the same thing as a row, except in an SQL DBMS, where the column values in a row are ordered. (Tuples are not ordered; instead, each attribute value is identified solely by the attribute name and never by its ordinal position within the tuple.) An attribute name might be "name" or "age".
+A relation is a table structure definition (a set of column definitions) along with the data appearing in that structure. The structure definition is the heading and the data appearing in it is the body, a set of rows. A database relvar (relation variable) is commonly known as a base table. The heading of its assigned value at any time is as specified in the table declaration and its body is that most recently assigned to it by invoking some update operator (typically, INSERT, UPDATE, or DELETE). The heading and body of the table resulting from evaluation of some query are determined by the definitions of the operators used in the expression of that query. (Note that in SQL the heading is not always a set of column definitions as described above, because it is possible for a column to have no name and also for two or more columns to have the same name. Also, the body is not always a set of rows because in SQL it is possible for the same row to appear more than once in the same body.)
+SQL, initially pushed as the standard language for relational databases, deviates from the relational model in several places. The current ISO SQL standard doesn't mention the relational model or use relational terms or concepts. However, it is possible to create a database conforming to the relational model using SQL if one does not use certain SQL features.
+The following deviations from the relational model have been noted[who?] in SQL. Note that few database servers implement the entire SQL standard and in particular do not allow some of these deviations. Whereas NULL is ubiquitous, for example, allowing duplicate column names within a table or anonymous columns is uncommon.
+3.E-R MODEL
+In software engineering, an entity-relationship model (ER model) is a data model for describing the data or information aspects of a business domain or its process requirements, in an abstract way that lends itself to ultimately being implemented in a database such as a relational database. The main components of ER models are entities (things) and the relationships that can exist among them, and databases
+FIG:-An entity-relationship diagram
+.Entity-relationship modeling was developed by Peter Chen and published in a 1976 paper.[1] However, variants of the idea existed previously,[2] and have been devised subsequently such as supertype and subtype data entities[3] and commonality relationships.
+Overview
+An entity-relationship model is a systematic way of describing and defining a business process. The process is modeled as components (entities) that are linked with each other by relationships that express the dependencies and requirements between them, such as: one building may be divided into zero or more apartments, but one apartment can only be located in one building. Entities may have various properties (attributes) that characterize them. Diagrams created to represent these entities, attributes, and relationships graphically are called entity-relationship diagrams.
+An ER model is typically implemented as a database. In the case of a relational database, which stores data in tables, every row of each table represents one instance of an entity. Some data fields in these tables point to indexes in other tables; such pointers represent the relationships.
+The three schema approach to software engineering uses three levels of ER models that may be developed.
+Conceptual data model
+This is the highest level ER model in that it contains the least granular detail but establishes the overall scope of what is to be included within the model set. The conceptual ER model normally defines master reference data entities that are commonly used by the organization. Developing an enterprise-wide conceptual ER model is useful to support documenting the data architecture for an organization.
+A conceptual ER model may be used as the foundation for one or more logical data models (see below). The purpose of the conceptual ER model is then to establish structural metadata commonality for the master data entities between the set of logical ER models. The conceptual data model may be used to form commonality relationships between ER models as a basis for data model integration.
+Logical data model
+A logical ER model does not require a conceptual ER model, especially if the scope of the logical ER model includes only the development of a distinct information system. The logical ER model contains more detail than the conceptual ER model. In addition to master data entities, operational and transactional data entities are now defined. The details of each data entity are developed and the entity relationships between these data entities are established. The logical ER model is however developed independent of technology into which it is implemented.
+Physical data model
+One or more physical ER models may be developed from each logical ER model. The physical ER model is normally developed to be instantiated as a database. Therefore, each physical ER model must contain enough detail to produce a database and each physical ER model is technology dependent since each database management system is somewhat different.
+The physical model is normally instantiated in the structural metadata of a database management system as relational database objects such as database tables, database indexes such as unique key indexes, and database constraints such as a foreign key constraint or a commonality constraint. The ER model is also normally used to design modifications to the relational database objects and to maintain the structural metadata of the database.
+The first stage of information system design uses these models during the requirements analysis to describe information needs or the type of information that is to be stored in a database. The data modeling technique can be used to describe any ontology (i.e. an overview and classifications of used terms and their relationships) for a certain area of interest. In the case of the design of an information system that is based on a database, the conceptual data model is, at a later stage (usually called logical design), mapped to a logical data model, such as the relational model; this in turn is mapped to a physical model during physical design. Note that sometimes, both of these phases are referred to as "physical design". It is also used in database management system.
+Entity-relationship modeling
+Two related entities
+An entity with an attribute
+A relationship with an attribute
+Primary key
+An entity may be defined as a thing capable of an independent existence that can be uniquely identified. An entity is an abstraction from the complexities of a domain. When we speak of an entity, we normally speak of some aspect of the real world that can be distinguished from other aspects of the real world.[4]
+An entity may be a physical object such as a house or a car, an event such as a house sale or a car service, or a concept such as a customer transaction or order. Although the term entity is the one most commonly used, following Chen we should really distinguish between an entity and an entity-type. An entity-type is a category. An entity, strictly speaking, is an instance of a given entity-type. There are usually many instances of an entity-type. Because the term entity-type is somewhat cumbersome, most people tend to use the term entity as a synonym for this term.
+Entities can be thought of as nouns. Examples: a computer, an employee, a song, a mathematical theorem.
+A relationship captures how entities are related to one another. Relationships can be thought of as verbs, linking two or more nouns. Examples: an owns relationship between a company and a computer, a supervises relationship between an employee and a department, a performs relationship between an artist and a song, a proved relationship between a mathematician and a theorem.
+The model's linguistic aspect described above is utilized in the declarative database query language ERROL, which mimics natural language constructs. ERROL's semantics and
+implementation are based on
+reshaped relational algebra (RRA), a relational algebra that is adapted to the entity-relationship model and captures its linguistic aspect.
+Entities and relationships can both have attributes. Examples: an employee entity might have a Social Security Number (SSN) attribute; the proved relationship may have a date attribute.
+Every entity (unless it is a weak entity) must have a minimal set of uniquely identifying attributes, which is called the entity's primary key.
+Entity-relationship diagrams don't show single entities or single instances of relations. Rather, they show entity sets and relationship sets. Example: a particular song is an entity. The collection of all songs in a database is an entity set. The eaten relationship between a child and her lunch is a single relationship. The set of all such child-lunch relationships in a database is a relationship set. In other words, a relationship set corresponds to a relation in mathematics, while a relationship corresponds to a member of the relation.
+Certain cardinality constraints on relationship sets may be indicated as well.
+Mapping natural language
+Chen proposed the following "rules of thumb" for mapping natural language descriptions into ER diagrams:[5]
+English grammar structure
+ER structure
+Common noun
+Entity type
+Proper noun
+Entity
+Transitive verb
+Relationship type
+Intransitive verb
+Attribute type
+Adjective
+Attribute for entity
+Adverb
+Attribute for relationship
+Physical view show how data is actually stored.
+Relationships, roles and cardinalities
+In Chen's original paper he gives an example of a relationship and its roles. He describes a relationship "marriage" and its two roles "husband" and "wife".
+A person plays the role of husband in a marriage (relationship) and another person plays the role of wife in the (same) marriage. These words are nouns. That is no surprise; naming things requires a noun.
+However as is quite usual with new ideas, many eagerly appropriated the new terminology but then applied it to their own old ideas.[citation needed] Thus the lines, arrows and crows-feet of their diagrams owed more to the earlier Bachman diagrams than to Chen's relationship diamonds. And they similarly misunderstood other important concepts.[citation needed]
+In particular, it became fashionable (now almost to the point of exclusivity) to "name" relationships and roles as verbs or phrases.
+Role naming
+It has also become prevalent to name roles with phrases such as is the owner of and is owned by. Correct nouns in this case are owner and possession. Thus person plays the role of owner and car plays the role of possession rather than person plays the role of, is the owner of, etc.
+The use of nouns has direct benefit when generating physical implementations from semantic models. When a person has two relationships with car then it is possible to generate names such as owner_person and driver_person, which are immediately meaningful.[6]
+Cardinalities
+Modifications to the original specification can be beneficial. Chen described look-across cardinalities. As an aside, the Barker-Ellis notation, used in Oracle Designer, uses same-side for minimum cardinality (analogous to optionality) and role, but look-across for maximum cardinality (the crows foot).[clarification needed]
+In Merise,[7] Elmasri & Navathe[8] and others[9] there is a preference for same-side for roles and both minimum and maximum cardinalities. Recent researchers (Feinerer,[10] Dullea et al.[11]) have shown that this is more coherent when applied to n-ary relationships of order > 2.
+In Dullea et al. one reads "A 'look across' notation such as used in the UML does not effectively represent the semantics of participation constraints imposed on relationships where the degree is higher than binary."
+In Feinerer it says "Problems arise if we operate under the look-across semantics as used for UML associations. Hartmann[12] investigates this situation and shows how and why different transformations fail." (Although the "reduction" mentioned is spurious as the two diagrams 3.4 and 3.5 are in fact the same) and also "As we will see on the next few pages, the look-across interpretation introduces several difficulties that prevent the extension of simple mechanisms from binary to n-ary associations."
+Various methods of representing the same one to many relationship. In each case, the diagram shows the relationship between a person and a place of birth: each person must have been born at one, and only one, location, but each location may have had zero or more people born at it.
+Two related entities shown using Crow's Foot notation. In this example, an optional relationship is shown between Artist and Song; the symbols closest to the song entity represents "zero, one, or many", whereas a song has "one and only one" Artist. The former is therefore read as, an Artist (can) perform(s) "zero, one, or many" song(s).
+Chen's notation for entity-relationship modeling uses rectangles to represent entity sets, and diamonds to represent relationships appropriate for first-class objects: they can have attributes
+and relationships of their own. If an entity set participates in a relationship set, they are connected with a line.
+Attributes are drawn as ovals and are connected with a line to exactly one entity or relationship set.
+Cardinality constraints are expressed as follows:
+* a double line indicates a participation constraint, totality or surjectivity: all entities in the entity set must participate in at least one relationship in the relationship set;
+* an arrow from entity set to relationship set indicates a key constraint, i.e. injectivity: each entity of the entity set can participate in at most one relationship in the relationship set;
+* a thick line indicates both, i.e. bijectivity: each entity in the entity set is involved in exactly one relationship.
+* an underlined name of an attribute indicates that it is a key: two different entities or relationships with this attribute always have different values for this attribute.
+Attributes are often omitted as they can clutter up a diagram; other diagram techniques often list entity attributes within the rectangles drawn for entity sets.
+NETWORK DATA MODEL
+The network model is a database model conceived as a flexible way of representing objects and their relationships. Its distinguishing feature is that the schema, viewed as a graph in which object types are nodes and relationship types are arcs, is not restricted to being a hierarchy or lattice.
+Example of a Network Model.
+Unit-3
+Entity Types
+The Entiy Relationship (ER) model consists of different types of entities. The existence of an entity may depends on the existence of one or more other entities, such an entity is said to be existence dependent.Entities whose existence not depending on any other entities is termed as not existence dependent.
+Entities based on their characteristics are classified as follows.
+* Strong Entities
+* Weak Entities
+* Recursive Entities
+* Composite Entities
+Strong Entity Vs Weak Entity An entity set that has a primary key is termed as strong entity set. An entity set that does not have sufficient attributes to form a primary key is termed as a weak entity set.
+A weak entity is existence dependent. That is the existence of a weak entity depends on the existence of an identifying entity set.
+The discriminator (or partial key) is used to identify other attributes of a weak entity set.
+The primary key of a weak entity set is formed by primary key of identifying entity set and the discriminator of weak entity set.
+The existence of a weak entity is indicated by a double rectangle in the ER diagram.
+We underline the discriminator of a weak entity set with a dashed line in the ER diagram.
+Recursive Entity A recursive entity is one in which a relation can exist between occurrences of the same entity set. This occurs in a unary relationship.
+Composite Entities
+If a Many to Many relationship exist we must create a bridge entity to convert it into 1 to Many. Bridge entity composed of the primary keys of each of the entities to be connected. The bridge entity is known as a composite entity. A composite entity is represented by a diamond shape with in a rectangle in an ER Diagram.
+Entities and Entity Sets
+* An entity is an object that exists and is distinguishable from other objects. For instance, John Harris with S.I.N. 890-12-3456 is an entity, as he can be uniquely identified as one particular person in the universe.
+* An entity may be concrete (a person or a book, for example) or abstract (like a holiday or a concept).
+* An entity set is a set of entities of the same type (e.g., all persons having an account at a bank).
+* Entity sets need not be disjoint. For example, the entity set employee (all employees of a bank) and the entity set customer (all customers of the bank) may have members in common.
+* An entity is represented by a set of attributes.
+o E.g. name, S.I.N., street, city for ``customer'' entity.
+o The domain of the attribute is the set of permitted values (e.g. the telephone number must be seven positive integers).
+* Formally, an attribute is a function which maps an entity set into a domain.
+o Every entity is described by a set of (attribute, data value) pairs.
+o There is one pair for each attribute of the entity set.
+o E.g. a particular customer entity is described by the set {(name, Harris), (S.I.N., 890-123-456), (street, North), (city, Georgetown)}.
+An analogy can be made with the programming language notion of type definition.
+* The concept of an entity set corresponds to the programming language type definition.
+* A variable of a given type has a particular value at a point in time.
+* Thus, a programming language variable corresponds to an entity in the E-R model.
+Relationships & Relationship Sets
+A relationship is an association between several entities.
+A relationship set is a set of relationships of the same type.
+Formally it is a mathematical relation on (possibly non-distinct) sets.
+If are entity sets, then a relationship set R is a subset of
+where is a relationship.
+For example, consider the two entity sets customer and account. (Fig. 2.1 in the text). We define the relationship CustAcct to denote the association between customers and their accounts. This is a binary relationship set (see Figure 2.2 in the text).
+Going back to our formal definition, the relationship set CustAcct is a subset of all the possible customer and account pairings.
+This is a binary relationship. Occasionally there are relationships involving more than two entity sets.
+The role of an entity is the function it plays in a relationship. For example, the relationship works-for could be ordered pairs of employee entities. The first employee takes the role of manager, and the second one will take the role of worker.
+A relationship may also have descriptive attributes. For example, date (last date of account access) could be an attribute of the CustAcct relationship set.
+Attributes
+It is possible to define a set of entities and the relationships among them in a number of different ways. The main difference is in how we deal with attributes.
+* Consider the entity set employee with attributes employee-name and phone-number.
+* We could argue that the phone be treated as an entity itself, with attributes phone-number and location.
+* Then we have two entity sets, and the relationship set EmpPhn defining the association between employees and their phones.
+* This new definition allows employees to have several (or zero) phones.
+* New definition may more accurately reflect the real world.
+* We cannot extend this argument easily to making employee-name an entity.
+The question of what constitutes an entity and what constitutes an attribute depends mainly on the structure of the real world situation being modeled, and the semantics associated with the attribute in question.
+The Entity-Relationship Model
+Database Design
+Goal of design is to generate a formal specification of the database schema
+Methodology:
+1. Use E-R model to get a high-level graphical view of essential components of enterprise and how they are related
+2. Then convert E-R diagram to SQL DDL, or whatever database model you are using
+E-R Model is not SQL based. It's not limited to any particular DBMS. It is a conceptual and semantic model - captures meanings rather than an actual implementation
+The E-R Model: The enterprise is viewed as set of
+* Entities
+* Relationships among entities
+Symbols used in E-R Diagram
+* Entity - rectangle
+* Attribute - oval
+* Relationship - diamond
+* Link - line
+Entities and Attributes
+Entity: an object that is involved in the enterprise and that be distinguished from other objects. (not shown in the ER diagram--is an instance)
+* Can be person, place, event, object, concept in the real world
+* Can be physical object or abstraction
+* Ex: "John", "CSE305"
+Entity Type: set of similar objects or a category of entities; they are well defined
+* A rectangle represents an entity set
+* Ex: students, courses
+* We often just say "entity" and mean "entity type"
+Attribute: describes one aspect of an entity type; usually [and best when] single valued and indivisible (atomic)
+* Represented by oval on E-R diagram
+* Ex: name, maximum enrollment
+* May be multi-valued - use double oval on E-R diagram
+* May be composite - attribute has further structure; also use oval for composite attribute, with ovals for components connected to it by lines
+* May be derived - a virtual attribute, one that is computable from existing data in the database, use dashed oval. This helps reduce redundancy
+Entity Types
+An entity type is named and is described by set of attributes
+* Student: Id, Name, Address, Hobbies
+Domain: possible values of an attribute.
+* Note that the value for an attribute can be a set or list of values, sometimes called "multi-valued" attributes
+* This is in contrast to the pure relational model which requires atomic values
+* E.g., (111111, John, 123 Main St, (stamps, coins))
+Key: subset of attributes that uniquely identifies an entity (candidate key)
+Entity Schema:
+The meta-information of entity type name, attributes (and associated domain), key constraints
+Entity Types tend to correspond to nouns; attributes are also nouns albeit descriptions of the parts of entities
+May have null values for some entity attribute instances - no mapping to domain for those instances
+Keys
+Superkey: an attribute or set of attributes that uniquely identifies an entity--there can be many of these
+Composite key: a key requiring more than one attribute
+Candidate key: a superkey such that no proper subset of its attributes is also a superkey (minimal superkey - has no unnecessary attributes)
+Primary key: the candidate key chosen to be used for identifying entities and accessing records. Unless otherwise noted "key" means "primary key"
+Alternate key: a candidate key not used for primary key
+Secondary key: attribute or set of attributes commonly used for accessing records, but not necessarily unique
+Foreign key: term used in relational databases (but not in the E-R model) for an attribute that is the primary key of another table and is used to establish a relationship with that table where it appears as an attribute also.
+So a foreign key value occurs in the table and again in the other table. This conflicts with the idea that a value is stored only once; the idea that a fact is stored once is not undermined.
+Graphical Representation in E-R diagram
+Rectangle -- Entity
+Ellipses -- Attribute (underlined attributes are [part of] the primary key)
+Double ellipses -- multi-valued attribute
+Dashed ellipses-- derived attribute, e.g. age is derivable from birthdate and current date.
+[Drawing notes: keep all attributes above the entity. Lines have no arrows. Use straight lines only]
+Relationships
+Relationship: connects two or more entities into an association/relationship
+* "John" majors in "Computer Science"
+Relationship Type: set of similar relationships
+* Student (entity type) is related to Department (entity type) by MajorsIn (relationship type).
+Relationship Types may also have attributes in the E-R model. When they are mapped to the relational model, the attributes become part of the relation. Represented by a diamond on E-R diagram.
+Relationship types can have descriptive attributes like entity sets
+Relationships tend to be verbs or verb phrases; attributes of relationships are again nouns
+[Drawing tips: relationship diamonds should connect off the left and right points; Dia can label those points with cardinality; use Manhattan connecting line (horizontal/vertical zigzag)]
+Attributes and Roles
+An attribute of a relationship type adds additional information to the relationship
+* e.g., "John" majors in "CS" since 2000
+* John and CS are related
+* 2000 describes the relationship - it's the value of the since attribute of MajorsIn relationship type
+* time stamps of updates or establishment of a relationship between two entities can be attributed here rather than with the entities.
+The role of a relationship type names one of the related entities. The name of the entity is usually the role name.
+e.g., "John" is value of Student role, "CS" value of Department role of MajorsIn relationship type
+(John, CS, 2000) describes a relationship
+Situation: relationships can relate elements of same entity type
+e.g., ReportsTo relationship type relates two elements of Employee entity type:
+* Bob reports to Mary since 2000
+We do not have distinct names for the roles. It is not clear who reports to whom.
+Solution: the role name of relationship type need not be same as name of entity type from which participants are drawn
+* ReportsTo has roles Subordinate and Supervisor and attribute Since
+* Values of Subordinate and Supervisor both drawn from entity type Employee
+It is optional to name role of each entity-relationship, but helpful in cases of
+* Recursive relationship - entity set relates to itself
+* Multiple relationships between same entity sets
+Roles are edges labeled with role names (omitted if role name = name of entity set). Most attributes have been omitted.
+Relationship Type
+Relationship types are described by the set of roles (entities) and [optional] attributes
+* e.g., MajorsIn: Student, Department, Since
+Think that entities are nouns; relationship types are often verbs
+* students and departments are the entities (nouns) and roles in relationship types
+* majors is the relationship type (verb)
+* i.e., "student" "majors in " "department"
+Here we have equate the role name (Student) the name of the entity type (Student) of the participant in the relationship.
+Degree of relationship
+The number of roles in the relationship
+Binary - links two entity sets; set of ordered pairs (most common)
+Ternary - links three entity sets; ordered triples (rare). If a relationship exists among the three entities, all three must be present
+N-ary - links n entity sets; ordered n-tuples (very rare). If a relationship exists among the entities, then all must be present. Cannot represesnt subsets.
+Note: ternary relationships may sometimes be replaced by two binary relationships (see book Figures 3.5 and 3.13). Semantic equivalence between ternary relationships and two binary ones are not necessarily true.
+Cardinality of Relationships
+Cardinality is the number of entity instances to which another entity set can map under the relationship. This does not reflect a requirement that an entity has to participate in a relationship. Participation is another concept.
+One-to-one: X-Y is 1:1 when each entity in X is associated with at most one entity in Y, and each entity in Y is associated with at most one entity in X.
+One-to-many: X-Y is 1:M when each entity in X can be associated with many entities in Y, but each entity in Y is associated with at most one entity in X.
+Many-to-many: X:Y is M:M if each entity in X can be associated with many entities in Y, and each entity in Y is associated with many entities in X ("many" =>one or more and sometimes zero)
+Of these choices, please use the first method!
+
+
+Relationship Participation Constraints
+Total participation
+* Every member of entity set must participate in the relationship
+* Represented by double line
+from entity rectangle to relationship diamond
+* E.g., A Class entity cannot exist unless related to a Faculty member entity in this example, not necessarily at Juniata.
+* You can set this double line in Dia
+* In a relational model we will use the references clause.
+Key constraint
+* If every entity participates in exactly one relationship, both a total participation and a key constraint hold
+* E.g., if a class is taught by only one faculty member.
+Partial participation
+* Not every entity instance must participate
+* Represented by single line from entity rectangle to relationship diamond
+* E.g., A Textbook entity can exist without being related to a Class or vice versa.
+Existence Dependency and Weak Entities
+Existence dependency: Entity Y is existence dependent on entity X is each instance of Y must have a corresponding instance of X
+In that case, Y must have total participation in its relationship with X
+If Y does not have its own candidate key, Y is called a weak entity, and X is strong entity
+Weak entity may have a partial key, called a discriminator, that distinguishes instances of the weak entity that are related to the same strong entity
+Use double rectangle for weak entity, with double diamond for relationship connecting it to its associated strong entity
+Note: not all existence dependent entities are weak - the lack of a key is essential to definition
+Schema of a Relationship Type
+Contains the following features:
+Role names, Ri, and their corresponding entity sets. Roles must be single valued (the number of roles is called its degree)
+Attribute names, Aj, and their corresponding domains. Attributes in the E-R model may be set or multi-valued.
+Key: Minimum set of roles and attributes that uniquely identify a relationship
+Relationship: <e1, en; a1, ak>
+* ei is an entity, a value from Ri's entity set
+* aj is a set of attribute values with elements from domain of Aj
+ER Diagram Example
+This was produced with Dia. It is the same as the figure in the book using instructor's preferred style.
+
+Hierarchical Model
+The hierarchical data model organizes data in a tree structure. There is a hierarchy of parent and child data segments. This structure implies that a record can have repeating information, generally in the child data segments. Data in a series of records, which have a set of field values attached to it. It collects all the instances of a specific record together as a record type. These record types are the equivalent of tables in the relational model, and with the individual records being the equivalent of rows. To create links between these record types, the hierarchical model uses Parent Child Relationships. These are a 1:N mapping between record types. This is done by using trees, like set theory used in the relational model, "borrowed" from maths. For example, an organization might store information about an employee, such as name, employee number, department, salary. The organization might also store information about an employee's children, such as name and date of birth. The employee and children data forms a hierarchy, where the employee data represents the parent segment and the children data represents the child segment. If an employee has three children, then there would be three child segments associated with one employee segment. In a hierarchical database the parent-child relationship is one to many. This restricts a child segment to having only one parent segment. Hierarchical DBMSs were popular from the late 1960s, with the introduction of IBM's Information Management System (IMS) DBMS, through the 1970s.
+Network Model
+The popularity of the network data model coincided with the popularity of the hierarchical data model. Some data were more naturally modeled with more than one parent per child. So, the network model permitted the modeling of many-to-many relationships in data. In 1971, the Conference on Data Systems Languages (CODASYL) formally defined the network model. The basic data modeling construct in the network model is the set construct. A set consists of an owner record type, a set name, and a member record type. A member record type can have that role in more than one set, hence the multiparent concept is supported. An owner record type can also be a member or owner in another set. The data model is a simple network, and link and intersection record types (called junction records by IDMS) may exist, as well as sets between them . Thus, the complete network of relationships is represented by several pairwise sets; in each set some (one) record type is owner (at the tail of the network arrow) and one or more record types are members (at the head of the relationship arrow). Usually, a set defines a 1:M relationship, although 1:1 is permitted. The CODASYL network model is based on mathematical set theory.
+Relational Model
+(RDBMS - relational database management system) A database based on the relational model developed by E.F. Codd. A relational database allows the definition of data structures, storage and retrieval operations and integrity constraints. In such a database the data and relations between them are organised in tables. A table is a collection of records and each record in a table contains the same fields.
+Properties of Relational Tables:
+* Values Are Atomic
+* Each Row is Unique
+* Column Values Are of the Same Kind
+* The Sequence of Columns is Insignificant
+* The Sequence of Rows is Insignificant
+* Each Column Has a Unique Name Certain fields may be designated as keys, which means that searches for specific values of that field will use indexing to speed them up. Where fields in two different tables take values from the same set, a join operation can be performed to select related records in the two tables by matching values in those fields. Often, but not always, the fields will have the same name in both tables. For example, an "orders" table might contain (customer-ID, product-code) pairs and a "products" table might contain (product-code, price) pairs so to calculate a given customer's bill you would sum the prices of all products ordered by that customer by joining on the product-code fields of the two tables. This can be extended to joining multiple tables on multiple fields. Because these relationships are only specified at retreival time, relational databases are classed as dynamic database management system. The RELATIONAL database model is based on the Relational Algebra.
+Object/Relational Model
+Object/relational database management systems (ORDBMSs) add new object storage capabilities to the relational systems at the core of modern information systems. These new facilities integrate management of traditional fielded data, complex objects such as time-series and geospatial data and diverse binary media such as audio, video, images, and applets. By encapsulating methods with data structures, an ORDBMS server can execute comple x analytical and data manipulation operations to search and transform multimedia and other complex objects.
+As an evolutionary technology, the object/relational (OR) approach has inherited the robust transaction- and performance-management features of it s relational ancestor and the flexibility of its object-oriented cousin. Database designers can work with familiar tabular structures and data definition languages (DDLs) while assimilating new object-management possibi lities. Query and procedural languages and call interfaces in ORDBMSs are familiar: SQL3, vendor procedural languages, and ODBC, JDBC, and proprie tary call interfaces are all extensions of RDBMS languages and interfaces. And the leading vendors are, of course, quite well known: IBM, Inform ix, and Oracle.
+Object-Oriented Model
+Object DBMSs add database functionality to object programming languages. They bring much more than persistent storage of
+programming language objects. Object DBMSs extend the semantics of the C++, Smalltalk and Java object programming languages to provide full-featured database programming capability, while retaining native language compatibility. A major benefit of this approach is the unification of the application and database development into a seamless data model and language environment. As a result, applications require less code, use more natural data modeling, and code bases are easier to maintain. Object developers can write complete database applications with a modest amount of additional effort. According to Rao (1994), "The object-oriented database (OODB) paradigm is the combination of object-oriented programming language (OOPL) systems and persistent systems. The power of the OODB comes from the seamless treatment of both persistent data, as found in databases, and transient data, as found in executing programs." In contrast to a relational DBMS where a complex data structure must be flattened out to fit into tables or joined together from those tables to form the in-memory structure, object DBMSs have no performance overhead to store or retrieve a web or hierarchy of interrelated objects. This one-to-one mapping of object programming language objects to database objects has two benefits over other storage approaches: it provides higher performance management of objects, and it enables better management of the complex interrelationships between objects. This makes object DBMSs better suited to support applications such as financial portfolio risk analysis systems, telecommunications service applications, world wide web document structures, design and manufacturing systems, and hospital patient record systems, which have complex relationships between data.
+Semistructured Model
+In semistructured data model, the information that is normally associated with a schema is contained within the data, which is sometimes called ``self-describing''. In such database there is no clear separation between the data and the schema, and the degree to which it is structured depends on the application. In some forms of semistructured data there is no separate schema, in others it exists but only places loose constraints on the data. Semi-structured data is naturally modelled in terms of graphs which contain labels which give semantics to its underlying structure. Such databases subsume the modelling power of recent extensions of flat relational databases, to nested databases which allow the nesting (or encapsulation) of entities, and to object databases which, in addition, allow cyclic references between objects. Semistructured data has recently emerged as an important topic of study for a variety of reasons. First, there are data sources such as the Web, which we would like to treat as databases but which cannot be constrained by a schema. Second, it may be desirable to have an extremely flexible format for data exchange between disparate databases. Third, even when dealing with structured data, it may be helpful to view it as semistructured for the purposes of browsing.
+Associative Model
+The associative model divides the real-world things about which data is to be recorded into two sorts: Entities are things that have discrete, independent existence. An entity's existence does not depend on any other thing. Associations
+are things whose existence depends on one or more other things, such that if any of those things ceases to exist, then the thing itself ceases to exist or becomes meaningless. An associative database comprises two data structures: 1. A set of items, each of which has a unique identifier, a name and a type. 2. A set of links, each of which has a unique identifier, together with the unique identifiers of three other things, that represent the source source, verb and target of a fact that is recorded about the source in the database. Each of the three things identified by the source, verb and target may be either a link or an item.
+Entity-Attribute-Value (EAV) data model
+The best way to understand the rationale of EAV design is to understand row modeling (of which EAV is a generalized form). Consider a supermarket database that must manage thousands of products and brands, many of which have a transitory existence. Here, it is intuitively obvious that product names should not be hard-coded as names of columns in tables. Instead, one stores product descriptions in a Products table: purchases/sales of individual items are recorded in other tables as separate rows with a product ID referencing this table. Conceptually an EAV design involves a single table with three columns, an entity (such as an olfactory receptor ID), an attribute (such as species, which is actually a pointer into the metadata table) and a value for the attribute (e.g., rat). In EAV design, one row stores a single fact. In a conventional table that has one column per attribute, by contrast, one row stores a set of facts. EAV design is appropriate when the number of parameters that potentially apply to an entity is vastly more than those that actually apply to an individual entity. For more information see: The EAV/CR Model of Data
+Context Model
+The context data model combines features of all the above models. It can be considered as a collection of object-oriented, network and semistructured models or as some kind of object database. In other words this is a flexible model, you can use any type of database structure depending on task. Such data model has been implemented in DBMS ConteXt. The fundamental unit of information storage of ConteXt is a CLASS. Class contains METHODS and describes OBJECT. The Object contains FIELDS and PROPERTY. The field may be composite, in this case the field contains SubFields etc. The property is a set of fields that belongs to particular Object. (similar to AVL database). In other words, fields are permanent part of Object but Property is its variable part. The header of Class contains the definition of the internal structure of the Object, which includes the description of each field, such as their type, length, attributes and name. Context data model has a set of predefined types as well as user defined types. The
+predefined types include not only character strings, texts and digits but also pointers (references) and aggregate types (structures).
+Types of Fields
+A context model comprises three main data types: REGULAR, VIRTUAL and REFERENCE. A regular (local) field can be ATOMIC or COMPOSITE. The atomic field has no inner structure. In contrast, a composite field may have a complex structure, and its type is described in the header of Class. The composite fields are divided into STATIC and DYNAMIC. The type of a static composite field is stored in the header and is permanent. Description of the type of a dynamic composite field is stored within the Object and can vary from Object to Object. Like a NETWORK database, apart from the fields containing the information directly, context database has fields storing a place where this information can be found, i.e. POINTER (link, reference) which can point to an Object in this or another Class. Because main addressed unit of context database is an Object, the pointer is made to Object instead of a field of this Object. The pointers are divided on STATIC and DYNAMIC. All pointers that belong to a particular static pointer type point to the same Class (albeit, possibly, to different Object). In this case, the Class name is an integral part of the that pointer type. A dynamic pointer type describes pointers that may refer to different Classes. The Class, which may be linked through a pointer, can reside on the same or any other computer on the local area network. There is no hierarchy between Classes and the pointer can link to any Class, including its own. In contrast to pure object-oriented databases, context databases is not so coupled to the programming language and doesn't support methods directly. Instead, method invocation is partially supported through the concept of VIRTUAL fields. A VIRTUAL field is like a regular field: it can be read or written into. However, this field is not physically stored in the database, and in it does not have a type described in the scheme. A read operation on a virtual field is intercepted by the DBMS, which invokes a method associated with the field and the result produced by that method is returned. If no method is defined for the virtual field, the field will be blank. The METHODS is a subroutine written in C++ by an application programmer. Similarly, a write operation on a virtual field invokes an appropriate method, which can changes the value of the field. The current value of virtual fields is maintained
+by a run-time process; it is not preserved between sessions. In object-oriented terms, virtual fields represent just two public methods: reading and writing. Experience shows, however, that this is often enough in practical applications. From the DBMS point of view, virtual fields provide transparent interface to such methods via an aplication written by application programer. A context database that does not have composite or pointer fields and property is essentially RELATIONAL. With static composite and pointer fields, context database become OBJECT-ORIENTED. If the context database has only Property in this case it is an ENTITY-ATTRIBUTE-VALUE database. With dynamic composite fields, a context database becomes what is now known as a SEMISTRUCTURED database. If the database has all available types... in this case it is ConteXt database!
+Data model
+A data model organizes data elements and standardizes how the data elements relate to one another. Since data elements document real life people, places and things and the events between them, the data model represents reality, for example a house has many windows or a cat has two eyes. Computers are used for the accounting of these real life things and events and therefore the data model is a necessary standard to ensure exact communication between human beings.
+Overview of data modeling context: Data model is based on Data, Data relationship, Data semantic and Data constraint. A data model provides the details of information to be stored, and is of primary use when the final product is the generation of computer software code for an application or the preparation of a functional specification to aid a computer software make-or-buy decision. The figure is an example of the interaction between process and data models.[1]
+Data models are often used as an aid to communication between the business people defining the requirements for a computer system and the technical people defining the design in response to those requirements. They are used to show the data needed and created by business processes.
+Precise accounting and communication is a large expense and organizations traditionally paid the cost by having employees translate between themselves on an ad hoc basis. In critical situations such as air travel, healthcare and finance, it is becoming commonplace that the accounting and communication must be precise and therefore requires the use of common data models to obviate risk.
+According to Hoberman (2009), "A data model is a wayfinding tool for both business and IT professionals, which uses a set of symbols and text to precisely explain a subset of real information to improve communication within the organization and thereby lead to a more flexible and stable application environment."[2]
+A data model explicitly determines the structure of data. Data models are specified in a data modeling notation, which is often graphical in form.[3]
+A data model can be sometimes referred to as a data structure, especially in the context of programming languages. Data models are often complemented by function models, especially in the context of enterprise models.
+Integrity Constraints
+Before one can start to implement the database tables, one must define the integrity constraints. Intergrity means something like 'be right' and consistent. The data in a database must be right and in good condition. There are the domain integrity, the entity integrity, the referential integrity and the foreign key integrity constraints.
+Domain Integrity
+Domain integrity means the definition of a valid set of values for an attribute. You define - data type, - lenght or size - is null value allowed - is the value unique or not for an attribute. You may also define the default value, the range (values in between) and/or specific values for the attribute. Some DBMS allow you to define the output format and/or input mask for the attribute. These definitions ensure that a specific attribute will have a right and proper value in the database.
+Entity Integrity Constraint
+The entity integrity constraint states that primary keys can't be null. There must be a proper value in the primary key field. This is because the primary key value is used to identify individual rows in a table. If there were null values for primary keys, it would mean that we could not indentify those rows. On the other hand, there can be null values other than primary key fields. Null value means that one doesn't know the value for that field. Null value is different from zero value or space. In the Car Rental database in the Car table each car must have a proper and unique Reg_No. There might be a car whose rate is unknown - maybe the car is broken or it is brand new - i.e. the Rate field has a null value. See the picture below. The entity integrity constraints assure that a spesific row in a table can be identified.
+Picture. Car and CarType tables in the Rent database
+Referential Integrity Constraint
+The referential integrity constraint is specified between two tables and it is used to maintain the consistency among rows between the two tables. The rules are: 1. You can't delete a record from a primary table if matching records exist in a related table. 2. You can't change a primary key value in the primary table if that record has related records.
+3. You can't enter a value in the foreign key field of the related table that doesn't exist in the primary key of the primary table. 4. However, you can enter a Null value in the foreign key, specifying that the records are unrelated. Examples Rule 1. You can't delete any of the rows in the CarType table that are visible in the picture since all the car types are in use in the Car table. Rule 2. You can't change any of the model_ids in the CarType table since all the car types are in use in the Car table. Rule 3. The values that you can enter in the model_id field in the Car table must be in the model_id field in the CarType table. Rule 4. The model_id field in the Car table can have a null value which means that the car type of that car in not known
+Foreign Key Integrity Constraint
+There are two foreign key integrity constraints: cascade update related fields and cascade delete related rows. These constraints affect the referential integrity constraint. Cascade Update Related Fields Any time you change the primary key of a row in the primary table, the foreign key values are updated in the matching rows in the related table. This constraint overrules rule 2 in the referential integrity constraints. If this contraint is defined in the relationship between the tables Car and CarType, it is possible to change the model_id in the CarType table. If one should change the model_id 1 (Ford Focus) to model_id 100 in the CarType table, the model_ids in the Car table would change from 1 to 100 (cars ABC-112, ABC-122, ABC-123). Cascade Delete Related Rows Any time you delete a row in the primary table, the matching rows are automatically deleted in the related table. This constraint overrules rule 1 in the referential integrity constraints. If this contraint is defined in the relationship between the tables Car and CarType, it is possible to delete rows from the CarType table. If one should delete the Ford Focus row from the CarType table, the cars ABC-112, ABC-122, ABC-123 would be deleted from the Car table, too. Source: Gillette Cynthia. 2001. MSCE SQL 2000 Database Design. Chapter 2: Data Modelling. Coriolis Group.
+Unit-4 Relational Algebra
+* Similar to normal algebra (as in 2+3*x-y), except we use relations as values instead of numbers, and the operations and operators are different.
+* Not used as a query language in actual DBMSs. (SQL instead.)
+* The inner, lower-level operations of a relational DBMS are, or are similar to, relational algebra operations. We need to know about relational algebra to understand query execution and optimization in a relational DBMS.
+* Some advanced SQL queries requires explicit relational algebra operations, most commonly outer join.
+* Relations are seen as sets of tuples, which means that no duplicates are allowed. SQL behaves differently in some cases. Remember the SQL keyword distinct.
+* SQL is declarative, which means that you tell the DBMS what you want, but not how it is to be calculated. A C++ or Java program is procedural, which means that you have to state, step by step, exactly how the result should be calculated. Relational algebra is (more) procedural than SQL. (Actually, relational algebra is mathematical expressions.)
+Set operations
+Relations in relational algebra are seen as sets of tuples, so we can use basic set operations.
+Review of concepts and operations from set theory
+* set
+* element
+* no duplicate elements (but: multiset = bag)
+* no order among the elements (but: ordered set)
+* subset
+* proper subset (with fewer elements)
+* superset
+* union
+* intersection
+* set difference
+* cartesian product
+Projection
+Example: The table E (for EMPLOYEE)
+nr
+name
+salary
+1
+John
+100
+5
+Sarah
+300
+7
+Tom
+100
+SQL
+Result
+Relational algebra
+select salary
+from E
+salary
+100
+300
+PROJECTsalary(E)
+select nr, salary
+from E
+nr
+salary
+1
+100
+5
+300
+7
+100
+PROJECTnr, salary(E)
+Note that there are no duplicate rows in the result.
+Selection
+The same table E (for EMPLOYEE) as above.
+SQL
+Result
+Relational algebra
+select *
+from E
+where salary < 200
+nr
+name
+salary
+1
+John
+100
+SELECTsalary < 200(E)
+7
+Tom
+100
+select *
+from E
+where salary < 200
+and nr >= 7
+nr
+name
+salary
+7
+Tom
+100
+SELECTsalary < 200 and nr >= 7(E)
+Note that the select operation in relational algebra has nothing to do with the SQL keyword select. Selection in relational algebra returns those tuples in a relation that fulfil a condition, while the SQL keyword select means "here comes an SQL statement".
+Relational algebra expressions
+SQL
+Result
+Relational algebra
+select name, salary
+from E
+where salary < 200
+name
+salary
+John
+100
+Tom
+100
+PROJECTname, salary (SELECTsalary < 200(E))
+or, step by step, using an intermediate result
+Temp <- SELECTsalary < 200(E) Result <- PROJECTname, salary(Temp)
+Notation
+The operations have their own symbols. The symbols are hard to write in HTML that works with all browsers, so I'm writing PROJECT etc here. The real symbols:
+Operation
+My HTML
+Symbol
+Projection
+PROJECT
+Selection
+SELECT
+Renaming
+RENAME
+Union
+UNION
+Operation
+My HTML
+Symbol
+Cartesian product
+X
+Join
+JOIN
+Left outer join
+LEFT OUTER JOIN
+Right outer join
+RIGHT OUTER JOIN
+Intersection
+INTERSECTION
+Assignment
+<-
+Full outer join
+FULL OUTER JOIN
+Semijoin
+SEMIJOIN
+Example: The relational algebra expression which I would here write as
+PROJECTNamn ( SELECTMedlemsnummer < 3 ( Medlem ) )
+should actually be written
+Cartesian product
+The cartesian product of two tables combines each row in one table with each row in the other table.
+Example: The table E (for EMPLOYEE)
+enr
+ename
+dept
+1
+Bill
+A
+2
+Sarah
+C
+3
+John
+A
+Example: The table D (for DEPARTMENT)
+dnr
+dname
+A
+Marketing
+B
+Sales
+C
+Legal
+SQL
+Result
+Relational algebra
+select *
+from E, D
+enr
+ename
+dept
+dnr
+dname
+1
+Bill
+A
+A
+Marketing
+1
+Bill
+A
+B
+Sales
+1
+Bill
+A
+C
+Legal
+2
+Sarah
+C
+A
+Marketing
+2
+Sarah
+C
+B
+Sales
+2
+Sarah
+C
+C
+Legal
+3
+John
+A
+A
+Marketing
+3
+John
+A
+B
+Sales
+3
+John
+A
+C
+Legal
+E X D
+* Seldom useful in practice.
+* Usually an error.
+* Can give a huge result.
+Join (sometimes called "inner join")
+The cartesian product example above combined each employee with each department. If we only keep those lines where the dept attribute for the employee is equal to the dnr (the department number) of the department, we get a nice list of the employees, and the department that each employee works for:
+SQL
+Result
+Relational algebra
+select *
+from E, D
+where dept = dnr
+enr
+ename
+dept
+dnr
+dname
+1
+Bill
+A
+A
+Marketing
+2
+Sarah
+C
+C
+Legal
+3
+John
+A
+A
+Marketing
+SELECTdept = dnr (E X D)
+or, using the equivalent join operation
+E JOINdept = dnr D
+* A very common and useful operation.
+* Equivalent to a cartesian product followed by a select.
+* Inside a relational DBMS, it is usually much more efficient to calculate a join directly, instead of calculating a cartesian product and then throwing away most of the lines.
+* Note that the same SQL query can be translated to several different relational algebra expressions, which all give the same result.
+* If we assume that these relational algebra expressions are executed, inside a relational DBMS which uses relational algebra operations as its lower-level internal operations, different relational algebra expressions can take very different time (and memory) to execute.
+Natural join
+A normal inner join, but using the join condition that columns with the same names should be equal. Duplicate columns are removed.
+Renaming tables and columns
+Example: The table E (for EMPLOYEE)
+nr
+name
+dept
+1
+Bill
+A
+2
+Sarah
+C
+3
+John
+A
+Example: The table D (for DEPARTMENT)
+nr
+name
+A
+Marketing
+B
+Sales
+C
+Legal
+We want to join these tables, but:
+* Several columns in the result will have the same name (nr and name).
+* How do we express the join condition, when there are two columns called nr?
+Solutions:
+* Rename the attributes, using the rename operator.
+* Keep the names, and prefix them with the table name, as is done in SQL. (This is somewhat unorthodox.)
+SQL
+Result
+Relational algebra
+select *
+from E as E(enr, ename, dept),
+D as D(dnr, dname)
+where dept = dnr
+enr
+ename
+dept
+dnr
+dname
+1
+Bill
+A
+A
+Marketing
+2
+Sarah
+C
+C
+Legal
+3
+John
+A
+A
+Marketing
+(RENAME(enr, ename, dept)(E)) JOINdept = dnr (RENAME(dnr, dname)(D))
+select *
+from E, D
+where dept = D.nr
+nr
+name
+dept
+nr
+name
+1
+Bill
+A
+A
+Marketing
+2
+Sarah
+C
+C
+Legal
+3
+John
+A
+A
+Marketing
+E JOINdept = D.nr D
+You can use another variant of the renaming operator to change the name of a table, for example to change the name of E to R. This is necessary when joining a table with itself (see below).
+RENAMER(E)
+A third variant lets you rename both the table and the columns:
+RENAMER(enr, ename, dept)(E)
+Aggregate functions
+Example: The table E (for EMPLOYEE)
+nr
+name
+salary
+dept
+1
+John
+100
+A
+5
+Sarah
+300
+C
+7
+Tom
+100
+A
+12
+Anne
+null
+C
+SQL
+Result
+Relational algebra
+select sum(salary)
+from E
+sum
+500
+Fsum(salary)(E)
+Note:
+* Duplicates are not eliminated.
+* Null values are ignored.
+SQL
+Result
+Relational algebra
+select count(salary)
+from E
+Result:
+count
+3
+Fcount(salary)(E)
+select count(distinct salary)
+from E
+Result:
+count
+2
+Fcount(salary)(PROJECTsalary(E))
+You can calculate aggregates "grouped by" something:
+SQL
+Result
+Relational algebra
+select sum(salary)
+from E
+group by dept
+dept
+sum
+A
+200
+deptFsum(salary)(E)
+C
+300
+Several aggregates simultaneously:
+SQL
+Result
+Relational algebra
+select sum(salary), count(*)
+from E
+group by dept
+dept
+sum
+count
+A
+200
+2
+C
+300
+1
+deptFsum(salary), count(*)(E)
+Standard aggregate functions: sum, count, avg, min, max
+Hierarchies
+Example: The table E (for EMPLOYEE)
+nr
+name
+mgr
+1
+Gretchen
+null
+2
+Bob
+1
+5
+Anne
+2
+6
+John
+2
+3
+Hulda
+1
+4
+Hjalmar
+1
+7
+Usama
+4
+Going up in the hierarchy one level: What's the name of John's boss?
+SQL
+Result
+Relational algebra
+select b.name
+from E p, E b
+where p.mgr = b.nr
+and p.name = "John"
+name
+Bob
+PROJECTbname ([SELECTpname = "John"(RENAMEP(pnr, pname, pmgr)(E))] JOINpmgr = bnr [RENAMEB(bnr, bname, bmgr)(E)])
+or, in a less wide-spread notation
+PROJECTb.name ([SELECTname = "John"(RENAMEP(E))] JOINp.mgr = b.nr [RENAMEB(E)])
+or, step by step
+P <- RENAMEP(pnr, pname, pmgr)(E) B <- RENAMEB(bnr, bname, bmgr)(E) J <- SELECTname = "John"(P) C <- J JOINpmgr = bnr B R <- PROJECTbname(C)
+Notes about renaming:
+* We are joining E with itself, both in the SQL query and in the relational algebra expression: it's like joining two tables with the same name and the same attribute names.
+* Therefore, some renaming is required.
+* RENAMEP(E) JOIN... RENAMEB(E) is a start, but then we still have the same attribute names.
+Going up in the hierarchy two levels: What's the name of John's boss' boss?
+SQL
+Result
+Relational algebra
+select ob.name
+from E p, E b, E ob
+where b.mgr = ob.nr
+where p.mgr = b.nr
+and p.name = "John"
+name
+Gretchen
+PROJECTob.name (([SELECTname = "John"(RENAMEP(E))] JOINp.mgr = b.nr [RENAMEB(E)]) JOINb.mgr = ob.nr [RENAMEOB(E)])
+or, step by step
+P <- RENAMEP(pnr, pname, pmgr)(E) B <- RENAMEB(bnr, bname, bmgr)(E) OB <- RENAMEOB(obnr, obname, obmgr)(E) J <- SELECTname = "John"(P) C1 <- J JOINpmgr = bnr B C2 <- C1 JOINbmgr = bbnr OB R <- PROJECTobname(C2)
+Recursive closure
+Both one and two levels up: What's the name of John's boss, and of John's boss' boss?
+SQL
+Result
+Relational algebra
+(select b.name ...)
+union
+(select ob.name ...)
+name
+Bob
+Gretchen
+(...) UNION (...)
+Recursively: What's the name of all John's bosses? (One, two, three, four or more levels.)
+* Not possible in (conventional) relational algebra, but a special operation called transitive closure has been proposed.
+* Not possible in (standard) SQL (SQL2), but in SQL3, and using SQL + a host language with loops or recursion.
+Outer join
+Example: The table E (for EMPLOYEE)
+enr
+ename
+dept
+1
+Bill
+A
+2
+Sarah
+C
+3
+John
+A
+Example: The table D (for DEPARTMENT)
+dnr
+dname
+A
+Marketing
+B
+Sales
+C
+Legal
+List each employee together with the department he or she works at:
+SQL
+Result
+Relational algebra
+select *
+from E, D
+where edept = dnr
+or, using an explicit join
+select *
+from (E join D on edept = dnr)
+enr
+ename
+dept
+dnr
+dname
+1
+Bill
+A
+A
+Marketing
+2
+Sarah
+C
+C
+Legal
+3
+John
+A
+A
+Marketing
+E JOINedept = dnr D
+No employee works at department B, Sales, so it is not present in the result. This is probably not a problem in this case. But what if we want to know the number of employees at each department?
+SQL
+Result
+Relational algebra
+select dnr, dname, count(*)
+from E, D
+where edept = dnr
+group by dnr, dname
+or, using an explicit join
+select dnr, dname, count(*)
+from (E join D on edept = dnr)
+group by dnr, dname
+dnr
+dname
+count
+A
+Marketing
+2
+C
+Legal
+1
+dnr, dnameFcount(*)(E JOINedept = dnr D)
+No employee works at department B, Sales, so it is not present in the result. It disappeared already in the join, so the aggregate function never sees it. But what if we want it in the result, with the right number of employees (zero)?
+Use a right outer join, which keeps all the rows from the right table. If a row can't be connected to any of the rows from the left table according to the join condition, null values are used:
+SQL
+Result
+Relational algebra
+select *
+from (E right outer join D on edept = dnr)
+enr
+ename
+dept
+dnr
+dname
+1
+Bill
+A
+A
+Marketing
+2
+Sarah
+C
+C
+Legal
+3
+John
+A
+A
+Marketing
+E RIGHT OUTER JOINedept = dnr D
+null
+null
+null
+B
+Sales
+select dnr, dname, count(*)
+from (E right outer join D on edept = dnr)
+group by dnr, dname
+dnr
+dname
+count
+A
+Marketing
+2
+B
+Sales
+1
+C
+Legal
+1
+dnr, dnameFcount(*)(E RIGHT OUTER JOINedept = dnr D)
+select dnr, dname, count(enr)
+from (E right outer join D on edept = dnr)
+group by dnr, dname
+dnr
+dname
+count
+A
+Marketing
+2
+B
+Sales
+0
+C
+Legal
+1
+dnr, dnameFcount(enr)(E RIGHT OUTER JOINedept = dnr D)
+Join types:
+* JOIN = "normal" join = inner join
+* LEFT OUTER JOIN = left outer join
+* RIGHT OUTER JOIN = right outer join
+* FULL OUTER JOIN = full outer join
+Outer union
+Outer union can be used to calculate the union of two relations that are partially union compatible. Not very common.
+Example: The table R
+A
+B
+1
+2
+3
+4
+Example: The table S
+B
+C
+4
+5
+6
+7
+The result of an outer union between R and S:
+A
+B
+C
+1
+2
+null
+3
+4
+5
+null
+6
+7
+Division
+Who works on (at least) all the projects that Bob works on?
+Semijoin
+A join where the result only contains the columns from one of the joined tables. Useful in distributed databases, so we don't have to send as much data over the network.
+Update
+To update a named relation, just give the variable a new value. To add all the rows in relation N to the relation R:
+R <- R UNION N
+RELATIONAL CALCULUS
+* Relational calculus is nonprocedural
+* It has the same expressive power as relational algebra, i.e. it is relationally complete
+* It is a formal language based upon a branch of mathematical logic called "predicate calculus"
+* There are two approaches: tuple relational calculus and domain relational calculus
+TUPLE RELATIONAL CALCULUS
+{ t | COND(t) } { t | EMPLOYEE(t) and t.SALARY > 50000 } The RANGE RELATION is EMPLOYEE The TUPLE VARIABLE is t The ATTRIBUTE of a TUPLE VARIABLE is t.SALARY (This is similar to SQL's T.SALARY In relational algebra, we will write T[SALARY] ) {t.FNAME,t.LNAME | EMPLOYEE(t) and t.SALARY > 50000 } is equivalent to SELECT T.FNAME, T.LNAME FROM EMPLOYEE T WHERE T.SALARY > 50000
+FORMAL SPECIFICATION OF TUPLE RELATIONAL CALCULUS
+{t1.A1, t2.A2, ..., tn.An | COND(t1,..., tn, .... , tm} The condition COND is a formula in relational calculus. Existential Quantifer E (E t)(F) is true, if for some tuple t the formula F is true Universal Quantifier A (A t)(F) is true, if for all tuple t the formula F is true A variable is BOUND in F, if it is of the form, (E t) (F) or (A t) (F) Otherwise it is FREE in F, for example d.DNAME = 'Research'
+EXAMPLES
+Q1: Retrieve the name and address of all employees who work for 'X' department. Q1: {t.FNAME, t.LNAME, t.ADDRESS | EMPLOYEE(t) and ((E d) (DEPARTMENT(d) and d.DNAME = 'X' and d.DNUMBER = t.DNO)) } Note: The only FREE tuple varaibles should be those appearing to the left of the bar | Q2: For every project located in 'Y', retrieve the project number, the controlling department number, and the last name, birthdate, and address of the manager of the department. Q2: {p.PNUMBER, p.DNUM, m.LNAME, m.BDATE, m.ADDRESS | PROJECT(p) and EMPLOYEE(m) and p.PLOCATION = 'Y' and ((E d) (DEPARTMENT(d) and p.DNUM = d.DNUMBER and d.MGRSSN = m.SSN)) }
+MORE EXAMPLES
+Q3: Retrieve the employee's first and last name and the first and last name of his or her immediate supervisor. Q3: {e.FNAME, e.LNAME, s.FNAME, s.LNAME | EMPLOYEE(e) and EMPLOYEE(s) and e.SUPERSSN = S.SSN } Q4: Make a list of all projects that involve an employee whose last name is 'Smith' as a worker or as manager of the controlling department of the project. Q4: {p.PNUMBER | PROJECT(p) and ((E e)(E w)(EMPLOYEE(e) and WORKS_ON(w) and w.PNO=p.PNUMBER and e.LNAME='Smith' and e.SSN = w.ESSN)) or ((E m)(E d)(EMPLOYEE(m) and DEPARTMENT(d) and p.DNUM=d.DNUMBER and d.MGRSSN=m.SSN and m.LNAME='Smith')) }
+TRANSFORMATION RULES
+(A x)(P(x)) = (not E x) (not(P(x)) (E x)(P(x)) = not (A x) (not (P(x)) (A x)(P(x) and Q(x)) = (not E x) (not(P(x)) or not(Q(x))) (A x)(P(x) or Q(x)) = (not E x) (not(P(x)) and not(Q(x))) (E x)(P(x) or Q(x)) = (not A x)(not(P(x)) and not(Q(x))) (E x)(P(x) and Q(x)) = (not A x)(not(P(x)) or not(Q(x))) (A x)(P(x)) => (E x)(P(x)) (not E x)(P(x)) => not (A x) (P(x))
+QUANTIFIERS IN SQL
+In SQL, we have the EXISTS function
+SELECT
+FROM
+WHERE EXISTS (SELECT *
+FROM R X
+WHERE P(X))
+SQL does not have universal quantifier. We can use the transformation to convert (A x)(P(x)) into (not E x)(not(P(x))
+SELECT
+FROM
+WHERE NOT EXISTS (SELECT *
+FROM R X
+WHERE NOT P(X))
+SAFE EXPRESSIONS
+A SAFE EXPRESSION is one that is guaranteed to yield a finite number of tuples as its results. Otherwise, it is called UNSAFE. { t | not(EMPLOYEE) } is UNSAFE! Technique to guarantee SAFENESS can be applied to transform a query.
+Q6: Find the names of employees without dependents. Q6: {e.FNAME, e.LNAME | EMPLOYEE(e) and (not(E d) (DEPENDENT(d) and e.SSN = d.ESSN) } Q6A: {e.FNAME, e.LNAME | EMPLOYEE(e) ((A d)(not(DEPENDENT(d)) or ((E d)(DEPENDENT(d) and not(e.SSN=d.ESSN))) ) ) }
+APPLYING TRANSFORMATION RULES TO MAKE QUERY PROCESSING EFFICIENT
+Query: Find the names of employees who work on all projecs controlled by department number 5. Q: { e.SSN | EMPLOYEE(e) and F' } F' = (A x)(not(PROJECT(x)) or F1) F1 = (E x) (PROJECT(x) and (not(x.DNUM=5) or F2))) F2 = (E x) (WORKS_ON(w) and w.ESSN=e.SSN and x.PNUMBER=w.PNO) Note: A universally quantified tuple variable must evalue to TRUE for every possible tuple assigned to it! Trick: Try to exclude the tuples we are not interested in, from further consideration.
+Functional Dependency
+Definition - What does Functional Dependency mean?
+Functional dependency is a relationship that exists when one attribute uniquely determines another attribute.
+If R is a relation with attributes X and Y, a functional dependency between the attributes is represented as X->Y, which specifies Y is functionally dependent on X. Here X is a determinant set and Y is a dependent attribute. Each value of X is associated precisely with one Y value.
+Functional dependency in a database serves as a constraint between two sets of attributes. Defining functional dependency is an important part of relational database design and contributes to aspect normalization.
+A functional dependency is trivial if Y is a subset of X. In a table with attributes of employee name and Social Security number (SSN), employee name is functionally dependent on SSN because the SSN is unique for individual names. An SSN identifies the employee specifically, but an employee name cannot distinguish the SSN because more than one employee could have the same name.
+Functional dependency defines Boyce-Codd normal form and third normal form. This preserves dependency between attributes, eliminating the repetition of information. Functional dependency is related to a candidate key, which uniquely identifies a tuple and determines the value of all other attributes in the relation. In some cases, functionally dependent sets are irreducible if:
+* The right-hand set of functional dependency holds only one attribute
+* The left-hand set of functional dependency cannot be reduced, since this may change the entire content of the set
+* Reducing any of the existing functional dependency might change the content of the set
+An important property of a functional dependency is Armstrong's axiom, which is used in database normalization. In a relation, R, with three attributes (X, Y, Z) Armstrong's axiom holds strong if the following conditions are satisfied:
+* Axiom of Transivity: If X->Y and Y->Z, then X->Z
+* Axiom of Reflexivity (Subset Property): If Y is a subset of X, then X->Y
+* Axiom of Augmentation: If X->Y, then XZ->YZ
+NORMALIZATION: Modification Anomalies
+What is Normalization and Modification Anamolies? Tables which meet the minimum requirement for a relation may not have an effective or appropriate structure. Changing the data in such tables can have undesirable consequences, called modification anomalies. Anomalies can be eliminated by redefining the relation into two or more relations. These redefined relations, or normalized, relations are preferred. The table above is a hypothetical example of registration options and fees for Oracle OpenWorld Conference. A potential issue is if customer 200 is removed. This would also remove the fact that the 'Develop' package costs $750. This is an example of a deletion anomaly. By deleting the facts about one entity (Customer 200 signed up for Develop
+package), we inadvertently delete facts about another entity (that Develop costs $750). In other words, with one deletion, we lose facts about two entities. (Note: this is for example purposes only, and is not associated with Oracle or the OpenWorld Conference) The Division of ACTIVITY into two Relations: Below we have divided ACTIVITY into two relations. Now, if Customer 200 is deleted, we do not lose the fact that the Develop package costs $750.
+Functional Dependency
+Functional dependency (FD) is a set of constraints between two attributes in a relation. Functional dependency says that if two tuples have same values for attributes A1, A2,..., An, then those two tuples must have to have same values for attributes B1, B2, ..., Bn.
+Functional dependency is represented by an arrow sign (?) that is, X?Y, where X functionally determines Y. The left-hand side attributes determine the values of attributes on the right-hand side.
+Armstrong's Axioms
+If F is a set of functional dependencies then the closure of F, denoted as F+, is the set of all functional dependencies logically implied by F. Armstrong's Axioms are a set of rules, that when applied repeatedly, generates a closure of functional dependencies.
+* Reflexive rule - If alpha is a set of attributes and beta is_subset_of alpha, then alpha holds beta.
+* Augmentation rule - If a ? b holds and y is attribute set, then ay ? by also holds. That is adding attributes in dependencies, does not change the basic dependencies.
+* Transitivity rule - Same as transitive rule in algebra, if a ? b holds and b ? c holds, then a ? c also holds. a ? b is called as a functionally that determines b.
+Trivial Functional Dependency
+* Trivial - If a functional dependency (FD) X ? Y holds, where Y is a subset of X, then it is called a trivial FD. Trivial FDs always hold.
+* Non-trivial - If an FD X ? Y holds, where Y is not a subset of X, then it is called a non-trivial FD.
+* Completely non-trivial - If an FD X ? Y holds, where x intersect Y = F, it is said to be a completely non-trivial FD.
+Normalization
+If a database design is not perfect, it may contain anomalies, which are like a bad dream for any database administrator. Managing a database with anomalies is next to impossible.
+* Update anomalies - If data items are scattered and are not linked to each other properly, then it could lead to strange situations. For example, when we try to update one data item having its copies scattered over several places, a few instances get updated properly while a few others are left with old values. Such instances leave the database in an inconsistent state.
+* Deletion anomalies - We tried to delete a record, but parts of it was left undeleted because of unawareness, the data is also saved somewhere else.
+* Insert anomalies - We tried to insert data in a record that does not exist at all.
+Normalization is a method to remove all these anomalies and bring the database to a consistent state.
+First Normal Form
+First Normal Form is defined in the definition of relations (tables) itself. This rule defines that all the attributes in a relation must have atomic domains. The values in an atomic domain are indivisible units.
+We re-arrange the relation (table) as below, to convert it to First Normal Form.
+Each attribute must contain only a single value from its pre-defined domain.
+Second Normal Form
+Before we learn about the second normal form, we need to understand the following -
+* Prime attribute - An attribute, which is a part of the prime-key, is known as a prime attribute.
+* Non-prime attribute - An attribute, which is not a part of the prime-key, is said to be a non-prime attribute.
+If we follow second normal form, then every non-prime attribute should be fully functionally dependent on prime key attribute. That is, if X ? A holds, then there should not be any proper subset Y of X, for which Y ? A also holds true.
+We see here in Student_Project relation that the prime key attributes are Stu_ID and Proj_ID. According to the rule, non-key attributes, i.e. Stu_Name and Proj_Name must be dependent upon both and not on any of the prime key attribute individually. But we find that Stu_Name can be identified by Stu_ID and Proj_Name can be identified by Proj_ID independently. This is called partial dependency, which is not allowed in Second Normal Form.
+We broke the relation in two as depicted in the above picture. So there exists no partial dependency.
+Third Normal Form
+For a relation to be in Third Normal Form, it must be in Second Normal form and the following must satisfy -
+* No non-prime attribute is transitively dependent on prime key attribute.
+* For any non-trivial functional dependency, X ? A, then either -
+o X is a superkey or,
+* A is prime attribute.
+We find that in the above Student_detail relation, Stu_ID is the key and only prime key attribute. We find that City can be identified by Stu_ID as well as Zip itself. Neither Zip is a superkey nor is City a prime attribute. Additionally, Stu_ID ? Zip ? City, so there exists transitive dependency.
+To bring this relation into third normal form, we break the relation into two relations as follows -
+Boyce-Codd Normal Form
+Boyce-Codd Normal Form (BCNF) is an extension of Third Normal Form on strict terms. BCNF states that -
+* For any non-trivial functional dependency, X ? A, X must be a super-key.
+In the above image, Stu_ID is the super-key in the relation Student_Detail and Zip is the super-key in the relation ZipCodes. So,
+Stu_ID ? Stu_Name, Zip
+and
+Zip ? City
+Which confirms that both the relations are in BCNF.
+We understand the benefits of taking a Cartesian product of two relations, which gives us all the possible tuples that are paired together. But it might not be feasible for us in certain cases to take a Cartesian product where we encounter huge relations with thousands of tuples having a considerable large number of attributes.
+Join is a combination of a Cartesian product followed by a selection process. A Join operation pairs two tuples from different relations, if and only if a given join condition is satisfied.
+We will briefly describe various join types in the following sections.
+Theta (?) Join
+Theta join combines tuples from different relations provided they satisfy the theta condition. The join condition is denoted by the symbol ?.
+Notation
+R1 ?? R2
+R1 and R2 are relations having attributes (A1, A2, .., An) and (B1, B2,.. ,Bn) such that the attributes don't have anything in common, that is R1 n R2 = F.
+Theta join can use all kinds of comparison operators.
+Student
+SID
+Name
+Std
+101
+Alex
+10
+102
+Maria
+11
+Subjects
+Class
+Subject
+10
+Math
+10
+English
+11
+Music
+11
+Sports
+Student_Detail -
+STUDENT ?Student.Std = Subject.Class SUBJECT
+Student_detail
+SID
+Name
+Std
+Class
+Subject
+101
+Alex
+10
+10
+Math
+101
+Alex
+10
+10
+English
+102
+Maria
+11
+11
+Music
+102
+Maria
+11
+11
+Sports
+Equijoin
+When Theta join uses only equality comparison operator, it is said to be equijoin. The above example corresponds to equijoin.
+Natural Join (?)
+Natural join does not use any comparison operator. It does not concatenate the way a Cartesian product does. We can perform a Natural Join only if there is at least one common attribute that exists between two relations. In addition, the attributes must have the same name and domain.
+Natural join acts on those matching attributes where the values of attributes in both the relations are same.
+Courses
+CID
+Course
+Dept
+CS01
+Database
+CS
+ME01
+Mechanics
+ME
+EE01
+Electronics
+EE
+HoD
+Dept
+Head
+CS
+Alex
+ME
+Maya
+EE
+Mira
+Courses ? HoD
+Dept
+CID
+Course
+Head
+CS
+CS01
+Database
+Alex
+ME
+ME01
+Mechanics
+Maya
+EE
+EE01
+Electronics
+Mira
+Outer Joins
+Theta Join, Equijoin, and Natural Join are called inner joins. An inner join includes only those tuples with matching attributes and the rest are discarded in the resulting relation. Therefore, we need to use outer joins to include all the tuples from the participating relations in the resulting relation. There are three kinds of outer joins - left outer join, right outer join, and full outer join.
+Left Outer Join(R S)
+All the tuples from the Left relation, R, are included in the resulting relation. If there are tuples in R without any matching tuple in the Right relation S, then the S-attributes of the resulting relation are made NULL.
+Left
+A
+B
+100
+Database
+101
+Mechanics
+102
+Electronics
+Right
+A
+B
+100
+Alex
+102
+Maya
+104
+Mira
+Courses HoD
+A
+B
+C
+D
+100
+Database
+100
+Alex
+101
+Mechanics
+---
+---
+102
+Electronics
+102
+Maya
+Right Outer Join: ( R S )
+All the tuples from the Right relation, S, are included in the resulting relation. If there are tuples in S without any matching tuple in R, then the R-attributes of resulting relation are made NULL.
+Courses HoD
+A
+B
+C
+D
+100
+Database
+100
+Alex
+102
+Electronics
+102
+Maya
+---
+---
+104
+Mira
+Full Outer Join: ( R S)
+All the tuples from both participating relations are included in the resulting relation. If there are no matching tuples for both relations, their respective unmatched attributes are made NULL.
+Courses HoD
+A
+B
+C
+D
+100
+Database
+100
+Alex
+101
+Mechanics
+---
+---
+102
+Electronics
+102
+Maya
+---
+---
+104
+Mira
+SQL is a programming language for Relational Databases. It is designed over relational algebra and tuple relational calculus. SQL comes as a package with all major distributions of RDBMS.
+SQL comprises both data definition and data manipulation languages. Using the data definition properties of SQL, one can design and modify database schema, whereas data manipulation properties allows SQL to store and retrieve data from database.
+Data Definition Language
+SQL uses the following set of commands to define database schema -
+CREATE
+Creates new databases, tables and views from RDBMS.
+For example -
+Create database tutorialspoint;
+Create table article;
+Create view for_students;
+DROP
+Drops commands, views, tables, and databases from RDBMS.
+For example-
+Drop object_type object_name;
+Drop database tutorialspoint;
+Drop table article;
+Drop view for_students;
+ALTER
+Modifies database schema.
+Alter object_type object_name parameters;
+For example-
+Alter table article add subject varchar;
+This command adds an attribute in the relation article with the name subject of string type.
+Data Manipulation Language
+SQL is equipped with data manipulation language (DML). DML modifies the database instance by inserting, updating and deleting its data. DML is responsible for all froms data modification in a database. SQL contains the following set of commands in its DML section -
+* SELECT/FROM/WHERE
+* INSERT INTO/VALUES
+* UPDATE/SET/WHERE
+* DELETE FROM/WHERE
+These basic constructs allow database programmers and users to enter data and information into the database and retrieve efficiently using a number of filter options.
+SELECT/FROM/WHERE
+* SELECT - This is one of the fundamental query command of SQL. It is similar to the projection operation of relational algebra. It selects the attributes based on the condition described by WHERE clause.
+* FROM - This clause takes a relation name as an argument from which attributes are to be selected/projected. In case more than one relation names are given, this clause corresponds to Cartesian product.
+* WHERE - This clause defines predicate or conditions, which must match in order to qualify the attributes to be projected.
+For example -
+Select author_name
+From book_author
+Where age > 50;
+This command will yield the names of authors from the relation book_author whose age is greater than 50.
+INSERT INTO/VALUES
+This command is used for inserting values into the rows of a table (relation).
+Syntax-
+INSERT INTO table (column1 [, column2, column3 ... ]) VALUES (value1 [, value2, value3 ... ])
+Or
+INSERT INTO table VALUES (value1, [value2, ... ])
+For example -
+INSERT INTO tutorialspoint (Author, Subject) VALUES ("anonymous", "computers");
+UPDATE/SET/WHERE
+This command is used for updating or modifying the values of columns in a table (relation).
+Syntax -
+UPDATE table_name SET column_name = value [, column_name = value ...] [WHERE condition]
+For example -
+UPDATE tutorialspoint SET Author="webmaster" WHERE Author="anonymous";
+DELETE/FROM/WHERE
+This command is used for removing one or more rows from a table (relation).
+Syntax -
+DELETE FROM table_name [WHERE condition];
+For example -
+DELETE FROM tutorialspoints
+WHERE Author="unknown";
+Query Processing + Optimization
+*Operator Evaluation Strategies
+??Selection
+??Join
+*Query Optimization
+*Query Tuning
+INTRODUCTION SQL QUERY PROCESSING
+SQL query processing requires that the DBMS identify and execute a strategy for retrieving the results of the query. The SQL query determines what data is to be found, but does not define the method by which the data manager searches the database. Hence, query optimization is necessary for high-level relational queries and provides an opportunity for the DBMS to systematically evaluate alternative query execution strategies and to choose an optimal strategy. In some cases the data manager cannot determine the optimal strategy. Assumptions are made which are predicated on the actual structure of the SQL query. These assumptions can significantly affect the query performance. This implies that certain queries can exhibit significantly different response times for relatively innocuous changes in query syntax and structure. For the purpose of this discussion an example medical database will be used. Figure 1 below illustrates our subject database schema for physicians, patients, and medical services. The Physician table contains one row for every physician in the system. Various attributes describe the physician name, address, provider number and specialty. The Patient table contains one row for every individual in the system. Patients have attributes listing their social security number, name, residence area, age, gender, and doctor. For simplicity, a physician can see many patients, but a patient has only one doctor. A Services table exists which lists all the valid medical procedures which can be performed. When a patient is ill and under the care of a physician, a row exists in the Treatment table describing the prescribed treatment. This table contains one attribute recording the cost of the individual service and a compound key that identifies the patient, physician, and the specific service received.
+Query Processing
+The steps necessary for processing an SQL query are shown in Figure 2. The SQL query statement is first parsed into its constituent parts. The basic SELECT statement is formed from the three clauses SELECT, FROM, and WHERE. These parts identify the various tables and columns that participate in the data selection process. The WHERE clause is used to determine the order and precedence of the various attribute comparisons through a conditional expression. An example query to determine the names and addresses of all patients of Doctor 1234 is shown as query Q1 below. The WHERE clause uses a conjunctive clause which combines two attribute comparisons. More complex conditions are possible.
+Q1:
+SELECT Name, Address, Dr_NameFROM Patient, PhysicianWHERE Patient.Doctor = Physician.Provider AND Physician.Provider = 1234
+The query optimizer has the task of determining the optimum query execution plan. The term "optimizer" is actually a misnomer, because in many cases the optimum strategy is not found. The goal is to find a reasonably efficient strategy for executing the query. Finding the perfect strategy is usually too time consuming and can require detailed information on both the data storage structure and the actual data content. Usually this information is simply not available.
+Once the execution plan is established the query code is generated. Various techniques such as memory management, disk caching and parallel query execution can be used to improve the query performance. However, if the plan is not correct, then the query performance cannot be optimum.
+Query Optimizing
+There are two main techniques for query optimization. The first approach is to use a rule based or heuristic method for ordering the operations in a query execution strategy. The rules usually state general characteristics for data access, such as it is more efficient to search a table using an index, if available, than a full table scan. The second approach systematically estimates the cost of different execution strategies and chooses the least cost solution. This approach uses simple statistics about the data structure size and organization as arguments to a cost estimating equation. In practice most commercial database systems use a combination of both techniques.
+Indexes
+Consider, for example, a rule-based technique for query optimization that states that indexed access to data is preferable to a full table scan. Whenever a single condition specifies the selection, it is a simple matter to check whether or not an indexed access path exists for the attribute involved in the condition. Queries Q2 and Q3 are two queries which, from a syntactic structure, are identical. However, query Q2 uses an index on the patient number, and query Q3 does not have an index on the patient name. Assuming a balanced tree based index, query Q2
+will at worst case access on the order of log2 (n) entries to locate the required row in the table. Conversely, query Q3 must search on average n/2 rows to find the entry during a full table scan, and n rows if the entry does not exist in the table. When n = 1,000,000 this is the difference between accessing 20 rows versus 500,000 rows for a successful search. Clearly, indexing can significantly improve query performance. However, it is not always practical to index every attribute in every table, thus certain types of user queries can respond quite differently from others.
+DBMS - Data Recovery
+Crash Recovery
+DBMS is a highly complex system with hundreds of transactions being executed every second. The durability and robustness of a DBMS depends on its complex architecture and its underlying hardware and system software. If it fails or crashes amid transactions, it is expected that the system would follow some sort of algorithm or techniques to recover lost data.
+Failure Classification
+To see where the problem has occurred, we generalize a failure into various categories, as follows -
+Transaction failure
+A transaction has to abort when it fails to execute or when it reaches a point from where it can't go any further. This is called transaction failure where only a few transactions or processes are hurt.
+Reasons for a transaction failure could be -
+* Logical errors - Where a transaction cannot complete because it has some code error or any internal error condition.
+* System errors - Where the database system itself terminates an active transaction because the DBMS is not able to execute it, or it has to stop because of some system condition. For example, in case of deadlock or resource unavailability, the system aborts an active transaction.
+System Crash
+There are problems - external to the system - that may cause the system to stop abruptly and cause the system to crash. For example, interruptions in power supply may cause the failure of underlying hardware or software failure.
+Examples may include operating system errors.
+Disk Failure
+In early days of technology evolution, it was a common problem where hard-disk drives or storage drives used to fail frequently.
+Disk failures include formation of bad sectors, unreachability to the disk, disk head crash or any other failure, which destroys all or a part of disk storage.
+Storage Structure
+We have already described the storage system. In brief, the storage structure can be divided into two categories -
+* Volatile storage - As the name suggests, a volatile storage cannot survive system crashes. Volatile storage devices are placed very close to the CPU; normally they are embedded onto the chipset itself. For example, main memory and cache memory are examples of volatile storage. They are fast but can store only a small amount of information.
+* Non-volatile storage - These memories are made to survive system crashes. They are huge in data storage capacity, but slower in accessibility. Examples may include hard-disks, magnetic tapes, flash memory, and non-volatile (battery backed up) RAM.
+Recovery and Atomicity
+When a system crashes, it may have several transactions being executed and various files opened for them to modify the data items. Transactions are made of various operations, which are atomic in nature. But according to ACID properties of DBMS, atomicity of transactions as a whole must be maintained, that is, either all the operations are executed or none.
+When a DBMS recovers from a crash, it should maintain the following -
+* It should check the states of all the transactions, which were being executed.
+* A transaction may be in the middle of some operation; the DBMS must ensure the atomicity of the transaction in this case.
+* It should check whether the transaction can be completed now or it needs to be rolled back.
+* No transactions would be allowed to leave the DBMS in an inconsistent state.
+There are two types of techniques, which can help a DBMS in recovering as well as maintaining the atomicity of a transaction -
+* Maintaining the logs of each transaction, and writing them onto some stable storage before actually modifying the database.
+* Maintaining shadow paging, where the changes are done on a volatile memory, and later, the actual database is updated.
+Log-based Recovery
+Log is a sequence of records, which maintains the records of actions performed by a transaction. It is important that the logs are written prior to the actual modification and stored on a stable storage media, which is failsafe.
+Log-based recovery works as follows -
+* The log file is kept on a stable storage media.
+* When a transaction enters the system and starts execution, it writes a log about it.
+<Tn, Start>
+* When the transaction modifies an item X, it write logs as follows -
+<Tn, X, V1, V2>
+It reads Tn has changed the value of X, from V1 to V2.
+* When the transaction finishes, it logs -
+<Tn, commit>
+The database can be modified using two approaches -
+* Deferred database modification - All logs are written on to the stable storage and the database is updated when a transaction commits.
+* Immediate database modification - Each log follows an actual database modification. That is, the database is modified immediately after every operation.
+Recovery with Concurrent Transactions
+When more than one transaction are being executed in parallel, the logs are interleaved. At the time of recovery, it would become hard for the recovery system to backtrack all logs, and then start recovering. To ease this situation, most modern DBMS use the concept of 'checkpoints'.
+Checkpoint
+Keeping and maintaining logs in real time and in real environment may fill out all the memory space available in the system. As time passes, the log file may grow too big to be handled at all. Checkpoint is a mechanism where all the previous logs are removed from the system and stored permanently in a storage disk. Checkpoint declares a point before which the DBMS was in consistent state, and all the transactions were committed.
+Recovery
+When a system with concurrent transactions crashes and recovers, it behaves in the following manner -
+* The recovery system reads the logs backwards from the end to the last checkpoint.
+* It maintains two lists, an undo-list and a redo-list.
+* If the recovery system sees a log with <Tn, Start> and <Tn, Commit> or just <Tn, Commit>, it puts the transaction in the redo-list.
+* If the recovery system sees a log with <Tn, Start> but no commit or abort log found, it puts the transaction in undo-list.
+All the transactions in the undo-list are then undone and their logs are removed. All the transactions in the redo-list and their previous logs are removed and then redone before saving their logs.
+DBMS - Concurrency Control
+In a multiprogramming environment where multiple transactions can be executed simultaneously, it is highly important to control the concurrency of transactions. We have concurrency control protocols to ensure atomicity, isolation, and serializability of concurrent transactions. Concurrency control protocols can be broadly divided into two categories -
+* Lock based protocols
+* Time stamp based protocols
+Lock-based Protocols
+Database systems equipped with lock-based protocols use a mechanism by which any transaction cannot read or write data until it acquires an appropriate lock on it. Locks are of two kinds -
+* Binary Locks - A lock on a data item can be in two states; it is either locked or unlocked.
+* Shared/exclusive - This type of locking mechanism differentiates the locks based on their uses. If a lock is acquired on a data item to perform a write operation, it is an exclusive lock. Allowing more than one transaction to write on the same data item would lead the database into an inconsistent state. Read locks are shared because no data value is being changed.
+There are four types of lock protocols available -
+Simplistic Lock Protocol
+Simplistic lock-based protocols allow transactions to obtain a lock on every object before a 'write' operation is performed. Transactions may unlock the data item after completing the write' operation.
+Pre-claiming Lock Protocol
+Pre-claiming protocols evaluate their operations and create a list of data items on which they need locks. Before initiating an execution, the transaction requests the system for all the locks it needs beforehand. If all the locks are granted, the transaction executes and releases all the locks when all its operations are over. If all the locks are not granted, the transaction rolls back and waits until all the locks are granted.
+Two-Phase Locking 2PL
+This locking protocol divides the execution phase of a transaction into three parts. In the first part, when the transaction starts executing, it seeks permission for the locks it requires. The second part is where the transaction acquires all the
+locks. As soon as the transaction releases its first lock, the third phase starts. In this phase, the transaction cannot demand any new locks; it only releases the acquired locks.
+Two-phase locking has two phases, one is growing, where all the locks are being acquired by the transaction; and the second phase is shrinking, where the locks held by the transaction are being released.
+To claim an exclusive (write) lock, a transaction must first acquire a shared (read) lock and then upgrade it to an exclusive lock.
+Strict Two-Phase Locking
+The first phase of Strict-2PL is same as 2PL. After acquiring all the locks in the first phase, the transaction continues to execute normally. But in contrast to 2PL, Strict-2PL does not release a lock after using it. Strict-2PL holds all the locks until the commit point and releases all the locks at a time.
+Strict-2PL does not have cascading abort as 2PL does.
+Timestamp-based Protocols
+The most commonly used concurrency protocol is the timestamp based protocol. This protocol uses either system time or logical counter as a timestamp.
+Lock-based protocols manage the order between the conflicting pairs among transactions at the time of execution, whereas timestamp-based protocols start working as soon as a transaction is created.
+Every transaction has a timestamp associated with it, and the ordering is determined by the age of the transaction. A transaction created at 0002 clock time would be older than all other transactions that come after it. For example, any transaction 'y' entering the system at 0004 is two seconds younger and the priority would be given to the older one.
+In addition, every data item is given the latest read and write-timestamp. This lets the system know when the last read and write' operation was performed on the data item.
+Timestamp Ordering Protocol
+The timestamp-ordering protocol ensures serializability among transactions in their conflicting read and write operations. This is the responsibility of the protocol system that the conflicting pair of tasks should be executed according to the timestamp values of the transactions.
+* The timestamp of transaction Ti is denoted as TS(Ti).
+* Read time-stamp of data-item X is denoted by R-timestamp(X).
+* Write time-stamp of data-item X is denoted by W-timestamp(X).
+Timestamp ordering protocol works as follows -
+* If a transaction Ti issues a read(X) operation -
+o If TS(Ti) < W-timestamp(X)
+? Operation rejected.
+o If TS(Ti) >= W-timestamp(X)
+? Operation executed.
+o All data-item timestamps updated.
+* If a transaction Ti issues a write(X) operation -
+o If TS(Ti) < R-timestamp(X)
+? Operation rejected.
+o If TS(Ti) < W-timestamp(X)
+? Operation rejected and Ti rolled back.
+o Otherwise, operation executed.
+Thomas' Write Rule
+This rule states if TS(Ti) < W-timestamp(X), then the operation is rejected and Ti is rolled back.
+Time-stamp ordering rules can be modified to make the schedule view serializable.
+Instead of making Ti rolled back, the 'write' operation itself is ignored.

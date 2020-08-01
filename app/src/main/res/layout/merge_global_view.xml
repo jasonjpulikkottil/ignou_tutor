@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/messageRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:layout_above="@+id/linearLayout"
+            />
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_msg_bar"
+            android:elevation="10dp"
+            android:id="@+id/linearLayout">
+
+            <ImageButton
+                android:id="@+id/emoticonButton"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_menu_emoticon"
+                android:background="@drawable/btn_white"
+                android:clickable="false"
+                />
+
+            <ImageButton
+                android:id="@+id/sendButton"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:paddingStart="5dp"
+                android:enabled="false"
+                android:src="@drawable/ic_menu_send"
+                android:background="@drawable/btn_selector"
+                android:clickable="false"
+                android:layout_alignParentEnd="true"
+                />
+
+            <github.ankushsachdeva.emojicon.EmojiconEditText
+                android:id="@+id/messageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:hint="@string/chat.hint.message"
+                android:inputType="textCapSentences"
+                android:background="@drawable/bg_msg_bar"
+                android:layout_toEndOf="@+id/emoticonButton"
+                android:layout_toStartOf="@id/sendButton"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</merge>

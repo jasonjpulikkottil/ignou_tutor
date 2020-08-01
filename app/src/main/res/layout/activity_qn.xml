@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".QnActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8">
+
+        <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+            android:id="@+id/imageViewZ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </ScrollView>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="0.25"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:srcCompat="@drawable/one" />
+
+        <ImageView
+            android:id="@+id/imv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:srcCompat="@drawable/two" />
+
+    </TableRow>
+    <LinearLayout
+        android:id="@+id/banner_container_qn"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+</LinearLayout>

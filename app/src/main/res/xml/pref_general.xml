@@ -1,0 +1,38 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <!--EditTextPreference
+        android:defaultValue="@string/pref_default_display_name"
+        android:inputType="textCapWords"
+        android:key="user_text"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="Input user name"
+        android:title="User name" -->
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <ListPreference
+        android:defaultValue="Pink-Blue"
+        android:entries="@array/theme_entries"
+        android:entryValues="@array/theme_entries"
+        android:key="list_preference_theme"
+        android:summary="Changed on next launch"
+        android:title="Theme" />
+    <SwitchPreference
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:defaultValue="true"
+        android:key="switch_sounds"
+        android:summary="Turn on application sounds"
+        android:title="Enable Sounds" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="switch_chlog"
+        android:summary="Show on next launch"
+        android:title="Show Welcome Tips" />
+
+</PreferenceScreen>

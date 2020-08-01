@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/fab_feedback"
+        android:icon="@drawable/feed"
+        android:title="Send Feedback" />
+    <item
+        android:id="@+id/fab_note"
+        android:icon="@drawable/note"
+        android:title="Add Note"/>
+    <item
+        android:id="@+id/fab_share"
+        android:icon="@drawable/share"
+        android:title="Share App" />
+</menu>

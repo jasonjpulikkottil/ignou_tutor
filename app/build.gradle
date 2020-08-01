@@ -1,0 +1,89 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.jdots.ignou"
+        minSdkVersion 17
+        targetSdkVersion 29
+        versionCode 19
+        versionName "2.8"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    implementation 'com.google.firebase:firebase-auth:19.2.0'
+    implementation 'com.google.firebase:firebase-config:19.1.0'
+    implementation 'com.google.firebase:firebase-database:19.2.0'
+    implementation 'com.google.firebase:firebase-messaging:20.1.0'
+    implementation 'com.google.firebase:firebase-analytics:17.2.2'
+    implementation 'com.google.firebase:firebase-storage:19.1.0'
+    implementation 'com.google.firebase:firebase-invites:17.0.0'
+    implementation 'com.google.firebase:firebase-crash:16.2.1'
+    implementation 'com.afollestad.material-dialogs:core:0.9.1.0'
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    implementation 'com.miguelcatalan:materialsearchview:1.4.0'
+    implementation 'com.jakewharton.rxrelay:rxrelay:1.2.0'
+
+    implementation 'androidx.browser:browser:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'androidx.preference:preference:1.1.0'
+    implementation 'androidx.mediarouter:mediarouter:1.1.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.github.khirr:Android-Privacy-Policy:1.0.1'
+    implementation 'com.github.GrenderG:Toasty:1.4.2'
+    implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.10.0'
+    implementation 'com.nabinbhandari.android:permissions:3.8'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.github.javiersantos:AppUpdater:2.7'
+    implementation 'com.github.Angtrim:Android-Five-Stars-Library:v3.1'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.android.gms:play-services-ads:18.3.0'
+    
+	implementation 'com.facebook.android:audience-network-sdk:5.6.0'
+	implementation 'com.facebook.android:facebook-android-sdk:5.13.0'
+
+    implementation 'am.appwise.components:NoInternetDialog:1.1.3'
+    implementation 'io.github.yavski:fab-speed-dial:1.0.6'
+    implementation 'com.github.florent37:expansionpanel:1.2.2'
+    implementation 'com.github.sd6352051:NiftyDialogEffects:v1.0.3'
+    implementation 'com.specyci:residemenu:1.6'
+    implementation 'com.getkeepsafe.taptargetview:taptargetview:1.13.0'
+    implementation 'com.victor:lib:1.0.4'
+
+    implementation 'com.anjlab.android.iab.v3:library:1.0.44'
+	implementation 'com.github.myinnos:AppIconNameChanger:1.0.7'
+
+    implementation 'com.github.delight-im:Android-AdvancedWebView:v3.0.0'
+
+    testImplementation 'junit:junit:4.12'
+    implementation project(':emoticon')
+}
+
+apply plugin: 'com.google.gms.google-services'

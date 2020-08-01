@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical|horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_5"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/course_ba"
+                android:textColor="@color/colorPrimary" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_content" />
+
+            <Spinner
+                android:id="@+id/spin3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/Spin_entries"
+                android:foreground="@drawable/roundshape2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/T1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/year1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/T2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/year2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/T3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/year3"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/T7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/BA11"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_1_8"
+                android:drawingCacheQuality="high"
+                android:onClick="BAClick11"
+                android:text="@string/FEG_01"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/BA21"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_2_8"
+                android:onClick="BAClick21"
+                android:text="@string/BEGE_101"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/BA31"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_3_8"
+                android:onClick="BAClick31"
+                android:text="@string/EEG_07"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/BA12"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_1_7"
+                android:onClick="BAClick12"
+                android:text="@string/FST_01"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/BA22"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_2_7"
+                android:onClick="BAClick22"
+                android:text="@string/EEG_02"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/BA32"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_3_7"
+                android:onClick="BAClick32"
+                android:text="@string/EEG_08"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/BA13"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_1_6"
+                android:onClick="BAClick13"
+                android:text="@string/BHDF_01"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/BA23"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_2_6"
+                android:onClick="BAClick23"
+                android:text="@string/EEG_03"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/BA33"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_3_6"
+                android:onClick="BAClick33"
+                android:text="@string/AFW_E"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/BA14"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_1_5"
+                android:onClick="BAClick14"
+                android:text="@string/FHS_01"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/BA24"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_2_5"
+                android:onClick="BAClick24"
+                android:text="@string/EEG_04"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/BA34"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_3_5"
+                android:onClick="BAClick34"
+                android:text="@string/AWR_E"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/BA15"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_1_4"
+                android:onClick="BAClick15"
+                android:text="@string/FEG_02"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/BA25"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_2_4"
+                android:onClick="BAClick25"
+                android:text="@string/EEG_05"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/BA35"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_3_4"
+                android:onClick="BAClick35"
+                android:text="@string/AWR_H"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/BA16"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_1_3"
+                android:onClick="BAClick16"
+                android:text="@string/FML_01"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@android:color/black"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/BA26"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_2_3"
+                android:onClick="BAClick26"
+                android:text="@string/EEG_06"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/B36"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#81ff7b"
+                android:onClick="BClick36"
+                android:text="@string/BCSL_033"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000"
+                android:visibility="invisible" />
+
+        </TableRow>
+
+    </LinearLayout>
+</ScrollView>
+
+

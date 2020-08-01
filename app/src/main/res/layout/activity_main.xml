@@ -1,0 +1,994 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/tools"
+    android:background="@drawable/background_3"
+    android:orientation="vertical">
+
+
+
+    <ScrollView
+        android:id="@+id/MainScroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/optButtonUp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/shape_3_7"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/opt_upgrade" />
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:id="@+id/exHeader_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                app:expansion_headerIndicator="@id/headerIndicator1"
+                app:expansion_layout="@id/expansion_1"
+                app:expansion_toggleOnClick="true">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/roundshape2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="9"
+                        android:gravity="center|start"
+                        android:text="@string/ex_header_1"
+                        android:textColor="@color/Blue"
+                        android:textColorLink="#404040"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/headerIndicator1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="Expand"
+                        app:srcCompat="@drawable/expand" />
+
+                </LinearLayout>
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansion_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundshape"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/optButton_1_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_1_1" />
+
+                    <Button
+                        android:id="@+id/optButton_1_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_1_2" />
+
+                    <Button
+                        android:id="@+id/optButton_1_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_1_3" />
+
+                    <Button
+                        android:id="@+id/optButton_1_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_1_4" />
+
+                    <Button
+                        android:id="@+id/optButton_1_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_1_5" />
+
+                    <Button
+                        android:id="@+id/optButton_1_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_1_6" />
+
+                </LinearLayout>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:id="@+id/exHeader_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                app:expansion_headerIndicator="@id/headerIndicator2"
+                app:expansion_layout="@id/expansion_2"
+                app:expansion_toggleOnClick="true">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/roundshape2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="9"
+                        android:gravity="center|start"
+                        android:text="@string/ex_header_2"
+                        android:textColor="@color/Blue"
+                        android:textColorLink="#404040"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/headerIndicator2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="Expand"
+                        app:srcCompat="@drawable/expand" />
+
+                </LinearLayout>
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansion_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundshape"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/optButton_2_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_2_1" />
+
+                    <Button
+                        android:id="@+id/optButton_2_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_2_2" />
+
+                    <Button
+                        android:id="@+id/optButton_2_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_2_3" />
+
+                    <Button
+                        android:id="@+id/optButton_2_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_2_4" />
+
+
+                </LinearLayout>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:id="@+id/exHeader_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                app:expansion_headerIndicator="@id/headerIndicator3"
+                app:expansion_layout="@id/expansion_3"
+                app:expansion_toggleOnClick="true">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/roundshape2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="9"
+                        android:gravity="center|start"
+                        android:text="@string/ex_header_3"
+                        android:textColor="@color/Blue"
+                        android:textColorLink="#404040"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/headerIndicator3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="Expand"
+                        app:srcCompat="@drawable/expand" />
+
+                </LinearLayout>
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansion_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundshape"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/optButton_3_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_3_1" />
+
+                    <Button
+                        android:id="@+id/optButton_3_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_3_2" />
+
+                    <Button
+                        android:id="@+id/optButton_3_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_3_3" />
+
+                    <Button
+                        android:id="@+id/optButton_3_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_3_4" />
+
+                    <Button
+                        android:id="@+id/optButton_3_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_3_5" />
+
+                    <Button
+                        android:id="@+id/optButton_3_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_3_6" />
+
+                    <Button
+                        android:id="@+id/optButton_3_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_3_7" />
+
+                    <Button
+                        android:id="@+id/optButton_3_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_3_8" />
+
+                    <Button
+                        android:id="@+id/optButton_3_9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_3_9" />
+
+                    <Button
+                        android:id="@+id/optButton_3_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_3_10" />
+
+                    <Button
+                        android:id="@+id/optButton_3_11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_3_11" />
+
+                    <Button
+                        android:id="@+id/optButton_3_12"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_3_12" />
+
+                    <Button
+                        android:id="@+id/optButton_3_13"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_3_13" />
+
+                    <Button
+                        android:id="@+id/optButton_3_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_3_14" />
+
+                    <Button
+                        android:id="@+id/optButton_6_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_6_7" />
+
+
+                </LinearLayout>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:id="@+id/exHeader_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                app:expansion_headerIndicator="@id/headerIndicator4"
+                app:expansion_layout="@id/expansion_4"
+                app:expansion_toggleOnClick="true">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/roundshape2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="9"
+                        android:gravity="center|start"
+                        android:text="@string/ex_header_4"
+                        android:textColor="@color/Blue"
+                        android:textColorLink="#404040"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/headerIndicator4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="Expand"
+                        app:srcCompat="@drawable/expand" />
+
+                </LinearLayout>
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansion_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundshape"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/optButton_4_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_4_1" />
+
+                    <Button
+                        android:id="@+id/optButton_4_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_4_2" />
+
+                    <Button
+                        android:id="@+id/optButton_4_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_4_3" />
+
+                    <Button
+                        android:id="@+id/optButton_4_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_4_4" />
+
+                    <Button
+                        android:id="@+id/optButton_4_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_4_5" />
+
+                    <Button
+                        android:id="@+id/optButton_4_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_4_6" />
+
+                    <Button
+                        android:id="@+id/optButton_4_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_4_7" />
+
+                    <Button
+                        android:id="@+id/optButton_4_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_4_8" />
+
+                    <Button
+                        android:id="@+id/optButton_4_9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_4_9" />
+
+                    <Button
+                        android:id="@+id/optButton_4_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_4_10" />
+
+                    <Button
+                        android:id="@+id/optButton_4_11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_4_11" />
+
+                    <Button
+                        android:id="@+id/optButton_4_12"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_4_12" />
+
+
+                </LinearLayout>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:id="@+id/exHeader_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                app:expansion_headerIndicator="@id/headerIndicator5"
+                app:expansion_layout="@id/expansion_5"
+                app:expansion_toggleOnClick="true">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/roundshape2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="9"
+                        android:gravity="center|start"
+                        android:text="@string/ex_header_5"
+                        android:textColor="@color/Blue"
+                        android:textColorLink="#404040"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/headerIndicator5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="Expand"
+                        app:srcCompat="@drawable/expand" />
+
+                </LinearLayout>
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansion_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundshape"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/optButton_5_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_5_1" />
+
+                    <Button
+                        android:id="@+id/optButton_5_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_5_2" />
+
+
+                </LinearLayout>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:id="@+id/exHeader_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                app:expansion_headerIndicator="@id/headerIndicator6"
+                app:expansion_layout="@id/expansion_6"
+                app:expansion_toggleOnClick="true">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/roundshape2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="9"
+                        android:gravity="center|start"
+                        android:text="@string/ex_header_6"
+                        android:textColor="@color/Blue"
+                        android:textColorLink="#404040"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/headerIndicator6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="Expand"
+                        app:srcCompat="@drawable/expand" />
+
+                </LinearLayout>
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansion_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundshape"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/optButton_6_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_6_1" />
+
+                    <Button
+                        android:id="@+id/optButton_6_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_6_2" />
+
+                    <Button
+                        android:id="@+id/optButton_6_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_6_3" />
+
+                    <Button
+                        android:id="@+id/optButton_6_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_6_4" />
+
+                    <Button
+                        android:id="@+id/optButton_6_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_6_5" />
+
+                    <Button
+                        android:id="@+id/optButton_6_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_6_6" />
+
+                    <Button
+                        android:id="@+id/optButton_6_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_6_8" />
+
+                    <Button
+                        android:id="@+id/optButton_6_9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_6_9" />
+
+                    <Button
+                        android:id="@+id/optButton_6_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_6_10" />
+
+                    <Button
+                        android:id="@+id/optButton_6_11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_6_11" />
+
+
+                </LinearLayout>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:id="@+id/exHeader_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                app:expansion_headerIndicator="@id/headerIndicator7"
+                app:expansion_layout="@id/expansion_7"
+                app:expansion_toggleOnClick="true">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/roundshape2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="9"
+                        android:gravity="center|start"
+                        android:text="@string/ex_header_7"
+                        android:textColor="@color/Blue"
+                        android:textColorLink="#404040"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/headerIndicator7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="Expand"
+                        app:srcCompat="@drawable/expand" />
+
+                </LinearLayout>
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansion_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundshape"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/optButton_7_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_7_1" />
+
+                    <Button
+                        android:id="@+id/optButton_7_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_7_2" />
+
+                    <Button
+                        android:id="@+id/optButton_7_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_7_3" />
+
+
+                </LinearLayout>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:id="@+id/exHeader_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                app:expansion_headerIndicator="@id/headerIndicator8"
+                app:expansion_layout="@id/expansion_8"
+                app:expansion_toggleOnClick="true">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/roundshape2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="9"
+                        android:gravity="center|start"
+                        android:text="@string/ex_header_8"
+                        android:textColor="@color/Blue"
+                        android:textColorLink="#404040"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/headerIndicator8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="Expand"
+                        app:srcCompat="@drawable/expand" />
+
+                </LinearLayout>
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansion_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundshape"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/optButton_8_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_8_1"
+                        android:textColorLink="#0000FF" />
+
+                    <Button
+                        android:id="@+id/optButton_8_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundshape"
+                        android:text="@string/opt_8_2" />
+
+
+                </LinearLayout>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+
+
+            <Button
+                android:id="@+id/optButtonChat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/shape_3_7"
+                android:text="@string/opt_chat" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+        <io.github.yavski.fabspeeddial.FabSpeedDial
+            android:id="@+id/FABspeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:foregroundGravity="right"
+            android:gravity="end"
+            app:fabGravity="bottom_end"
+            app:fabMenu="@menu/menu_fab"
+            app:miniFabBackgroundTint="@android:color/white"
+            app:miniFabDrawableTint="?attr/colorPrimaryDark"
+            app:miniFabTitleTextColor="?attr/colorPrimaryDark">
+
+
+        </io.github.yavski.fabspeeddial.FabSpeedDial>
+
+
+</LinearLayout>

@@ -1,0 +1,4157 @@
+<resources>
+    <string name="app_name">IGNOU Tutor</string>
+	<string name="app_name_pro">IGNOU Tutor Pro</string>
+	<string name="app_name_adfree">IGNOU Tutor Adfree</string>
+
+    <!-- activity_login -->
+    <string name="login.title">IGNOU Tutor Login</string>
+    <string name="login.hint.email">Email</string>
+    <string name="login.hint.password">Password</string>
+    <string name="login.button.login">Login</string>
+    <string name="login.button.forgot">Forgot your password ?</string>
+    <string name="login.text.register">Not a user yet?</string>
+    <string name="login.button.register">Register now</string>
+    <string name="login.dialog.progress">Please wait</string>
+    <string name="login.dialog.registration.title">Create a new account</string>
+    <string name="login.dialog.forgot.title">Type your email address</string>
+    <string name="login.dialog.forgot.text">Check your inbox and follow the instructions to reset your password</string>
+    <string name="login.dialog.forgot.ok">Ok</string>
+    <string name="login.dialog.forgot.close">Close</string>
+    <string name="login.snackbar.password.short">Password cannot be empty</string>
+    <string name="login.snackbar.email.error">Email is not valid</string>
+    <string name="login.snackbar.email.short">Email cannot be empty</string>
+    <string name="login.toast.googleauth.error">Authentication failed.</string>
+    <string name="login.toast.googleservices.error">Google Play Services error.</string>
+
+    <!-- activity registration -->
+    <string name="registration.title">Registration</string>
+    <string name="registration.hint.email">Email</string>
+    <string name="registration.hint.password">Password</string>
+    <string name="registration.hint.confirm">Confirm Password</string>
+    <string name="registration.button.register">Register</string>
+    <string name="registration.text.login">Already have an account ?</string>
+    <string name="registration.button.login">Login</string>
+    <string name="registration.dialog.title">Welcome</string>
+    <string name="registration.dialog.text">Verify your email by clicking the link we sent you to your inbox</string>
+    <string name="registration.dialog.positive">Close</string>
+    <string name="registration.snackbar.password.short">Password must be longer than 8 character</string>
+    <string name="registration.snackbar.password.error">Passwords doesn\'t match</string>
+    <string name="registration.snackbar.email.short">Email cannot be empty</string>
+    <string name="registration.snackbar.email.error">Email is not valid</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- activity main -->
+    <string name="title_activity_main">Main Activity</string>
+    <string name="main.invite.title">Invite</string>
+    <string name="main.invite.message">Join me to IGNOU chat</string>
+    <string name="main.invite.cta">Call to Action</string>
+    <string name="main.toast.logout.message">Logged out</string>
+    <string name="main.toast.exit.message">Please click BACK again to exit</string>
+    <string name="main.dialog.text.wait">Please wait upgrading the database for the first launch</string>
+
+    <string name="main.toolbar.menu.search">Search</string>
+
+    <!-- activity firstlogin -->
+    <string name="firstlogin.title">Profile</string>
+    <string name="firstLogin.button.next">Start</string>
+
+    <!-- Navigation Drawer -->
+    <string name="drawer.logout">Logout</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- activity chat -->
+    <string name="chat.hint.message">Message</string>
+    <string name="chat.textview.typing"> is typing…</string>
+    <string name="chat.toolbar.lastseen.online">Online</string>
+    <string name="chat.toolbar.lastseen.offline.today">Last seen today at time</string>
+    <string name="chat.toolbar.lastseen.offline">Last seen on date at time</string>
+
+    <!-- activity profile -->
+    <string name="profile.toolbar.title">Profile</string>
+    <string name="profile.button.delete">Delete Account</string>
+    <string name="profile.hint.name">Full Name</string>
+    <string name="profile.hint.password">Change Password</string>
+    <string name="profile.dialog.name.title">Type your name</string>
+    <string name="profile.dialog.password.title">Type your new password</string>
+    <string name="profile.toast.password.negative">An error occured while changing the password</string>
+    <string name="profile.toast.password.positive">Password has been changed successfully</string>
+    <string name="profile.dialog.remove.content">Are you sure you want to delete this account permanently?</string>
+    <string name="profile.dialog.remove.positive">Confirm</string>
+    <string name="profile.dialog.remove.negative">Cancel</string>
+    <string name="profile.dialog.input.close">Close</string>
+    <string name="profile.dialog.upload.title">Uploading Image</string>
+    <string name="profile.dialog.upload.message">Please Wait...</string>
+
+    <!-- fragment users -->
+    <string name="users.toolbar.title">"Users List"</string>
+    <string name="users.toolbar.search.hint">Search...</string>
+
+    <!-- fragment conversations -->
+    <string name="conversations.toolbar.title">Conversations</string>
+    <string name="conversations.conversation.item.today">Today</string>
+    <string name="conversations.conversation.item.yesterday">Yesterday</string>
+
+    <!-- fragment global messages -->
+    <string name="global.toolbar.title">IGNOU Room</string>
+
+
+    <string name="ex_header_1">Courses</string>
+    <string name="ex_header_2">Study materials</string>
+    <string name="ex_header_3">Notes</string>
+    <string name="ex_header_4">IGNOU links</string>
+    <string name="ex_header_5">Solved assignments</string>
+    <string name="ex_header_6">Forms</string>
+    <string name="ex_header_7">Prospectus</string>
+    <string name="ex_header_8">More</string>
+
+    <string name="opt_1_1">BCA</string>
+    <string name="opt_1_2">MCA</string>
+    <string name="opt_1_3">BA</string>
+    <string name="opt_1_4">BCA question papers</string>
+    <string name="opt_1_5">MCA question papers</string>
+    <string name="opt_1_6">Other question papers</string>
+
+    <string name="opt_2_1">BCA materials</string>
+    <string name="opt_2_2">MCA materials</string>
+    <string name="opt_2_3">CIT materials</string>
+    <string name="opt_2_4">Other materials</string>
+
+    <string name="opt_3_1">Business organization</string>
+    <string name="opt_3_2">C language</string>
+    <string name="opt_3_3">C++ language</string>
+    <string name="opt_3_4">English grammar</string>
+    <string name="opt_3_5">Java language</string>
+    <string name="opt_3_6">Assembly programming and microprocessor</string>
+    <string name="opt_3_7">Data communications and networks</string>
+    <string name="opt_3_8">Data structures</string>
+    <string name="opt_3_9">Database management system</string>
+    <string name="opt_3_10">Internet technology</string>
+    <string name="opt_3_11">Operating system</string>
+    <string name="opt_3_12">Relational database management system</string>
+    <string name="opt_3_13">Software engineering</string>
+    <string name="opt_3_14">Software engineering ii</string>
+
+    <string name="opt_4_1">IGNOU home</string>
+    <string name="opt_4_2">Login</string>
+    <string name="opt_4_3">Grade card</string>
+    <string name="opt_4_4">Assignments</string>
+    <string name="opt_4_5">Downloads</string>
+    <string name="opt_4_6">Student zone</string>
+    <string name="opt_4_7">Egyankosh</string>
+    <string name="opt_4_8">Bulletin board</string>
+    <string name="opt_4_9">Exam status</string>
+    <string name="opt_4_10">Assignment status</string>
+    <string name="opt_4_11">Study material download</string>
+    <string name="opt_4_12">Exam results</string>
+
+    <string name="opt_5_1">BCA assignments solutions</string>
+    <string name="opt_5_2">MCA assignments solutions</string>
+
+    <string name="opt_6_1">Term end examination form</string>
+    <string name="opt_6_2">Reevaluation of answer scripts</string>
+    <string name="opt_6_3">Application form for reimbursement of fee</string>
+    <string name="opt_6_4">Duplicate degree,diploma and certificate</string>
+    <string name="opt_6_5">Duplicate mark sheet form</string>
+    <string name="opt_6_6">Official transcript form</string>
+    <string name="opt_6_7">Application for early declaration of result</string>
+    <string name="opt_6_8">Improvement form</string>
+    <string name="opt_6_9">Form for obtaining photocopy of the answer script</string>
+    <string name="opt_6_10">Form for change of medium, course of study</string>
+    <string name="opt_6_11">Application for migration certificate</string>
+
+    <string name="opt_7_1">Common prospectus english</string>
+    <string name="opt_7_2">Common prospectus hindi</string>
+    <string name="opt_7_3">MBA prospectus</string>
+
+    <string name="opt_8_1">Maths puzzle</string>
+    <string name="opt_8_2">Youtube classes</string>
+    <string name="title_activity_note">NoteActivity</string>
+
+    <string name="mopub_banner_id" translatable="false">f4b6b609b5ee4543aec97c8ccf4fd546</string>
+    <string name="mopub_interstitial_id" translatable="false">1214869a62cf426e847689399b2a337d</string>
+    <string name="mopub_video_id" translatable="false">b6b900a9fcea4cafab72cbf351efc99f</string>
+
+    <string name="mopub_banner_test" translatable="false">b195f8dd8ded45fe847ad89ed1d016da</string>
+    <string name="mopub_interstitial_test" translatable="false">24534e1901884e398f1253216226017e</string>
+    <string name="mopub_video_test" translatable="false">920b6145fb1546cf8b5cf2ac34638bb7</string>
+
+
+    <string name="fan_banner_id" translatable="false">188306292320931_188317988986428</string>
+    <string name="fan_interstitial_id" translatable="false">188306292320931_188318735653020</string>
+   
+
+<string name="facebook_app_id">188306292320931</string>
+<string name="fb_login_protocol_scheme">fb188306292320931</string>
+
+
+    <string name="syllabus" translatable="false">SYLLABUS</string>
+   
+    <string name="syllabus_2">   SYLLABUS   </string>
+    <string name="summary_2">   SUMMARY   </string>
+
+
+    <string name="enter_name">Country Name</string>
+    <string name="add_record">Add Note</string>
+    <string name="btn_update">Save</string>
+    <string name="btn_delete">Delete</string>
+    <string name="empty_list_text">No notes found.\n Press \u2295 to add. </string>
+    <string name="enter_desc">Text</string>
+    <string name="enter_title">Title</string>
+
+    <string name="study_Material">STUDY MATERIAL</string>
+    <string name="login">LOGIN</string>
+    <string name="question_papers">QUESTION PAPERS</string>
+    <string name="course">COURSE</string>
+    <string name="course_bca">COURSE:BCA</string>
+    <string name="course_mca">COURSE:MCA</string>
+    <string name="course_ba">COURSE:BA</string>
+    <string name="course_bcom">COURSE:B.COM</string>
+
+    <string name="syl_2016_2017">2016–2017</string>
+    <string name="syl_2017_2018">2017–2018</string>
+    <string name="syl_2018_2019">2018–2019</string>
+
+    <string name="semester1">SEMESTER 1</string>
+    <string name="semester2">SEMESTER 2</string>
+    <string name="semester3">SEMESTER 3</string>
+    <string name="semester4">SEMESTER 4</string>
+    <string name="semester5">SEMESTER 5</string>
+    <string name="semester6">SEMESTER 6</string>
+
+
+    <string name="FEG_02">FEG-02</string>
+    <string name="ECO_01">ECO-01</string>
+    <string name="BCS_011">BCS-011</string>
+    <string name="BCS_012">BCS-012</string>
+    <string name="BCSL_013">BCSL-013</string>
+    <string name="ECO_02">ECO-02</string>
+    <string name="MCS_011">MCS-011</string>
+    <string name="MCS_012">MCS-012</string>
+    <string name="MCS_015">MCS-015</string>
+    <string name="MCS_013">MCS-013</string>
+    <string name="BCSL_021">BCSL-021</string>
+    <string name="BCSL_022">BCSL-022</string>
+    <string name="MCS_021">MCS-021</string>
+    <string name="MCS_023">MCS-023</string>
+    <string name="MCS_014">MCS-014</string>
+    <string name="BCS_031">BCS-031</string>
+    <string name="BCSL_032">BCSL-032</string>
+    <string name="BCSL_033">BCSL-033</string>
+    <string name="BCSL_034">BCSL-034</string>
+    <string name="BCS_040">BCS-040</string>
+    <string name="MCS_024">MCS-024</string>
+    <string name="BCS_041">BCS-041</string>
+    <string name="BCS_042">BCS-042</string>
+    <string name="MCSL_016">MCSL-016</string>
+    <string name="BCSL_043">BCSL-043</string>
+    <string name="BCSL_044">BCSL-044</string>
+    <string name="BCSL_045">BCSL-045</string>
+    <string name="BCS_051">BCS-051</string>
+    <string name="BCS_052">BCS-052</string>
+    <string name="BCS_053">BCS-053</string>
+    <string name="BCS_054">BCS-054</string>
+    <string name="BCS_055">BCS-055</string>
+    <string name="BCSL_056">BCSL-056</string>
+    <string name="BCSL_057">BCSL-057</string>
+    <string name="BCSL_058">BCSL-058</string>
+    <string name="BCS_062">BCS-062</string>
+    <string name="MCS_022">MCS-022</string>
+    <string name="BCSL_063">BCSL-063</string>
+    <string name="BCSP_064">BCSP-064</string>
+
+    <string name="FEG_01">FEG-01</string>
+    <string name="FST_01">FST-01</string>
+    <string name="BHDF_01">BHDF-01</string>
+    <string name="FHS_01">FHS-01</string>
+    <string name="FML_01">FML-01</string>
+    <string name="BEGE_101">BEGE-101</string>
+    <string name="EEG_02">EEG-02</string>
+    <string name="EEG_03">EEG-03</string>
+    <string name="EEG_04">EEG-04</string>
+    <string name="EEG_05">EEG-05</string>
+    <string name="EEG_06">EEG-06</string>
+    <string name="EEG_07">EEG-07</string>
+    <string name="EEG_08">EEG-08</string>
+    <string name="AFW_E">AFW-(E)</string>
+    <string name="AWR_E">AWR-(E)</string>
+    <string name="AWR_H">AWR-(H)</string>
+
+
+    <string name="FEG_01_title">Foundation Course in English-1</string>
+    <string name="FST_01_title">Foundation Course in Science and Technology</string>
+    <string name="BHDF_01_title">Foundation Course in Hindi</string>
+    <string name="FHS_01_title">Foundation Course in Humanities and Social Sciences</string>
+    <string name="FML_01_title">Foundation Course in Malayalam</string>
+
+    <string name="BEGE_101_title">From Language to Literature</string>
+    <string name="EEG_02_title">The Structure of Modern English</string>
+    <string name="EEG_03_title">Communication Skills in English</string>
+    <string name="EEG_04_title">English for Practical Purposes</string>
+    <string name="EEG_05_title">Understanding Prose</string>
+    <string name="EEG_06_title">Understanding Poetry</string>
+    <string name="EEG_07_title">Understanding Drama</string>
+    <string name="EEG_08_title">Reading the Novel</string>
+    <string name="AFW_E_title">Feature Writing</string>
+    <string name="AWR_E_title">Writing for Radio</string>
+    <string name="AWR_H_title">Radio Lekhan (Hindi)</string>
+
+
+    <string name="FEG_01_syllabus">\nSyllabus is under revision process\n</string>
+    <string name="FST_01_syllabus">\nSyllabus is under revision process\n</string>
+    <string name="BHDF_01_syllabus">\nSyllabus is under revision process\n</string>
+    <string name="FHS_01_syllabus">\nSyllabus is under revision process\n</string>
+    <string name="BEGE_101_syllabus">\nSyllabus is under revision process\n</string>
+    <string name="EEG_02_syllabus">\nSyllabus is under revision process\n</string>
+    <string name="EEG_03_syllabus">\nSyllabus is under revision process\n</string>
+    <string name="EEG_04_syllabus">\nSyllabus is under revision process\n</string>
+    <string name="EEG_05_syllabus">\nSyllabus is under revision process\n</string>
+    <string name="EEG_06_syllabus">\nSyllabus is under revision process\n</string>
+    <string name="EEG_07_syllabus">\nSyllabus is under revision process\n</string>
+    <string name="EEG_08_syllabus">\nSyllabus is under revision process\n</string>
+    <string name="AFW_E_syllabus">\nSyllabus is under revision process\n</string>
+    <string name="AWR_E_syllabus">\nSyllabus is under revision process\n</string>
+    <string name="AWR_H_syllabus">\nSyllabus is under revision process\n</string>
+
+
+    <string name="FML_01_syllabus">
+
+    Foundation Course in Malayalam \n
+    Foundation Courses in the following Modern Indian Languages have been prepared by Indira Gandhi
+    National Open University for the convenience of students who may find it difficult to do the Foundation
+    Course in Hindi. \n
+    Foundation Course in Malayalam(FML-1) \n
+    4 credits \n  \n
+    The objectives of the Foundation Course in these Modern Indian Languages is to help you improve your proficiency in the languages you opt by developing your skills in reading,
+    comprehension and writing.
+    The general approach followed in these courses is to teach you language through different kinds of textual materials taken from a number of disciplines pertaining to Humanities,
+    Social Sciences and different forms of Literature. Due importance has been given to the use of language of administrative purposes as well.
+     \n  \n SYLLABUS \n
+    \n  The broad outline of the syllabus of our Foundation Courses in Modern Indian Languages is as under:
+     \n 1. Essentials of the language
+     \n Scripts, vocabulary, word formation, sentence structure, idioms, proverbs, etc.
+     \n a) Humanities Ethics, Philosophy, Religion, Fine Arts, Culture, Folk Lore, etc.
+    \n  b) Social Sciences History, Political Science, Sociology, Economics, Law etc.
+     \n c) Sciences Space Biology Ecology, Environment, Geography, Geology, Physics,
+    \n  Astronomy, Science Computer Science, Energy etc.
+    \n  2. Learning Language through Literary texts
+    \n  a) Poems-Old and Modern Poetry
+     \n b) Short-story
+    \n  c) Essay
+     \n d) Biography
+    \n  3. Language for Administrative Purposes
+     \n Precis Writing
+     \n Noting and Drafting
+     \n Reporting
+
+    </string>
+
+
+    <string name="FEG_02_title">English-2</string>
+    <string name="ECO_01_title">Business Organization</string>
+    <string name="BCS_011_title">Computer Basics and PC Software</string>
+    <string name="BCS_012_title">Basic Mathematics</string>
+    <string name="BCSL_013_title">Computer Basics and PC Software Lab</string>
+    <string name="ECO_02_title">Accountancy-1</string>
+    <string name="MCS_011_title">Problem Solving and Programming</string>
+    <string name="MCS_012_title">Computer Organization and Assembly Language Programming</string>
+    <string name="MCS_015_title">Communication Skills</string>
+    <string name="MCS_013_title">Discrete Mathematics</string>
+    <string name="BCSL_021_title">C Language Programming Lab</string>
+    <string name="BCSL_022_title">Assembly Language Programming Lab</string>
+
+    <string name="MCS_021_title">Data and File Structures</string>
+    <string name="MCS_023_title">Introduction to Database Management Systems</string>
+    <string name="MCS_014_title">Systems Analysis and Design</string>
+    <string name="BCS_031_title">Programming in C++</string>
+    <string name="BCSL_032_title">C++ Programming Lab</string>
+    <string name="BCSL_033_title">Data and File Structures Lab</string>
+    <string name="BCSL_034_title">DBMS Lab</string>
+    <string name="BCS_040_title">Statistical Techniques</string>
+
+    <string name="MCS_024_title">Object Oriented Technologies and Java Programming</string>
+    <string name="BCS_041_title">Fundamentals of Computer Networks</string>
+    <string name="BCS_042_title">Introduction to Algorithm Design</string>
+    <string name="MCSL_016_title">Internet Concepts and Web Design</string>
+    <string name="BCSL_043_title">Java Programming Lab</string>
+    <string name="BCSL_044_title">Statistical Techniques Lab</string>
+    <string name="BCSL_045_title">Algorithm Design Lab</string>
+
+    <string name="BCS_051_title">Introduction to Software Engineering</string>
+    <string name="BCS_052_title">Network Programming and Administration</string>
+    <string name="BCS_053_title">Web Programming</string>
+    <string name="BCS_054_title">Computer Oriented Numerical Techniques</string>
+    <string name="BCS_055_title">Business Communication</string>
+    <string name="BCSL_056_title">Network Programming and Administration Lab</string>
+    <string name="BCSL_057_title">Web Programming Lab</string>
+    <string name="BCSL_058_title">Computer Oriented Numerical Techniques Lab</string>
+
+    <string name="BCS_062_title">E-Commerce</string>
+    <string name="MCS_022_title">Operating System Concepts and Networking Management</string>
+    <string name="BCSL_063_title">Operating System Concepts and Networking Management</string>
+    <string name="BCSP_064_title">Project</string>
+
+
+    <string name="FEG_02_syllabus"> \n
+
+FEG-02 : Foundation Course in English -2
+
+ \n 4 Credits \n
+
+Block 1
+	\n Unit 1	:	Writing paragraph-1,
+	\n Unit 2	:	Writing paragraph-2, the development of a paragraph
+	\n Unit 3	:	Writing a composition
+	\n Unit 4	:	Expository composition
+	\n Unit 5	:	Note-taking 1
+	\n Unit 6	:	Writing reports-I, reporting events
+Block 2
+	Unit	7	:	Argumentative composition-1, techniques of argument
+	\n Unit 8	:	Argumentative composition-1, logical presentation
+\n Unit 9
+: Note taking-2, use of tables and diagrams
+\n Unit 10
+: Writing reports-2, reporting meetings and speeches
+\n Unit 11
+: Writing summaries-1
+\n Unit 12
+Block 3
+: Writing summaries-2
+\n Unit 13
+: Writing paragraphs-2
+\n Unit 14
+: Narrative composition-1
+\n Unit 15
+: Narrative composition-2
+\n Unit 16 :
+Writing reports-3, reporting interviews
+\n Unit 17 :
+Writing reports-4, reporting surveys
+\n Unit 18 :
+Block 4
+Writing summaries-3
+\n Unit 19 :
+Descriptive composition-1, describing persons
+\n Unit 20 :
+Descriptive composition-2, describing places and objects
+\n Unit 21 :
+Descriptive composition-3, describing conditions and processes
+\n Unit 22 :
+Note-taking-3,
+\n Unit 23 :
+Writing reports-5, reporting experiments
+\n Unit 24	:	Summing up
+</string>
+
+
+    <string name="ECO_01_syllabus"> \n
+ECO-01: Business Organisation	 \n 4 Credits \n
+This course consists of five blocks containing 18 units in all. After studying this course, you should
+be able to:
+\n*	Explain the nature of business organisation and identify various forms of organisation learn
+how business units are set up and financed
+\n*	Under the ways and means of marketing the goods
+\n*	Explain how aids-to-trade facilitate the business operations
+\n*	Evaluation the role of government in business
+\n\n BLOCK 1 : Basic Concepts and Forms of Business Organisation
+\n Unit 1	: Nature and scope of Business
+\n Unit 2	: Forms of Business Organisation \n * I \n Unit 3
+	: Forms of Business Organisation \n * II
+\n Unit 4	: Business Promotion
+\n\n BLOCK 2 : Financing of Business
+\n Unit 5	: Methods of Raising Finance
+	\n Unit 6	:	Long-term Financing and Underwriting,
+	\n Unit 7	:	Stock Exchanges
+\n\n BLOCK 3: Marketing
+\n Unit 8	:	Advertising
+\n Unit 9	:	Advertising Media
+\n Unit 10	:	Home Trade and Channels of Distribution
+\n Unit 11	:	Wholesalers and Retailers
+\n Unit 12	:	Procedure for Import and Export Trade
+\n\n BLOCK 4: Business Services
+\n Unit 13 :	Banking
+\n Unit 14 :	Business Risk and Insurance
+\n Unit 15 :	Transport and Warehousing
+\n\n BLOCK 5: Government and Business
+\n Unit 16 :	Government and Business
+\n Unit 17 :	Forms of Organisation in Public Enterprises
+\n Unit 18 :	Public Utilities
+</string>
+
+
+    <string name="BCS_011_syllabus"> \n Computer Basics and PC Software
+ \n 3 Credits \n
+Objectives: \n
+This is the first course in Computer Science for the BCA students; therefore, it deals with the
+basic concepts of computers. It discusses about the computer hardware, its components and basic
+computer architecture. The course also deals with the basic computer software including the
+operating system and its concepts. This course also highlights some of the open source software
+technologies. Finally, the course highlights the applications of computers that include web
+applications, social networking and wiki.
+Structure
+\n\n BLOCK 1: Basics of Computer Hardware
+\n Unit 1
+: Computer their Origin and Applications
+A bit of history highlighting the concepts, Abacas, Difference Engine, Electro-
+magnetic Computers, Discrete components, IC circuits, Current hardware Platforms,
+Description of current applications of computer highlighting role of computers,
+Limitations of Computers.
+\n Unit 2
+: Functioning of a Computer
+Components of a computer and their role, Number system, Codes ASCII Unicode.
+Concept of Instruction \n * a simple example, Role of ALU and CU with the help of an
+example.
+\n Unit 3
+: Memory System
+Type of memories and their characteristics, What is the need of memory hierarchy\'
+Memory Hierarchy with examples of each level, Current trends in memory.
+\n Unit 4
+: I/O Devices and their Functions I/O
+devices, Current trends in I/O
+\n Unit 5
+: My Personal Computer
+Explain the configuration of PC and its components in respect of identification of
+various components so that a student can relate all the terms discussed in \n Unit 1 to 4
+to this configuration.
+\n\n BLOCK 2 : Basics of Computer Software
+\n Unit 1
+: Software Evolution
+Different type of software and its evolution, System and application software, Utility
+software, Perverse software, Open Source software.
+\n Unit 2
+: Operating System Concepts
+Need and Functions, Type of OS starting from Batch, Multi-programming and real
+time Network and distributed OS, Web OS, Examples of OS and their features.
+\n Unit 3
+: Concept of Programming Languages
+Some basic constructs, Editors, Compilers and interpreters, Assemblers.
+\n Unit 4
+: Computer Applications
+Concepts of Open Source Software, Philosophy \n * licensing, copyright. Project
+Management Software, Timesheet system, Office Applications, Word Processing *
+Creating a Memo for a number of people, Spreadsheet \n * Creating a sheet of Income
+and deduction and calculation of IT Database \n * a small application with data records, a
+form, a query and a report. Email \n * Sending mail to a number of people in a group.
+\n\n BLOCK 3 : Internet Technologies
+\n Unit 1
+: Networking and Internet
+Basic of Networking Concepts, Advantages of Networking, Basic model of
+Networks, Network Devices, TCP/IP, Web addresses, DNS, IP addresses.
+\n Unit 2
+: Web Applications I
+Browsing, E-mail, Messenger/Chat
+\n Unit 3
+: Web Applications II
+Blogging, E-Learning and wiki, Collaboration, Social Networking.
+	</string>
+
+
+    <string name="BCS_012_syllabus"> \n BCS-012: Basic Mathematics \n 	4 Credits \n
+Objectives: \n
+The primary objective of this course is to introduce students some of the mathematics through
+which they can develop some mathematical maturity, that is enhance their ability to understand
+and create mathematical arguments. The secondary objective of this course is to prepare students
+for mathematical oriented courses in computer science such as discrete mathematics, database
+theory, analysis of algorithms etc. BLOCK-1: Algebra I
+Unit-1
+: Determinants
+Determinants of order 2 and 3, properties of determinants; evaluation of determinants.
+Area of triangles using determinants, cramer\'s rule.
+Unit-2
+: Matrices-1
+Definition, equality, addition and multiplication of matrices. Adjoint and inverse of a
+matrix. Solution of a system of linear equations \n * homogeneous and
+nonhomogeneous.
+Unit-3
+: Matrices-2
+Elementary row operations; rank of a matrix, reduction to normal form,Inverse of a
+matrix using elementary row operations.
+Unit-4
+: Mathematical Induction
+Principle of mathematical induction 1 and 2.
+\n\n BLOCK 2 : Algebra II
+\n Unit 1
+: Sequence and Series
+Definition of sequence and series; A.P, G.P, H.P and A.G.P. ?n, ?n2 and ?n3,Idea of
+limit of a sequence.
+\n Unit 2
+: Complex Number
+Complex number in the form of a+ib. Addition, multiplication, division of complex
+numbers. Conjugate and modulus of complex numbers. De Moivre\'s Theorem.
+\n Unit 3
+: Equations
+Quadratic, cubic and biquadratic equations. Relationship between roots and co-
+efficient. Symmetric functions of roots.
+\n Unit 4
+: Inequalities
+Solution of linear and quadratic inequalities.
+\n\n BLOCK 3: Calculus (Without Trigonometry)
+	\n Unit 1	: Differential Calculus
+Concept of limit and continuity; differentiation of the sum, difference, product and
+quotient of two functions, chain rule. Differentiation of parametric functions. 2nd
+order derivatives.
+\n Unit 2	: Simple Application of Differential Calculus
+Rate of change; monotoncity-increasing and decreasing; maxima and minima.
+\n Unit 3	: Integration
+Integration as an anti-derivative. Integration by substitution and by parts.
+\n Unit 4	: Application of Integration
+Finding area under a curve. Rectification.
+\n\n BLOCK 4: Vectors and Three-Dimensional Geometry
+\n Unit 1
+: Vector-1
+Vectors and scalars, magnitude and direction of a vector. Direction cosines/ratio of
+vectors. Addition of two vectors. Multiplication of a vector by a scalar. Position
+vector of a point and section formula.
+\n Unit 2
+: Vector-2
+Scalar (Dot) product of vectors, Vector (Cross) product of vectors. Scalar triple
+product and vector triple product.
+\n Unit 3
+: Three- Dimensional Geometry-1
+Introduction, Distance formula. Direction cosines/ratio of a line passing through two
+points. Equations of a line in different forms; angle between two lines; Coplanar and
+skew lines. Distance between skew lines.
+\n Unit 4
+: Linear Programming
+Introduction, definition and related terminology such as constrains, objective
+function, optimization. Mathematical Formulation of LPP. Graphical method of
+solving LPP in two variables. Feasible and inferring solution (up to three non-trivial
+constraints).
+</string>
+
+
+    <string name="BCSL_013_syllabus"> \n BCSL-013: Computer Basics and PC Software Lab	 \n 2 Credits \n
+Objectives: \n
+The main objectives of PC Software Lab course are to familiarize with basic operations of: i)
+	Operating systems such as Windows and Linux. ii)	Word Processor such as Open Office and
+MSWord. iii)	Workbook, worksheet, graphics and Spreadsheets. iv)	PowerPoint
+including animation and sounds.
+v)	Address book, Spam and Filtering in E-mail.
+vi)	Browsing, Search, Discussion forum and
+Wikis.
+ \n Section 1	:	Operating System
+ \n Session 1	:	Familiarization (Keyboard, Memory, I/O Port),  \n Session 2: Windows (2 Session)
+ \n Session 4	:	Linux (2 Session)
+ \n Section 2
+:
+Word Processor (Open Office and MS Word)
+ \n Session 1
+:
+Basic Operations (Font selection, Justification, Spell check, Table, Indentation).
+ \n Session 2
+:
+Table of Contents, Track Changes and Commenting, \n  Session 3: Mail Merge,
+Printing, Practice session.
+ \n Section 3
+:
+Spread Sheet (Concept of Worksheet, Workbook and Cell)
+ \n Session 1
+:
+Data	entry,	Data	editing	and Formula, \n  Session 2: Functioning,  \n Session. 3:
+Graphics and Practice  \n session.
+ \n Section 4
+:
+PowerPoint
+ \n Session 1
+:
+Basics operation, \n  Session 2: Animation and Sounds. \n
+Section 5
+:
+E-mail
+ \n Session 1
+:
+Basic Operation, \n  Session 2: Address Book, Spam and Filtering. \n
+Section 6
+:
+Browsing and Discussion Forum
+ \n Session1
+:
+Browsing and Search (2 Sessions), \n  Session 3: Discussion Forum, Wiki and
+Google Doc (3 Sessions).
+4.2 Detailed Syllabus of BCA Second Semester
+</string>
+
+
+    <string name="ECO_02_syllabus"> \nECO-02: Accountancy-I	 \n 4 Credits \n
+This course consists of five blocks containing 22 units in all. This course introduces you to the
+basic accounting concepts and framework. It also covers the preparation of accounts of
+nontrading and those from incomplete records. After studying this course, you should be able to:
+\n*	Understand the whole process of accounting;
+\n*	Work out the net result of business operations by preparing final accounts for both trading
+and non-trading concerns;
+\n*	Appropriate special features of accounting fro consignments and joint ventures;
+\n*	Describe different methods of providing depreciation, and
+\n*	Explain the need for making provisions and various kinds of reserves.
+\n\n BLOCK 1: Accounting Fundamentals
+\n Unit 1
+:
+Basic Concepts of Accounting
+\n Unit 2
+:
+The Accounting Process
+\n Unit 3
+:
+Cash Book and Bank Reconciliation
+\n Unit 4
+:
+Other Subsidiary Books
+\n Unit 5
+:
+Bills of Exchange
+\n\n BLOCK 2: Final Accounts
+	\n Unit 6	:	Concepts Relating to Final Accounts
+	\n Unit 7	:	Final Accounts \n * I
+\n Unit 8	:	Final Accounts \n * II
+\n Unit 9	:	Errors and their Rectification
+\n\n BLOCK 3: Consignment and Joint Ventures
+\n Unit 10	:	Consignments Accounts \n * I
+\n Unit 11	:	Consignments Accounts \n * II
+\n Unit 12	:	Consignments Accounts \n * III
+\n Unit 13	:	Joint Venture Accounts
+\n\n BLOCK 4: Accounts from Incomplete Records
+\n Unit 14	:	Self Balancing System
+\n Unit 15	:	Accounting from Incomplete Records \n * I
+\n Unit 16	:	Accounting from Incomplete Records \n * II
+\n Unit 17	:	Accounting from Incomplete Records \n * III
+\n\n BLOCK 5: Accounts of Non-trading Concerns, Depreciation, Provisions and Reserves
+\n Unit 18	:	Accounts of Non-trading Concerns \n * I
+\n Unit 19	:	Accounts of Non-trading Concerns \n * II
+\n Unit 20	:	Depreciation \n * I
+\n Unit 21	:	Depreciation \n * II
+\n Unit 22	:	Provisions and Reserves
+</string>
+
+
+    <string name="MCS_011_syllabus"> \nMCS - 011: Problem Solving and Programming	 \n 3 Credits \n
+Objectives
+The course is aimed to develop problem-solving strategies, techniques and skills that can be
+applied to computers and problems in other areas which give students an introduction to
+computer and analytical skills to use in their subsequent course work and professional
+development. Emphasis of this course is to act as an introduction to the thinking world of
+computers, to help students develop the logic, ability to solve the problems efficiently using C
+programming. Knowledge in a programming language is prerequisite to the study of most of
+computer science courses. This knowledge area consists of those skills and concepts that are
+essential to problem solving and programming practice independent of the underlying paradigm.
+The student will learn various concepts and techniques for problem solving and will implement
+those ideas using C programs.
+Structure
+\n\n BLOCK 1:	An Introduction to C
+\n Unit 1	: Problem Solving
+Problems Solving Techniques, Steps for Problem \n * Solving, Using Computer as a
+Problem-Solving Tool, Design of Algorithms, Definition, Features of Algorithm,
+Criteria to be followed by an Algorithm, Top Down Design, Analysis of Algorithm
+Efficiency, Analysis of Algorithm Complexity, Flowcharts, Basic Symbols used in
+Flowchart Design.
+\n Unit 2
+: Basics of C
+What is a Program and what is a Programming Language* C Language, History of C,
+Salient Features of C, Structure of a C Program, A Simple C Program, Writing a C
+Program, Compiling a C Program, Link and Run the C Program, Run the C Program
+through the Menu, Run from an Executable File, Linker Errors, Logical and Runtime
+Errors, Diagrammatic Representation of Program, Execution Process.
+\n Unit 3
+: Variables and Constants
+Character Set, Identifiers and Keywords, Rules for Forming Identifiers, Keywords,
+Data Types and Storage, Data Type Qualifiers, Variables, Declaring Variables,
+Initialising Variables, Constants, Types of Constants.
+\n Unit 4
+: Expressions and Operators
+Assignment Statements, Arithmetic Operators, Relational Operators, Logical
+Operators, Comma and Conditional Operators, Type Cast Operator, Size of
+Operator, C Shorthand, Priority of Operators.
+\n\n BLOCK 2: Control Statements, Arrays and Functions
+\n Unit 1
+: Decision and Loop Control Statements
+Decision Control Statements, The if Statement, The switch Statement, Loop Control
+Statements, The while Loop, The do-while Statement, The for Loop, The Nested
+Loop, The Goto Statement, The Break Statement, The Continue Statement.
+\n Unit 2
+: Arrays
+Array Declaration, Syntax of Array Declaration, Size Specification , Array
+Initialization, Initialization of Array Elements in the Declaration, Character Array
+Initialization, Subscript, Processing the Arrays, Multi-Dimensional Arrays, Multi-
+Dimensional Array Declaration, Initialization of Two-Dimensional Arrays.
+\n Unit 3
+: Strings
+Declaration and Initialization of Strings, Display of Strings Using Different
+Formatting Techniques, Array of Strings, Built-in String Functions and Applications,
+Strlen Function, Strcpy Function, Strcmp Function, Strcat Function, Strlwr Function,
+Strrev Function, Strspn Function, Other String Functions.
+\n Unit 4
+: Functions
+Definition of a Function, Declaration of a Function, Function Prototypes, The Return
+Statement, Types of Variables and Storage Classes, Automatic Variables, External
+Variables, Static Variables, Register Variables, Types of Function Invoking, Call by
+Value, Recursion.
+\n\n BLOCK 3: Structures, Pointers and File Handling
+	\n Unit 1	: Structures and Unions
+Declaration of Structures, Accessing the Members of a Structure, Initializing
+Structures, Structures as Function Arguments, Structures and Arrays, Unions,
+Initializing an Union, Accessing the Members of an Union.
+\n Unit 2
+: Pointers
+Pointers and their Characteristics, Address and Indirection Operators, Pointer Type
+Declaration and Assignment, Pointer Arithmetic, Passing Pointers to Functions, A
+Function Returning More than One Value, Function Returning a Pointer, Arrays and
+Pointers, Array of Pointers, Pointers and Strings.
+\n Unit 3
+: The C Preprocessor
+# define to Implement Constants, # define to Create Functional Macros, Reading
+from Other Files using # include ,Conditional Selection of Code using #ifdef, Using
+#ifdef for different computer types.
+Using #ifdef to temporarily remove program statements, Other Preprocessor
+Commands, Predefined Names Defined by Preprocessor, Macros Vs Functions.
+\n Unit 4
+: Files
+File Handling in C Using File Pointers, Open a file using the function fopen ( ),
+Close a file using the function fclose ( ), Input and Output using file pointers,
+Character Input and Output in Files, String Input / Output Functions, Formatted
+Input / Output Functions, Block Input / Output Functions, Sequential Vs Random
+Access Files, Positioning the File Pointer, the Unbufferred I/O - The UNIX like File
+Routines.
+</string>
+
+
+    <string name="MCS_012_syllabus"> \n MCS-012:	Computer Organisation and Assembly
+	Language Programming	 \n 4 Credits \n
+Objectives
+In the modern era, Computer system is used in most aspects of life. You may use many different
+types of software on a computer system for particular applications ranging from simple
+document creation to space data processing. But, how does the Software is executed by the
+Computer Hardware* The answer to this basic question is contained in this Course. This course
+presents an overview of the Computer Organisation. After going through this course, you will
+not only acquire the conceptual framework of Computer Organisation and Architecture but also
+would be able to use the concepts in the domain of Personal Computers. In specific, you will be
+able to design digital circuits; describe the functions of various components of computers and
+their construction; and write simple assembly programs.
+Structure
+\n\n BLOCK 1: Introduction to Digital Circuits
+\n Unit 1
+: The Basic Computer
+The von Neumann Architecture, Instruction Execution: An Example, Instruction
+Cycle Interrupts, Interrupts and Instruction Cycle, Computers: Then and Now, The
+Beginning, First Generation Computers, Second Generation Computers, Third
+Generation Computers, Later Generations.
+\n Unit 2
+: The Data Representation
+Data Representation, Number Systems, Decimal Representation in Computers,
+Alphanumeric Representation, Data Representation for Computation, Error
+Detection and Correction Codes.
+\n Unit 3
+: Principles of Logic Circuits I
+Logic Gates, Logic Circuits, Combinational Circuits, Canonical and Standard Forms,
+Minimization of Gates, Design of Combinational Circuits, Examples of Logic
+Combinational Circuits, Adders, Decoders, Multiplexer, Encoder, Programmable
+Logic Array, Read Only Memory ROM.
+\n Unit 4
+: Principles of Logic Circuits I
+Sequential Circuits: The Definition, Flip Flops, Basic Flip-Flops, Excitation Tables,
+Master Slave Flip Flops, Edge Triggered Flip-flops, Sequential Circuit Design,
+Examples of Sequential Circuits, Registers, Counters \n * Asynchronous Counters,
+Synchronous Counters, RAM, Design of a Sample Counter.
+	\n\n BLOCK 2:	Basic Computer Organisation
+\n Unit 1
+: The Memory System
+The Memory Hierarchy, RAM, ROM, DRAM, Flash Memory, Secondary Memory
+and Characteristics, Hard Disk Drives, Optical Memories, CCDs, Bubble Memories,
+RAID and its Levels, The Concepts of High Speed Memories, Cache Memory,
+Cache Organisation, Memory Interleaving, Associative Memory, Virtual Memory,
+the Memory System of Micro-Computer.
+\n Unit 2
+: The Input/Output System
+Input / Output Devices or External or Peripheral Devices, The Input Output
+Interface, the Device Controllers and its Structure, Device Drivers, Input Output
+Techniques, Programmed Input /Output, Interrupt-Driven Input /Output, Interrupt-
+Processing, DMA (Direct Memory Access).
+Input Output Processors, External Communication Interfaces.
+\n Unit 3
+: Secondary Storage Techniques
+Secondary Storage Systems , Hard Drives and Its Characteristics, Partitioning and
+Formatting: FAT, Inode, Drive Cache , Hard Drive Interface: IDE, SCSI, EIDE,
+Ultra DMA and ATA/66, Removable Drives, Floppy Drives, CD-ROM and DVD-
+ROM, Removable Storage Options, Zip, Jaz and Other Cartridge Drives, Recordable
+CDs and DVDs, CD-R vs CD-RW, Tape Backup.
+\n Unit 4
+: I/O Technology
+Keyboard, Mouse , Video Cards, Monitors, Liquid Crystal Displays (LCD), Digital
+Camera, Sound Cards, Printers , Classification of Printers, Modems, Scanners,
+Scanning Tips, Power Supply, SMPS (Switched Mode Power Supply).
+	\n\n BLOCK 3:	The Central Processing Unit
+	\n Unit 1	: Instruction Set Architecture
+Instruction Set Characteristics, Instruction Set Design Considerations, Operand Data
+Types, Types of Instructions, Number of Addresses in an Instruction, Addressing
+Schemes, Types of Addressing Schemes, Immediate Addressing, Direct Addressing,
+Indirect Addressing, Register Addressing, Register Indirect Addressing, Indexed
+Addressing Scheme, Base Register Addressing, Relative Addressing Scheme, Stack
+Addressing, Instruction Set and Format Design Issues, Instruction Length, Allocation
+of Bits Among Opcode and Operand, Variable Length of Instructions, Example of
+Instruction Format.
+\n Unit 2
+: Registers, Micro-Operations and Instruction Execution
+Basic CPU Structure, Register Organization, Programmer Visible Registers, Status
+and Control Registers, General Registers in a Processor, Micro-operation Concepts,
+Register Transfer Micro-operations, Arithmetic Micro-operations, Logic
+Microoperations, Shift Micro-operations, Instruction Execution and Micro-
+operations, Instruction Pipelining.
+\n Unit 3
+: ALU Organisation
+ALU Organisation, A Simple ALU Organization, A Sample ALU Design, Arithmetic
+Processors.
+\n Unit 4
+: The Control Unit
+The Control Unit, The Hardwired Control, Wilkes Control, The Micro-Programmed
+Control, The Micro-Instructions, Types of Micro-Instructions, Control Memory
+Organisation, Micro-Instruction Formats, The Execution of Micro-Program.
+\n Unit 5
+: Reduced Instruction Set Computer Architecture
+Introduction to RISC, RISC Architecture, The Use of Large Register File, Comments
+on RISC, RISC Pipelining.
+\n\n BLOCK 4: Assembly Language Programming
+\n Unit 1
+: Microprocessor Architecture
+Microcomputer Architecture, Structure of 8086 CPU, Register Set of 8086,
+Instruction Set of 8086, Data Transfer Instructions, Arithmetic Instructions, Bit
+Manipulation Instructions, Program Execution Transfer Instructions, String
+Instructions, Processor Control Instructions, Addressing Modes, Register Addressing
+Mode, Immediate
+	Addressing Mode,	Direct Addressing Mode, Indirect Addressing Mode.
+\n Unit 2
+: Introduction to Assembly Language Programming
+The Need and Use of the Assembly Language, Assembly Program Execution, An
+Assembly Program and its Components, The Program Annotation, Directives, Input
+Output in Assembly Program, Interrupts, DOS Function Calls (Using INT 21H), The
+Types of Assembly Programs, COM Programs, EXE Programs, How to Write Good
+Assembly Programs.
+\n Unit 3
+: Assembly Language Programming (Part \n * I)
+Simple Assembly Programs, Data Transfer, Simple Arithmetic Application,
+Application Using Shift Operations, Larger of the Two Numbers, Programming With
+Loops and Comparisons, Simple Program Loops, Find the Largest and the Smallest
+Array Values, Character Coded Data, Code Conversion, Programming for Arithmetic
+and String Operations, String Processing, Some More Arithmetic Problems.
+\n Unit 4
+: Assembly Language Programming (Part \n * I)
+Use of Arrays in Assembly, Modular Programming, The stack, FAR and NEAR
+Procedures, Parameter Passing in Procedures, External Procedures, Interfacing
+Assembly Language Routines to High Level Language, Programs, Simple
+Interfacing, Interfacing Subroutines With Parameter Passing, Interrupts, Device
+Drivers in Assembly.
+	</string>
+
+
+    <string name="MCS_015_syllabus"> \nMCS-015 : Communication Skills	 \n 2 Credits \n
+Objectives
+This course is aimed to develop the communication skills at the work place. In this course, we
+concentrate on English at the workplace. You are probably wondering whether business English
+(as it is also called) is a separate language to general English. Certainly not, business English is
+not a separate language. It is English used at the workplace using specific vocabulary, and in
+certain situations having a different discourse. Every profession uses a certain jargon* and the
+business context in no different. While Business English is firmly rooted in general English,
+nevertheless there are certain distinguishing features which are evident. In this course, you will
+learn some theoretical inputs into the process of communication, its different types, the
+difference between written and oral communication. We then concentrate on the structure of
+conversation \n * its characteristics and conventions, effectively speaking over the telephone,
+preparing Curriculum vitae for jobs and interviews, preparing and participating in the Group
+Discussions, presentation skills, making negotiations and many more.
+Structure
+\n\n BLOCK 1:	Skills Needed at the Work Place-I
+\n Unit 1
+: The Process of Communication
+Introduction: What is Communication* The Process of Communication, Barriers to
+Communication, Different Types of Communication , Written vs. Oral
+Communication, Different Types of Face-to-Face Interactions, Characteristics and
+Conventions of Conversation, Conversational Problems of Second/Foreign Language
+Users, Difference between Conversation and Other Speech Events.
+\n Unit 2
+: Telephone Techniques
+Warm Up, Speaking and Listening: Commonly Used Phrases in Telephone
+Conversations, Reading: Conference Calls, Vocabulary, Writing and Listening:
+Leaving a Message, Grammar and Usage: The Perfect Tenses, Pronunciation:
+Contracted Forms.
+\n Unit 3
+: Job Applications and Interviews
+Warm up, Reading, Vocabulary: Apply for a Job, Curriculum Vitae, Language
+Focus: Some Useful Words, Study Skills: Preparing for an Interview, Listening,
+Speaking, Writing.
+\n Unit 4
+: Group Discussions
+Reading, Writing Skills, Listening: How to be Successful in a Group Discussion,
+Study Skills, Language Focus, Vocabulary, Speaking, Grammar: Connectives,
+Pronunciation.
+\n Unit 5
+: Managing Organisational Structure
+Warm Up: Ability to Influence and Lead, Reading: The Role of a Manager,
+Vocabulary: Leadership, Speaking and Listening, Language Focus: Degree of
+Probability, Grammar:
+Modals, Writing: Reports, Pronunciation.
+\n Unit 6
+: Meetings
+Reading: A Successful Meeting, Speaking: One to One Meetings, Language Focus:
+Opening, Middle and Close, Study Skills: Editing, Listening: Criteria for Successful
+Meetings, Vocabulary, Grammar: Reporting Verbs, Writing: Memos, Pronunciation:
+Stress According to Part of Speech.
+\n Unit 7
+: Taking Notes and Preparing Minutes
+Taking Notes, The Note-taking Skill: The Essential Components, The Note-taking
+Skill: An Example Preparing Minutes, Format of Minutes, Language and Style of
+Minutes, Grammar: Using the Passive Voice.
+\n Unit 8
+: Presentation Skills-I
+Reading: Presentation Skills, Grammar: Verbs often required in Presentations,
+Language Focus, Listening: Importance of Body Language in Presentations,
+Speaking: Preparing an Outline of a Presentation, Pronunciation.
+\n Unit 9
+: Presentation Skills-II
+Reading: Structure of Presentation, Study Skills: Visual Aids, Ending the Presentation.
+Language Focus: Talking about Increase and Decrease, Grammar: Prepositions,
+Listening: Podium Panic, Speaking, Pronunciation: Emphasizing the Important
+Words in Context.
+\n Unit 10 : Negotiation Skills
+Language Focus: Idiomatic Expressions, Study Skills: Process of Negotiations,
+Grammar: Phrasal Verbs, Listening: Effective Negotiations, Speaking, Writing.
+
+</string>
+
+
+    <string name="MCS_013_syllabus"> \nMCS-013: Discrete Mathematics	 \n 2 Credits \n
+Objectives
+Discrete mathematics, sometimes called finite mathematics, is the study of mathematical
+structure that are fundamentally discrete, in the sense of not supporting notion of continuity. A
+study of discrete sets has become more and more necessary because of many application of
+Computer Science and various areas of engineering. Regarding computer science concept from
+discrete mathematics are useful to study or express objects or problems in computer algorithm
+and programming languages. For instance, to improve the efficiency of a computer programs, we
+need to study its logical structure, which involves a finite number of steps each requiring a
+certain amount of time. Using the theory of combinatory and graph theory, major areas of
+discrete mathematics, we can do this. Therefore, a study of these areas would complement and
+improve the understanding of courses based on algorithm and problem solving.
+This course is designed to give basic concepts of propositions, predicates, Boolean algebra, logic
+circuit, sets, relations, functions, combinatorics, partitions and distributions.
+\n\n BLOCK 1: Elementary Logic
+\n Unit 1
+: Prepositional Calculus
+Propositions, Logical Connectives, Disjunction, Conjunction, Negation, Conditional
+Connectives, Precedence Rule, Logical Equivalence, Logical Quantifiers.
+\n Unit 2
+: Methods of Proof
+What is a Proof* Different Methods of Proof, Direct Proof, Indirect Proofs, Counter
+Examples, Principle of Induction.
+\n Unit 3
+: Boolean Algebra and Circuits
+Boolean Algebras, Logic Circuits, Boolean Functions.
+\n\n BLOCK 2: Basic Combinatorics
+\n Unit 1
+: Sets, Relations and Functions
+Introducing Sets, Operations on Sets, Basic Operations, Properties Common to Logic
+and Sets Relations, Cartesian Product, Relations and their types, Properties of
+Relations, Functions, Functions, Operations on Functions.
+\n Unit 2
+: Combinatorics \n * An Introduction
+Multiplication and Addition Principles, Permutations, Permutations of Objects not
+Necessarily Distinct, Circular Permutations, Combinations, Binomial Coefficients,
+Combinatorial Probability.
+\n Unit 3
+: Some More Counting Principles
+Pigeonhole Principle, Inclusion-Exclusion Principle, Applications of Inclusion *
+Exclusion, Application to Surjective Functions, Application to Probability,
+Application to Derangements.
+\n Unit 4	: Partitions and Distributions
+Integer Partitions, Distributions, Distinguishable Objects into Distinguishable
+Containers, Distinguishable Objects into Indistinguishable Containers,
+Indistinguishable Objects into Distinguishable Containers, Indistinguishable Objects
+into
+Indistinguishable Containers.
+</string>
+
+
+    <string name="BCSL_021_syllabus"> \n
+    BCSL -021: C Language Programming Lab (Lab Course)	 \n 1 Credit \n
+    Objectives
+    This lab course is completely based on MCS-011 .The basic objective of the course is to provide
+    the hands on experience on C Programming and improve the practical skill set. Also to apply all
+    the concepts that has been covered in the theory course MCS-011. The learner will try to apply
+    the alternate ways to provide the solution to a given problem. The learner will be able to develop
+    the logic for the given problem, recognize and understand the syntax and construction of C code,
+    gains experience of C , know the steps involved in compiling, linking and debugging C code,
+    feel more confident about writing the C functions, write some complex programs.
+    Structure
+     \n Section 1	: C Programming Lab
+    \n*	Salient Features of C
+    \n*	C Programming Using Borland Compiler
+    \n*	Using C with UNIX
+    \n*	Running C Programs using MS Visual C++
+    \n*	Program Development Life Cycle
+    \n*	List of Lab Assignments \n * Session wise
+    7. BCSL -022: Assembly Language Programming Lab (Lab Course)  \n 1 Credit \n
+    Objectives
+    This lab course is completely based on MCS-012.The basic objective of the course is to provide
+    the hands on experience on Assembly language programming and improve the practical skill set.
+    Also to apply all the concepts that have been covered in the theory course MCS-012. The learner
+    will try to apply the alternate ways to provide the solution to a given problem. The learner will
+    be able to develop the logic for the given problem, recognize and understand the syntax and
+    construction of Assembly language code, gains experience of Assembly language programming,
+    know the steps involved in compiling, linking and debugging Assembly language Program.
+    Structure
+     \n Section 1
+    Digital Logic Circuits
+    \n*	Logic Gates Circuit Simulation Program
+    \n*	Making a Logic Circuit Using Logic
+    \n*	A Revisit of Steps of Logic Circuit Design
+    \n*	Session-wise problems
+
+     \n Section 2
+    Assembly Language Programming
+    \n*	Assemblers
+    \n*	Turbo Assembler (TASM)
+    \n*	MASM
+    \n*	Emu 8086
+    \n*	The DEBUG Program
+    \n*	Assembly Programming File
+    \n*	Session-wise List of Programs
+
+   </string>
+
+
+    <string name="BCSL_022_syllabus"> \n
+BCSL -022: Assembly Language Programming Lab (Lab Course)  \n 1 Credit \n
+Objectives
+This lab course is completely based on MCS-012.The basic objective of the course is to provide
+the hands on experience on Assembly language programming and improve the practical skill set.
+Also to apply all the concepts that have been covered in the theory course MCS-012. The learner
+will try to apply the alternate ways to provide the solution to a given problem. The learner will
+be able to develop the logic for the given problem, recognize and understand the syntax and
+construction of Assembly language code, gains experience of Assembly language programming,
+know the steps involved in compiling, linking and debugging Assembly language Program.
+Structure
+ \n Section 1
+Digital Logic Circuits
+\n*	Logic Gates Circuit Simulation Program
+\n*	Making a Logic Circuit Using Logic
+\n*	A Revisit of Steps of Logic Circuit Design
+\n*	Session-wise problems
+
+ \n Section 2
+Assembly Language Programming
+\n*	Assemblers
+\n*	Turbo Assembler (TASM)
+\n*	MASM
+\n*	Emu 8086
+\n*	The DEBUG Program
+\n*	Assembly Programming File
+\n*	Session-wise List of Programs
+</string>
+
+
+    <string name="MCS_021_syllabus"> \nMCS-021: Data and File Structures	 \n 4 Credits \n
+Objectives
+The learner should be well versed with the fundamentals of Algorithms, learn various data
+structures, should be able to use them appropriately as per need during development of
+programs. Also, the learner should know different sorting and searching techniques so that
+correct techniques can be used in different programs so that the complexity of the program does
+not increase due the sorting/ search technique employed. The learner should have the knowledge
+about file structures and finally, s/he should also know the concepts of advanced data structures.
+Structure
+\n\n BLOCK 1 : Introduction to Algorithms and Data Structures
+\n Unit 1
+: Analysis of Algorithms
+Mathematical Background, Process of Analysis, Calculation of Storage Complexity,
+Calculation of Run Time Complexity.
+\n Unit 2
+: Arrays
+Arrays and Pointers, Sparse Matrices, Polynomials, Representation of Arrays, Row
+Major Representation, Column Major Representation, Applications.
+\n Unit 3
+: Lists
+Abstract Data Type-List, Array Implementation of Lists, Linked Lists-
+Implementation, Doubly Linked Lists-Implementation, Circularly Linked Lists-
+Implementation, Applications.
+BLOCK-2: Stacks, Queues and Trees
+\n Unit 4
+: Stacks
+Abstract Data Type-Stack, Implementation of Stack, Implementation of Stack using
+Arrays, Implementation of Stack using Linked Lists, Algorithmic Implementation of
+Multiple Stacks, Applications.
+\n Unit 5
+: Queues
+Abstract Data Type-Queue, Implementation of Queue, Array Implementation,
+Linked List Implementation, Implementation of Multiple Queues, Implementation of
+Circular Queues, Array Implementation, Linked List Implementation of a circular
+queue, Implementation of DEQUEUE, Array Implementation of a dequeue, Linked
+List Implementation of a dequeue.
+\n Unit 6
+: Trees
+Abstract Data Type-Tree, Implementation of Tree, Tree Traversals, Binary Trees,
+Implementation of Binary Tree, Binary Tree Traversals, Recursive Implementation
+of Binary Tree Traversals, Non Recursive Implementations of Binary Tree
+Traversals, Applications.
+\n\n BLOCK 3 : Graph Algorithms and Searching Techniques
+\n Unit 7
+: Advanced Trees
+Binary Search Trees, Traversing a Binary Search Trees, Insertion of a node into a
+Binary Search Tree, Deletion of a node from a Binary Search Tree, AVL Trees,
+Insertion of a node into an AVL Tree, Deletion of a node from and AVL Tree, AVL
+tree rotations, Applications of AVL Trees, B-Trees, Operations on B-Trees ,
+Applications of B-Trees.
+\n Unit 8
+: Graphs
+Definitions, Shortest Path Algorithms, Dijkstra\'s Algorithm, Graphs with Negative
+Edge costs, Acyclic Graphs, All Pairs Shortest Paths Algorithm, Minimum cost
+Spanning Trees, Kruskal\'s Algorithm, Prims\'s Algorithm, Applications, Breadth
+First Search , Depth First Search, Finding Strongly Connected Components.
+\n Unit 9
+: Searching
+Linear Search, Binary Search, Applications.
+\n\n BLOCK 4 : File Structures and Advanced Data Structures
+\n Unit 10 : Sorting
+Internal Sorting, Insertion Sort, Bubble Sort, Quick Sort, 2-way Merge Sot, Heap Sort,
+Sorting on Several Keys.
+\n Unit 11 : Advanced Data Structures
+Splay Trees, Splaying steps, Splaying Algorithm, Red-Black trees, Properties of a
+Red Black tree, Insertion into a Red-Black tree, Deletion from a Red-Black tree, AA-
+Trees.
+\n Unit 12 : File Structures
+Terminology, File Organisation, Sequential Files, Structure, Operations, Disadvantages,
+Areas of use, Direct File Organisation, Indexed Sequential File Organisation.
+</string>
+    <string name="MCS_023_syllabus"> \n	MCS 023: Introduction to Database Management Systems	 \n 3 Credits \n
+Objectives
+Database systems are pervasive. They are present in every segment of commercial, academic and
+virtual world. They are required as the backbone of any information system, enterprise resource
+planning, research activities and other activity that require permanence of data storage. This
+course provides the basic introduction to database system technologies; and concurrency,
+security and recovery issues of database management systems.
+This course also provides the basic conceptual background necessary to design and develop
+simple database systems. The major focus in this course is the Relational database model;
+however, it also discusses about the ER model and distributed databases. This course enables you
+to write good queries using a standard query language called SQL.
+Structure
+\n\n BLOCK 1 : The Database Management System Concepts
+\n Unit 1
+: The Basic Concepts
+Need for a Database Management System, The file based system, Limitations of file
+based system, The Database Approach, The Logical DBMS Architecture, Three level
+architecture of DBMS or logical DBMS architecture, Mappings between levels and
+data independence, The need for three level architecture, Physical DBMS
+Architecture, DML Precompiler, DDL Compiler, File Manager, Database Manager,
+Query Processor, Database Administrator, Data files indices and Data Dictionary,
+Commercial Database Architecture, Data Models.
+\n Unit 2
+: Relational and ER Models
+The Relational Model, Domains, Attributes, Tuple and Relation, Super keys
+Candidate keys and Primary keys for the Relations, Relational Constraints, Domain
+Constraint, Key Constraint, Integrity Constraint, Update Operations and Dealing
+with Constraint
+Violations, Relational Algebra, Basic Set Operation, Cartesian Product, Relational
+Operations, Entity Relationship (ER) Model, Entities, Attributes, Relationships,
+More about Entities and Relationships, Defining Relationship for College Database,
+E-R Diagram, Conversion of E-R Diagram to Relational Database.
+\n Unit 3
+: Database Integrity and Normalisation
+Relational Database Integrity, The Keys, Referential Integrity, Entity Integrity,
+Redundancy and Associated Problems, Single-Valued Dependencies, Single-Valued
+Normalisation, The First Normal Form, The Second Normal Form, The Third
+Normal Form, Boyce Codd Normal Form, Desirable Properties of Decomposition,
+Attribute Preservation, Lossless-join Decomposition, Dependency Preservation, Lack
+of redundancy, Rules of Data Normalisation, Eliminate Repeating Groups, Eliminate
+Redundant Data, Eliminate Columns Not Dependent on Key.
+\n Unit 4
+: File Organisation in DBMS
+Physical Database Design Issues, Storage of Database on Hard Disks, File
+Organisation and Its Types, Heap files (Unordered files), Sequential File
+Organisation, Indexed (Indexed Sequential) File Organisation, Hashed File
+Organisation, Types of Indexes, Index and Tree Structure, Multi-key File
+Organisation, Need for Multiple Access Paths, Multi-list File Organisation, Inverted
+File Organisation, Importance of File Organisation in Databases..
+\n\n BLOCK 2: Structured Query Language and Transaction Management
+\n Unit 1
+: The Structures Query Language
+What is SQL* Data Definition Language, Data Manipulation Language, Data
+Control, Database Objects: Views, Sequences, Indexes and Synonyms, Table
+Handling, Nested Queries.
+\n Unit 2
+: Transactions and Concurrency Management
+The Transactions, The Concurrent Transactions, The Locking Protocol, Serialisable
+Schedules, Locks. Two Phase Locking (2PL), Deadlock and its Prevention,
+Optimistic Concurrency Control.
+\n Unit 3
+: Database Recovery and Security
+What is Recovery* Kinds of failures, Failure controlling methods, Database errors,
+Recovery Techniques, Security and Integrity, Relationship between Security and
+Integrity, Difference between Operating System and Database Security,
+Authorization.
+\n Unit 4
+: Distributed and Client Server Databases
+Need for Distributed Database Systems, Structure of Distributed Database,
+Advantages and Disadvantages of DDBMS, Advantages of Data Distribution,
+Disadvantages of Data Distribution, Design of Distributed Databases, Data
+Replication, Data Fragmentation, Client Server Databases, Emergence of Client
+Server Architecture, Need for Client Server Computing, Structure of Client Server
+Systems, Advantages of Client Server Systems.
+\n\n BLOCK 3: Application Development: Development of a Hospital Management System
+Need to Develop the Hospital Management System (An HMS), Creating a Database for
+HMS, Developing Front End Forms, Reports, Using Queries and Record set.
+\n\n BLOCK 4: Study Centre Management System: A Case Study
+Software Development Process: Analysis, System Designing, Issues relating to
+Software Development, Testing and Maintenance.
+</string>
+
+
+    <string name="MCS_014_syllabus"> \n
+4.3	Detailed Syllabus of BCA Third Semester
+
+1. MCS-014 : Systems Analysis and Design
+ \n 3 Credits \n
+Objectives
+The objectives of the course include the enabling of learner to identify the Software projects in
+an organization after studying various functionalities in the organization. Also, they should be
+able to structure various requirements, do the design and select the best method to develop the
+system. They should be able to implement and maintain the system. The learners should also get
+acquainted with different quality standards as well as learn about Management Information
+Systems.
+Structure
+\n\n BLOCK 1: Introduction to Systems Development
+\n Unit 1
+: Introduction to SAD
+Fundamentals of System, Important Terms related to Systems, Classification of
+Systems, Real Life Business Subsystems, Real Time Systems, Distributed Systems,
+Development of a successful System, Various Approaches for development of
+Information Systems. Structured Analysis and Design Approach, Prototype, Joint
+Application Development.
+\n Unit 2
+: Systems Analyst-A Profession
+Why do Businesses need Systems Analysts* Users, Analysts in various functional
+areas, Systems Analyst in Traditional Business, Systems Analyst in Modern
+Business, Role of a Systems Analyst Duties of a Systems Analyst, Qualifications of a
+Systems Analyst, Analytical Skills, Technical Skills, Management Skills,
+Interpersonal Skills.
+\n Unit 3
+: Process of System Development
+Systems Development Life Cycle, Phases of SDLC, Project Identification and
+Selection, Project Initiation and planning, Analysis, Logical Design, Physical
+Design, Implementation, Maintenance, Product of SDLC Phases, Approaches to
+Development, Prototyping, Joint Application Design, Participatory Design, Case
+Study.
+\n Unit 4
+: Introduction to Documentation of Systems
+	Concepts	and	process	of	Documentation, Types	of	Documentation,	System
+Requirements Specification, System Design Specification, Test Design Document,
+User Manual, Different Standard for Documentation, Documentation and Quality of
+Software, Good Practices for Documentation.
+\n\n BLOCK 2: Planning and Designing Systems
+\n Unit 5
+: Process of System Planning
+Fact finding Techniques, Interviews, Group Discussion, Site Visits, Presentations,
+Questionnaires, Issues involved in Feasibility Study, Technical Feasibility,
+Operational Feasibility, Economic Feasibility, Legal Feasibility, Cost Benefit
+Analysis, Preparing
+Schedule, Gathering Requirements of System, Joint Application Development,
+Prototyping.
+\n Unit 6
+: Modular and Structured Design
+Design Principles, Top Down Design, Bottom Up Design, Structure Charts,
+Modularity, Goals of Design, Coupling, Cohesion.
+\n Unit 7
+: System Design and Modelling
+Logical and Physical Design, Process Modeling, Data Flow Diagrams, Data
+Modeling, E-R Diagrams, Process Specification Tools, Decision Tables, Decision
+Trees, Notation Structured English, Data Dictionary.
+\n\n BLOCK 3: More Design Issues and CASE Tools
+\n Unit 8
+: Forms and Reports Design
+Forms, Importance of Forms, Reports, Importance of Reports, Differences between
+Forms and Reports, Process of Designing Forms and Reports, Deliverables and
+Outcomes, Design Specifications, Narrative Overviews, Sample Design, Testing and
+Usability Assessment, Types of Information, Internal Information, External
+Information, Turnaround Document, General Formatting Guidelines, Meaningful
+Titles, Meaningful
+Information, Balanced Layout, Easy Navigation, Guidelines for Displaying Contents,
+Highlight Information, Using Colour, Displaying Text, Designing Tables and Lists,
+Criteria for Form Design, Organization, Consistency, Completeness, Flexible Entry,
+Economy, Criteria for Report Design, Relevance, Accuracy, Clarity, Timeliness,
+Cost.
+\n Unit 9
+: Physical File Design and Data base Design
+Introduction to Database design, Flat files vs. Database, Steps in Database Design,
+ER model to Database Design, Inputs to Physical Database Design, Guidelines for
+Database Design, Design of Data Base Fields, Types of Fields, Rules for Naming
+Tables and Fields, Design of Physical Records, Design of Physical Files, Types of
+Files, File Organization, Design of Database, Case Study.
+\n Unit 10 : CASE Tools for Systems Development
+Use of CASE tools by organizations, Definition of CASE Tools, Use of CASE tools
+by Organizations, Role of CASE Tools, Advantages of CASE Tools, Disadvantages
+of CASE Tools, Components of CASE, Types of CASE Tools, Classification of
+CASE Tools, Reverse and Forward Engineering, Visual and Emerging CASE tools,
+Traditional systems development and CASE based systems development, CASE
+environment, Emerging CASE Tools, Objected oriented CASE tools, Creating
+documentation and reports using CASE tools, Creating and executable prototype
+using Object Oriented CASE tools, Sequence Diagrams.
+\n\n BLOCK 4: Implementation and Security of Systems and MIS
+\n Unit 11 : Implementation and Maintenance of Systems
+Implementation of Systems, Conducting System Tests, Preparing Conversion Plan,
+Installing Databases, Training the end users, Preparation of User Manual, Converting
+to the new System, Maintenance of Systems, Different Maintenance activities, Issues
+involved in Maintenance.
+\n Unit 12 : Audit and Security of Computer Systems
+Definition of Audit, Objectives of Audit, Responsibility and Authority of the System
+Auditor, Confidentiality, Audit Planning, Audit of Transactions on Computer,
+Transaction Audit, Audit of Computer Security, Audit of Application, Benefits of
+Audit, Computer Assisted Audit Techniques, Audit Software, Test Data, Audit
+Expert Systems, Audit Trail, Computer System and Security issues, Analysis of
+Threats and Risks, Recovering from Disasters, Planning the contingencies, Viruses,
+Concurrent Audit Techniques, Need for Concurrent Audit, Techniques, An
+Integrated Test Facility, Techniques, The Snapshot Techniques, SCARF, Continuous
+and Intermittent, Simulation Technique.
+\n Unit 13 : Management Information Systems
+Role of MIS in an organization, Different kinds of Information Systems, Transaction
+Processing System, Management Information System, Decision Support System,
+Expert System.</string>
+
+
+    <string name="BCS_031_syllabus"> \nBCS-031 : C++ Programming	 \n 3 Credits \n
+Objectives: \n
+The object oriented programming paradigm is one of the popular programming paradigms of
+today. Due to its characteristics object orientation has added new dimensions in the software
+development process. In this course concept of Object Oriented Programming (OOP) is
+introduced and for this purpose C++ programming language is being used. C++ a very powerful
+general purpose programming language, which supports object oriented programming paradigm.
+This course covers basics of C++ programming language which includes data types, variables,
+operators, and array and pointers. Also object oriented features such as class and objects,
+inheritance, polymorphism are covered in this course. Finally exceptions handling, I/O
+operations and STL are explained.
+\n\n BLOCK 1: Basics of Object Oriented Programming and C++
+\n Unit 1
+: Object Oriented Programming
+Structured vs. Object Oriented Programming, Object Oriented Programming
+Concepts, Benefits of Object oriented programming, Object Oriented Languages.
+\n Unit 2
+: Introduction to C++
+Genesis of C++, Structure of a C++ program, Data Types, Operators and Control
+Structures.
+\n Unit 3
+: Objects and Classes
+Classification, Defining Classes, Encapsulation, Instantiating Objects, Member
+Functions, Accessibility labels, Static Members.
+
+
+\n Unit 4	Constructors and Destructors
+Purpose of Constructors, Default Constructor, Parameterized Constructors, Copy
+Constructor, Destructor, Memory Management.
+\n\n BLOCK 2: Inheritance and Polymorphism in C++
+\n Unit 1
+: Inheritance
+Concept of Reusability, Types of Inheritance, Single and Multiple Inheritance,
+Multilevel Inheritance.
+\n Unit 2
+: Operator Overloading
+Function and Operator Overloading, Overloading Unary and Binary Operators.
+\n Unit 3
+: Polymorphism and Virtual Function
+Abstract Class, Function Overriding, Dynamic Binding, Pure Virtual Functions.
+Block 3:
+Advanced Features of C++
+\n Unit 1
+: Streams and Files
+Stream Classes, Types of I/O, Formatting Outputs, File Pointers, Buffer.
+\n Unit 2
+: Templates and STL
+Function and Class Templates, Use of Templates, Standard Template Library.
+\n Unit 3
+: Exception Handling
+Exceptions in C++ Programs, Try and Catch Expressions, Exceptions with arguments.
+\n Unit 4
+: Case Study
+A Case Study to implement a real world problem.</string>
+
+
+    <string name="BCSL_032_syllabus"> \nBCSL-032: C++ Programming Lab	 \n 1 Credit \n
+Objectives: \n
+Objective of this course is to provide hands on experience to the learners in C++ programming.
+Learners will write program in C++ based on concepts learned in C++ programming course. In
+this course programming to be done for implementation of OO features such as class, objects,
+inheritance, polymorphism.
+Syllabus and Sessions Allocation:
+ \n Session1: Basics of C++, data type, I/O, Control Structures etc., \n  Session 2: Class and Objects,
+function calling,  \n Session 3: Constructor and Destructor, \n  Session 4: Inheritance, \n  Session 5:
+Operator Overloading,  \n Session 6: Polymorphism,  \n Session 7: Template class and function,
+ \n Session 8: I/O and streaming, \n Session9: Exception Handling, \n  Session10:STL.
+
+</string>
+
+
+    <string name="BCSL_033_syllabus"> \n	BCSL-033	Data and File Structures Lab	 \n 1 Credit \n
+Objectives: \n
+This lab is based on the courses MCS-021. This lab course involves the development of the
+practical skills in Data structures using C programming, Theoretical aspects were already
+covered in the respective theory courses. This course is an attempt to upgrade and enhance your
+theoretical skills and provide the hands on experience. By the end of these practical sessions of
+this course, you will be able to write programs using basic data structures such as Arrays etc. as
+well as advanced data structures such as trees etc.
+Structure
+\n SECTION 1 : Data and File Structures Lab Manual
+\n*	Arrays
+\n*	Structures
+\n*	Linked Lists
+\n*	Stacks
+\n*	Queues
+\n*	Trees
+\n*	Advanced Trees
+\n*	Graphs
+\n*	Searching
+\n*	Sorting</string>
+
+
+    <string name="BCSL_034_syllabus"> \n
+BCSL-034 DBMS Lab	 \n 1 Credit \n
+Objectives: \n This lab is based on the courses MCS-023,. This lab course involves the
+development of the practical skills in DBMS using MS-Access , Theoretical aspects were
+already covered in the respective theory courses. This course is an attempt to upgrade and
+enhance your theoretical skills and provide the hands on experience. By the end of these
+practical sessions of this course, you will be able to create databases and use DBMS Tools in the
+areas of Database applications.
+Structure
+\n SECTION 1: DBMS Lab
+\n*	Introduction to MS-Access
+\n*	Database Creation
+\n*	Use of DBMS Tools/Client-Server Mode
+\n*	Forms and Procedures</string>
+
+
+    <string name="BCS_040_syllabus"> \nBCS-040: Statistical Techniques	4 Credits \n
+ \nBLOCK-1: Statistics and Probability
+ \nUnit-1	: Descriptive Statistics
+Collecting Data, Kinds of Data, Frequency Distribution of a Variable, Graphical
+Representation of Frequency Distribution, Summarisation of Data, Measures of
+Central Tendency, Measures of Dispersion or Variability.
+ \nUnit-2	Probability Concepts
+Preliminaries, Trials, Sample Space, Events, Algebra of Events, Probability
+Concepts, Probability of an Event, Probability of Compound Events, Conditional
+Probability and Independent Events.
+ \nUnit-3	: Probability Distributions
+Random Variable, Discrete Random Variable, Continuous Random Variable,
+Binomial Distribution, Poisson Distribution, Uniform Distribution, Normal
+Distribution.
+ \nBLCOK-2: Statistical Inference
+ \nUnit-4
+: Sampling Distributions
+Population and Samples, What is a Sampling Distribution, t-distribution, Chi-Square
+distribution F-distribution.
+ \nUnit-5
+: Estimation
+Point Estimation, Criteria For a Good Estimator, Interval Estimation, Confidence
+Interval for Mean with Known Variance, Confidence Interval for Mean with Known
+Variance, Confidence Interval for Proportion.
+ \nUnit-6
+: Tests of Significance
+Some Basic Concepts, Tests About the Mean, Difference in the Means of Two
+Populations Test About the Variance.
+ \nUnit-7
+: Applications of Chi-Square in Problems with Categorical Data
+Goodness-of-fit, Test of Independence.
+BLOCK-3: Applies Statistical Methods
+ \nUnit-8	: Analysis of Variance: One-Way Classification
+Analysis of Variance: Basic Concepts, Source of Variance, One-Way Classification
+Model for One-Way Classification, Test Procedure, Sums of Squares, Preparation of
+ANOVA Table, Pairwise Comparisons, Unbalanced Data, Random Effects Model.
+ \nUnit-9	: Regression Analysis
+Simple Linear Regression, Measures of Goodness of Fit, Multiple Linear Regression,
+Preliminaries, Regression with Two Independent Variables.
+ \nUnit-10 : Forecasting and Time Series Analysis
+Forecasting, Time Series and Their Components, Long-term Trend, Seasonal
+Variations, Cyclic Variations, Random Variations/Irregular Fluctuations, Forecasting
+Models, the Additive Model, the Multiplicative Model, Forecasting Long-term
+Trends, The Methods of Least Squares, the Methods of Moving Averages,
+Exponential Smoothing.
+ \nUnit-11 : Statistical Quality Control
+Concept of Quality, Nature of Quality Control, Statistical Process Control, Concepts
+of Variation, Control Charts, Control Charts For Variables, Process Capability
+Analysis, Control Charts For Attributes, Acceptance Sampling, Sampling Plan
+Concepts, Single Sampling Plans.
+ \nBLOCK- 4: Sampling
+ \nUnit-12 : Simple Random Sampling and Systematic Sampling
+Sampling- What and Why* Preliminaries, Simple Random Sampling, Estimation of
+Population Parameters Systematic Sampling, Linear Systematic Sampling, Circular
+Systematic Sampling, Advantages and, Limitations of Systematic Sampling.
+ \nUnit-13 : Stratified Sampling
+Stratified Sampling, Preliminaries, Advantages, Estimation of population parameters,
+Allocation of sample size, Construction of strata, Post-Stratification.
+ \nUnit-14 : Cluster Sampling and Multistage Sampling
+Cluster Sampling, Preliminaries, Estimation of population mean, Efficiency of
+cluster sampling Multistage sampling, Preliminaries, Estimation of mean in two
+stage sampling.
+         Note: There may be some minor changes in the syllabus of BCS-040.
+		</string>
+
+
+    <string name="MCS_024_syllabus"> \nMCS-024:
+
+
+Object Oriented Technology and Java Programming  \n 3 Credits \n
+Objectives: \n
+Today almost every branch of computer science is feeling presence of object- orientation. Object
+oriented technology is successfully incorporated in various fields of computer science. Since its
+arrival on the scene in 1995, the Java has been accepted as one of the primary programming
+language.
+This course is designed to give you exposure to basic concepts of object-oriented technology.
+This course will help in learning to write programs in Java using object-oriented paradigm.
+Approach in this course is to take Java as a language that is used as a primary tool in many
+different areas of programming work.
+Structure
+\n\n BLOCK 1:	Object Oriented Technology and Java
+\n Unit 1
+: Object Oriented Methodology-1
+Paradigms of Programming Languages, Evolution of OO Methodology, Basic
+Concepts of OO Approach, Comparison of Object Oriented and Procedure Oriented
+Approaches, Benefits of OOPs, Introduction to Common OO Language,
+Applications of OOPs.
+\n Unit 2
+: Object Oriented Methodology-2
+Classes and Objects, Abstraction and Encapsulation, Inheritance, Method Overriding
+and Polymorphism.
+\n Unit 3
+: Java Language Basics
+Introduction To Java, Basic Features, Java Virtual Machine Concepts, A Simple Java
+Program, Primitive Data Type And Variables, Java Keywords, Integer and Floating
+Point Data Type, Character and Boolean Types, Declaring and Initialization
+Variables, Java Operators.
+\n Unit 4	Expressions, Statements and Arrays
+Expressions, Statements, Control Statements, Selection Statements, Iterative
+Statements, Jump Statements, Arrays.
+\n\n BLOCK 2: Object Oriented Concepts and Exceptions Handling
+\n Unit 1
+: Class and Objects
+Class Fundamentals, Creating objects, Assigning object reference variables,
+Introducing Methods, Static methods, Constructors, Overloading constructors, This
+Keyword, Using Objects as Parameters, Argument passing, Returning objects,
+Method Overloading, Garbage Collection, The Finalize ( ) Method.
+\n Unit 2
+: Inheritance and Polymorphism
+Inheritance Basics, Access Control, Multilevel Inheritance, Method Overriding,
+Abstract Classes, Polymorphism, Final Keyword.
+\n Unit 3
+: Packages and Interfaces
+Package, Defining Package, CLASSPATH, Package naming, Accessibility of
+Packages, Using Package Members, Interfaces, Implementing Interfaces, Interface
+and Abstract Classes, Extends and Implements Together.
+\n Unit 4
+: Exceptions Handling
+Exception, Handling of Exception, Using try-catch, Catching Multiple Exceptions,
+Using finally clause, Types of Exceptions, Throwing Exceptions, Writing Exception
+Subclasses.
+\n\n BLOCK 3: Multithreading, I/O and String Handling
+\n Unit 1
+: Multithreaded Programming
+Multithreading: An Introduction, The Main Thread, Java Thread Model, Thread
+Priorities, Synchronization in Java, Interthread Communication.
+\n Unit 2
+: I/O in Java
+I/O Basics, Streams and Stream Classes, Byte Stream Classes, Character Stream
+Classes, The Predefined Streams, Reading from, and Writing to, Console, Reading
+and Writing Files, The Transient and Volatile Modifiers, Using Instance of Native
+Methods.
+\n Unit 3
+: Strings and Characters
+Fundamentals of Characters and Strings, The String Class, String Operations, Data
+Conversion using Value Of ( ) Methods, String Buffer Class and Methods.
+\n Unit 4
+: Exploring Java I/O
+Java I/O Classes and Interfaces, I/O Stream Classes, Input and Output Stream, Input
+Stream and Output Stream Hierarchy, Text Streams, Stream Tokenizer, Serialization,
+Buffered Stream, Print Stream, Random Access File.
+\n\n BLOCK 4 :	Applets Programming and Advance Java Concepts
+\n Unit 1
+: Applets
+The Applet Class, Applet Architecture, An Applet Skeleton: Initialization and
+Termination, Handling Events, HTML Applet Tag.
+\n Unit 2
+: Graphics and User Interfaces
+Graphics Contexts and Graphics Objects, Color Control, Fonts, Coordinate System,
+User Interface Components, Building User Interface with AWT, Swing-based GUI,
+Layouts and Layout Manager, Container.
+\n Unit 3
+: Networking Features
+Socket Overview, Reserved Parts and Proxy Servers, Internet Addressing: Domain
+Naming Services (DNS), JAVA and the net: URL, TCP/IP Sockets, Datagrams.
+\n Unit 4
+: Advance Java
+Java Database Connectivity, Establishing A Connection, Transactions with Database,
+An Overview of RMI Applications, Remote Classes and Interfaces, RMI
+Architecture, RMI Object Hierarchy, Security, Java Servlets, Servlet Life Cycle, Get
+and Post Methods, Session Handling, Java Beans.</string>
+
+
+    <string name="BCS_041_syllabus"> \nBCS-041: Fundamental of Computer Networks	 \n 4 Credits \n
+Objectives: \n s
+This course introduces the basics of data communication and networking. Students will develop
+an understanding of the general principles of data communication and networking as used in
+networks. It also includes an activity of setting up a small local area network. The goal of this
+course is that the student will develop an understanding of the structure of network, its elements
+and how these elements operate and communicate with each other.
+\n\n BLOCK 1:	Concepts of Communication And Networking
+\n Unit 1
+: Basics of Data Communication
+Concept of communication system, Analog and Digital Communication, Data
+communication modes, Synchronous and asynchronous transmission, Simplex,
+halfduplex, full duplex communication, Networking Protocols and Standards,
+Layering, OSI reference model, encapsulation, End-to-end argument. Protocol design
+issues, Applications.
+\n Unit 2
+: Modulation and Encoding
+Analog Modulation (AM, FM, PM), AM Demodulation (one technique only),
+Advantages and Disadvantages of each., Analog to Digital (Digitization), Sampling,
+Quantization, Digital to Analog, Digital Modulation (ASK, FSK, PSK, QPSK).
+\n Unit 3
+: Multiplexing and Switching
+Concept, FDM, TDM, SDM, Multiplexing Applications, Circuit and Packet Switching.
+\n Unit 4
+: Communication Mediums
+Digital data transmission, Serial and Parallel Transmission, Guided and Unguided
+mediums, Wireless Communication, Coaxial Cables, Twisted Pair Cables, Fiber
+Optic Cables, Connectors.
+
+
+\n\n BLOCK 2: Networks and Devices
+\n Unit 1
+: Network Classifications and Topologies
+Network Concept, LAN overview, LAN Topologies, LAN access methods, Network
+Types based on size like PAN, LAN, MAN, WAN, Functional Classification of
+Networks, Peer to Peer, Client Server. Wide Area Network, WAN Topologies, WAN
+Access Methods.
+\n Unit 2
+: OSI and TCP/IP Models
+Introduction of OSI Model, Need of such Models, Basic functions of each OSI layer,
+Introduction to TCP/IP, Comparisons with TCP/IP layers. (At the beginner\'s level).
+\n Unit 3
+: Physical and Data link Layer
+Error detection and correction, CRC, Framing, Retransmission strategies, Multi-
+access communication, CSMA/CD, Ethernet, Addressing, ARP and RARP.
+\n Unit 4
+: Internetworking Devices
+Network Interface Cards, Modems, Repeaters, Hubs, Bridges, Switch (L2 and L3
+differences) and gateways.
+\n\n BLOCK 3: Network, Transport And Application Layer
+\n Unit 1
+: Network layer
+Circuit and packet switching, Routing, Congestion control, Routing protocols:
+distance vector vs link-state routing, DV problems, Network Addressing,
+Forwarding, Fragmentation, Error Messaging Services.
+\n Unit 2
+: Transport layer
+Addressing and multiplexing, Flow control, congestion control, data transport, Port
+numbers, service models, Intro to reliability, QoS.
+\n Unit 3
+: Application Layer
+DNS, Remote Logging, File transfer, Network Management, client-server applications,
+WWW, E-mail, MIME.
+\n Unit 4
+: Network Applications
+Internet Applications like emails, chatting, social networking, Rail Reservations,
+Information Sharing, e-governance, Online Processing and Collaborations, etc., Mobile
+Applications.
+	\n\n BLOCK 4:	Network Design And Security
+	\n Unit 1	: Building a Simple Network
+Examples of designing the developing small networks, Structure Cabling, Integrating
+home computers and devices, creating a small Networking.
+	\n Unit 2	: Introduction to Network Architectures
+X.25, Frame relay, Telephone network, ATM network, ISP, IPv4 and IPv6 overview
+\n Unit 3
+: Introduction to Wireless and Mobile Networks
+Introduction to wireless communication systems, modern wireless communication
+systems and generations, Introduction to cellular mobile systems, CDMA, cellular
+system design fundamentals.
+\n Unit 4
+: Network Security
+Introduction to computer security, Security services, Authentication and Privacy, Block
+and Stream Ciphers, Public and Private key Cryptography, Introduction to RSA, MD5
+and DES at the beginner\'s level.</string>
+
+
+    <string name="BCS_042_syllabus"> \n BCS-042: Analysis and Design of Algorithms	 \n 2 Credits \n
+Objectives: \n
+To learn about properties of algorithm and how to design an algorithm, discuss asymptotic
+notations, Design and measure time complexity analysis of searching, sorting and Graph traversal
+algorithms. Make comparison of different type of algorithm likes Linear, Quadratic, Polynomial and
+Exponential, Describe how greedy approach facilitate solving the problem. Discuss Divide and
+Conquer approach for solving the problem.
+BLOCK-1:	Introduction To Algorithm
+\n Unit 1
+: Basics of an Algorithm
+Definition and Example of an algorithm, Characteristics of an algorithm, Steps in
+Designing of Algorithms, Growth of function, Recurrence, Problem Formulation
+(Tower of Hanoi), Substitution Method, Iteration Method, Master Method.
+\n Unit 2
+: Asymptotic Bounds
+Asymptotic Notations, Concept of efficiency of analysis of an algorithm
+Comparative efficiencies of algorithms: Linear, Quadratic, Polynomial and
+Exponential.
+\n Unit 3
+: Analysis of simple Algorithms
+Euclid\'s algorithm for GCD, Horner\'s Rule for polynomial evaluation, Simple Matrix (n
+x n) Multiplication, Exponent evaluation e.g. an, Searching, Linear Search, Sorting,
+Bubble sort, Insertion Sort, Selection sort.
+\n\n BLOCK 2: Design Techniques
+\n Unit 1
+: Greedy Technique
+Elements of Greedy strategy, Activity Selection Problem, Continuous Knapsack
+Problem, Coin changing Problem, More Examples.
+\n Unit 2
+: Divide and Conquer Approach
+General Issues in Divide and Conquer, Binary Search, Merge Sort, Quick Sort,
+Integer Multiplication, More Examples.
+\n Unit 3
+: Graph Algorithm
+Representation of Graphs, Adjacency Matrix, Adjacency List, Depth First Search and
+Examples, Breadth First Search and Examples.
+	</string>
+
+
+    <string name="MCSL_016_syllabus"> \n
+ MCSL-016: Internet Concepts and Web Design (Lab Course)	 \n 2 Credits \n
+Objectives: \n
+The main objective of the course is to introduce the whole range of web technologies starting from
+HTML, DHTML, Java Script, VBScript, and Dreamweaver. It also gives a brief description on
+Internet. Through the various examples the course will describe how to design specific page,
+dynamic web page, forms and frames. It also focuses on the practical aspects of these technologies.
+Structure
+\n\n BLOCK 1: Scripting Languages
+\n Unit 1
+: The Internet
+Classification of Networks, Networking Models, What is Packet Switching,
+Accessing the Internet, Internet Protocols, Internet Protocol (IP), Transmission
+Control Protocol (TCP), Internet Address, Structure of Internet Servers Address,
+Address Space, How does the Internet work, Intranet and Extranet, Internet
+Infrastructure, Protocols and Services on Internet, Domain Name System, SMTP and
+Electronic Mail, Http and World Wide Web, Usenet and Newgroups, FTP, Telnet,
+Internet Tools, Search Engines, Web Browser.
+\n Unit 2
+: Introduction to HTML
+What is HTML, Basic Tags of HTML, HTML Tag, TITLE Tag, BODY Tag,
+Formatting of Text, Headers, Formatting Tags, PRE Tag, FONT Tag, Special
+Characters, Working with Images, META Tag.
+\n Unit 3
+: Advanced HTML
+Links, Anchor tag, Lists, Unordered Lists, Ordered Lists, Definition Lists, Tables,
+TABLE, TR and TD Tags, Cell Spacing and Cell Padding, Colspan and Rowspan,
+Frames, Frameset, FRAME Tag, NOFRAMES Tag, Forms, FORM and INPUT Tag,
+Text Box, Radio Button, Checkbox, SELECT Tag and Pull Down Lists, Hidden,
+Submit and Reset, Some Special Tags, COLGROUP, THREAD, TBODY, TFOOT,
+_blank, _self, _parent, _top, IFRAME, LABEL, Attribute for SELECT,
+TEXTAREA.
+\n Unit 4
+: Introduction to JavaScript
+JavaScript Variables and Data Types, Declaring Variables, Data Types, Statements
+and Operators, Control Structures, Conditional Statements, Loop Statements,
+ObjectBased Programming, Functions, Executing Deferred Scripts, Objects, Message
+box in JavaScript, Dialog Boxes, Alert Boxes, Confirm Boxes, Prompt Boxes,
+JavaScript with HTML, Events, Event Handlers, Forms, Forms Array.
+\n Unit 5
+: VB Script
+What is VBScript* Adding VBScript Code to an HTML Page, VB Script Basics,
+VBScript Data Types, VBScript Variables, VBScript Constants, VBScript Operators,
+Using Conditional Statements, Looping Through Code, VBScript Procedures, VBScript
+Coding Conventions, Dictionary Object in VBScript, Methods: VBScript Dictionary
+Object, VBScript Dictionary Object Properties, Err Object, Methods: VBScript Err
+Object, Properties: VBScript Err Object.
+\n Unit 6	: Dreamweaver
+Using Dreamweaver, Create a Site Home Page, Design a Page in Layout View, Insert
+Images, Insert Text, Work in Standard View, View the Site Files, Link your Documents.
+\n\n BLOCK 2: Lab Manual
+ \n Section 1 :HTML (Hypertext Markup Language)
+      \n*	Basic of HTML
+      \n*	How to Create HTML Document
+      \n*	Steps for Creating a Simple HTML Program  \n Section 2: Advanced HTML
+      \n*	Advanced Topics of HTML
+ \n Section 3: JavaScript
+      \n*	Script Basics
+      \n*	Incorporating JavaScript into a Web Page \n  Section 4: VBScript
+      \n*	VBScript Basics
+      \n*	Incorporating VBScript into HTML Page
+ \n Section 5: Dreamweaver
+      \n*	How to Work in Dreamweaver
+      \n*	How to save your file?
+      \n*	Adding Layers to the Timeline and Giving Motion to the Layer
+      \n*	Inserting Scripts
+      \n*	Inserting External Media in the Web Page
+      \n*	Adding SSI(Server-side include to the Page)
+      \n*	Adding CSS Style to your Page
+      \n*	Adding XML Files to your Page
+      \n*	To Export a Dreamweaver Document as XML File, checking entries,
+working in frames, windows control, the Java script URL.</string>
+
+
+    <string name="BCSL_043_syllabus"> \n Java Programming Lab	 \n 1 Credit \n
+Objectives
+This lab is based on the course MCS-024. This lab course involves the development of the practical
+skills in Java Programming. Theoretical aspects were already covered in the respective theory
+courses. This course is an attempt to upgrade and enhance your theoretical skills and provide the
+hands on experience in Java programming. By the end of these practical sessions of this course, you
+will be able to write programs using java programming language.
+\n SECTION 1: Java Programming Lab
+\n*	Programming with Java
+\n*	PATH and CLASSPATH Setting
+\n*	Example Programs
+\n*	List of Lab Assignments
+</string>
+
+    <string name="BCSL_044_syllabus"> \n
+BCSL-044: Statistical Techniques Lab	 \n 1 Credit \n
+This course is based on Statistical Techniques course.
+Objectives: \n
+This lab course will provide opportunity to the learners to implement the concepts and techniques
+learned in Statistical Techniques course in C/C++ Language and/or in MS-Excel.
+Session wise coverage:
+ \n	Session 1	: Frequency distribution, central tendency and dispersion.
+Session 2, 4	: Hypothesis testing, t distribution, chi square distribution of distribution, normal
+distribution.
+ \n	Session 5	: Regression and correlation coefficient-univariate, multivariate.
+ \n	Session 6	: Anova test.
+ \n	Session 7	: Central charts.
+ \n Session 8	: Time series.
+ \nSession 9, 10 : Sampling for a problem domain and analyse \n * Case Study.
+</string>
+
+
+    <string name="BCSL_045_syllabus"> \nBCSL-045 : Analysis and Design of Algorithms Lab	 \n 1 Credit \n
+This course will cover practical implementations of several algorithms covered in BCS-042 course.</string>
+
+
+    <string name="BCS_051_syllabus"> \n BCS-051 : Introduction to Software Engineering	 \n 3 Credits \n
+Objectives: \n
+After studying the course, the student should:
+ \na)	Be able to develop SRS as per any of the existing standards;
+ \nb)	Know various Function and Object oriented modeling and design techniques;
+ \nc)	Know various testing techniques;
+ \nd)	Know different Software Development Life Cycle models; and
+ \ne)	Know the concepts of Software Project Management.
+ \nBLOCK-1 : Development of SRS
+ \nUnit-1	: Characteristics of SRS
+Completeness, Unambiguity, Inconsistency, IEEE SRS.
+ \nUnit-2	: Function oriented Modeling
+DFD, ERD, Structure Chart, SRS, Data Dictionaries.
+ \nUnit-3	: Object Oriented Modeling
+UML Introduction, Use Case Diagrams, Class Diagrams.
+BLOCK-2 : Design and Testing
+ \nUnit-1
+: Function Oriented Design
+Constructing solution to problem, Identifying components and their interaction,
+Visualizing the solution, Characteristics of a good function oriented design
+(Coupling, Cohesion etc.).
+ \nUnit-2
+: Object Oriented Design
+Identification and Specification problem domain static objects, Working out the
+application logic objects, Identification of necessary utility objects, Methodology of
+identification of objects, Case Study.
+ \nUnit-3
+: Testing Techniques
+Different testing techniques with examples.
+ \nUnit-4
+: Development and Execution of test cases
+Debugging, Testing tools and Environments, Types of test cases and test plans.
+ \nBLOCK-3 : Software Engineering Concepts
+ \nUnit-1
+: Software Development Models
+Program vs Software, Definition of Software Engineering, SDLC models.
+ \nUnit-2
+: Software Project Management Concepts
+Planning, Execution, Monitoring, Control of Software Projects, Software Metrics,
+Application of PERT and GANTT charts.
+ \nUnit-3
+: Software Engineering Fundamentals
+Software Configuration Management, Software Maintenance, Software Quality
+Assurance.
+</string>
+
+
+    <string name="BCS_052_syllabus"> \n BCS-052: Network Programming and Administration	 \n 3 Credits \n
+\n\n BLOCK 1 :	TCP/IP Protocols
+ \nUNIT 1 : Introduction to TCP/IP
+Origin of TCP/IP and Internet, Communication ,Why do we Need the Internet, Need of
+Protocol on Communication, Problems in Computer Communication, Dealing with
+Incompatibility, A Brief History of the Internet, Architecture of the Internet, TCP/IP
+Layer and Protocols, Network Access Layer, Internet Layer, Need for IP Address,
+Classes of IP Address, Special Meanings, Who Decides the IP Addresses, Internet
+Protocol, Address Resolution Protocol (ARP),Reverse Address Resolution Protocol
+(RARP), Internet Control Message Protocol (ICMP), Transport Layer, Transmission
+Control Protocol, User Datagram Protocol (UDP), Application Layer, Electronic Mail,
+Domain Name System (DNS), How does the DNS Server Works* Simple Network
+Management Protocol (SNMP), Remote Login: TELNET, World Wide Web: HTTP,
+Networking Example.
+ \nUNIT 2 : Internet Protocol
+Overview of Internet Protocol, IP Header, IP Address, IP Address Classes, Subnet
+Masks and CIDR Networks (Classless IP Addresses), Internet-Legal Versus Private
+Addressing, IP Routing, Routing Protocol, Routing Algorithms.
+ \nUNIT 3 : Transport Layer Protocols
+Overview of TCP, Transmission Control Protocol (TCP), TCP Header, TCP Connection
+Establishment and Termination, TCP Connection Establishment, TCP Connection
+Termination, User Datagram Protocol (UDP).
+ \nUNIT 4 : Application Layer Protcols
+Domain Name System (DNS), Hierarchical Name Space, Domain Servers, How does
+DNS Work in Internet, Domain Name Resolution, Messages Used in DNS, Dynamic
+DNS (DDNS), Electronic Mail, Simple Mail Transfer Protocol (SMTP),Message
+Transfer Agent, User Agent, Post Office Protocol (POP), Internet Mail Access Protocol
+(IMAP),Multipurpose Internet Mail Extension (MIME), Telnet , File Transfer Protocol
+(FTP).
+\n\n BLOCK 2: Fundamentals of TCP/IP Programming
+ \nUNIT 1 : TCP/IP Programming Concepts
+Client Server Communication, Designing Client/Server Programs, Socket Concepts, IP
+Address and Ports, Byte Ordering, Sketch of Networking Connection, Active and
+Passive Sockets, Socket Fundamentals, Networking Example.
+ \nUNIT 2 : Socket Interface
+Elementary Socket System Calls, Socket System Call, Bind System Call, Connect
+System Call, Listen System Call, Accept System Call, Elementary Data Transfer Calls,
+Closing a Socket, TCP and UDP Architectures, Networking Example.
+ \nUNIT 3 : Socket Programming
+Advance System call, Data Transfer, Byte Operations and Addressing, Socket Options,
+Select System Call Raw Socket, Multiple Recipients, Unicasting, Broadcasting,
+Multicasting, Quality of Service Issues.
+\n\n BLOCK 3: Network Administration Using Linux
+ \nUNIT 1 : Introduction To Network Administration
+Role and responsibilities of Network Administrator, Linux and TCP/IP Internetworking
+concepts, Using Network Clients, Understanding System Initialization, Use Remote
+Administration Services and Tools.
+ \nUNIT 2 : Network Administration Activities
+Managing software packages and File systems, Managing users, System and kernel
+management, Basic Troubleshooting.
+ \nUNIT 3 : Network Configuration and Setting
+Configuring Networks, Dynamic Host Configuration Protocol, Domain Name System
+(DNS), Network File System (NFS), Web Server (Prefer Samba Server).
+ \nUNIT 4: Network Management and Security
+Networks and Security, User Security Management, Disk Security Management,
+Security Configuration and Analysis, Account Policies, Permissions and Restrictions,
+Configuring Network Settings, Advance Troubleshooting.
+</string>
+
+    <string name="BCS_053_syllabus"> \n
+
+        BCS-053: Web Programming	 \n 2 Credits \n
+Objectives: \n
+After going through this course a student should be able to:
+\n*	Use XHTML tags to create simple static web pages;
+\n*	format a simple Web page using Cascading Style sheets;
+\n*	state the	concepts applicable to web programming;
+\n*	create an interactive and dynamic Web site using JavaScript;
+\n*	represent data over the Web using XML;
+\n*	appreciate the use of Ajax and Rich Internet Applications, and \n * perform	server side
+scripting using Java Server Pages (JSP).
+\n\n BLOCK 1: Client Side
+\n Unit 1
+: Web 2.0 and XHTML
+What Is Web 2.0* Introduction to Web 2.0 terms: Search, Content Networks,
+Blogging, Social Networking, Social Media, Rich Internet Applications (RIAs), Web
+Services, Mashups, Widgets and Gadgets, Introduction to XHTML and WML,
+Syntactic Differences between HTML and XHTML, Standard XHTML Document
+Structure, An example of XHTML covering Basic Syntax, Images, Hypertext Links,
+Lists and Tables, Creation of an XHTML Form, Internal Linking and Meta Elements.
+\n Unit 2
+: Using Style Sheets
+CSS: Inline Styles, Embedded Style Sheets, Linking External Style Sheets, Style
+Specification Formats Selector Forms, Colour, Property Value Forms, Font
+Properties, List Properties, Alignment of Text, The Box Model, Background Image
+,The span and div Tags.
+\n Unit 3
+: Introduction to XML
+XML Basics, XML Document Structure, XML Namespaces, Document Type
+Definitions, XML Schemas, Displaying XML Documents.
+\n Unit 4
+: Programming with Java Script \n * DOM and Events
+The Document Object Model, Element Access in JavaScript, Traversing and
+Modifying a DOM Tree, DOM Collections and Styles, Events, Examples of Event
+Handling from Body, Button, Text Box and Password Elements, Dynamic
+Documents using JavaScript \n * element moving, visibility, positioning etc., Example
+program (s),Introduction and example of AJAX.
+\n Unit 5
+: Introduction to WAP and WML
+WAP and WML Basics, WML formatting and links, WML input, WML tasks, WML
+timer, WML variables, Example.
+\n\n BLOCK 2: Server Side
+\n Unit 1
+: The Server Side Scripting
+Server side scripting and its need ,Two-Tier, Three-Tier, N-Tier and Enterprise
+Architecture, Various Languages/ Technologies for server scripting ,HTTP Methods
+(such as GET, POST, HEAD, and so on) , Purpose ,Technical characteristics,
+Method selection, Use of request and response primitives, Web container \n * Tomcat.
+\n Unit 2
+: JSP \n * Basic
+Basic JSP Lifecycle, JSP Directives and Elements, Scriptlets, Expressions, Action
+Elements, Standard Actions, Comments and Template Data, JSP variables, The out
+Object, Request, response, sessions and application objects.
+\n Unit 3
+: JSP \n * Applications
+Exceptions and exception handling using JSP, Cookies and sessions, Managing
+Email using JSP.
+\n Unit 4
+: JSP Application Development
+Example applications using JSP, What is JDBC* Need for JDBC, Database Drivers,
+Connection using JDBC API, Application development and deployment.
+</string>
+
+
+    <string name="BCS_054_syllabus"> \n
+
+
+        BCS-054 : Computer Oriented Numerical Techniques	 \n 3 Credits \n
+Introduction and Objectives: \n
+In today\'s world the practical problems are quite complex and it may not be possible to find their
+analytical solutions. Hence we have to resort to computer oriented numerical methods for solving
+them. Numerical analysis provides knowledge of various techniques to get mathematical entities
+involved in solving the problems.
+	\n\n BLOCK 1:	Computer Arithmetic and Solution of Linear and Non-linear Equations
+	\n Unit 1	: Computer Arithmetic
+Floating Point Arithmetic and Errors, Rounding and Chopping of a Number and
+Associated Errors, Floating Point Representation of Numbers, Truncation errors and
+Taylor\'s Series.
+\n Unit 2
+: Solution of Linear Algebraic Equations
+Preliminaries, Direct Methods, Gauss Elimination Method (Basic), Gauss
+Elimination Method (Row Interchanges: Pivotal condensation),Iterative Methods,
+Gauss Jacobi Iterative Method, The Gauss-Seidel Iteration Method, Comparison of
+Direct and Iterative Methods.
+\n Unit 3
+: Solution of Non-linear Equations
+Non Linear Equations, Solution of Non Linear Equations, Successive Substitution
+Method(Fixed point method), Bisection Method ,Newton-Raphson Method, Regulafalsi
+Method, Secant Method.
+\n\n BLOCK 2: Interpolation
+\n Unit 1
+: Operator
+What is Interpolation, Some Operators and their Properties, Interrelation between
+operators, Applications of operators on some functions.
+\n Unit 2
+: Interpolation with Equal Intervals
+Difference Table, Interpolation Methods, Newton Forward Difference Formula,
+Newton Backward Difference Formula, Central Difference Formula, Stirling\'s
+Formula, Bessle\'s Formula.
+\n Unit 3
+: Interpolation with Unequal Intervals
+Lagrang\'s Method, Divided Difference Method, Divided Difference Table, Newton\'s
+Divided Difference Method.
+\n\n BLOCK 3: Differentiation, Integration And Differential Equations
+\n Unit 1
+: Numerical Differentiation
+Differentiation by Forward/Backward Difference Formula, Differentiation by Central
+Difference Formula.
+\n Unit 2
+: Numerical Integration
+Methodology\'s of Numerical Integration, Rectangular Rule, Trapezoidal Rule,
+Simpsons (1/3) Rule.
+\n Unit 3
+: Ordinary Differential Equation
+Initial Value and Boundary Value Problem, Euler\'s Method, Improved Euler\'s Method,
+Runge Kutta (R-K) Methods (of Order 2 and 4).
+</string>
+
+
+    <string name="BCS_055_syllabus"> \nBCS-055: Business Communication	 \n 2 Credits \n
+Objectives: \n
+\n*	Making students aware of the importance of social skills in business.
+\n*	Preparing them for the job market.
+\n*	Sensitizing them to implications of communicating in multi-cultural settings.
+\n*	Making students aware of difference between oral and written communication.
+\n*	Facilitating understanding and practice of in company and external business correspondence.
+\n*	Dealing with requirements of effective reports and proposals.
+\n*	Developing editing skills.
+\n*	Learning to summaries.
+	\n\n BLOCK 1:	Business Social Skills and the Recruitment Process
+\n Unit 1
+: Greetings and Introductions
+Small talk, Corporate Entertainment.
+\n Unit 2
+: Company Profiles/Jobs and responsibilities
+\n Unit 3
+: Getting Ready for the Job Market
+Preparing a Portfolio.
+\n Unit 4
+: Responding to Advertisements
+Writing a CV/Resume, Covering Letter, Accepting and Declining Job Offers.
+\n Unit 5
+: Interviews
+Preparing for Interviews, Face to face Interviews, Phone and walk in Interviews Group
+Discussions, Presentations for Recruitment.
+\n Unit 6
+: Communicating Across Cultures
+Language and Culture, Business Travel, Business Events \n * IT Trade Fairs and Conferences.
+\n\n BLOCK 2: Business Writing
+\n Unit 1
+: Features of Written and Oral Communication
+Making a choice, In Company Communication: notices, notes, messages, memos, e
+mails etc.
+\n Unit 2
+: External Communication
+Types of Letters, faxes, e mails,Conventions and Practices.
+\n Unit 3
+: Writing Reports
+Types of reports \n * Informative and analytical, Contents and Structures.
+\n Unit 4
+: Writing Proposals
+Basic Features, Types of proposals.
+\n Unit 5
+: The Process of Writing
+Editing Skills \n * correction of errors, eliminating superfluities, Summarizing.
+</string>
+
+
+    <string name="BCSL_056_syllabus"> \nBCSL-056: Network Programming and Administration Lab	 \n 1 Credit \n
+ \n Section 1: Introduction to UNIX
+Overview of Unix,Unix Commands.
+ \n Section 2: Introduction to Linux
+Overview of Linux,Exploring Desktop,Using the Shell,Understanding users and file
+systems, Understanding text processing,Managing processes.
+ \n Section 3: Network Programming Using C Introduction to
+C.
+ \n Section 4: Network Programming and Administration Exercises Lab
+Sessions.</string>
+
+
+    <string name="BCSL_057_syllabus"> \nBCSL-057- Web Programming Lab
+This lab course is of 1Credit, based on course Web programming.
+Session wise coverage:
+ \n Session 1	:	Using Web 2.0 and creating pages using XHTML.
+ \n Session 2	:	Creating Style Sheets for the web pages created in session.
+ \n Session 3	:	Creating sample XML document and displaying it.
+ \n Session 4	:	WML.
+ \n Session 5 and 6 :	Using and writing JavaScript in web pages, including events and Ajax.
+ \n Session 7, 8	:	Using JSP.
+ \n Session 9, 10	: Writing simple applications using JSP and JDB and deploying it.
+</string>
+
+
+    <string name="BCSL_058_syllabus"> \n. BCSL-058: Computer Oriented Numerical Techniques Lab	 \n 1 Credit \n
+This course is based on Computer Oriented Numerical Techniques.
+Objectives: \n
+This lab course will provide opportunity to the learners to implement the concepts and techniques
+learned in course Computer Oriented Numerical Techniques in C/C++ Language and/ or in MS-
+Excel/Any Spread Sheet.
+Session wise coverage:
+ \n Session 1,2,3	:	for Based on problems	discussed in Block 1
+ \n Session 4,5,6	:	for Based on problems	discussed in Block 2
+ \n Session 7,8,9,10 :	for Based on problems	discussed in Block 3
+	4.6	Detailed Syllabus of BCA Sixth Semester
+</string>
+
+
+    <string name="BCS_062_syllabus"> \n1. BCS-062: E-Commerce	 \n 2 Credits \n
+Objectives: \n
+The Objectives of the Course are:
+1.	To make the student aware about the basics of E-commerce, its processes and some of the
+services/products supporting these processes.
+2.	After studying this course, the students shall be able to understand the basic related business
+processes like B2B, C2B and B2C involved in the area of E-Commerce with an overview of the
+technical support for the processes.
+\n\n BLOCK 1 : E-Commerce Concept and Models
+\n Unit 1
+: Introduction to E-Commerce
+Definition and scope of E-Commerce and M-Commerce, E-Commerce trade cycle,
+Electronic Markets, Internet Commerce, Benefits and Impacts of E-Commerce.
+\n Unit 2
+: Elements of E-Commerce
+Various elements, e-visibility, e-shops, Delivery of goods and services, Online
+payments, After - sales services, Internet E-Commerce security.
+\n Unit 3
+: EDI and Electronic Payment Systems
+Introduction and definition of EDI, EDI layered Architecture, EDI technology and
+standards, EDI communications and transactions, Benefits and applications of EDI
+with example, Electronic Payment Systems: credit/debit/smart cards, e-credit
+accounts, e-money.
+\n Unit 4
+: Introduction to EC models
+Inter-organization and intra-organization E-Commerce, E-Commerce Models: B2B,
+B2C, C2B, C2C, G2C, C2G.
+\n\n BLOCK 2: Practices in E-Commerce
+\n Unit 5
+: E-Business
+Introduction to Internet bookshops, Grocery Suppliers, Software Supplies and
+support, Electronic newspapers, Virtual auctions, Online share dealing, e-diversity.
+\n Unit 6
+: E-Security and Legal Issues
+Security concerns in E-Commerce, Privacy, integrity, authenticity, non-repudiation,
+confidentiality, SSL, Digital Signatures and fire walls, IT Act 2000,Cyber crimes and
+cyber laws.
+\n Unit 7
+: Mobile Commerce and Future of E-Commerce
+Introduction to Mobile Commerce, Benefits of Mobile Commerce, Impediments of
+M-Commerce, M-Commerce framework, Emerging and future trends.
+\n Unit 8
+: Case Study
+</string>
+
+
+    <string name="MCS_022_syllabus"> \n MCS-022: Operating System Concepts and Networking Management
+                                                                      \n  4 Credits \n
+Objectives: \n
+This course is intended to introduce the concepts, structure, features, trends and design mechanism
+of Operating system. The Operating System has seen consistent innovations and developments like
+other fields of computer science. In this course efforts have been to capture these changes. The trend
+is towards GUI based free, platform independent, secure and network-based operating system.
+Linux and Windows 2000 have got very wide coverage in the course. Security and network
+management, a part of modern Operating System design, have also been taken up.
+Syllabus
+\n\n BLOCK 1: Operating System Fundamentals Networking
+\n Unit 1
+: Graphical User Interface
+What is Graphical User Interface, Evolution of Human and Machine Interaction,
+Common Graphical User Interfaces, Functionality of Graphical User Interface, GUI
+Design Consideration: psychological factors, GUI Design Consideration: standards,
+GUI Example, Microsoft Windows, Macintosh Toolbox, X-windows, NeXT.
+\n Unit 2
+: Introduction to Operating System
+What is an Operating System* Evolution of Operating System, Serial Processing,
+Batch Processing, Multiprogramming, Operating System Structure, Layered
+Structure Approach, Virtual Machine, Client-Server Model, Kernel Approach,
+Classification of Advanced Operating System, Architecture Driven Operating
+System, Application Driven Operating System, Characteristics of Modern Operating
+System, Microkernel Architecture, Multithreading, Symmetric Multiprocessing.
+\n Unit 3
+: Introduction to Networking Concepts
+Why Computer Networks, The Topologies, Characteristics of the OSI Layers, OSI
+Models and Communication between Systems, Interaction between OSI Model
+Layers, Protocols Types of Networks, Local Area Network (LANs), Metropolitan
+Networks (MANs), Wide Area Network (WANs), Medium, Data Flow, Physical
+Connection, Transmission Media, Connecting Devices, Repeaters, Hubs, Bridges,
+Routers, Gateways.
+\n Unit 4
+: Internetworking: Concept
+Architecture and Protocols, History of internetworking, Packet Switching,
+Internetworking Concepts, Internet Addresses Object-Based Programming, Configuring
+IP Addresses, TCP/ IP, Additional TCP/ IP \n * Related Protocols, Application Layer
+Protocols, File Transfer Protocols, Trivial File Transfer Protocol (TFTP), TELNET,
+Remote login, Electronic Mail (Email),World Wide Web, Domain Name System,
+SNMP and UDP.
+\n\n BLOCK 2: Linux Operating System
+\n Unit 1	: Introduction to Linux Operating System
+Features of Linux, Drawbacks of Linux, Components of Linux, Memory Management
+Subsystems, Linux Process and Thread Management, File Management System, Device
+Drivers.
+	\n Unit 2	: Linux Commands and Utilities
+Entering the Machine, User Names and Groups, Logging In, Correcting Typing
+Mistakes, Format of Linux Commands, Changing Your Password, Characters with
+Special Meanings, Linux Documentation, The File System, Current Directory, Looking
+at the Directory Contents, Absolute and Relative Pathnames, Some Linux Directories
+and Files.
+	\n Unit 3	: Linux Utilities and Editor
+Some Useful Commands, Permission Modes and Standard Files, Pipes, Filters and
+Redirection, Shell Scripts, Graphical User Interface, Editor.
+	\n Unit 4	: User-to-User Communication
+On-Line Communication, Off-Line Communication, Apache Server Settings, Network
+Server Settings, Domain Name Server, Network File Server.
+	\n Unit 5	: UNIX System Administration
+System Administration, Installing Linux, Choosing an Installation Method, Choosing an
+Installation Class, Pre-installation checks, Installation, Booting the System, Maintaining
+User Accounts, File Systems and Special Files, Backups and Restoration.
+\n\n BLOCK 3: Windows 2000
+\n Unit 1
+: Windows 2000 Networking
+Windows 2000 Operating System Architecture, Peer-To-Peer Network, Domains,
+Network Protocols, File Services, Shared Folders, Distributed File System, Print
+Services, Using the Mapped Drive, Printing a Mapped Drive, Disconnecting a
+Mapped Drive, Viewing Directory Information, Creating a Shared Folder, Logging
+off a Client, A Few Important Facts About Windows 2000 Usages.
+\n Unit 2
+: Managing Windows 2000 Server
+Using Windows 2000 and Client, Logging on to the Network, Browsing Network
+Resources 1, Accessing Network Resources Using My Network Places, Mapping a
+Folder.
+\n Unit 3
+: Advanced Windows 2000 Networking
+Windows 2000 Domains, Workgroups and Trusted Relationships, Concept of
+Domains, Trust Relationships, Building Domains, User Administration, Remote
+Access.
+\n Unit 4
+: Windows XP Networking
+Introduction to Windows XP Networking, TCP/IP Protocol Setting for Windows XP,
+To Select a Network Protocol, Virtual Private Networks and Remote Networking,
+Windows XP in File System, Sharing Network Resources in Windows XP, Sharing
+Files in Windows XP, Sharing Folders in Windows XP, Sharing Drives in Windows
+XP, Enabling Offline File Features.
+\n\n BLOCK 4: Security and Management
+	\n Unit 1	: Security Concepts
+Goals of Computer Security, Integrity, Confidentiality, Availability, Security Problem
+and Requirements, Identifying the Assets, Identifying the Threats, Identifying the
+Impact, Threat and Vulnerabilities, User Authentication, Security System and Facilities,
+System Access Control, Password Management, Privileged User Management, User
+Account Management, Data Resource Protection, Sensitive System Protection,
+Cryptography, Intrusion detection, Computer-Security Classifications.
+\n Unit 2
+: Computer Security
+Hardening Operating System and Application Code, Hardening File System Security,
+Hardening Local Security Policies, Hardening Services, Hardening Default
+Accounts, Hardening Network Activity, Malicious Code, Firewall, Fault Tolerant
+System, BACKUP and UPS.
+\n Unit 3
+: Security and Management-I
+Main Issues In Windows Security Management, Physical Security Management,
+Logon Security Management, Users and Groups Management, Managing Local and
+Global Groups, Managing User Accounts, Windows NT Domain Management,
+Domain Controller, The Primary Domain Controller (PDM), Backup Domain
+Controller (BDC), Windows Resources Management, Registry Management,
+Removing Registry Access, Managing Individual Keys, Audit Registry Access,
+Printer Management, Managing Windows 2000 Operating System, Active Directory,
+Logical Structure, Physical Structure, Windows 2000 DNS Management, Managing
+Group Policy.
+\n Unit 4
+: Security and Management-II
+User Authentication Management, Subsystems Component Management, Kerberos
+Management, User and Group Management, Configuring User Accounts, Creating
+Domain User Accounts, Managing Logon Hours, Managing Expiry Date for a User
+Account, Windows 2000 Groups Management, Default Group Types, Security
+Configuration Management Tool, Resource Management, Files and Folder
+Management, Files and Folder Permission, Inheritances and Propagation, Moving Data
+and Permission, Shared Resources Management, The NULL Session, Registry
+Management, Default Registry Configurations, Registry Backup Managements, Printer
+Security Management, Windows 2000 Network \n * Security and Management, NAT and
+ICS, RRAS, RADIUS and IAS, IPSec, Encrypting File System Management,
+Encrypting File System (EFS), EFS and Users Management, Data Recovery
+Management, EFS Cryptography Management.
+</string>
+
+
+    <string name="BCSL_063_syllabus"> \n
+BCSL-063:	Lab (Operating System concepts and Networking Management)
+ \n 1 Credit \n
+Objectives :
+This lab is based on the course MCS-022. This lab course involves the development of the practical
+skills in OS and Networking. Theoretical aspects were already covered in the respective theory
+courses. This course is an attempt to upgrade and enhance your theoretical skills and provide the
+hands on experience. By the end of these practical sessions of this course, you will be able use Unix
+and Linux OS commands, write scripting and Installation and Configuration of the networking
+services like TCP/IP, DNS, DHCP, FTP, SMTP etc.
+Structure
+\n SECTION 1: Operating Systems and Networking Lab
+\n*	Overview of Windows 2000
+\n*	Unix and Linux
+\n*	Advanced concepts of Local Area Network
+\n*	Network administration of Windows 2000
+\n*	LINUX administration
+\n*	Unix Networking
+\n*	Installation and Configuration of the networking services like TCP/IP, DNS, DHCP, FTP,
+SMTP
+
+</string>
+    <string name="BCSP_064_syllabus"> \n
+
+	BCSP-064: Project
+	 \n 8 Credits \n
+The objective of the BCA project work is to develop a quality software solution by following the
+software engineering principles and practices. During the development of the project the students
+should involve in all the stages of the software development life cycle (SDLC). The main objective
+of this project course is to provide learners a platform to demonstrate their practical and theoretical
+skills gained during five semesters of study in BCA Programme. During project development
+students are expected to define a project problem, do requirements analysis, systems design,
+software development, apply testing strategies and do documentation with an overall emphasis on
+the development of a robust, efficient and reliable software systems. The project development
+process has to be consistent and should follow standard.. For example database tables designed in
+the system should mach with the E-R Diagram. SRS documents to be created as per IEEE standards.
+Students are encouraged to spend maximum time of the sixth semester working on a project
+preferably in a software industry or any research organization. Topics selected should be complex
+and large enough to justify as a BCA final semester project. The courses studied by the students
+during the BCA Programme provide them the comprehensive background knowledge on diverse
+subject areas in computer science such as computer programming, data structure, DBMS, Computer
+Organization, SAD, Software Engineering, Computer Networks etc., which will be helping students
+in doing project work.
+Student will receive Project Guidelines along with their 5th semester course material.One may also
+download Project Guidelines from IGNOU Website. Students should strictly follow and adhere to
+the BCSP-064 project guidelines.
+ </string>
+
+
+    <string name="MCSL_017">MCSL-017</string>
+    <string name="MCSL_025">MCSL-025</string>
+    <string name="MCS_031">MCS-031</string>
+    <string name="MCS_032">MCS-032</string>
+    <string name="MCS_033">MCS-033</string>
+    <string name="MCS_034">MCS-034</string>
+    <string name="MCS_035">MCS-035</string>
+    <string name="MCSL_036">MCSL-036</string>
+    <string name="MCS_041">MCS-041</string>
+    <string name="MCS_042">MCS-042</string>
+    <string name="MCS_043">MCS-043</string>
+    <string name="MCS_044">MCS-044</string>
+    <string name="MCSL_045">MCSL-045</string>
+    <string name="MCS_051">MCS-051</string>
+    <string name="MCS_052">MCS-052</string>
+    <string name="MCS_053">MCS-053</string>
+    <string name="MCSL_054">MCSL-054</string>
+    <string name="MCSE_003">MCSE-003</string>
+    <string name="MCSE_004">MCSE-004</string>
+    <string name="MCSE_011">MCSE-011</string>
+    <string name="MCSSP_060">MCSSP-060</string>
+
+
+    <string name="MCSL_017_title">C and Assembly Language Programming Lab</string>
+    <string name="MCSL_025_title">Lab based on MCS-021, 022, 023 and 024</string>
+    <string name="MCS_031_title">Design and Analysis of Algorithms</string>
+    <string name="MCS_032_title">Object Oriented Analysis and Design</string>
+    <string name="MCS_033_title">Advanced Discrete Mathematics</string>
+    <string name="MCS_034_title">Software Engineering</string>
+    <string name="MCS_035_title">Accountancy and Financial Management</string>
+    <string name="MCSL_036_title">Lab based on MCS-032, 034 and 035</string>
+    <string name="MCS_041_title">Operating Systems</string>
+    <string name="MCS_042_title">Data Communication and Computer Networks</string>
+    <string name="MCS_043_title">Advanced Database Management Systems</string>
+    <string name="MCS_044_title">Mini Project</string>
+    <string name="MCSL_045_title">Lab UNIX and Oracle</string>
+    <string name="MCS_051_title">Advanced Internet Technologies</string>
+    <string name="MCS_052_title">Principles of Management and Information Systems</string>
+    <string name="MCS_053_title">Computer Graphics and Multimedia</string>
+    <string name="MCSL_054_title">Lab based on MCS-051 and 053</string>
+    <string name="MCSE_003_title">Artificial Intelligence and Knowledge Management</string>
+    <string name="MCSE_004_title">Numerical and Statistical Computing</string>
+    <string name="MCSE_011_title">Parallel Computing</string>
+    <string name="MCSSP_060_title">Project</string>
+
+
+    <string name="MCSL_017_syllabus">
+MCSL -017: Lab (C and Assembly Language Programming) (Lab Course)  \n 2 Credits  \n
+        Objectives This lab Course is completely based on MCS-011 and MCS-012 courses. The basic objective of the Course is to provide hands on experience on C Programming and Assembly Language Programming and improve the practical skill. Als \n o to apply all the concepts that have been covered in the theory courses MCS-011 and MCS – 012. The learner will try to apply the alternate ways to provide the solution to a given problem. The learner will be able to develop the logic for the given problem, recognize and understand the syntax and construction of C code, gains experience of C and Assembly Language Programming, know the steps involved in compiling, linking and debugging C code, feel more confident about writing the C functions, including the writing of some complex programs. Syllabus
+
+ \n SECTION 1 C Programming Lab
+Salient Features of C
+C Programming Using Borland Compiler
+Using C with UNIX
+Running C Programs using MS Visual C++
+Program Development Life Cycle
+List of Lab Assignments – Session wise
+
+ \n SECTION 2 Digital Logic Circuits
+Logic Gates Circuit Simulation Program
+Making a Logic Circuit Using Logic
+A Revisit of Steps of Logic Circuit Design
+Session-wise problems
+
+ \n SECTION 3 Assembly Language Programming
+Assemblers
+ \n o Turb \n o Assembler (TASM)
+ \n o MASM
+ \n o Emu 8086
+ \n o The DEBUG Program
+Assembly Programming File
+Session-wise List of Programs
+
+</string>
+
+
+    <string name="MCSL_025_syllabus">
+MCSL-025: Lab (Data Structures using C, WINDOWS 2000, LINUX / UNIX, Java and MS-ACCESS, My SQL)  \n 4 Credits \n
+
+Objectives
+This Lab Course is based on the courses MCS-021, MCS-022, MCS-023 and MCS-024. It involves the development of the practical skills in Data structures using C programming, Networking, DBMS and Java Programming. Theoretical aspects were already covered in the respective theory courses. This course is an attempt to upgrade and enhance your theoretical skills and provide the hands on experience. By the end of these practical sessions of this Course, you will be able to write programs using basic data structures such as Arrays etc. as well as advanced data structures such as trees etc. Syllabus
+ \n  \n SECTION 1: Data and File Structures Lab Manual Arrays Structures Linked Lists Stacks Queues Trees Advanced Trees Graphs Searching Sorting
+ \n  \n SECTION 2: Operating Systems and Networking Lab Overview of Windows 2000 Unix and Linux Advanced concepts of Local Area Network Network administration of Windows 2000 LINUX administration Unix Networking Installation and Configuration of the networking services like TCP/IP, DNS, DHCP, FTP, SMTP
+ \n  \n SECTION 3: DBMS Lab
+Introduction to MS-Access Database Creation Use of DBMS Tools/ Client-Server Mode Forms and Procedures
+ \n  \n SECTION 4: Java Programming Lab
+Programming with Java PATH and CLASSPATH Setting Example Programs List of Lab Assignments
+</string>
+
+
+    <string name="MCS_031_syllabus">
+MCS-031: Design and Analysis of Algorithms  \n 4 Credits \n
+        Objectives
+Algorithm is the central concept of computer science. Whole of computer science can be thought of as revolving around the concept of algorithm - the machines are designed and fabricated to execute algorithms; the programming languages are defined to describe algorithms s \n o that the machines can understand and execute programs written in programming languages; the foundation/theory of Computer Science is the 53
+study of the limits of algorithmic methods, i.e., the study tells whether a particular task is accomplishable by a computer or not, etc. Hence, the study of the Design and Analysis of Algorithm has to be an essential part of any Computer Science/Engineering curriculum. Even if, software for solving all types of problems may become available in the future and the user/student may not be required to write an algorithm to solve any problem, still training the students in the skills of designing and analyzing the algorithms will remain essential, because these constitute the fundamental skills for solving problems with computers. It is like teaching of geometry to instill in students the skills of logical reasoning. The objectives of the Course is to make the students aware of and well-groomed in the use of the tools and Techniques of designing and analyzing algorithms. Syllabus
+ \n BLOCK 1 Introduction to Algorithmics  \n Unit 1: Elementary Algorithmics
+Example of an Algorithm
+Problems and Instances
+Characteristics of an Algorithm
+Problems, Available Tools and Algorithms
+Building Blocks of Algorithms
+Outline of Algorithms
+
+ \n Unit 2: Some pre-rquisites and
+Asymptotic Bounds
+Some Useful Mathematical Functions and Notations
+Mathematical Expectation
+Principle of Mathematical Induction
+Concept of Efficiency of an Algorithm
+Well Known Asymptotic Functions and Notations
+
+ \n Unit 3: Basics of Analysis
+Analysis of Algorithm - Simple Example
+Well Known Sorting Algorithms
+Best-Case and Worst-Case Analyses
+Analysis of Non-Recursive Control
+
+Structures
+Recursive Constructs
+Solving Recurrences
+Average-Case and Amortized Analyses
+
+ \n BLOCK 2 Design Techniques-I
+ \n Unit 1: Divide-and-Conquer
+General Issues in Divide-And Conquer
+Integer Multiplication
+Binary Search
+Sorting
+Finding the Median
+Matrix Multiplication
+Exponentiation
+
+ \n Unit 2: Graphs Algorithms
+Examples
+Traversing Trees
+Depth-First Search
+Breadth-First Search
+Best-First Search and Minimax Principle
+Topological Sort
+
+ \n BLOCK 3 Design Techniques - II
+ \n Unit 1 Dynamic Programming
+The Problem of Making Change
+The Principle of Optimality
+Chained Matrix Multiplication
+Matrix Multiplication Using Dynamic
+
+Programming
+ \n Unit 2 Greedy Algorithms
+Some Examples
+Formalization of Greedy Technique
+Minimum Spanning Trees
+Prim\‘s Algorithm
+Kruskal\‘s Algorithm
+Dijkstra\‘s Algorithm
+54
+ \n Unit 3 Models for Executing Algorithms –I: FA
+Regular Expressions
+Regular Languages
+Finate Automata
+
+ \n Unit 4 Models for Executing Algorithms –II
+PDFA and CFG
+Formal Language and Grammar
+Context Free Grammar(CFG)
+Pushdown Automata (PDA)
+
+ \n BLOCK 4 Complexity and Completeness
+ \n Unit 1: Models for Executing Algorithms – III :TM
+Prelude to Formal Definition
+Turing Machine: Formal Definition and Examples
+Instantaneous Description and Transition Diagram
+Some Formal Definitions
+Observations
+Turing Machine as a Computer of Functions
+
+ \n Unit 2 Algorithmically Unsolvable Problems
+Decidable And Undecidable Problems
+The Halting Problem
+Reduction to Another Undecidable Problem
+Undecidable Problems for CFL
+Other Undecidable Problems
+
+ \n Unit 3 Complexity of Algorithms
+Notations for the Growth Rates of Functions
+
+</string>
+
+
+    <string name="MCS_032_syllabus">
+MCS-032: Object Oriented Analysis and Design  \n
+3 Credits  \n Objectives Object oriented analysis and design has emerged as a new paradigm of analysis and design of the systems. This Course is designed to help in learning object oriented analysis and design concepts. This Course is having coverage of UML diagrams and will help in developing understanding in the area of system analysis and design concepts using object-oriented approach. This Course will cover different aspects of OOAD with explaining object modeling dynamic modeling and functional modeling.
+Syllabus
+ \n BLOCK 1: Object Oriented Modeling and UML
+ \n Unit 1: Introduction to Object Oriented
+Modelling
+Object Oriented Modeling
+Characteristics Object Oriented Modeling
+ \n o Class and Objects
+ \n o Links and Association
+ \n o Generalization and Inheritance
+An Object Model
+Benefits of O \n o Modeling
+Introduction to OOAD tools
+
+ \n Unit 2: Object Oriented Analysis
+Object Oriented Analysis
+Problem Statement: an Example
+Differences between Structured Analysis and Object Oriented Analysis
+Analysis Techniques
+ \n o Object Modeling
+ \n o Dynamic Modeling
+ \n o Functional Modeling
+Adding Operations
+Analysis Iteration
+
+ \n Unit 3: Using UML
+UML: Introduction
+Object Model Notations:
+Basic Concepts
+Structural Diagrams
+ \n o Class
+ \n o Object
+ \n o Composite
+ \n o Package
+ \n o Component
+ \n o Deployment
+Behavioral Diagrams:
+ \n o Use Case
+ \n o Communication
+ \n o Sequence
+ \n o Interaction Overview
+ \n o Activity
+ \n o State
+55
+
+Modeling with Objects
+
+ \n BLOCK 2: Object Oriented Design
+ \n Unit 4: System Design
+System Design: An Object Oriented Approach
+Breaking into Subsystems
+Concurrency Identification
+Management of data store
+Controlling events between Objects
+Handling Boundary Conditions
+
+ \n Unit 5: Object Design
+Object Design for Processing
+Object Design Steps
+Designing a Solution
+Choosing Algorithms
+Choosing Data Structures
+Defining Classes and delegation of
+
+Responsibilities to Methods
+ \n Unit 6: Advance Object Design
+Control and its Implementation
+ \n o Control as a State within Program
+ \n o Control as State Machine Engine
+ \n o Control as Concurrent Task
+Inheritance Adjustment
+Association: Design
+Object Representation
+Design Optimization
+Design Documentation
+
+ \n BLOCK 3: Modeling
+ \n Unit 7: Object Modeling
+Advance Modeling Concepts
+ \n o Aggregation
+ \n o Abstract Class
+Multiple Inheritance
+Generalization as an Extension
+Generalization as a Restriction
+Metadata
+Constraints
+An Object Model
+
+ \n Unit 8: Dynamic Modeling
+Events
+State and State Diagram
+Elements of State Diagrams
+Examples of State Diagrams
+Advance Concepts in Dynamic Modeling
+Concurrency
+A Dynamic model
+
+ \n Unit 9: Functional Modeling
+Functional Models
+Data Flow Diagrams
+Features of a DFD
+Design flaws in DFD
+A Functional model
+Relationship between Object, Dynamic, and Functional Models
+
+Block 4: Implementation
+ \n Unit 10: Implementation Strategies
+Implementation
+ \n o Using Programming Languages
+ \n o Using Database System
+Unidirectional Implementation
+Bi-directional Implementation
+Implementing associations
+Implementing Constraints
+Implementing Statecharts
+Persistency
+
+ \n Unit 11: Object Mapping with Databases
+Relational Database Schema for Object Modes
+Object Classes to Database Tables
+Mapping Associations to Tables
+Mapping Generalizations to Tables
+Interfacing to Database
+Object Mapping with Databases:
+
+an Example
+ \n Unit 12: Case Study
+This unit will cover all the OOAD aspects Covered in previous 11(eleven) units of this course
+</string>
+
+
+    <string name="MCS_033_syllabus">
+MCS-033 Advanced Discrete Mathematics  \n 2 credits \n
+Objectives
+This Course assumes the knowledge of the course MCS-013, ?Discrete Mathematics?. In the tw \n o blocks of this Course, we discuss recursion and graph theory, respectively. The first Block is aimed at developing the understanding of a very important tool for analyzing recursive programmes, namely, recurrence relations. In 56
+the second Block we aim to develop a basic understanding of graph theory, which is a very useful modeling tool for computer programming.
+
+Syllabus
+ \n BLOCK 1: Recurrences
+ \n Unit 1: Recurrence Relations
+The Fibonacci Sequences, The Tower of Hanoi, Catalan Numbers
+Related Definitions
+Divide and Conquer Methods
+
+ \n Unit 2 Generating Functions
+Definitions and Constructions
+Applications for Finding the Number of Integers Solutions of Linear Equations
+Exponential Generating Functions
+Solving Recurrence Relations using Generating Functions
+Applying Generating Functions for Combinatorial Identities and Partitions
+
+ \n Unit 3 Solving Recurrences
+Linear Homogeneous Recurrences
+Linear Non- Homogeneous Recurrences
+Methods of Inspection, Telescoping Sums, Iteration, Substitution
+
+ \n BLOCK 2: Graph Theory
+ \n Unit 1: Basic Properties of Graphs
+What Graphs are
+Degree, Regularity and Isomorphism
+SubGraphs
+
+ \n Unit 2 Connectedness
+Connected Graphs
+ \n o Paths, Circuits and Cycles
+ \n o Components
+ \n o Connectivity
+
+Bipartite Graphs
+ \n Unit 3 Eulerian and Hamiltonian Graphs
+Eulerian Graphs
+Hamiltonian Graphs
+Travelling Salesperson Problem
+
+ \n Unit 4 Graph Colourings
+Vertex Colouring
+Edge Colouring
+Planar Graphs
+Map Colouring Problem
+
+</string>
+
+
+    <string name="MCS_034_syllabus">
+MCS-034: Software Engineering  \n 3 Credits  \n     Objectives The objectives of the Course is to make the learner efficiently work as software engineer. S/he should be well acquainted with all the phases of Software Development Life Cycle. The learner should be able to apply the concepts learned for doing research.
+Syllabus  \n BLOCK 1 : Overview of Software Engineering
+ \n Unit 1 Software Engineering and its models
+Evolution of Software Engineering
+Software development models
+Capability maturity models
+Software process technology
+
+ \n Unit 2: Principles of Software Requirements Analysis
+Engineering the product
+Modeling the system architecture
+Software prototyping and specification
+
+ \n Unit 3 Software Design
+Data design
+Architectural design
+Interface design
+HCI design
+Modular design
+
+ \n Unit 4 Software testing
+Testing techniques
+Testing for specialized environments
+Debugging
+
+ \n BLOCK 2: Software Project Management  \n Unit 5: Software Project Planning
+Different types of project metrics
+57
+
+Software project estimation
+Models for estimation
+Automated tools for estimation
+
+ \n Unit 6: Risk management and Project Scheduling
+Identification of Software risks
+Monitoring of risks
+Management of risks
+Formulating a task set for the project
+Choosing the tasks of software engineering
+Scheduling methods
+The Software project plan
+
+ \n Unit 7 Software Quality Assurance
+Formal technical reviews
+Software reliability
+Software quality standards
+
+ \n Unit 8 Software change management
+Baselines
+Version control
+Change control\
+Auditing and reporting
+
+ \n BLOCK 3: Advanced Software Engineering
+ \n Unit 9: Web Software Engineering
+Different layers
+Issues of management of web based projects
+Metrics
+Analysis
+Design
+Testing
+
+ \n Unit 10: Mobile Software Engineering
+Transition from design to coding of mobile applications
+Elements of mobile applications
+Approaches to the development of mobile applications
+
+ \n Unit 11: CASE tools
+Analysis tools
+Design tools
+SQA tools
+UI design tools
+Software testing tools
+Web engineering tools
+
+ \n Unit 12: Advanced Software Engineering
+Clean room Software engineering
+Component based Software engineering
+Re-engineering
+Reverse engineering
+
+
+</string>
+
+
+    <string name="MCS_035_syllabus">
+MCS-035: Accountancy and Financial Management  \n
+3 Credits \n Objectives This Course aims at introducing the basic accounting procedures and financial management processes. It als \n o focuses on the computerised implementation of the various accounting principles discussed at different levels.
+Syllabus
+ \n BLOCK 1: Accounting System
+ \n Unit 1: Accounting and its Functions
+Scope of Accounting
+Emerging Role of Accounting
+Accounting as an Information System
+Role and Activities of an Accountant
+Accounting Personnel
+Nature of Accounting Function
+Organisation Chart for Accounting and
+Finance
+
+ \n Unit 2: Accounting Concepts and Standards
+Accounting Framework
+Accounting Concepts
+Accounting Standards
+Changing Nature of Generally Accepted
+Accounting Principles (GAAP)
+Attempts towards Standardisation
+Accounting Standards in India
+
+ \n Unit 3: Basic Accounting Process: Preparation of Journal, Ledger and Trial Balance
+Accounting Equation
+Classification of Accounts
+Definitions of Journal and
+
+Ledger
+ \n o Journalising Process
+58
+
+ \n o Ledger Posting
+ \n o Balancing an Account
+Trial Balance
+Objectives of Preparing Trial Balance
+ \n o Total Method of Preparing the
+
+Trial Balance
+ \n o Balance Method of Preparing the
+
+Trial Balance
+ \n o Limitations of Trial Balance
+Accounting Cycle
+
+ \n BLOCK 2: Understanding and Analysis of Financial Statements  \n Unit 1: Preparation and Analysis of Final Accounts
+Trading Account
+ \n o Opening/Closing Stock
+ \n o Net Purchases
+ \n o Direct Expenses
+ \n o Net Sales
+Profit And Loss Account
+Difference between Trading and Profit and
+
+Loss Account
+Balance Sheet
+Constructing a Balance Sheet
+Classification of Balance Sheet\‘s Items
+Adjustment Entries
+ \n o Closing Stock
+ \n o Depreciation
+ \n o Bad Debts
+ \n o Provision for Bad and Doubtful
+
+Debts
+ \n o Salaries and Wages
+ \n o Outstanding Expenses
+ \n o Prepaid Expenses
+ \n o Accrued Income
+ \n o Income Received in Advance
+
+ \n Unit 2: Funds Flow and Cash Flow Statements
+Statements of changes in Financial
+
+Positions
+Fund Flow Statement
+Analysing Changes in Working Capital
+Sources of Funds
+Uses (Applications) of Funds
+Cash Flow Statement
+Sources and Uses of Cash
+
+ \n Unit 3: Ratio Analysis
+Categories of Ratios
+ \n o Long-term Solvency Ratios
+ \n o Short-term Solvency Ratios
+ \n o Activity or Turnover Ratios
+ \n o Profitability Ratios
+ \n o Market Test Ratios
+
+ \n BLOCK 3: Financial Management and Decisions  \n Unit 1: Introduction to Financial Management
+Evolution of Financial Management
+Significance of Financial Management
+Principles of Financial Management
+Economic Value Added
+Agency Relationship
+Changing Financial Landscape
+
+ \n Unit 2: Time Value of Money and Investment Decisions
+Determining The Future Value
+ \n o Shorter Compounding Period
+ \n o Effective versus Nominal Rates
+ \n o Continuous Compounding
+Annuity
+
+ \n Unit 3: Working Capital Decisions
+Characteristics of Current Assets
+Operating Cycle Concepts
+Factors Influences Working Capital
+
+Environment
+Estimating working capital Requirement
+
+ \n BLOCK 4: Working Capital Management
+ \n Unit 1: Cash and Treasury Management
+Treasury Management
+ \n o Treasury Risk Management
+ \n o Functions of Treasury Department
+Facets of Cash Management
+ \n o Motives for Holding Cash
+ \n o Cash Planning
+ \n o Determining the Optimum Cash
+
+Balance
+Methods of Cash Flow Budgeting
+Investing Surplus Cash
+Cash Collection and Disbursements
+
+ \n Unit 2: Receivables Management
+Terms of Payment
+Credit Policy Variables
+Credit Evaluation
+Monitoring Receivables
+Factoring
+
+ \n Unit 3: Inventory Management
+Reasons for Holding Inventory
+59
+
+Objectives of Inventory Management
+Techniques of Inventory Control
+Modern Techniques
+Traditional Techniques
+
+
+</string>
+
+
+    <string name="MCSL_036_syllabus">
+MCSL-036 Lab  \n 3 credits  \n  Objectives This Course is based on three courses namely MCS-032 (Object Oriented Analysis and Design), MCS-034 (Software Engineering) and MCS-035 (Accountancy and Financial Management). The prime objectives of this Course are (i) to help in learning the use of the computer for object oriented analysis and design concepts, making of UML diagrams with the help of software tools. (ii) to use Software tools for different phases of software development like cycle (iii) to familiarise with the use of software for basic accounting procedures and financial management. This lab course is based on the courses MCS-032, MCS-034 and MCS-035
+</string>
+
+
+    <string name="MCS_041_syllabus">Operating Systems
+MCS-041: Operating Systems  \n 4 Credits  \n  Objectives In the second semester student will get exposed to the fundamental concepts of Operating Systems in MCS-022. But that course completely provides knowledge from the implementation, networking and from the practical point of view. This is the core Course on Operating Systems and the main objective of this course is to provide core knowledge of Operating Systems features, functions and techniques. Each and every Operating System function is discussed in detailed. This Course als \n o provides an attempt to throw some light on the advanced topics in O/S like Multiprocessors Systems and Distributed O/S. Case studies of WINDOWS and LINUX are organized at the end of this Course s \n o as to provide the support what ever they had pursued theoretically. Syllabus
+
+ \n BLOCK 1 Introduction to Operating Systems,
+Process Management
+ \n Unit 1 Operating System-An Overview
+What is an Operating System (OS)?
+Goals of an Operating System
+Generations of Operating Systems
+Types of Operating Systems
+Desirable Qualities of OS
+Operating Systems : Some Examples
+Functions of OS
+
+ \n Unit 2 Processes
+Concept of Process
+System Calls for Process Management
+Process Scheduling
+Scheduling Algorithms
+ \n o First Come First serve (FCFS)
+ \n o Shortest Job First (SJF)
+ \n o Round Robin (RR)
+ \n o Shortest remaining time next (SRTN)
+ \n o Priority Based Scheduling or Event Driven (ED) scheduling
+Performance evaluation of the Scheduling Algorithms
+
+ \n Unit 3: Interprocess Communication and Synchronization
+Interprocess Communication
+Interprocess Synchronization
+Semaphores
+Classical problems in concurrent programming
+Locks
+Monitors and Conditional Variables
+Summary
+
+ \n Unit 4: Deadlocks
+Deadlocks
+Characterization of a Deadlock
+A Resource Allocation Graph
+Dealing with Deadlock Situations
+ \n o Deadlock Prevention
+ \n o Deadlock Avoidance
+ \n o Deadlock Detection and Recovery
+Deadlock detection and recovery
+Deadlock Prevention
+ \n o Havender\‘s Algorithm
+60
+
+Deadlock Avoidance
+ \n o Banker\‘s Algorithm
+
+ \n BLOCK 2: Memory Management, File Management and Security  \n Unit 1: Memory Management
+Overlays and Swapping
+Logical and Physical Address Space
+Single Process Monitor
+Contiguous Memory Methods
+Paging
+ \n o Principles of operation
+ \n o Page allocation
+ \n o Hardware Support for Paging
+ \n o Protection and Sharing
+Segmentation
+ \n o Principles of operation
+ \n o Address Translation
+ \n o Protection and Sharing
+
+ \n Unit 2: Virtual Memory
+Virtual Memory
+ \n o Principles of operation
+ \n o Virtual Memory management
+ \n o Protection and sharing
+Demand paging
+Page Replacement policies
+Thrashing
+ \n o Working Set Model
+ \n o Page Fault Rate
+Demand Segmentation
+Combined Systems
+ \n o Segmented paging
+ \n o Paged segmentation
+
+ \n Unit 3: I.O. and File Management
+Organization of the I.O. function
+I.O. Buffering
+Disk Organization
+Disk Scheduling
+RAID
+Disk Cache
+Command language user\‘s view of File
+
+System
+The System programmer\‘s view of the file
+
+System
+The Operating systems\‘ view of file
+
+Management
+ \n o Directories
+ \n o Disk Space Management
+ \n o Disk address translation
+ \n o File related system services
+ \n o Asynchronous Input / Output
+
+ \n Unit 4: Security and Protection
+Security Threats
+Security Policies and Mechanisms
+Authentication
+ \n o Passwords
+ \n o Alternative Forms of Authentication
+Protection in Computer Systems
+Security Models
+ \n o Access-Control Matrix
+ \n o Mandatory Access Control
+ \n o Discretionary Access Control
+ \n o Rule-Based Access Control
+ \n o Role-Based Access Control
+ \n o The Take-grant Model
+ \n o Multilevel Models
+
+ \n BLOCK 3: Advanced Topics and Case Studies  \n Unit 1: Multiprocessor Systems
+Multiprocessor and Processor Coupling
+Multiprocessor Interconnections
+ \n o Bus-Oriented Systems
+ \n o Crossbar-Connected systems
+ \n o Hypercubes
+ \n o Multistage Switch-based systems
+Types of Multiprocessor Operating System
+ \n o Separate Supervisors
+ \n o Master/Slave
+ \n o Symmetric
+Multiprocessor OS Functions and
+
+Requirements
+Multiprocessor Synchronization
+ \n o Test and set
+ \n o Compare and swap
+ \n o Fetch and Add
+
+ \n Unit 2: Distributed Operating Systems
+History ofr Distributed Computing
+Distributed Systems
+Key features and Advantages of a Distributed System
+Design Goals of Distributed Systems
+Design Issues Involved in Distributed Systems
+Distributed System Structure
+Mutual Exclusion in Distributed Systems
+Remote Procedure Calls
+Other Middleware Technologies
+
+ \n Unit 3: Case Study - UNIX
+ \n Unit 4: Case Study – WINDOWS 200061
+
+</string>
+
+
+    <string name="MCS_042_syllabus">
+MCS 042: Data Communication and Networks  \n 3 Credits   \n Objectives The main objective of the Course is to deal with fundamental issues of computer network. The Course is designed around the TCP/IP Model. Some of the important topics discussed in the Course are: Data Encoding Techniques, MAC Protocols, Routing Techniques, Transport Services, Mechanism and Network Security.
+Syllabus
+ \n BLOCK 1: Introduction to Data Communication and Computer Network Concepts
+ \n Unit 1: Introduction to Computer Networks
+What is computer Network
+Network Goals / Motivation
+Application of Networks
+Point to Point or Switched Networks
+ \n o Circuit Switched Networks
+ \n o Packet-Switched Networks
+Broadcast Networks
+ \n o Packet Radio Networks
+ \n o Satellite Networks
+ \n o Local Area Networks
+
+Network Protocols Networking Model Examples of Some Networks  \n Unit 2: Data Transmission Transmission Terminology
+ \n o Simplex, Half duplex and full duplex spectrum and Bandwidth, frequency
+
+Serial and Parallel Communication Analog and Digital Data Transmission Bandwidth and Date Rate Throughout Transmission Impairments
+Attenuation and Distortion
+Delay Distortion
+Noise
+Concept of Delays
+How to reduce delays
+
+Transmission Media and its Characteristics
+Twisted Pair
+IBM Cable
+Coaxial Cable
+Twin Axial Cable
+Optical Fiber
+Terrestrial Microwave
+Satellite Microwave
+
+Wireless Transmission
+Radio
+Infra red
+Wireless LAN
+
+ \n Unit 3: Data Encoding and Communication Technique Pulse Code Modulation (PCM) Amplitude Modulation Frequency and Phase Modulation Asynchronous Transmission Synchronous Transmission  \n Unit 4: Multiplexing and Switching Frequency Division Multiplexing Synchronous Time Division Multiplexing Statistical Time Division Multiplexing Modems Switching
+ \n BLOCK 2: Media Access Control and Data Link Layer
+ \n Unit 1: Data Link Layer Fundamentals Framing
+Basics of Error Detection
+Forward Error Correction
+Cyclic Redundancy Check codes for Error Detection
+Flow Control
+
+ \n Unit 2: Retransmission Strategies
+Stop-and-Wait ARQ
+Go-Back-NARQ
+Selective Repeat ARQ
+Pipelining
+
+ \n Unit 3: Contention-based Media Access Protocols
+The advantages of Multiple-Access Sharing of Channel Resource
+Pure ALOHA
+Slotted ALOHA
+Carrier Sense Multiple Access (CSMA)
+CSMA with Collision Detection (CSMA/CD)
+62
+ \n Unit 4: Polling-based Media Access Control Protocols
+Token Ring
+Token Bus
+
+ \n Unit 5: Media Access Control Protocols for High Speed Networks FDDI-I and FDDI-H DQDB with Bandwidth Balancing for Fair Access Asynchronous Transfer Mode (ATM)  \n BLOCK 3: Network Layer  \n Unit 1: Introduction to Layer Functionality and Design Issues Connection Oriented Vs Connectionless Services Addressing Concept of Congestion Routing Network Layer in ATM Protocols Network Layer Design Issues  \n Unit 2: Routing Algorithms Shortest Path Routing Flooding Distance Vector Routing Link State Routing Hierarchical Routing Broadcast Routing Multicast Routing  \n Unit 3: Congestion Control Algorithms General Principles of Congestion Control Congestion Prevention Policies Congestion Control in Virtual Circuit Subnets Load Shedding Jitter Control  \n Unit 4: Internetworking and Network Layer in the Internet Tunneling Internetworking Routing Fragmentation IP Protocol
+IP Addresses
+Internet Control Protocols OSPF – The Interior Gateway Routing Protocol BGP – The Exterior Gateway Routing Protocol Internet Multicasting Mobile IP IPv6  \n BLOCK 4: Transport Layer and Application Layer Services  \n Unit 1: Transport Services and Mechanism Type of Services Quality of Services Data Transfer Connection Management Transport Control Mechanism Addressing Multiplexing Flow Control and Buffering Connection Establishment Crash Recovery  \n Unit 2: TCP/UDP Introduction to UDP Remote procedure Call The Real-Time Transport Protocol Introduction to TCP TCP Service Model TCP Protocol TCP Segment Header TCP Connection Establishment TCP Connection Release Modeling TCP Connection Management TCP Transmission Policy TCP Congestion Control TCP Timer Management  \n Unit 3: Network Security I Cryptography Symmetric Key Algorithms Public Key Algorithms  \n Unit 4: Network Security II Digital Signatures Management of Public Keys Communication Security
+Web Security 63
+
+</string>
+
+
+    <string name="MCS_043_syllabus">
+MCS 043: Advanced Database Management Systems  \n 4 Credits  \n  Objectives This Course will help the students to acquire the theoretical foundation of Database Management Systems. It includes concepts relating to various advanced database models, and concepts like database mining and warehousing. This Course als \n o describes in major details about the advanced concepts of relation database management systems. Additionally, the Course als \n o provides sample database management system architecture. Thus, this is an advanced course, which will further develop the knowledge and skill acquired by the students at the basic level.
+Structure
+ \n BLOCK 1: Database Design and
+Implementation
+ \n Unit 1: Relational Database Design
+Features of good database design
+Enhanced ER tools
+ \n o Subclasses, Super class, and Inheritance
+ \n o Specialization and Generalization
+ \n o Constraints and Characteristics of Specialization and Generalization
+Converting EER diagram to tables
+Functional dependency theory and normalization
+Multi value dependency and 4NF
+Join Dependency and 5NF
+Inclusion Dependencies and Template Dependency
+PJNF/DKNF
+Modeling temporal data
+
+ \n Unit 2: Database implementation and
+Tools
+Information system and organization
+Data Design and Implementation in an Organization
+Use of UML and its support for database design specifications
+Representing specialization and generalization in UML Class diagram.
+UML based design tools
+Automated database design tools.
+
+ \n Unit 3: Advanced SQL
+Assertion and views
+Cursors, triggers and stored procedures
+Embedded SQL, dynamic SQL, SQLJ,
+Advanced Features of SQL
+Examples of above in Oracle
+
+ \n Unit 4: Database System Catalog
+Catalogs for relational DBMS
+System Catalog in Oracle
+Data dictionary and data repository system
+Catalog in Distributed database and object oriented database systems
+Role of system catalog in administration
+
+ \n BLOCK 2: DBMS Advanced Features and
+Distributed Database
+ \n Unit 1: Query Processing and Evaluation
+Measures of Query Cost
+ \n o Selection Operation,
+ \n o Sorting
+ \n o Join Operation
+ \n o other Operations
+Evaluation of Expression
+Transformation of Relational Expressions
+Role of Relational Algebra and Relational Calculus in query optimisation
+Estimating Statistics of Expression
+Choice of Evaluation Plans
+Views and query processing
+Storage and query optimization
+
+ \n Unit 2: Transaction Management and Recovery
+Advanced feature of Transactions
+Enhanced Lock Based and timestamp based Protocols
+Multiple Granularity
+Multi-version Schemes
+Deadlock Handling
+Weak Levels of Consistency
+Concurrency in Index Structures
+Recovery and Atomicity
+Recovery with Concurrent Transaction
+Buffer Management
+Advanced Recovery Techniques
+Remote Backup Systems
+Use of SQL in recovery
+64
+
+Examples of e-transactions
+
+ \n Unit 3: Database Security and Authorization
+Levels of database security
+Access control
+Multilevel security
+Statistical database security
+Audit trails in the databases
+Examples of e security
+
+ \n Unit 4: Distributed Databases
+Centralised versus non centralized Databases
+Homogeneous and Heterogeneous DDBMS and their comparison
+Functions and Architecture
+Distributed database design, query processing in DDBMS
+Distributed concurrency management, deadlock management
+Distributed Commit Protocols: 2 PC and 3 PC
+Concepts of replication servers
+
+ \n BLOCK 3: ENHANCED DATABASE MODELS
+ \n Unit 1: Object Oriented Database
+Limitations of Relational databases
+The need of Object oriented databases
+Complex Data Types
+Structured Types and Inheritance in SQL
+Table Inheritance
+Data types (arrays, multi-set etc) and structure in Object oriented databases using SQL
+Object-Identity and Reference Types in SQL
+ODL and OQL
+Implementing O-R Features
+Persistent Programming Languages
+Object-Oriented versus Object-Relational
+An Example of Object oriented and object relational database implementation
+
+ \n Unit 2: Database and XML
+Structured Semi structure and unstructured data
+XML hierarchical tree data model
+Documents DTD and XML schema
+XML Documents and Database
+XML query and tranasformation
+Storage of XML data
+XML database applications
+
+ \n Unit 3: Introduction to data warehousing
+What is Data Warehousing, DSS and EIS?
+Characteristics and functioning and architecture of Data Warehousing
+Data marts
+Data warehousing Life Cycle
+Data modeling (Multidimensional Database) for data warehousing
+Building of data warehouse
+OLAP, MOLAP, ROLAP
+Data warehouse and views
+Future open issue for data warehouse
+
+ \n Unit 4: Introduction to Data Mining
+What is data mining Technology and its relationship to Data warehousing
+Association rules
+Classification
+Clustering
+Approaches to data mining problems
+Applications of Data mining problem
+Commercial tools of data mining
+Knowledge Discovery
+
+ \n BLOCK 4: Emerging Trends and Example DBMS Architectures  \n Unit 1: Emerging Database Models, Technologies and Applications I
+Multimedia database
+Geography databases, Gnome databases
+Knowledge databases, deductive databases and semantic databases
+Spatial database
+Information visualization
+
+ \n Unit 2: Emerging Database Models, Technologies and Applications II
+Mobile databases
+Web databases (JDBC, ODBC)
+Personal databases
+Digital libraries
+Data grids
+Wireless networks and databases
+
+ \n Unit 3: PostgreSQL
+Important features and brief architecture
+User Interfaces
+SQL Variations and Extensions
+Transaction Management
+Storage and Indexing
+65
+
+Query Processing and evaluation and optimization
+
+ \n Unit 4: Oracle
+Features and basic architecture
+Database Design and Querying Tools
+SQL Variations and Extensions
+Storage and Indexing
+Query Processing, evaluation and Optimization
+Concurrency Control and Recovery
+Distributed Oracle
+Database administration and other advanced tools
+
+</string>
+
+
+    <string name="MCS_044_syllabus">
+MCS - 044: Mini Project  \n 4 Credits  \n  Objectives The project work constitutes a major component in most of the professional programmes and it is to be carried out with due care and should be executed with seriousness by the students. The objective of the project is to motivate them to work in emerging/ latest technologies, help the student to develop ability to apply theoretical and practical tools/techniques to solve real life problems related to industry, academic institutions and research laboratories. This project will help the student make ease and provide enough experience to carry out the larger project in the sixth semester. You will receive a block containing the guidelines for the mini project along with the list of project specifications, category-wise.
+</string>
+
+
+    <string name="MCSL_045_syllabus">
+MCSL-045 Lab (UNIX and DBMS)  \n 2 Credits  \n  Objectives This lab Course is based on MCS-041(Operating Systems) and MCS-043(Advanced Database Management Systems) courses. The basic objective of the Course is to provide the hands on experience to improve the practical skills on UNIX Operating System and Oracle DBMS and als \n o to apply the concepts that been covered in the courses MCS-041 and MCS – 043. This Course is divided into 2  \n SECTIONs:  \n SECTION – 1 covers the Unix Lab and  \n SECTION – 2 covers the DBMS Lab. At the end of each  \n SECTION, lists of exercises are given for your practice.
+
+</string>
+
+
+    <string name="MCS_051_syllabus">
+MCS-051: Advanced Internet Technologies  \n 3 Credits  \n
+Objectives The Major Objectives of the Course is to introduce concepts, tools/technologies and programming to rapidly develop Internet based distributed, secure, reliable and scalable application. The discussion in the course is centered around Servelet and JSP (Java Server Pages) Programming, JDBC APIs, Server Side component architecture (Enterprise Java Beans), and XML. It als \n o introduces Web Security and its implementation.
+Syllabus
+ \n BLOCK 1: Servelet and JSP Programming
+ \n Unit 1: Introduction to Servelet
+Servelet life Cycle
+HTTP Servelet Class
+Request Interface
+Response Interface
+Session Tracking (Cookies VRL)
+Database Connectivity from Servelet
+Interservelet Communication
+Handling Servelet
+Servelet Collaboration
+
+ \n Unit 2: Database Connection
+JDBC Drivers
+JDBC APIs
+JDBC Techniques
+Statements and its Types
+Record Sets
+Various Operations (Insertion, Deletion and updation)
+
+ \n Unit 3: JSP-I
+Overview of JSP
+66
+
+Relation of Applets and Servelets with JSP
+Scripting Elements
+JSP Expressions
+JSP Scriplets
+JSP Declarations
+Predefined Variables
+Creating Custom JSP Tag Libraries Using Nested Tags
+
+ \n Unit 4: JSP-II
+Structuring Generated Servelet in JSP Pages
+Including Files and Applets in JSP Documents
+Integrating Servelet and JSP
+
+ \n BLOCK 2: EJB and XML
+ \n Unit 1: Introduction to Beans
+Types of Beans
+Session Beans
+Counting Beans
+Message Beans
+Context and Naming Convention
+
+ \n Unit 2: Creating Beans
+How to Create Beans
+Create Web Application
+Create Application Client
+
+ \n Unit 3: Deploying Beans
+Deploying J2EE Applications
+
+ \n Unit 4: XML
+Overview of XML
+Overview of SGML
+Differentiate Between SGML and XML
+XML Development Goal
+Structure of XML Document
+Using DTD
+XML Parser
+Using XML Introduction
+XML Entities
+
+ \n BLOCK 3: Web Security and Case Study
+ \n Unit 1: Web Security Concepts
+HTTP Authentication
+Compare and Contrast
+Application Types (BASIC, DIGEST, FORM and Client CERT)
+
+ \n Unit 2: Security Implementation
+Retrieving Authentication Information
+Security in Servelet
+Form Based Custom Authorisation
+Retrieving SSL Authentication
+
+ \n Unit 3: Case Study
+
+</string>
+
+
+    <string name="MCS_052_syllabus">
+MCS-052: Principles of Management and Information Systems  \n 2 Credits  \n
+Objectives The Course objective is to provide the use and function of management information systems. It describes and evaluates information systems development processes and techniques.
+Syllabus
+ \n BLOCK 1: Management Systems
+ \n Unit 1: Organisational Overview
+Oraganisation Types
+ \n o Service, Business, Government, Social
+ \n o Industry Types
+Organisational Structure
+Organisational Characteristics
+ \n o Size
+ \n o Location
+ \n o Others
+Organisation functions
+Life cycle of organisation
+Vertical and horizontal organisations
+
+ \n Unit 2: Management Functions and Business Processes
+Overview of management Levels
+Business Processes
+ \n o Sale and orders
+ \n o Finance
+ \n o Human resource
+ \n o Production
+ \n o Marketing
+Information systems requirements
+67
+
+Requirement analysis
+Tools and methods for requirement analysis
+
+ \n Unit 3:Management Systems
+Management Systems Types
+Management Systems Requirements
+Levels of management activities
+Strategic level
+Management level
+Middle Management Level
+
+ \n Unit 4: Business values of Information System
+Impact of Information Systems
+Empirical studies
+Cost Value Performance
+Total cost of ownership
+Culture for Information Systems
+Decision management with Information Systems
+
+ \n BLOCK 2: Information Systems
+ \n Unit 5: Portfolio Management and IT applications
+What is portfolio management
+Portfolio management methods
+Design and implementation of portfolio management
+Risk Management
+Disaster Management
+Portfolio management issues and challenges
+Tools and techniques
+Emerging technologies
+
+ \n Unit 6: Enterprise Information Systems
+Evolution of enterprise information Systems
+Enterprise Resource Planning
+Resource planning management
+ERP Market
+Supply Chain Management
+Customer Relationship Management
+E-CRM Systems
+Emerging technologies
+
+ \n Unit 7: Intelligence Information Systems
+Knowledge Management in organization
+Creating, developing and sharing Knowledge
+Artificial intelligence in business
+Business Analytics
+Business Intelligence
+Role of Business Intelligence
+ \n o Sale and orders
+ \n o Finance
+ \n o Human resource
+ \n o Marketing
+Business Intelligence Tools
+Business Intelligence reports
+
+ \n Unit 8: Social, Ethical and Legal Aspects
+Society in information age
+Moral dimensions and information age
+Technology trends and ethical issues
+Ethical principal and dilemma
+Responsibility, accountability and liability
+Information right and acts
+</string>
+
+
+    <string name="MCS_053_syllabus">
+MCS-053 Computer Graphics and Multimedia  \n 4 Credits   \n Objectives The Aim and Objective of the Course is to enable the learner\'s thinking process in the field of Computer Graphics, Animation, Simulation and Multimedia. After going through the Course the learner will be able to understand the abilities required to develop the graphical tools. The understanding of the learned concepts will help the learner in executing the practical component i.e. Lab component of the Computer Graphics
+Syllabus
+ \n BLOCK 1: Raster Graphics and Clipping
+ \n Unit 1: Introduction to Computer Graphics
+What is Computer Graphics?
+Application of Computer Graphics
+ \n o Presentation Graphics
+ \n o Painting and Drawing
+ \n o Photo Editing
+ \n o Scientific Visualization
+68
+
+ \n o Image Processing
+ \n o Digital Art
+ \n o Education, training, Entertainment and CAD
+ \n o Simulation
+ \n o Animation and Games
+
+Graphics Hardware
+Input and Output Devices
+ \n o Touch Panel
+ \n o Light Pens
+ \n o Graphic Tablets
+ \n o Plotters
+ \n o Film Recorders
+Display Devices
+Refreshing Display Devices
+ \n o Raster-Scan
+ \n o Random-Scan
+Plasma Panel and LCD panels
+
+ \n Unit 2: Graphics Primitives
+Points and Lines
+Line-drawing Algorithms
+ \n o DDA Algorithm
+ \n o Bresenham\‘s line Algorithm
+
+Circle-generating Algorithm
+ \n o Properties of Circles
+ \n o Midpoint Circle of Algorithm
+Polygon Filling Algorithm: Scan-Line
+
+ \n Unit 3: 2-D Viewing and Clipping
+Point Clipping
+Line Clipping
+ \n o Cohen-Sutherland Line Clippings
+ \n o Cyrus-Beck Line Clipping Algorithm
+
+Polygon Clipping: Sutherland Hodgman Algorithm
+Windowing Transformation
+
+ \n BLOCK 2: Transformations  \n Unit 4: 2-D and 3-D Transformations
+Basic Transformations
+ \n o Translation
+ \n o Rotation
+ \n o Scaling
+ \n o Shear
+
+Composite Transformations
+ \n o Rotations about a point
+ \n o Reflection about a line
+Homogeneous Coordinate Systems
+3-D Transformations
+
+ \n Unit 5: Viewing Transformation
+Projections
+ \n o Parallel Projection
+ \n o Orthographic and Oblique Projections
+ \n o Isometric Projections
+Perspective Projections
+
+ \n BLOCK 3: Modeling and Rendering  \n Unit 6: Curves and Surfaces
+Polygon Representation Methods
+ \n o Polygon Surfaces
+ \n o Polygon Tables
+ \n o Plane Equations
+ \n o Polygon Meshes
+
+Bezier Curves and Surfaces
+ \n o Bezier Curves
+ \n o Properties of Bezier Curves
+ \n o Bezier Surfaces
+
+Surface of Revolution
+ \n Unit 7: Visible – Surface Detection
+Depth Buffer Method
+Scan-Line Method
+Area-Subdivision Method
+
+ \n Unit 8: Polygon Rendering and Ray Tracing Methods
+Illumination Model
+ \n o Ambient Reflection
+ \n o Diffuse Reflection
+ \n o Specular Reflection
+
+Shading
+ \n o Gouraud Shading
+ \n o Phong Shading
+
+Ray Tracing
+ \n o Basic Ray-Tracing Algorithm
+
+ \n BLOCK 4: Multimedia and Animation  \n Unit 9: Computer Animation
+Basic of Animation
+Types of Animation
+Simulating Accelerations
+Computer Animation Tools
+Applications
+69
+ \n Unit 10: Multimedia Concepts and Applications
+Concepts of Hypertext/Hypermedia
+Multimedia Applications
+ \n o Education
+ \n o Video Conferencing
+ \n o Training
+ \n o Entertainment
+ \n o Electronic Encyclopedia
+
+Images
+Audio and Video
+ \n o Analog and Digital Sound and Video
+ \n o Mpeg, mpi, wav, etc.
+Multimedia Tools
+
+
+</string>
+
+
+    <string name="MCSL_054_syllabus">
+MCSL-054 Lab (Advanced Internet Technologies and Computer Graphics)  \n 2 Credits  \n
+</string>
+
+
+    <string name="MCSE_003_syllabus">
+MCSE-003 Artificial Intelligence and Knowledge Management  \n 3 Credits  \n
+Objectives
+One of the ways of looking at Artificial Intelligence (AI) is as the study concerned with solving hard and insolvable problems using reasonable amount of time, by exploiting the knowledge of the problem domain. In view of the significance of knowledge in AI, in this course, a number of knowledge representation formalisms are introduced. The formalisms discussed include Propositional Logic, First Order Predicate Logic, Rule-based systems, Semantic Networks and Frames. In order to encode knowledge structures obtained using these formalisms, the syntax of each of the tw \n o well-known AI programming languages LISP and PROLOG is discussed along with explanation of how the language can be to encode proposed solutions. Finally, as applications/ products of AI, the topics on Expert Systems and Intelligent Agents are discussed briefly. MCSE-003 is a 4-credit course and the course material consists of 4 blocks. The pre-requisites for the course include Design and Analysis of Algorithms, Discrete Mathematics and programming and problem solving experience.
+Syllabus
+ \n BLOCK 1: Problem Solving and Search Techniques
+ \n Unit 1: Introduction
+Concepts and definitions of AI
+Brief history of AI
+AI and related fields
+Problems
+Techniques
+Characteristics and underlying assumption of AI
+Turing test Uninformed searches
+Informed searches: generate and test
+Hill-climbing
+best-first search
+
+ \n Unit 2: State Space Representation and Search Techniques
+A* algorithm
+Problem reduction
+Constraint satisfaction
+
+ \n Unit 3: Game Playing
+Overview of One and Tw \n o Player Game
+The Min-Max Search Procedure
+Alpha-Beta Cutoffs
+
+ \n BLOCK 2: Knowledge Representation
+ \n Unit 1: Propositional and Predicate Logic
+Syntax and semantics for prepositional logic
+Syntax and semantics of First Order Predicate Logic (FOPL)
+Properties of well-formed formula (wff)
+Conversion to clausal form
+Inference rules
+The resolution principle
+Non-deductive inference methods
+
+ \n Unit 2: Structured Knowledge Representations
+Production Rules
+Semantic Nets
+Frames
+70
+
+Conceptual Dependencies and Scripts
+
+ \n Unit 3: AI Programming Languages
+Introduction to LISP
+Syntax and Numeric Functions
+Basic List Manipulation Functions in LISP Functions
+Predicates and Conditionals
+Input, Output, and Local Variables
+Iteration and Recursion
+Property Lists and Arrays
+PROLOG: List, Operators, Arithmetic
+Cut and Fail
+Backtracking
+
+ \n BLOCK 3: Handling Uncertainty
+ \n Unit 1: Handling Inconsistent and Incomplete Knowledge
+Truth Maintenance Systems
+Reasoning Techniques
+Concept of Uncertainty
+Bayes\‘ Theorem
+Certainty Factors and Rule-Based Systems
+Bayesian Networks
+Dempster-Shafter Theory
+
+ \n Unit 2: Fuzzy Logic
+Fuzzy Sets
+Fuzzy Operators and Arithmetic
+Membership Functions
+Fuzzy Relations
+
+ \n BLOCK 4: Applications of Artificial Intelligence
+ \n Unit 1: Expert Systems
+Introduction and Concept of Planning
+Representing and Using Domain Knowledge
+Expert System Shells
+Knowledge Acquisition
+
+ \n Unit 2: Intelligent Agents
+Agents and environments
+Rationality and other performance measures
+Nature of environments
+Structure of agents
+</string>
+
+
+    <string name="MCSE_004_syllabus">
+MCSE-004 Numerical and Statistical Computing  \n 3 Credits  \n
+Objectives The main objective of this course is to prepare the firm footing of learners in the domain of numerical and statistical computation. Understanding the concepts covered in the course, will make the learner to realize the need of Numerical and statistical components in computer science. Further, the concepts covered in this course will enable the analytical skill of the learner, and s/he may appreciate the need of this course in various domain of computer science viz. Software Reliability, Software Quality Assurance , Software Testing and many more. Syllabus
+ \n BLOCK-1 Numerical Computing-I  \n Unit 1 Floating Point Arithmetic and Errors
+Floating Point Representation
+Sources of Errors
+Propagated Errors
+
+ \n Unit 2 Solution of Non-Linear Equations
+Bi \n SECTION Method
+Regula-Falsi Method
+Secant Method
+Newton-Raphson Method
+Successive Iteration Method
+
+ \n Unit 3 Solution of Linear Algebraic Equations
+Direct Method
+Gauss Elimination Method (without and with Pivoting)
+LU-Decomposition Method
+71
+Iterative Method
+Jacobi Method
+Gauss Seidel Method
+Successive Over Relaxation Method
+
+ \n BLOCK-2 Numerical Computing-II  \n Unit 1 Interpolation
+Differences – Forward and Backward Differences
+Newton\‘s – Forward and Backward Difference Formulas
+Lagrange\‘s Interpolation
+
+ \n Unit 2 Numerical Integration
+Newton – Cotes Formulas
+Composite Formulas
+Gaussian Quadrature
+
+ \n Unit 3 Numerical Solution of ODE
+Euler\‘s Method
+Runge Kutta Method
+
+ \n BLOCK-3 Statistical Computing
+ \n Unit 1 Probability Distribution
+Discrete Distribution
+Binomial Distribution
+Poisson Distribution
+
+Continuous Distribution
+Uniform Distribution
+Exponential Distribution
+Normal Distribution
+Chi-square Distribution
+
+ \n Unit 2 Pseud \n o Random Number Generation
+Uniform Distribution
+ \n o Method of Generation (Discrete Case)
+ \n o Inversion Method (Exponential Distribution)
+ \n o Acceptance and Rejection
+
+ \n Unit 3 Regression
+Linear Regression Model
+ \n o Least Square for Parameter Estimation
+ \n o Goodness-of-Fit
+ \n o Residual Analysis
+
+Non-Linear Regression
+
+
+</string>
+
+
+    <string name="MCSE_011_syllabus">MCSE-011 Parallel Computing
+ \n
+3 Credits   \n Objectives In view of the limitations of the sequential paradigms in respect of solving difficult problems; over the years, a number of parallel/ concurrent paradigms have emerged that include parallel computer architectures, parallel operating systems, parallel algorithms and parallel programming languages. Based on these paradigms, parallel computer systems have been designed, developed and studied in depth. The purpose of the course is to equip students with skills for solving difficult problems using these paradigms, architectures etc. MCSE-011 is a 3-credit course and the course material consists of three blocks. The pre-requisites for the course include knowledge of computer architecture, operating system, design and analysis of algorithm and problem solving and programming experience.
+Syllabus
+ \n BLOCK –I Elements of Parallel Computing and Architecture
+ \n Unit 1 Introduction to Parallel Computing
+Basic concepts about program/process/ thread concurrent
+Execution Parallel Execution, granularity, Potential of Parallelism
+Need of Parallel Computation
+Levels of parallel processing
+Parallel processing Vs. Parallel computing
+Dataflow Computing concept
+
+Applications of parallel processing
+ \n o Scientific Applications / Image processing
+ \n o Engineering Application
+ \n o Database query / Answering applications
+ \n o A I Applications
+ \n o Mathematical simulations and modeling
+
+ \n Unit 2 Classification of Parallel Computers
+Types of Classification
+Flynn\‘s/ Handler classification
+UMA / NUMA /COMA
+Loosely coupled / tightly coupled
+Classification based grain size and Instruction level parallelism
+
+ \n Unit 3 Interconnection Network
+Need of Interconnection Network
+Concept Bandwidth Nod degree diameter bi \n SECTION bandwidth, In degree and Out degree
+Static and Dynamic Interconnection network
+Omega, Parallel Shifter, Bens, permutation, hypercube, butterfly,
+Shuffle exchange Network
+
+ \n Unit 4 Parallel Computer Architecture
+Introduction to various computer architecture
+Pipeline processing
+Vector / Array processing
+VLIW and Super scalar architecture
+Associative architecture
+ \n o Multithreaded architecture
+
+ \n BLOCK 2 Parallel Algorithm and Parallel Programming
+ \n Unit 1 Parallel Algorithm
+Introduction to Parallel Algorithms
+Analysis of Parallel Algorithms
+Different models of computation
+ \n o Combinational circuit
+ \n o Permutation Circuit
+ \n o Sorting circuit
+ \n o Matrix computation
+
+ \n Unit –2 PRAM Algorithms
+Message passage programming
+ \n o Shared memory
+ \n o Message passing libraries
+ \n o Data Parallel programming
+Data Structures for parallel algorithms
+ \n o Link list
+ \n o Arrays pointers
+ \n o Hypercube network
+
+ \n Unit 3 Parallel Programming
+Introduction to Parallel Programming
+Types of parallel programming
+ \n o Programming based on message passing
+ \n o Programming based on data parallelism
+ \n o Programming for shared memory systems
+ \n o Example programs for parallel systems
+
+ \n BLOCK –3 Advanced Topics
+ \n Unit 1 Operating System for Parallel Computers
+Basic issues of Operating Systems for Parallel Computers
+Process Management
+Resource Management
+Memory management
+I.O. Management
+Inter-Processor Communication
+Vectorisation Compiler
+
+ \n Unit 2 Performance Evaluation
+Introduction to performance evaluation
+Metric of Parallel overhead
+Law Speedup
+Measurement Tools
+
+ \n Unit 3 Recent Trends for Parallel Computer
+Development of last 3 years
+Multicompontent CPU
+Apex architecture IA 64
+Hyperthreading
+
+
+</string>
+
+
+    <string name="MCSSP_060_syllabus">
+MCSP-060 Project  \n 16 Credits  \n
+The objective of the MCA project work is to develop quality software solution by following the software engineering principles and practices. It is only possible when a learner goes about with the task independently. During the development of the project the students should involve in all the stages of the software development life cycle like requirements engineering, systems analysis, systems design, software development, testing strategies and documentation with an overall emphasis on the development of reliable software systems. The primary emphasis of the project work is to understand and gain the knowledge of the principles of software engineering practices, s \n o as to participate and manage a large software engineering projects in future.
+Students are encouraged to spend at least six man-months working on a project preferably in a software industry or any research organization. Topics selected should be complex and large enough to justify as a MCA project. The courses studied by the students during the MCA programme provide them the comprehensive background to work on diverse application domains. Student will receive Project Guidelines along with their 5th semester course material. Students should strictly follow and adhere to the MCSP-060 project guidelines.
+
+</string>
+
+
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="title_activity_web">WebActivity</string>
+
+    <string name="title_activity_fullscreen">IGNOU</string>
+    <string name="ignou_bca">IGNOU\nBCA</string>
+    <string name="user_info">USER PROGRESS</string>
+    <string name="select_content">Select Content : </string>
+
+
+    <string-array name="Spin_entries">
+        <item>Question Papers</item>
+        <item>Syllabus</item>
+
+    </string-array>
+
+
+    <string-array name="theme_entries">
+        <item>Pink-Blue</item>
+        <item>Red-Blue</item>
+        <item>Blue-Green</item>
+        <item>Green-Red</item>
+
+    </string-array>
+
+
+    <string name="pref_header_general">General</string>
+
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">User</string>
+
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_enable_notifications">Enable notifications</string>
+    <string name="year1">Year 1</string>
+    <string name="year2">Year 2</string>
+    <string name="year3">Year 3</string>
+
+
+    <string name="opt_chat">IGNOU CHAT ROOM</string>
+
+
+    <string name="title_activity_upgrade">UpgradeActivity</string>
+
+    <string name="adfree_text">
+        * NO ADS FOREVER \n \n
+        * SUPPORT FUTURE APP DEVELOPMENT
+
+
+    </string>
+    <string name="adfree_text_purchased">
+       IGNOU TUTOR ADFREE HAS ALREADY PURCHASED
+    </string>
+
+
+    <string name="pro_text">
+
+        * NO ADS FOREVER \n \n
+        * AVAIL FULL FEATURES NOW AND IN FUTURE  \n \n
+        * CHAT IN IGNOU CHAT ROOM AND WITH OTHER USERS \n \n
+        * SUPPORT FUTURE APP DEVELOPMENT
+
+    </string>
+    <string name="pro_text_purchased">
+       IGNOU TUTOR PRO HAS ALREADY PURCHASED
+    </string>
+    <string name="upgrade_head">UPGRADE IGNOU TUTOR</string>
+
+    <string name="opt_upgrade">UPGRADE</string>
+
+
+    <string name="PRODUCT_ID_A">adfree</string>
+    <string name="PRODUCT_ID_B">pro</string>
+    <string name="LICENSE_KEY">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnyoLEyC+IP9ZrC2/8UUCQB5vG4JSCTInefFhCE6YCacBdzxvO4BP1pGMqdrrLbYKSLKlygSkvXzDgEjKEwG+0jB3rwVJFdVhxRSw/3cLaS8LvJe0itu3YuuCC0w8y23aVxqPOwrW8w8jJnKnK0JCj6fDbRkwuf8XF/Zfxw9xCzuKMEhFsUR3eU/H85XbxPQyzxX2KLIJKTpMhTutthG3MmzHtr2Ou+7u1lbMHzOv8wxQtIhwSHJdfhl6rKUp8ZycSf2yDCtX1+XS1sAu5pVHJJ74iyShwZwiPYN6rL4VWRv8KJahPtEAVqAGnlFwrG4MSGyccS/1v1OgOGvX4FxIzwIDAQAB</string>
+    <string name="MERCHANT_ID">02317777200718912476</string>
+    <string name="LOG_TAG">IGNOUTUTOR</string>
+    <string name="ed_purpose">FOR EDUCATIONAL PURPOSE ONLY</string>
+
+
+</resources>

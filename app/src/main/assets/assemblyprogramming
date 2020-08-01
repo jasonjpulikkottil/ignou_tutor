@@ -1,0 +1,1811 @@
+ASSEMBLY PROGRAMMING AND MICROPROCESSOR 
+UNIT - I
+A microprocessor is a multipurpose, programmable, clock driven, register based electronic device that reads binary instructions from a storage device called memory; accepts binary data as input and processes data according to those instructions and provides result as output
+A set of instructions written for the microprocessor to perform a task is called as a program.
+Types:
+> Reprogramable - use for computing and data processing. Eg. Microcomputers
+> Embedded systems - It is a final product.
+Eg. Microcontroller - Traffic signal application
+8085 Microprocessor Architecture:
+Components of MuP:
+1:Register and accumulator. 2:ALU. 3:Instruction decoder and machine cycle encoder. 4:Address buffer.
+5:Address/data buffer. 6:Inc/Dec latch. 7:Interrupt control. 8:Serial i/o like SOD,SID. 9:Timing and Control circuit.
+> ALU: Arithmetic and Logic commutations are performed
+> Registers: Stores data temporarily
+o Eg. B,C,D,E,H,L
+> Control Unit: Controls flow of data b/w microprocessor and peripherals with timing and control signals
+> I/O ports: Data is transferred in and out
+o Eg. LED display
+> Memory: Stores binary information interms of data and instructions. Eg. RAM/ROM
+> Bus: Group of wires that carries information between microprocessor and peripherals.
+Address Bus
+Data Bus
+Control Bus
+ALP
+> Assembly language programming: Microprocessors are programmed in ALP. It is a middle level language which consists of mnemonics.
+Eg.
+ADD A,B
+MOV C,A
+8085 Machine Language:
+> 8085 has word length of 8-bits.
+Instruction set:
+It uses various combinations such as 1 byte, 2 byte and 3 byte.
+Eg. Increment Accumulator, Add B
+1 byte instruction:
+INR A 0011 1100 3C
+ADD B 1000 0000 80
+Characteristics of a Micropocessor:
+? Instruction set: The set of instructions that the microprocessor can execute. (248 )
+? bandwidth : The number of bits processed in a single instruction. (8 bit)
+? clock speed : Given in megahertz (MHz), the clock speed determines how many instructions per second the processor can execute. (3 MHz)
+Accumulator:
+> The accumulator is an 8-bit register
+> It is a part of the arithmetic/logic unit(ALU).
+> This register is used to store 8-bit data which is used to perform arithmetic & logical operation.
+> The result of an operation is stored in the accumulator.
+> The accumulator is also identified as register A.
+Registers
+> The 8085 simulator has six general-purpose registers to store 8-bit data;
+> These are identified as B, C, D, E, H and L.
+> They can be combined as register pair - BC, DE and HL - to perform some 16-bit operations.
+The programmer can use these registers to store or copy data into the registers by using data copy instructions.
+> Out of these six registers, four 8-bit registers are Scratch pad registers which are accessible to the programmer and hence can be used to store data during a program execution.
+> And the two registers H and L are similar to that of scratch pad register but they are utilized in Indirect addressing mode. In this mode, the memory location i.e. the address is specified by the contents of the registers.
+> The temporary registers W and Z are intended for internal use of the processor and it cannot be used by the programmer.
+Program Counter (PC):
+> This 16-bit register deals with sequencing the execution of instructions.
+> This register is a memory pointer.
+> Memory locations have 16-bit addresses.
+> The function of the program counter is to point to the memory address from which the next instruction is to be fetched.
+> When a byte (machine code) is being fetched, the program counter is incremented by one to point to the next memory location.
+Stack Pointer (SP)
+> The stack pointer is also a 16-bit register used as a memory pointer. It points to a memory location in R/W memory, called the stack.
+> The return address of the PC from where the program control was transferred to the subroutine this return address is kept in a special area called stack.
+> Stack pointer is useful when interrupt occur i.e. before execution of call instruction, address of next instruction is copied into stack pointer.
+> Incrementor decrementor. This is also 16 bit register. It is used to add or subtract one from the contents of the program counter or stack pointer.
+The Flags register:
+There is also the flags register whose bits are affected by the arithmetic & logic operations.
+? S-sign flag
+The sign flag is set if bit D7 of the accumulator is set after an arithmetic or logic operation.
+? Z-zero flag
+Set if the result of the ALU operation is 0. Otherwise is reset. This flag is affected by operations on the accumulator as well as other registers. (DCR B).
+? AC-Auxiliary Carry
+This flag is set when a carry is generated from bit D3 and passed to D4 . This flag is used only internally for BCD operations.
+? P-Parity flag
+After an ALU operation if the result has an even # of 1's the p-flag is set. Otherwise it is cleared. So, the flag can be used to indicate even parity.
+? CY-carry flag
+It sets if there was a carry during addition, or borrow during subtraction/ comparison.
+8085 Microprocessor PIN Description:
+? Interrupts: They are generated through the microprocessor. They are initialized on the basis of priorities. (In descending order)
+? TRAP
+? RST 7.5
+? RST 6.5
+? RST 5.5
+? INTR - fetches any one instruction(RST0-RST7)
+? They are subdivided into maskable (RST, INTR ) and non maskable (TRAP) interrupts
+? Maskable: When the interrupt is received the processor saves the contents of the PC into stack and branches to the respective address.
+> INTR: Known as hardware interrupt and has Lowest priority.
+> INTA: Interrupt Acknowledge signal. It is a active low signal.
+> Vss : Ground signal
+> Vcc: power supply +5v
+> X1 and X2 are used to generate clock frequency.
+> RD: Processor is performing a Read operation.
+> WR: Processor is performing a write operation
+> READY: Acknowledgement from wait state.
+> I O /M : Memory or I/O Operation
+> RESET/IN: It is used to reset the microprocessor; it is active low signal. When the signal on this pin is low for at least 3 clock cycles; it resets the microprocessor.
+> RESET/OUT: Used to reset the peripheral devices.
+> S0 &S1 : Status signal used to define instruction operation.
+S1
+S0
+Operation
+0
+0
+Fetch operation
+0
+1
+Write operation
+1
+0
+Read
+Operation
+1
+1
+Halt operation
+> Clock: It generates clock frequency of 3 mHz and will be applied to other digital IC's which requires same clock pulse.
+> SID (Serial Input Data line)- The data on this line is loaded into accumulator bit 7 whenever a RIM(read interrupt mask) instruction is executed.
+> SOD (Serial Output Data line)- The SIM (set interrupt mask) instruction loads the value of bit 7 of the accumulator into SOD.
+> ALE (Address Latch Enable): ALE=1, bus functions as address bus, ALE=0, bus functions as data bus.
+> HOLD: It indicates that another master is requesting the use of address and data buses. CPU will relinquish the bus soon after current bus transfer.
+> HLDA (Hold Acknowledge): Indicates that the CPU has received the HOLD request and that it will relinquish the bus in the next clock cycle.
+Data and Address Bus:
+> 8085 MicroProcessor consists of 16 signal pins use as address bus.
+> A15 - A8 : Unidirectional, known as 'high order address'.
+> AD7 - AD0 : bidirectional and dual purpose (address and data placed once at a time). This technique of sharing of data and address on the bus is known as multiplexing.
+> AD7 - AD0 also known as 'low order address'.
+TIMING DIAGRAM OF 8085
+Opcode Fetch Machine Cycle:
+> Each instruction of the processor has one byte opcode.
+> The opcodes are stored in memory. So, the processor executes the opcode fetch machine cycle to fetch the opcode from memory.
+> Hence, every instruction starts with opcode fetch machine cycle.
+> The time taken by the processor to execute the opcode fetch cycle is 4T.
+> In this time, the first, 3 T-states are used for fetching the opcode from memory and the remaining T-states are used for internal operations by the processor.
+Memory Read Machine Cycle:
+> The memory read machine cycle is executed by the processor to read a data byte from memory.
+> The processor takes 3T states to execute this cycle.
+> The instructions which have more than one byte word size will use the machine cycle after the opcode fetch machine cycle
+> The memory write machine cycle is executed by the processor to write a data byte in a memory location.
+> The processor takes,3T states to execute this machine cycle..
+I/O Read Machine Cycle:
+> The I/O Read cycle is executed by the processor to read a data byte from I/O port or from the peripheral, which is I/O, mapped in the system.
+> The processor takes 3T states to execute this machine cycle.
+> The IN instruction uses this machine cycle during the execution
+> The I/O write machine cycle is executed by the processor to write a data byte in the I/O port or to a peripheral, which is I/O, mapped in the system.
+> The processor takes, 3T states to execute this machine cycle
+UNIT - II
+Programming 8085:
+ADDRESSING MODES OF 8085
+The instructions MOV B, A or MVI A, 82H are to copy data from a source into a
+destination. In these instructions the source can be a register, an input port, or an 8-bit number (00H to FFH). Similarly, a destination can be a register or an output port. The sources and destination are operands. The various formats for specifying operands are called the ADDRESSING MODES. For 8085, they are:
+1. Immediate addressing.
+2. Register addressing.
+3. Direct addressing.
+4. Indirect addressing.
+Immediate addressing
+Data is present in the instruction. Load the immediate data to the destination provided.
+Example: MVI R,data
+Register addressing
+Data is provided through the registers.
+Example: MOV Rd, Rs
+Direct addressing
+Used to accept data from outside devices to store in the accumulator or send the data stored in the accumulator to the outside device. Accept the data from the port 00H and store them into the accumulator or Send the data from the accumulator to the port 01H.
+Example: IN 00H or OUT 01H
+Indirect Addressing
+This means that the Effective Address is calculated by the processor. And the
+contents of the address (and the one following) is used to form a second address. The second address is where the data is stored. Note that this requires several memory accesses; two accesses to retrieve the 16-bit address and a further access (or accesses) to retrieve the data which is to be loaded into the register.
+Instruction Set Classification
+An specific function. determines what functions the microprocessor can perform. These instructions can be classified into the following five functional categories: data transfer (copy) operations, arithmetic operations, logical operations, branching operations, and machine-control operations. Instruction is a binary pattern designed inside a microprocessor to perform ainstruction set,
+Data Transfer (Copy) Operations
+This group of instructions copy data from a location called a source to another
+location called a destination, without modifying the contents of the source. In
+technical manuals, the term source are destroyed when, in fact, the contents are retained without any modification.
+The various types of data transfer (copy) are listed below together with examples of
+each type:
+data transfer is used for this copying function.
+Instruction word size
+The 8085 instruction set is classified into the following three groups according to
+word size:
+1. One-word or 1-byte instructions
+2. Two-word or 2-byte instructions
+3. In the 8085, "byte" and "word" are synonymous because it is an 8-bit microprocessor.
+However, instructions are commonly referred to in terms of bytes rather than words. Eg.Three-word or 3-byte instructions
+One-Byte Instructions
+A 1-byte instruction includes the opcode and operand in the same byte. Operand(s)
+are internal register and are coded into the instruction.
+For example:
+These instructions are 1-byte instructions performing three different tasks. In the first instruction, both operand registers are specified. In the second instruction, the operand B is specified and the accumulator is assumed. Similarly, in the third instruction, the accumulator is assumed to be the implicit operand. These
+instructions are stored in 8-bit binary format in memory; each requires one memory location.
+MOV rd, rs
+rd <-- rs copies contents of rs into rd.
+Coded as 01 ddd sss where ddd is a code for one of the 7 general registers which is
+the destination of the data, sss is the code of the source register.
+Example: MOV A,B
+Coded as 01111000 = 78H = 170 octal (octal was used extensively in instruction
+design of such processors).
+ADD r
+A <-- A + r
+Two-Byte Instructions
+In a two-byte instruction, the first byte specifies the operation code and the second
+byte specifies the operand. Source operand is a data byte immediately following the
+opcode. For example:
+Assume that the data byte is 32H. The assembly language instruction is written as
+The instruction would require two memory locations to store in memory.
+MVI r,data
+r <-- data
+Example: MVI A,30H coded as 3EH 30H as two contiguous bytes. This is an
+example of immediate addressing.
+ADI data
+A <-- A + data
+OUT port
+0011 1110
+DATA
+where port is an 8-bit device address. (Port) <-- A. Since the byte is not the data but
+points directly to where it is located this is called direct addressing.
+Three-Byte Instructions
+In a three-byte instruction, the first byte specifies the opcode, and the following two
+bytes specify the 16-bit address. Note that the second byte is the low-order address
+and the third byte is the high-order address.
+opcode + data byte + data byte
+For example:
+This instruction would require three memory locations to store in memory.
+Three byte instructions - opcode + data byte + data byte
+LXI rp, data16
+rp is one of the pairs of registers BC, DE, HL used as 16-bit registers. The two data
+bytes are 16-bit data in L H order of significance.
+rp <-- data16
+Example:
+LXI H,0520H coded as 21H 20H 50H in three bytes. This is also immediate
+addressing.
+LDA addr
+A <-- (addr) Addr is a 16-bit address in L H order. Example: LDA 2134H coded as
+3AH 34H 21H. This is also an example of direct addressing.
+Instruction Set of 8085
+> An instruction is a binary pattern designed inside a microprocessor to perform a specific function.
+> The entire group of instructions that a microprocessor supports is called Instruction Set.
+> 8085 has 246 instructions.
+> Each instruction is represented by an 8-bit binary value.
+> These 8-bits of binary value is called Op-Code or Instruction Byte.
+> An instruction is a binary pattern designed inside a microprocessor to perform a specific function.
+> Theentiregroupof instructions thata microprocessor supports is called Instruction Set.
+> 8085 has 246 instructions.
+> Each instruction is represented byan 8-bit binaryvalue.
+> These 8-bits of binaryvalue is called Op-Code or Instruction Byte.
+Classification of Instruction Set
+> DataTransfer Instruction
+> Arithmetic Instructions
+> Logical Instructions
+> Branching Instructions
+> Control Instructions
+Data Transfer Instructions
+> These instructions movedata between registers, or between memory and registers.
+> These instructionscopydata from source to destination.
+> Whilecopying, thecontentsof sourceare not modified.
+> This instruction copies thecontents of the source register into the destination register.
+> Thecontents of the source registerare not altered.
+> If one of the operands is a memory location, its location is specified by the contents of the HL registers.
+Example: MOV B, C or MOV B, M
+>
+> Opcode
+> Operand
+> Description
+> MVI
+> Rd, Data M, Data
+> Move immediate 8-bit
+?The 8-bit data is stored in the destination registeror memory.
+?If the operand is a memory location, its location is specified by thecontentsof the H-L registers.
+?Example: MVI B, 57H or MVI M, 57H
+Opcode
+Operand
+Description
+LDA
+16-bitaddress
+Load Accumulator
+?Thecontentsof a memory location, specified bya 16-bitaddress in theoperand, are copied to the accumulator.
+?Thecontentsof thesourceare notaltered.
+?Example: LDA 2034H
+Opcode
+Operand
+Description
+LDAX
+B/D Register Pair
+Load accumulator indirect
+?Thecontentsof thedesignated registerpairpoint to a memory location.
+?This instruction copies thecontentsof that memory location into the accumulator.
+?Thecontentsof either the registerpairor the memory location are not altered.
+?Example: LDAX B
+Opcode
+Operand
+Description
+LXI
+Reg. pair, 16-bit data
+Load registerpair immediate
+?This instruction loads 16-bit data in the register pair.
+?Example: LXI H, 2034 H
+Opcode
+Operand
+Description
+LHLD
+16-bitaddress
+Load H-L registersdirect
+?This instructioncopies thecontentsof memory location pointed out by 16-bit address into register L.
+?Itcopies the contentsof next memory location into register H.
+?Example: LHLD 2040 H
+Opcode
+Operand
+Description
+STA
+16-bitaddress
+Storeaccumulatordirect
+?Thecontentsof accumulatorare copied into the memory location specified by the operand.
+?Example: STA 2500 H
+Opcode
+Operand
+Description
+STAX
+Reg. pair
+Storeaccumulator indirect
+?Thecontentsof accumulatorare copied into the memory location specified by the contentsof the registerpair.
+?Example: STAX B
+Opcode
+Operand
+Description
+SHLD
+16-bitaddress
+Store H-L registersdirect
+?Thecontentsof register L are stored into memory location specified by the 16-bitaddress.
+?Thecontentsof register H are stored into the next memory location.
+?Example: SHLD 2550 H
+Opcode
+Operand
+Description
+XCHG
+None
+Exchange H-L with D-E
+?Thecontentsof register H are exchanged with the contentsof register D.
+?Thecontentsof register L are exchanged with the contentsof register E.
+?Example: XCHG
+?This instruction loads the contentsof H-L pair into SP.
+?Example: SPHL
+Opcode
+Operand
+Description
+XTHL
+None
+Exchange H-L with topof stack
+?Thecontentsof L registerare exchanged with the location pointed out by the contentsof the SP.
+?Thecontentsof H registerare exchanged with the next location (SP + 1).
+?Example: XTHL
+Opcode
+Operand
+Description
+PCHL
+None
+Load program counterwith H-L contents
+?Thecontentsof registers H and L are copied into the program counter (PC).
+?Thecontentsof H are placed as the high-order byte and thecontentsof L as the low-order byte.
+?Example: PCHL
+Opcode
+Operand
+Description
+SPHL
+None
+Copy H-L pair to the Stack Pointer (SP)
+Opcode
+Operand
+Description
+PUSH
+Reg. pair
+Push registerpaironto stack
+?Thecontents of register pairare copied onto stack.
+?SP is decremented and thecontents of high-order registers (B, D, H, A) are copied into stack.
+?SP isagain decremented and the contents of low-order registers (C, E, L, Flags) are copied into stack.
+?Example: PUSH B
+Opcode
+Operand
+Description
+POP
+Reg. pair
+Pop stack to registerpair
+?Thecontents of topof stack are copied into register pair.
+?Thecontents of location pointed out by SP are copied to the low-order register (C, E, L, Flags).
+?SP is incremented and thecontents of location are copied to the high-order register (B, D, H, A).
+?Example: POP H
+Opcode
+Operand
+Description
+OUT
+8-bitport address
+Copydata from accumulator toa port with 8-bit
+address
+?Thecontentsof accumulatorare copied into the I/O port.
+?Example: OUT 78 H
+Opcode
+Operand
+Description
+IN
+8-bitport address
+Copydata to accumulator from a port
+with 8-bitaddress
+?The contents of I/O port are copied into accumulator.
+?Example: IN 8C H
+Arithmetic Instructions:
+?These instructions perform the operations like:
+?Addition
+?Subtract
+?Increment
+?Decrement
+Addition
+?Any 8-bit number, or the contents of register, or the contents of memory location can be added to the contents of accumulator.
+?The result (sum) is stored in the accumulator.
+?No two other 8-bit registers can be added directly.
+?Example: The contents of register B cannot be added directly to the contents of register C.
+Subtraction
+?Any 8-bit number, or the contents of register, or the contents of memory location can be subtracted from the contents of accumulator.
+?The result is stored in the accumulator.
+?Subtraction is performed in 2'scomplement form.
+?If the result is negative, it is stored in 2's complement form.
+?No two other 8-bit registers can be subtracted directly.
+Increment / Decrement
+?The 8-bit contents of a register or a memory location can be incremented or decremented by 1.
+?The 16-bit contents of a register pair can be incremented or decremented by 1.
+?Increment or decrement can be performed on any register or a memory location.
+Opcode
+Operand
+Description
+ADD
+R M
+Add registeror memory to accumulator
+?The contents of register or memory are added to the contents of accumulator.
+?The result is stored in accumulator.
+?If the operand is memory location, its address is specified by H-L pair.
+?All flags are modified to reflect the result of the addition.
+?Example: ADD B orADD M
+Opcode
+Operand
+Description
+ADC
+R M
+Add registeror memory to
+accumulatorwith carry
+?The contents of register or memory and Carry Flag (CY) are added to the contents of accumulator.
+?The result is stored in accumulator.
+?If the operand is memory location, its address is specified by H-L pair.
+?All flags are modified to reflect the result of the addition.
+?Example: ADC B or ADC M
+Opcode
+Operand
+Description
+ADI
+8-bitdata
+Add immediate to accumulator
+?The 8-bit data is added to the contentsof accumulator.
+?The result is stored in accumulator.
+?All flagsare modified to reflect the resultof the addition.
+?Example: ADI 45 H
+Opcode
+Operand
+Description
+ACI
+8-bitdata
+Add immediate to accumulator
+with carry
+?The 8-bit data and the Carry Flag (CY) are added to the contents of accumulator.
+?The result is stored in accumulator.
+?All flags are modified to reflect the result of the addition.
+?Example: ACI 45 H
+Opcode
+Operand
+Description
+DAD
+Reg. pair
+Add registerpair to H-L pair
+?The 16-bit contents of the registerpairare added to the contents of H-L pair.
+?The result is stored in H-L pair.
+?If the result is larger than 16 bits, then CY is set.
+?Noother flags are changed.
+?Example: DAD B
+Opcode
+Operand
+Description
+SUB
+R M
+Subtract register or memory from
+accumulator
+?The contents of the registeror memory location are subtracted from the contentsof the accumulator.
+?The result is stored in accumulator.
+?If the operand is memory location, its address is specified by H-L pair.
+?All flags are modified to reflect the result of subtraction.
+?Example: SUB B or SUB M
+Opcode
+Operand
+Description
+SBB
+R M
+Subtract registeror memory from
+accumulator with borrow
+?Thecontentsof the registeror memory location and Borrow Flag (i.e. CY) are subtracted from thecontentsof theaccumulator.
+?The result is stored in accumulator.
+?If theoperand is memory location, itsaddress is specified by H-L pair.
+?All flags are modified to reflect the resultof subtraction.
+?Example: SBB B or SBB M
+Opcode
+Operand
+Description
+SUI
+8-bitdata
+Subtract immediate from
+accumulator
+?The 8-bit data is subtracted from thecontents of the accumulator.
+?The result is stored in accumulator.
+?All flags are modified to reflect the result of subtraction.
+?Example: SUI 45 H
+Opcode
+Operand
+Description
+SBI
+8-bitdata
+Subtract immediate from
+Accumulator with borrow
+?The 8-bit data and the Borrow Flag (i.e. CY) is subtracted from the contents of theaccumulator.
+?The result is stored in accumulator.
+?All flags are modified to reflect the result of subtraction.
+?Example: SBI 45 H
+Opcode
+Operand
+Description
+INR
+R M
+Increment registeror memory by 1
+?Thecontents of registeror memory location are incremented by 1.
+?The result is stored in the same place.
+?If the operand is a memory location, itsaddress is specified by the contents of H-L pair.
+?Example: INR B or INR M
+Opcode
+Operand
+Description
+INX
+R
+Increment registerpair by 1
+?Thecontentsof register pairare incremented by 1.
+?The result is stored in the same place.
+?Example: INX H
+Opcode
+Operand
+Description
+DCR
+R M
+Decrementregisteror memory by 1
+?Thecontents of registeror memory location are decremented by 1.
+?The result is stored in the same place.
+?If the operand is a memory location, itsaddress is specified by the contents of H-L pair.
+?Example: DCR B or DCR M
+Opcode
+Operand
+Description
+DCX
+R
+Decrementregisterpair by 1
+?Thecontentsof register pairare decremented by 1.
+?The result is stored in the same place.
+?Example: DCX H
+Logical Instructions
+?These instructions perform logical operations on data stored in registers, memoryand status flags.
+?The logical operations are:
+?AND
+?OR
+?XOR
+?Rotate
+?Compare
+?Complement
+AND, OR, XOR
+?Any 8-bitdata, orthe contentsof register, or memory locationcan logically have
+?AND operation
+?OR operation
+?XOR operation
+with the contentsof accumulator.
+?The result is stored in accumulator.
+Rotate
+?Each bit in the accumulatorcan be shifted either leftor right to the next position.
+Compare
+?Any 8-bitdata, orthe contentsof register, or memory locationcan be compares for:
+?Equality
+?GreaterThan
+?Less Than
+with the contentsof accumulator.
+?The result is reflected in status flags.
+Complement
+?Thecontentsof accumulatorcan becomplemented.
+?Each 0 is replaced by 1 and each 1 is replaced by 0.
+Logical Instructions
+Opcode
+Operand
+Description
+CMP
+R M
+Compare register or memory with
+accumulator
+?Thecontentsof theoperand (registeror memory) are compared with the contentsof the accumulator.
+?Both contentsare preserved .
+?The resultof the comparison is shown by setting the flagsof the PSW as follows:
+Opcode
+Operand
+Description
+CMP
+R M
+Compare register or memory with
+Accumulator
+?if (A) < (reg/mem): carry flag is set
+?if (A) = (reg/mem): zero flag is set
+?if (A) > (reg/mem): carry and zero flagsare reset.
+?Example: CMP B or CMP M
+Opcode
+Operand
+Description
+CPI
+8-bitdata
+Compare immediate with
+accumulator
+?The 8-bit data is compared with the contentsof accumulator.
+?Thevalues being compared remain unchanged.
+?The resultof the comparison is shown by setting the flagsof the PSW as follows:
+Opcode
+Operand
+Description
+CPI
+8-bitdata
+Compare immediate
+with accumulator
+?if (A) < data: carry flag is set
+?if (A) = data: zero flag is set
+?if (A) > data: carry and zero flagsare reset
+?Example: CPI 89H
+Opcode
+Operand
+Description
+ANA
+R M
+Logical AND register or memory
+with accumulator
+?Thecontentsof theaccumulatorare logically ANDed with thecontents of registeror memory.
+?The result is placed in theaccumulator.
+?If theoperand is a memory location, itsaddress is specified by the contentsof H-L pair.
+?S, Z, P are modified to reflect the resultof theoperation. ?CY is resetand AC is set.
+?Example: ANA B orANA M.
+Opcode
+Operand
+Description
+ANI
+8-bitdata
+Logical AND immediate with
+accumulator
+?Thecontents of theaccumulatorare logically ANDed with the 8-bit data.
+?The result is placed in the accumulator.
+?S, Z, P are modified to reflect the result.
+?CY is reset, AC is set.
+?Example: ANI 86H.
+Opcode
+Operand
+Description
+ORA
+R M
+Logical OR registeror memory
+with accumulator
+? Thecontents of the accumulator are logically ORed with thecontents of the registeror memory.
+? The result is placed in the accumulator.
+? If theoperand is a memory location, its address is specified by thecontents of H-L pair.
+? S, Z, P are modified to reflect the result.
+? CYand AC are reset.
+? Example: ORA B or ORA M.
+Opcode
+Operand
+Description
+ORI
+8-bitdata
+Logical OR immediate with
+accumulator
+?Thecontents of theaccumulatorare logically ORed with the 8-bit data.
+?The result is placed in the accumulator. ?S, Z, P are modified to reflect the result. ?CYand AC are reset.
+?Example: ORI 86H.
+Opcode
+Operand
+Description
+XRA
+R M
+Logical XOR registeror memory
+with accumulator
+?The contents of the accumulator are XORed with the contents of the register or memory.
+?The result is placed in the accumulator.
+?If theoperand is a memory location, its address is specified by the contentsof H-L pair.
+?S, Z, P are modified to reflect the resultof the operation. ?CYand AC ar
+?Example: XRA B orXRA M.
+Opcode
+Operand
+Description
+XRI
+8-bitdata
+XOR immediate with accumulator
+?Thecontentsof theaccumulatorare XORed with the 8-bitdata.
+?The result is placed in the accumulator. ?S, Z, P are modified to reflect the result. ?CYand AC are reset.
+?Example: XRI 86H.
+Opcode
+Operand
+Description
+RLC
+None
+Rotateaccumulator left
+?Each binary bit of theaccumulator is rotated left by one position.
+?Bit D7 is placed in the position of D0 as well as in the Carry flag.
+?CY is modified according to bit D7.
+?S, Z, P, AC are not affected.
+?Example: RLC.
+Opcode
+Operand
+Description
+RRC
+None
+Rotate accumulator right
+?Each binary bit of theaccumulator is rotated right by one position.
+?Bit D0 is placed in the position of D7 as well as in the Carry flag.
+?CY is modified according to bit D0. ?S, Z, P, AC are not affected. ?Example: RRC.
+Opcode
+Operand
+Description
+RAL
+None
+Rotateaccumulator left
+throughcarry
+?Each binary bit of theaccumulator is rotated left by one position through the Carry flag.
+?Bit D7 is placed in the Carry flag, and the Carry flag is placed in the least significant position D0.
+?CY is modified according to bit D7.
+?S, Z, P, AC are not affected.
+?Example: RAL.
+Opcode
+Operand
+Description
+RAR
+None
+Rotate accumulator right
+Throughcarry
+?Each binary bit of theaccumulator is rotated right by one position through the Carry flag.
+?Bit D0 is placed in the Carry flag, and the Carry flag is placed in the most significant position D7.
+?CY is modified according to bit D0. ?S, Z, P, AC are not affected. ?Example: RAR.
+Opcode
+Operand
+Description
+CMA
+None
+Complementaccumulator
+?Thecontentsof theaccumulatorare complemented.
+?No flags are affected.
+?Example: CMA.
+Opcode
+Operand
+Description
+CMC
+None
+Complementcarry
+?The Carry flag is complemented.
+?Noother flagsare affected.
+?Example: CMC.
+Opcode
+Operand
+Description
+STC
+None
+Setcarry
+?The Carry flag is set to 1.
+?Noother flagsare affected.
+?Example: STC.
+Branching Instructions
+?The branching instructionalter the normal sequential flow.
+?These instructionsaltereither unconditionallyor conditionally.
+Opcode
+Operand
+Description
+JMP
+16-bitaddress
+Jump unconditionally
+?The program sequence is transferred to the memory location specified by the 16-bitaddress given in the operand.
+?Example: JMP 2034 H.
+Opcode
+Operand
+Description
+Jx
+16-bitaddress
+Jumpconditionally
+?The program sequence is transferred to the memory location specified by the 16-bitaddress given in the operand based on the specified flag of the PSW.
+?Example: JZ 2034 H.
+Jump Conditionally
+Opcode
+Description
+Status Flags
+JC
+Jump if Carry
+CY = 1
+JNC
+Jump if No Carry
+CY = 0
+JP
+Jump if Positive
+S = 0
+JM
+Jump if Minus
+S = 1
+JZ
+Jump if Zero
+Z = 1
+JNZ
+Jump if No Zero
+Z = 0
+JPE
+Jump if Parity Even
+P = 1
+JPO
+Jump if Parity Odd
+P = 0
+Opcode
+Operand
+Description
+CALL
+16-bitaddress
+Call unconditionally
+?The program sequence is transferred to the memory location specified by the 16-bitaddress given in the operand.
+?Before the transfer, the address of the next instruction after CALL (thecontents of the program counter) is pushed onto thestack.
+?Example: CALL 2034 H.
+Opcode
+Operand
+Description
+Cx
+16-bitaddress
+Call conditionally
+?The program sequence is transferred to the memory location specified by the 16-bitaddress given in the operand based on the specified flag of the PSW.
+?Before the transfer, theaddress of the next instruction afterthe call (thecontentsof the program counter) is pushed onto the stack.
+?Example: CZ 2034 H.
+Call Conditionally
+Opcode
+Description
+Status Flags
+CC
+Call if Carry
+CY = 1
+CNC
+Call if No Carry
+CY = 0
+CP
+Call if Positive
+S = 0
+CM
+Call if Minus
+S = 1
+CZ
+Call if Zero
+Z = 1
+CNZ
+Call if No Zero
+Z = 0
+CPE
+Call if Parity Even
+P = 1
+CPO
+Call if Parity Odd
+P = 0
+Opcode
+Operand
+Description
+RET
+None
+Return unconditionally
+?The program sequence is transferred from the subroutineto the calling program.
+?The two bytes from the topof the stack are copied into the program counter, and program execution begins at the new address.
+?Example: RET.
+Opcode
+Operand
+Description
+Rx
+None
+Call conditionally
+?The program sequence is transferred from the subroutineto the calling program based on the specified flag of the PSW.
+?The two bytes from the topof the stack are copied into the program counter, and program execution begins at the new address.
+?Example: RZ.
+Return Conditionally
+Opcode
+Description
+Status Flags
+RC
+Return if Carry
+CY = 1
+RNC
+Return if No Carry
+CY = 0
+RP
+Return if Positive
+S = 0
+RM
+Return if Minus
+S = 1
+RZ
+Return if Zero
+Z = 1
+RNZ
+Return if No Zero
+Z = 0
+RPE
+Return if Parity Even
+P = 1
+RPO
+Return if Parity Odd
+P = 0
+Opcode
+Operand
+Description
+RST
+0 - 7
+Restart (Software Interrupts)
+?The RST instruction jumps the control tooneof eight memory locationsdepending upon the number.
+?Theseare used as software instructions in a program to transferprogram execution tooneof theeight locations.
+?Example: RST 3.
+Restart Address Table
+Instructions
+Restart Address
+RST 0
+0000 H
+RST 1
+0008 H
+RST 2
+0010 H
+RST 3
+0018 H
+RST 4
+0020 H
+RST 5
+0028 H
+RST 6
+0030 H
+RST 7
+0038 H
+Control Instructions
+?Thecontrol instructionscontrol the operation of microprocessor.
+Opcode
+Operand
+Description
+NOP
+None
+Nooperation
+?Nooperation is performed.
+?The instruction is fetched and decoded but no operation is executed.
+?Example: NOP
+Opcode
+Operand
+Description
+HLT
+None
+Halt
+?The CPU finishes executing the current instruction and halts any furtherexecution.
+?An interruptorreset is necessary toexit from the halt state.
+?Example: HLT
+Opcode
+Operand
+Description
+DI
+None
+Disable interrupt
+?The interruptenable flip-flop is reset and all the interruptsexcept the TRAP are disabled.
+?No flags are affected.
+?Example: DI
+Opcode
+Operand
+Description
+EI
+None
+Enable interrupt
+?The interruptenable flip-flop is setand all interrupts areenabled.
+?No flags are affected.
+?This instruction is necessary to re-enable the interrupts (except TRAP).
+?Example: EI
+Opcode
+Operand
+Description
+RIM
+None
+Read Interrupt Mask
+RIM Instruction
+?This is a multipurpose instruction used to read the statusof interrupts 7.5, 6.5, 5.5 and read serial data input bit.
+?The instruction loadseight bits in theaccumulator with the following interpretations.
+?Example: RIM
+Opcode
+Operand
+Description
+SIM
+None
+Set Interrupt Mask
+SIM Instruction
+?This is a multipurpose instructionand used to implement the 8085 interrupts 7.5, 6.5, 5.5, and serial dataoutput.
+?The instruction interprets theaccumulatorcontentsas follows.
+?Example: SIM
+Unit - III
+Programming techniques:
+Looping - The program is instructed to execute certain set if instructions repeatedly execute a particular task number of times.
+Counting - It allows programmers to count how many times the instruction or set of instructions are executed.
+Indexing - This technique allows programmer to point or refer the data stored in sequential memory location one by one.
+CCoouunntteerrss
+> A loop counter is set up by loading a register with a certain value
+> Then using the DCR (to decrement) and INR (to increment) the contents of the register are updated.
+> A loop is set up with a conditional jump instruction that loops back or not depending on whether the count has reached the termination count.
+> The operation of a loop counter can be described using the following flowchart.
+Sample ALP for implementing a loop Using DCR instruction
+MVI C, 15 H
+LOOP DCR C
+JNZ LOOP
+UUssiinngg aa RReeggiisstteerr PPaaiirr aass aa LLoooopp CCoouunntteerr
+> Using a single register, one can repeat a loop for a maximum count of 255 times.
+> It is possible to increase this count by using a register pair for the loop counter instead of the single register.
+> A minor problem arises in how to test for the final count since DCX and INX do not modify the flags.
+UUssiinngg aa RReeggiisstteerr PPaaiirr aass aa LLoooopp CCoouunntteerr
+The following is an example of a loop set up with a register pair as the loop counter.
+LXI B, 1000 H
+LOOP DCX B
+MOV A, C
+JNZ LOOP
+DDeellaayyss
+> It was shown earlier that each instruction passes through different combinations of Fetch,(4T) Memory Read, and Memory Write cycles.(3T)
+> Delays are used to maintain timings of operations.
+Eg. Traffic signal
+> Knowing the combinations of cycles, one can calculate how long such an instruction would require to complete.
+Disadvantage,
+-the time of the processor is wasted.
+-alternate solution is to use a dedicated timer like 8253/54 to product time delays.
+> Knowing how many T-States an instruction requires, and keeping in mind that a T-State is one clock cycle long, we can calculate the delay time.
+> For example a "MOV" instruction uses 7 T-States. (Fetch is 4T ; Memory read is 3T if 1 byte instruction)
+> Delay = No. of T states / Frequency
+> Therefore, if the Microprocessor is running at a frequency of 2 MHz, the instruction would require 3.5 Seconds to complete.
+Here, for the instruction,
+A000 LDA F045
+A0 00 21
+A0 01 45
+A0 02 F0
+Stacks & Subroutines
+SSTTAACCKK
+o The stack is an area of memory identified by the programmer for temporary storage of information.
+o The stack is a LIFO (Last In First Out. ) structure.
+o The stack normally grows backwards into memory.
+o In other words, the programmer defines the bottom of the stack and the stack grows up into reducing address range.
+oo GGiivveenn tthhaatt tthhee ssttaacckk ggrroowwss bbaacckkwwaarrddss iinnttoo mmeemmoorryy,, iitt iiss ccuussttoommaarryy ttoo ppllaaccee tthhee bboottttoomm ooff tthhee ssttaacckk aatt tthhee eenndd ooff mmeemmoorryy ttoo kkeeeepp iitt aass ffaarr aawwaayy ffrroomm uusseerr pprrooggrraammss aass ppoossssiibbllee..
+oo IInn tthhee 88008855,, tthhee ssttaacckk iiss ddeeffiinneedd bbyy sseettttiinngg tthhee SSPP ((SSttaacckk PPooiinntteerr)) rreeggiisstteerr..
+LLXXII SSPP,, FFFFFFFFHH
+oo TThhiiss sseettss tthhee SSttaacckk PPooiinntteerr ttoo llooccaattiioonn FFFFFFFFHH ((eenndd ooff mmeemmoorryy ffoorr tthhee 88008855))..
+o Information is saved on the stack by PUSH
+o It is retrieved from the stack by POP
+o The 8085 provides two instructions: PUSH and POP for storing information on the stack and retrieving it back.
+o Both PUSH and POP work with register pairs ONLY.
+TThhee PPUUSSHH IInnssttrruuccttiioonn
+? PUSH B/D/H
+o Decrement SP
+o Copy the contents of register B to the memory location pointed to by SP
+o Decrement SP
+o Copy the contents of register C to the memory location pointed to by SP
+TThhee PPOOPP IInnssttrruuccttiioonn
+? POP B/D/H
+o Copy the contents of the memory location pointed to by the SP to register E
+o Increment SP
+o Copy the contents of the memory location pointed to by the SP to register D
+o Increment SP
+OOppeerraattiioonn ooff tthhee SSttaacckk
+o During pushing, the stack operates in a "decrement then store" style.
+o The stack pointer is decremented first, then the information is placed on the stack.
+o During poping, the stack operates in a "use then increment" style.
+o The information is retrieved from the top of the the stack and then the pointer is incremented.
+o The SP pointer always points to "the top of the stack".
+TThhee PPSSWW RReeggiisstteerr PPaaiirr
+oo TThhee 88008855 rreeccooggnniizzeess oonnee aaddddiittiioonnaall rreeggiisstteerr ppaaiirr ccaalllleedd tthhee PPSSWW ((PPrrooggrraamm SSttaattuuss WWoorrdd))..
+oo TThhiiss rreeggiisstteerr ppaaiirr iiss mmaaddee uupp ooff tthhee AAccccuummuullaattoorr aanndd tthhee FFllaaggss rreeggiisstteerrss..
+oo IItt iiss ppoossssiibbllee ttoo ppuusshh tthhee PPSSWW oonnttoo tthhee ssttaacckk,, ddoo wwhhaatteevveerr ooppeerraattiioonnss aarree nneeeeddeedd,, tthheenn PPOOPP iitt ooffff ooff tthhee ssttaacckk..
+oo TThhee rreessuulltt iiss tthhaatt tthhee ccoonntteennttss ooff tthhee AAccccuummuullaattoorr aanndd tthhee ssttaattuuss ooff tthhee FFllaaggss aarree rreettuurrnneedd ttoo wwhhaatt tthheeyy wweerree bbeeffoorree tthhee ooppeerraattiioonnss wweerree eexxeeccuutteedd..
+SSUUBBRROOUUTTIINNEESS
+o A subroutine is a group of instructions that will be used repeatedly in different locations of the program.
+o Rather than repeat the same instructions several times, they can be grouped into a subroutine that is called from the different locations.
+o In Assembly language, a subroutine can exist anywhere in the code.
+o However, it is customary to place subroutines separately from the main program.
+o The 8085 has two instructions for dealing with subroutines.
+o The CALL instruction is used to redirect program execution to the subroutine.
+o The RTE instruction is used to return the execution to the calling routine.
+TThhee CCAALLLL IInnssttrruuccttiioonn
+? CALL 4000H
+o 3-byte instruction.
+o Push the address of the instruction immediately following the CALL onto the stack and decrement the stack pointer register by two.
+o Load the program counter with the 16-bit address supplied with the CALL instruction.
+o Jump Unconditionally to memory location.
+TThhee RRTTEE IInnssttrruuccttiioonn
+? RTE
+o 1-byte instruction
+o Retrieve the return address from the top of the stack and increments stack pointer register by two.
+o Load the program counter with the return address.
+o Unconditionally returns from a subroutine.
+IIlllluussttrraatteess tthhee eexxcchhaannggee ooff iinnffoorrmmaattiioonn bbeettwweeeenn ssttaacckk aanndd PPrrooggrraamm CCoouunntteerr
+PPrrooggrraamm EExxeeccuuttiioonn
+PPrrooggrraamm EEcceeccuuttiioonn::
+CCAALLLL EExxeeccuuttiioonn
+? Instruction requires five machine cycles and eighteen T-states:
+RREETT EExxeeccuuttiioonn
+? Program execution sequence is transferred to the memory location 2043H
+PPaassssiinngg DDaattaa ttoo aa SSuubbrroouuttiinnee
+o In Assembly Language data is passed to a subroutine through registers.
+o The data is stored in one of the registers by the calling program and the subroutine uses the value from the register.
+o The other possibility is to use agreed upon memory locations.
+o The calling program stores the data in the memory location and the subroutine retrieves the data from the location and uses it.
+RREESSTTAARRTT IINNSSTTRRUUCCTTIIOONNSS
+CONDITIONAL CALL & RETURN INSTRUCTIONS
+Unit -IV
+Memory and I/O Interfacing
+Memory Interface:
+Memory and I/O mapping and interfacing concepts.
+Interrupts :
+8085 vectored interrupts , Restart as Software instructions, additional I/O concepts and processes.
+What is an Interface?
+> An interface is a concept that refers to a point of interaction between components, and is applicable at the level of both hardware and software.
+> This allows a component, (such as a graphics card or an Internet browser), to function independently while using interfaces to communicate with other components via an input/output system and an associated protocol.
+Memory Interface
+The memory is made up of semiconductor material used to store the programs and data.
+The types of memory is,
+> Primary or main memory
+> Secondary memory
+Primary Memory
+> RAM and ROM are examples of this type of memory.
+> Microprocessor uses it in storing a program temporarily (commonly called loading) and executing a program.
+> Hence the speed of this type of memory should be fast.
+Secondary Memory
+> These are used for bulk storage of data and information.
+> The main examples include Floppy, Hard Disk, CD-ROM, Magnetic Tape etc.
+> Slower and Sequential Access.
+> Non-volatile.
+Memory Chip
+> Memory 216 words
+> 8 bits per word
+> 16 address lines
+> 8 data input lines
+> 8 output lines
+> Example Block Diagram
+8085 Interfacing Pins
+Demultiplexing Address/Data Lines
+> 8085 identifies a memory location with its 16 address lines, (AD0 to AD7) & (A8 to A15)
+> 8085 performs data transfer using its data lines, AD0 to AD7
+> Lower order address bus & Data bus are multiplexed on same lines i.e. AD0 to AD7.
+> Demultiplexing refers to separating Address & Data signals for read/write operations.
+Generating Control Signals
+Interfacing I/O devices
+PERIPHERAL MAPPED I/0
+Comparison of Peripheral & I/O mapping
+8085 Interrupt
+> Interrupt signals are send by an external device to the processor.
+> It used to request to perform a particular task.
+> Interrupts are used for data transfer between the peripheral and the microprocessor.
+Whenever there is an Interrupt, The content of the PC and the status are saved in the stack.
+> The pointer jumps to the subroutine program called ISS(Interrupt service subroutine)
+> Which includes memory and /I/O mapped commands such as LDA, STA, IN, OUT.
+> The interrupt is controlled by the Interrupt Enable Flip flop which is set and reset using instructions such as EI -enable interrupt and DI disable interrupt.
+> If the flipflop is enabled then interrupt is sent by the external device to the MP. INTR signal goes high.
+> The microprocessor completes the current instruction execution, disables the interrupt so that no interrupt is accepted until it is enabled again.
+> The INTR signal inserts a restart (RST) instruction through external hardware.
+> The RST instruction transfers the program control to a specified memory location called the ISS (Interrupt service subroutine).
+> The address of the next instruction will be stored in the stack.
+> Once the MP encounters RET it will return back to the main program.
+> Hardware Interrupts: TRAP,RST 7.5, RST 6.5, RST 5.5 and INTR.
+> Software Interrupts: RST 0,RST 1, RST2, RST 3, RST 4, RST 5, RST 6 and RST 7.
+Software interrupts
+Restart Instruction
+Equivalent to
+RST0
+CALL 0000H
+RST1
+CALL 0008H
+RST2
+CALL 0010H
+RST3
+CALL 0018H
+RST4
+CALL 0020H
+RST5
+CALL 0028H
+RST6
+CALL 0030H
+RST7
+CALL 0038H
+Hardware interrupts
+> Classified as Vector and Non-Vector interrupts.
+> RST 7.5, 6.5 , 5.5 are vector interrupts.
+> INTR is a non vectored interrupt.
+> Vectored inputs are automatically transferred to specific memory locations without any hardware.
+> They do not require the signal of an input port.
+> Manufacturer fixes the address and are mapped into a table called Interrupt Vector Table (IVT)
+Hardware interrupts
+> Non Vectored inputs : When the device interrupts through INTR, the interrupted device should provide the address of Interrupt service Routine (ISR) after receiving interrupt acknowledge signal. (INTA)
+> Two types: Maskable and Non-maskable
+> Maskable interrupts:
+> 4 maskable interrupts RST 7.5, RST 6.5, RST 5.5 and INTR
+> Mask Interrupt process controlled by a single flipflop - Interrupt Enable Flipflop
+> Use two instructions to enable and disable
+> Enable Interrupt - EI ; Disable Interrupt - DI
+Interrupt Name
+Maskable
+Vectored
+INTR
+Yes
+No
+RST 5.5
+Yes
+Yes
+RST 6.5
+Yes
+Yes
+RST 7.5
+Yes
+Yes
+TRAP
+No
+Yes
+> Non Maskable Interrupts:
+> TRAP is not affected by commands EI and DI
+> TRAP has the highest priority followed by RST 7.5,6.5,5.5 and INTR.
+> But TRAP has lower priority than HOLD signal.
+Interrupt instructions
+SIM Instruction
+> Additional masking facility is accessed by moving data into 8 bit accumulator and executing SIM instruction.
+> Bit 0 is the mask for RST 5.5, bit 1 is the mask for RST 6.5 and bit 2 is the mask for RST 7.5.
+> If the mask bit is 0, the interrupt is available.
+> If the mask bit is 1, the interrupt is masked.
+> Bit 3 (Mask Set Enable - MSE) is an enable for setting the mask.
+> If it is set to 0 the mask is ignored and the old settings remain.
+> If it is set to 1, the new setting are applied.
+> Bit 4 of the accumulator in the SIM instruction allows explicitly resetting the RST 7.5 memory even if the microprocessor did not respond to it.
+> Bit 5 is not used by the SIM instruction
+> Bit 6 & Bit 7 is used for extra functionality such as serial data transmission.
+SIM Instruction
+Example: Set the interrupt masks so that RST5.5 is enabled, RST6.5 is masked, and RST7.5 is enabled.
+> First, determine the contents of the accumulator
+Pending Interrupts
+> Since the 8085 has five interrupt lines, interrupts may remain pending.
+> Using the RIM instruction, it is possible to can read the status of the interrupt lines and find if there are any pending interrupts.
+RIM instruction: Read Interrupt Mask
+> Bits 0-2 show the current setting of the mask for each of RST 7.5, RST 6.5 and RST 5.5 .
+> Bit 3 shows whether the maskable interrupt process is enabled or not.
+> It can be used by a program to determine whether or not interrupts are enabled.
+> Bits 4-6 show whether or not there are pending interrupts on RST 7.5, RST 6.5, and RST 5.5 .
+> Bit 7 is used for Serial Data Input.
+> The RIM instruction reads the value of the SID pin on the microprocessor and returns it in this bit.
+Restart Sequence
+> The restart sequence is made up of three machine cycles
+> In the 1st machine cycle:
+> The Microprocessor sends the INTA signal.
+> While INTA is active the microprocessor reads the data lines expecting to receive, from the interrupting device, the opcode for the specific RST instruction.
+> In the 2nd and 3rd machine cycles: the 16-bit address of the next instruction is saved on the stack.
+> Then the microprocessor jumps to the address associated with the specified RST instruction.
+> There are 8 different RST instructions.
+> Each RST instruction tells the processor to go to a specific memory address (call location - fixed)
+UNIT-V
+8255 A PROGRAMMABLE PERIPHERAL INTERFACE:
+The 8255A is a general purpose programmable I/O device designed for use with Intel Microprocessors. It consists of three 8-bit bidirectional I/O ports (24 I/O lines) that can be configured to meet different system I/O needs. The three ports are PORTA, PORTB & PORTC. PortA contains one 8-bit output latch/buffer and one 8-bit input buffer. PortB is same as PORTA or PORTB.However, PORTC can be split into two parts PORTC lower(PC0-PC3) and PORTC upper (PC7-PC4) by the control word. The three ports are divided intwo groups GroupA (PORTA and upper PORTC) GroupB (PORTB and lower PORTC). The two groups can be programmed in three different modes. In the first mode (mode0), each group may be programmed in either input mode or output mode (PORTA, PORTB, PORT C lower, PORTC upper). In mode1, the second's mode, each group may be programmed to have 8-lines of input or output (PORT A or PORT B) of the remaining 4-lines (PORT C lower or PORT C upper) 3-lines are used for handshaking and interrupt control signals. The third mode of operation (mode2) is a bidirectional bus mode which uses 8-line (PORT A only for a bidirectional bus and five lines (PORT C upper 4 lines and borrowing one from other group) for handshaking. The 8255 is contained in a 40-pin package, whose pin out is given below:
+Fig 5.1 Pin diagram of 8255 PPI
+Fig.5.2 Block diagram of 8255 programmable peripheral interface
+Functional Description:
+This support chip is a general purpose I/O component to interface peripheral equipment to the microcomputer system bus. It is programmed by the system software so that normally no external logic is necessary to interface peripheral devices or structures.
+Data Bus Buffer:
+It is a tri-state 8-bit buffer used to interface the chip to the system databus. Data is transmitted or received by the buffer upon execution of input or output instructions by the CPU. Control words and status information are also transferred through the databus buffer. The data lines are connected to BDB of microprocessor.
+Read/Write and logic control:
+The function of this block is to control the internal operation of the device and to control the transfer of data and controlor status words. It accepts inputs from the
+CPU address and control buses and inturn issues command to both the control groups.
+ChipSelect: A low on this input selects the chip and enables the communication between the 8255A & the CPU. It is connected to the output of address decode circuitry to select the device when it (Read). A low on this input enables the 8255 to send the data or status information to the CPU on the databus.
+Write: A low on this input pin enables the CPU to write data or control words into the 8255A.
+A1,A0 port select : These input signals, in conjunction with the and inputs, control the selection of one of the three ports or the control word registers. They are normally connected to the least significant bits of the address bus (A0andA1). Following Table gives the basic operation,
+operation table of 8255
+All other states put data bus into tri-state/ illegal condition.
+RESET: A high on this input pin clears the control register and all ports (A, B & C) are initialized to input mode. This is connected to RESET OUT of 8255. This is done to prevent destruction of circuitry connected to port lines. If port lines are initialized as output after a power up or reset, the port might try to output into the output of a device connected to same inputs might destroy one or both of them.
+PORTs A, B and C: The 8255A contains three 8-bit ports (A, B and C). All can be configured in a variety of functional characteristic by the system software.
+PORT A: One 8-bit data output latch/buffer and one 8-bit data input latch.
+PORT B: One 8-bit data output latch/buffer and one 8-bit data input buffer.
+PORTC: One 8-bit data output latch/buffer and one 8-bit data input buffer (no latch for input). This port can be divided into two 4-bit ports under the mode control. Each 4-bit port contains a 4-bit latch and it can be used for the control signal outputs and status signals inputs in conjunction with ports A and B.
+Group A & Group B control: The functional configuration of each port is programmed by the system software. The control words outputted by the CPU configure the associated ports of the each of the two groups. Each control block accepts command from Read/Write content logic receives control words from the internal databus and issues proper commands to its associated ports.
+Control Group A - Port A & Port C upper Control Group B - Port B & Port C lower
+The control word register can only be written into No read operation if the control word register is allowed.
+Operation Description: Mode selection: There are three basic modes of operation that can be selected by the system software.
+Mode 0: Basic Input/output
+Mode1: Strobes Input/output Mode 2: Bi-direction bus.
+When the reset input goes HIGH all poets are set to mode '0' as input which means all 24 lines are in high impedance state and can be used as normal input. After the reset is removed the 8255 A remains in the input mode with no additional initialization. During the execution of the program any of the other modes may be selected using a single output instruction.
+The modes for PORT A & PORT B can be separately defined, while PORT C is divided into two portions as required by the PORT A and PORT B definitions. The ports are thus divided into two groups Group A & Group B. All the output register, including the status flip-flop will be reset whenever the mode is changed.
+Modes of the two group may be combined for any desired I/O operation e.g. Group A in mode'1'and group B in mode'0'.
+Mode Definition
+The basic mode definitions with bus interface and the mode definition format are given in fig 5.3 & 5.4
+Mode0
+Mode 1&2
+8259A PROGRAMMABLE INTERRUPT CONTROLLER:
+The 8259 A is a Programmable Interrupt controller designed to work with Intel microprocessor 8080 A, 8085, 8086, 8088. The 8259 A interrupt controller can
+1) Handle eight interrupt inputs. This is equivalent to providing eight interrupt pins on the processor in place of one INTR/INT pin.
+2) Vector an interrupt request anywhere in the memory map. However, all the eight interrupt are spaced at the interval of either four or eight location. This eliminates the major drawback, 8085 interrupt, in which all interrupts are vectored to memory location on page 00 H.
+3) Resolve eight levels of interrupt priorities in a variety of modes.
+4) Mask each interrupt request individually.
+5) Read the status of pending interrupts, in service interrupts, and masked interrupts.
+6) Be setup to accept either the level triggered or edge triggered interrupt request.
+7) Mine 8259 a scan be cascade in a master slave configuration to handle 64 interrupt inputs. The 8259 A is contained in a 28-element inline package that requires only a compatible with 8259. The main difference between the two is that the 8259 A can be used with Intel 8086/8088
+processor. It also induces additional features such as level triggered mode, Buffered mode and automatic end of interrupt mode. The pin diagram and interval block diagram is shown below:
+Pin diagram of 8259
+Chipselect: To access this chip, CS' is made low. A LOW on this pin enables RD'&WR' communication between the C PU and the 8259 A. This pin is connected to address bus through the decoder logic circuits. INTA functions are independent of CS'
+WR':.Alowonthispin.WhenCS'islowenablesthe8259AtoacceptcommandwordsfromCPU.
+RD': A low on this pin when CS' is low enables these 8259 A to release status on to the databus for the CPU. The status includes the contents of IMR, ISR or TRR register or a priority level.
+D7-D0: Bidirectional databus control status and interrupt in a this bus. This bus is connected to BDB of 8085.
+CAS0-CAS2: Cascade lines: The CAS lines form a private 8259 A bus to control a multiple 8259 A structure ie to identify a particular slave device. These pins are outputs of a master 8259 A and inputs for a slave 8259 A.
+Salve program / enable buffer: This is a dual function pin. It is used as an input to determine whether the 8259 A is to a master (SP/EB=1) or as a slave (SP/EB=0). It is also used as an output to disable the data bus transceivers when data are being transferred from the 8259A to the CPU. When In buffered mode, it can be used as an output and when not in the buffered mode it is used as an input.
+INT: This pin goes high whenever a valid interrupt request is asserted. It is used to interrupt the CPU, thus it is connected to the CPU's interrupt pin (INTR).
+Interrupt Acknowledge: This pin is used to enable 8259 A interrupt vector data on the
+data bus by a sequence of interrupt request pulses issued by the CPU.
+IR0-IR7: Interrupt Requests: Asynchronous interrupt inputs. An interrupt request is executed by raising an IR input (low to high), and holding it high until it is acknowledged. (Edge triggered mode). Or just by a high level on an IR input (levels triggered mode).
+A0:A0addressline:This pin acts in conjunction with the, RD', WR' & CS' pins. It is used by the 8259 A to send various command words from the CPU and to read the status. If is connected to the CPU A0 address line. Two addresses must be reserved in the I/O addresss pace for each 8259 in the system.
+Functional Description: The 8259 A has eight interrupt request inputs, TR2IR0. The 8259 A uses its INT output to interrupt the 8085 A via INTR pin. The 8259 A receives interrupt acknowledge pulses from the at its input. Vector address used by the 8085 A to transfer control to the service subroutine of the interrupting device, is provided by the 8259 A on th e databus. The 8259 A is a programmable device that must be initialized by command words sent by the. After initialization the 8259 A mode of operation can be changed by operation command words from the microprocessor.
+Block diagram of 8259PIC
+Databus buffer: This 3-state, bidirectional 8-bit buffer is used to interface the 8259 A to the system databus. Control words and status information are transferred through the data bus buffer.
+Read/Write & control logic: The function of this block is to accept OUTPUT commands from the CPU. It contains the initialization command word (ICW) register and operation command
+Word (OCW) register which store the various control formats for device operation. This function block also allows the status of 8159 A to be transferred to the databus.
+Interrupt request register(IRR): IRR stores all the interrupt inputs that are requesting service. Basically, it keeps track of which interrupt inputs are asking for service. If an interrupt input is unmasked, and has an interrupt signal on it, then the corresponding bit in the IRR will be set.
+Interrupt mask register (IMR): The IMR is used to disable (Mask) or enable (Unmask) individual interrupt inputs. Each bit in this register corresponds to the interrupt input with the same number.The IMR operation on the IRR. Masking of higher priority input will not affect the interrupt request lines of lower priority.To unmask any interrupt the corresponding bit is set'0'.
+Inservice register (ISR): The inservice registers keeps tracks of which interrupt inputs are currently being serviced. For each input that is currently being serviced the corresponding bit will be set in the inservice register.Each of these 3-reg can be read as status reg.
+Priority Resolver: This logic block determines the priorities of the set in the IRR. The highest priority is selected and strobed into the corresponding bit of the ISR during INTA' pulse.
+Cascade buffer/comparator: This function blocks stores and compare the IDS of all 8259 A' s in the reg. The associated 3-I/O pins (CAS0-CAS2) are outputs when 8259 A is used a master. Master and are inputs when 8259 A is used as a slave. As a master, the 8259 A sends the ID of the interrupting slave device onto the cas2-cas0. The slave thus selected will send its pre-programmed subroutine address onto the databus during the next one or two successive INTA' pulses.
+DIRECT MEMORY ACCESS 8237 CONTROLLER:
+Introduction: Direct Memory Access (DMA) allows devices to transfer data without subjecting the processor a heavy overhead. Otherwise, the processor would have to copy each piece of data from the source to the destination. This is typically slower than copying normal blocks of memory since access to I/O devices over a peripheral bus is generally slower than normal system RAM. During this time the processor would be unavailable for any other tasks involving processor bus access. But it can continue to work on any work which does not require bus access. DMA transfers are essential for high performance embedded systems where large chunks of data need to be transferred from the input/output devices to or from the primary memory.
+DMAController: A DMA controller is a device, usually peripheral to a CPU that is programmed to perform a sequence of data transfers on behalf of the CPU. A DMA controller can directly access memory and is used to transfer data from one memory location to another, or from an I/O device to memory and viceversa. A DMA controller manages several DMA channels, each of which can be programmed to perform a sequence of these DMA transfers. Devices, usually I/O peripherals, that acquire data that must be read (or devices that must output data and be written to) signal the DMA controller to perform a DMA transfer by asserting a hardware DMA request (DRQ) signal. A DMA request signal for each channel is routed to the DMA controller. This signal is monitored and responded to in much the same way that a processor handles interrupts. When the DMA controller sees a DMA request, it responds by performing one or many data transfers from that I/O device into system memory or viceversa. Channels must be enabled by the processor for the DMA controller to respond to DMA requests. The number of transfers performed, transfer modes used, and memory locations accessed depends on how the DMA channel is programmed. A DMA controller typically shares the
+System memory and I/O bus with the CPU and has both bus master and slave capability. Figure shows the DMA controller architecture and how the DMA controller interacts with the CPU. In bus master mode, the DMA controller acquires the system bus (address,data,and control lines) from the CPU to perform the DMA transfers. Because the CPU releases the system bus for the duration of the transfer, the process is sometimes referred to as cycle stealing.
+In bus slave mode, the DMA controller is accessed by the CPU, which programs the DMA controller's internal registers to setup DMA transfers. The internal registers consist of source and destination address registers and transfer count registers for each DMA channel, as well as control and status registers for initiating, monitoring,
+and sustaining the operation of the DMA controller.
+DMA Transfer Types and Modes:
+DMA controllers vary as to the type of DMA transfers and the number of DMA channels they support. The two types of DMA transfers are fly by DMA transfers and fetch-and-deposit DMA transfers. The three common transfer modes are single, block, and demand transfer modes. A DMA controller is a device, usually peripheral to a CPU that is programmed to perform a sequence of data transfers on behalf of the CPU. A DMA controller can directly access memory and is used to transfer data from one memory location to another, or from an I/O device to memory and viceversa. When the DMA controller sees a DMA request, it responds by performing one or many data transfers from that I/O device into system memory or viceversa.
+DMA transfer
+The second type of DMA transfer is referred to as a dual-cycle,dual-address,flow-through,or fetch-and-deposit DMA transfer.
+As these type of transfer involves two memory or I/O cycles. The data being transferred is first read from the I/O device or memory into a temporary data register internal to the DMA controller. The data is then written to the memory or I/O device in the next cycle.Figure shows the fetch-and-deposit DMA transfer signal protocol. Although inefficient because the DMA controller performs two cycles and thus retains the systembus longer, this type of transfer is useful for interfacing devices with different data bus sizes.
+Fetch-and-DepositDMATransfer8237DMAcontrollerIC:
+pindiagramof8237DMAcontroller is shown in figure.
+Block Diagram of DMA controller
+VCC: is the +5V power supply pin
+GND Ground
+CLK: CLOCK INPUT: The Clock Input is used to generate the timing signals which
+control 82C37A operations.
+CS:CHIPSELECT: Chip Select is an active low input used to enable the controller on to the databus for CPU communications.
+RESET:This is an active high input which clears the Command,Status,Request,andTemporary registers,theFirst/LastFlip-Flop,and the mode register counter.The Mask register is set to ignore requests. Following a Reset, the controller is in an idle cycle.
+READY:This signal can be used to extend the memory read and write pulses from the 82C37A to accommodates low memories or I/O devices.
+HLDA:HOLDACKNOWLEDGE:The active high Hold Acknowledge from the CPU indicates that it has relinquished control of the system busses.
+DREQ0-DREQ3:DMAREQUEST:The DMA Request(DREQ) lines are individual asynchronous channel request inputs used by peripheral circuits to obtain DMA service. In Fixed Priority,DREQ0 has the highest priority and DREQ3 has the lowest priority. A request is generated by activating the DREQ line of a channel. DACK will acknowledge the recognition of a DREQ signal. Polarity of DREQ is programmable. RESET initializes these lines to active high. DREQ must be maintained until the corresponding DACK goes active. DREQ will not be recognized while the clock is stopped. Unused DREQ inputs should be pulled High or Low(inactive) and the corresponding mask bit set.
+DB0-DB7:DATABUS:The Data Bus lines are bidirectional three-state signals connected to the system databus. The outputs are enabled in the Program condition during the I/O Read to output the contents of a register to the CPU.The outputs are disabled and the inputs are read during an I/O Write cycle when the CPU is programming the 82C37A control registers. During DMA cycles, the most significant 8-bits of the address are output on to the databus to be strobed into an external latch by ADSTB.In memory-to-memory operations,data from the memory enters the 82C37A on the databus during the read-from-memory transfer,then during the write-to-memory transfer, the databus outputs write the data into the new memory location.
+IOR:READ:I/O Read is a bidirectional active low three-state line. In the Idle cycle, it is an input control signal used by the CPU to read the control registers. In the Active cycle,it is an output control signal used by the 82C37A to access data from the peripheral during a DMA Write transfer.
+IOW:WRITE: I/O Write is a bidirectional active low three-stateline. In the Idle cycle, it is an input control signal used by the CPU to load information into the82C37A.In the Active cycle,it is an output control signal used by the 82C37A to load data to the peripheral during a DMA Read transfer.
+EOP:ENDOFPROCESS:End of Process(EOP) is an active low bidirectional signal. Information concerning the completion of DMA services is available at the bidirectional EOP pin. The 82C37A allows an external signal to terminate an active DMA service by pulling the EOP pin low. A pulse is generated by the 82C37A when terminal count(TC) for any channel is reached, except for channel0 in memory-to-memory mode. During memory-to-memory Transfers, EOP will be output when the TC for channel 1 occurs. The EOP pin is driven by an open drain transistor on-chip,and requires an external pull-up resistor toVCC.When an EOP pulse occurs, whether internally or externally generated, the82C37A will terminate the service, and if auto-initialize is enabled, the base registers will be written to the current registers of that channel.The mask bit and TC bit in the status word will be set for the currently active channel by EOP unless the channel is programmed for auto initialize. In that case,the mask bit remains clear.
+A0-A3:ADDRESS:The four least significant address lines are bidirectional three-state signals. In the Idle cycle, they are inputs and are used by the 82C37A to address the control register to be loaded or read. In the Active cycle,they are outputs and provide the lower 4-bits of the output address.
+A4-A7:ADDRESS:The four most significant address lines are three-state outputs and provide 4-bits of address.These lines are enabled onlyduring the DMA service.
+HRQ:HOLDREQUEST:The Hold Request (HRQ) output isused to request control of the systembus.When a DREQ occurs and the corresponding mask bit is clear, or a software DMA request is made,the 82C37A issues HRQ. The HLDA signal then informs the controller when access to the system busses is permitted. For stand-alone operation where the 82C37A always controls the busses,HRQ may be tied to HLDA.This will result in one S0 state before the transfer.
+DACK0-DACK3:DMAACKNOWLEDGE:DMA acknowledge is used to notify the individual peripherals when one has been granted a DMA cycle.The sense of these lines is programmable. RESET initializes them to activelow.
+AEN:ADDRESSENABLE:AddressEnable enables the 8-bit latch containing the upper 8 address bits on to the system addressbus. AEN can also be used to disable
+other systembus drivers during DMA transfers.AEN is active high.
+ADSTB:ADDRESSSTROBE: This is an active high signal used to control latching of the upper address byte. It will drive directly the strobe input of external transparent octal latches, such as the 82C82. During block operations, ADSTB will only be issued when the upper address byte must be updated, thus speeding operation through elimination of S1 states.ADSTB timing is referenced to the falling edge of the 82C37A clock.
+MEMR:MEMORYREAD:The Memory Read signal is an active low three-state output used to access data from the selected memory location during a DMA Read or a memory-to-memory transfer.
+MEMW:MEMORYWRITE:The Memory Write signal is an active low three-state output used to write data to the selected memory location during a DMA Write or a memory-to-memory transfer.
+NC:NOCONNECT: Pin5 is open and should not be tested for continuity.
+Programs
+Two Digit BCD subtraction using 100th compliment method:
+MVI C,101 ; 65 IN HEXADECIMAL
+MVI B,50; 32 IN HEXADECIMAL
+MVI A,153 ;99 IN HEX
+SUB B
+INR A
+ADD C
+DAA
+JC 16914 ;POSI
+MOV B,A
+MVI A,99
+SUB B
+INR A
+STA 1200 ; POSI
+HLT
+;99-32= 67
+;67+1=68
+;68+65=1 33 ;discard carry if positive
+2's compliment subtraction:
+LDA 1100
+MOV B,A
+LDA 1101
+CMA
+ADI 01
+ADD B
+STA 1102
+HLT
+;08
+;02
+;06
+ADD 2 N BYTE NUMBERS
+LXI H,1100 ;N VALUE
+MOV C,M
+INX H
+LXI D,1200
+XRA A
+LDAX D ; LOOP
+ADC M ; add with carry
+MOV M,A
+INX H
+INX D
+DCR C
+JNZ 16905 ;LOOP
+MVI A,00
+RAL ;rotate left through carry
+MOV M,A
+HLT
+Addition of two 8 bit numbers
+LDA 1100
+LXI H,1101
+ADD M
+STA 1102
+HLT
+Addition of two 16 bit numbers
+MVI C,00
+LHLD 1100
+XCHG
+LHLD 1102
+DAD D ; ADD DE TO HL
+JNC 16911 ;SKIP
+MVI C,01
+SHLD 1104 ;SKIP
+MOV A,C
+STA 1106
+HLT
+;1100 - 05
+;1101 - 02
+;1102 - 01
+;1103 - 04
+;1104 - 06
+;1105 - 06
+;1106 - 0
+Addition with carry
+MVI C,00
+LDA 1100
+LXI H,1101
+ADD M
+JNC 16909
+INR C
+STA 1102
+MOV A,C
+STA 1103
+HLT
+;FA - 250
+;EE - 238
+;E8 - 232
+;1 - 1
+ADD N NUMBERS UNTIL FF IS ENCOUNTERED
+MVI D,00
+MVI C,00
+LXI H,1100
+MOV A,M ;CONT
+CPI 255;FF
+JZ 0000 ;STOP
+ADD D
+JNC SKIP
+INR C
+MOV D,A ; SKIP
+INX H
+JMP CONT
+MOV A,D ;STOP
+STA 1200
+MOV A,C
+STA 1201
+HLT
+Ascending Order
+LDA 1100
+MOV B,A
+DCR B
+;LOOP3
+LXI H,1100
+MOV C,M
+DCR C
+INX H
+;LOOP2
+MOV A,M
+INX H
+CMP M
+JC 16918 ;LOOP1
+MOV D,M
+MOV M,A
+DCX H
+MOV M,D
+INX H
+;LOOP1
+DCR C
+JNZ 16907 ;LOOP2
+DCR B
+JNZ 16901 ;LOOP3
+HLT
+ASCII TO BINARY(HEX)
+LXI SP,65535;FFFFH
+LXI H,1100
+MOV A,M
+CALL 16909;CONV
+INX H
+MOV M,A
+HLT
+;SUBROUTINE CONV
+SUI 48 ; 30H CONV
+CPI 10 ; 0AH :if A<10 c=1
+RC ; return when carry
+SUI 7 ;07H
+RET
+;1100 - 56 - 38H
+;1101 - 8 - 8H
+;1100 - 70 - 46H
+;1101 - 15 - FH
+;ASCII code for '0' is 30H
+; and for '9' is 39H.
+;So if the number < 10
+; subtract 30
+; else subtract 7 more
+;ASCII code for 'A' is 41H
+; and F is 46 H
+Addition of Two 4 Bit BCD
+MVI C,00
+LHLD 1100
+XCHG
+LHLD 1102
+MOV A,E
+ADD L
+DAA
+JNC 16912; LOOP1
+INR D
+STA 1200 ; LOOP1
+MOV A,D
+ADD H
+DAA
+JNC 16922; LOOP2
+INR C
+STA 1201 ; LOOP2
+MOV A,C
+STA 1202
+HLT
+;7890+3456=11346
+;1100 - 86 - 56H
+;1101 - 52- 34 H
+;1102-144 -90H
+;1103 - 120-78H
+;O/P
+;1200-70-46H
+;1201-19-13H
+;1202-01H
+BCD to Binary
+LDA 1100
+MOV E,A
+ANI 15 ;F0
+RLC
+RLC
+RLC
+RLC
+MOV B,A
+XRA A
+MVI C,10
+RET ;
+DCR C
+JNZ 0000 ;
+MOV B,A
+MOV A,E
+ANI 15 ;0F
+ADD B
+STA 1101
+HLT
+;1100 - 68
+;1101 - 44
+Binary to BCD
+MVI E,00
+MOV D,E
+LDA 1100
+CPI 64 ; HUND
+JC 0000; TEN
+SUI 64 ;
+INR E
+JMP 0000 ;HUND
+CPI 10 ; TEN
+JC 0000 ;UNIT
+SUI 10
+INR D
+JMP 0000; TEN
+MOV C,D ; UNIT
+MOV A,D
+RLC
+RLC
+RLC
+RLC
+ADD C
+STA 1200
+MOV A,E
+STA 1201
+HLT
+;1100 - 54
+;1200 - 84
+;1201 - 00
+Binary to ASCII
+LDA 1200
+CPI 10 ;0A
+JC 16906 ;SKIP
+ADI 07
+ADI 48 ;30H ;SKIP
+STA 1202
+HLT
+;1200 -10 - 0AH
+;1202 - 65- 41H
+Decending Order
+LDA 1100
+MOV B,A
+DCR B
+;LOOP3
+LXI H,1101
+MOV C,M
+DCR C
+INX H
+;LOOP2
+MOV A,M
+INX H
+CMP M
+JNC 16918 ;LOOP1
+MOV D,M
+MOV M,A
+DCX H
+MOV M,D
+INX H
+;LOOP1
+DCR C
+JNZ 16907 ;LOOP2
+DCR B
+JNZ 16901 ;LOOP3
+HLT
+Division of two 8 bit numbers
+;DIVIDEND 4
+LXI H,1100
+MOV B,M
+MVI C,00
+;DIVISOR 8
+INX H
+MOV A,M
+CMP B
+JC 16913
+SUB B
+INR C
+JMP 16904
+;REMINDER 0
+STA 1102
+MOV A,C
+;QUOTIENT 2
+STA 1103
+HLT
+Exchange of two 16 bit numbers
+LHLD 1100
+XCHG ;EXCHANGE HL AND DE
+LHLD 1102
+SHLD 1100
+XCHG
+SHLD 1102
+HLT
+;EXCHANGE OF A BLOCK OF N BYTES
+MVI C,10
+LXI H,1100
+LXI D, 1200
+LDAX D ; CONT
+MOV B,A
+MOV A,M
+STAX D
+MOV M,B
+INX H
+INX D
+DCR C
+JNZ 16904 ;CONT
+HLT
+Fibonacci series
+LDA 1100 ; N VALUE
+SUI 02
+MOV D,A
+LXI H,1101
+MVI M,00
+INX H
+MVI M,01
+INX H
+MVI B,00
+MVI C,01
+MOV A,B ;LOOP
+ADD C
+MOV B,C
+MOV C,A
+MOV M,A
+INX H
+DCR D
+JNZ 16915 ;LOOP
+HLT
+;1100 10
+;1101 00
+;1102 01
+Largest of n numbers
+LXI H,1100
+MOV C,M
+INX H
+DCR C
+MOV A,M
+INX H
+CMP M
+JNC 16909
+MOV A,M
+DCR C
+JNZ 16903
+STA 1200
+HLT
+Multiplication of two 8 bit numbers
+LXI H,1100
+MOV B,M
+MVI A,00
+MOV C,A
+INX H
+ADD M
+JNC 16909
+INR C
+DCR B
+JNZ 16904
+STA 1103
+MOV A,C
+STA 1104
+HLT
+Positive Negative and Zero
+LDA 1100
+ORI 00
+JZ 16910
+JM 16915
+JP 16920
+MVI A,00
+JMP 16922
+MVI A,02
+JMP 16922
+MVI A,01
+STA 1101
+HLT
+;ZERO 0
+;NEGATIVE 251
+;POSITIVE 8
+;0-128 are positive numbers
+Smallest of n numbers
+LXI H,1100
+MOV C,M
+INX H
+DCR C
+MOV A,M
+INX H
+CMP M
+JC 16909
+MOV A,M
+DCR C
+JNZ 16903
+STA 1200
+HLT
+Subtraction of two 16 bit numbers
+MVI C,00
+LHLD 1100
+XCHG
+LHLD 1102
+MOV A,E
+SUB L
+STA 1104
+MOV A,D
+SBB H ; SUB WITH BORROW H WITH ACC
+STA 1105
+HLT
+MVI C,00
+LDA 1100
+LXI H,1101
+SUB M
+JNC 16909
+INR C
+STA 1102
+MOV A,C
+STA 1103
+HLT
+;FA - 250
+;FE - 254
+;FC - 252
+;1 - 1
+Subtraction with Borrow
+MVI C,00
+LDA 1100
+LXI H,1101
+SUB M
+JNC 16909
+INR C
+STA 1102
+MOV A,C
+STA 1103
+HLT
+;
+TRANSFER A BLOCK OF N BYTES
+MVI C,10
+LXI H,1100
+LXI D, 1200
+MOV A,M ; CONT
+STAX D
+INX H
+INX D
+DCR C
+JNZ 16904 ;CONT
+HLT
+;REVERSE-TRANSFER A BLOCK OF N BYTES
+MVI C,10
+LXI H,1109
+LXI D, 1200
+MOV A,M ; CONT
+STAX D
+DCX H
+INX D
+DCR C
+JNZ 16904 ;CONT
+HLT
+All the Best !!!

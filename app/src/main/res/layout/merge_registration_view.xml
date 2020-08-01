@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:id="@+id/layout"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="48dp"
+            android:paddingRight="48dp"
+            >
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="60dp"
+                android:textSize="24sp"
+                android:textColor="@color/colorText"
+                android:text="@string/registration.title"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/email_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleTextView"
+                android:layout_marginTop="24dp"
+                android:textColorHint="@color/colorText"
+                >
+
+                <EditText
+                    android:id="@+id/emailEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/colorText"
+                    android:hint="@string/registration.hint.email"
+                    android:theme="@style/Custom.EditText"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_below="@+id/email_hint"
+                android:textColorHint="@color/colorText"
+                >
+
+                <EditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="@color/colorText"
+                    android:hint="@string/login.hint.password"
+                    android:theme="@style/Custom.EditText"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/confirmHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_below="@+id/passwordHint"
+                android:textColorHint="@color/colorText"
+                >
+
+                <EditText
+                    android:id="@+id/confirmEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="@color/colorText"
+                    android:hint="@string/registration.hint.confirm"
+                    android:theme="@style/Custom.EditText"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/confirmHint"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/shape_3_8"
+                android:text="@string/registration.button.register"
+                android:textColor="@color/colorText" />
+
+            <LinearLayout
+                android:id="@+id/registerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_marginTop="60dp"
+                android:layout_below="@+id/registerButton">
+
+                <TextView
+                    android:id="@+id/registerTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/registration.text.login"
+                    android:textColor="@color/colorText" />
+
+                <Button
+                    android:id="@+id/loginButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/shape_3_5"
+                    android:padding="10dp"
+                    android:text="@string/registration.button.login"
+                    android:textColor="@color/colorText" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</merge>

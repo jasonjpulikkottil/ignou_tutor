@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:scrollbars="vertical|horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_5"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/TVV1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/course_mca"
+                android:textColor="@color/colorPrimary" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.09"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/TVV2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_content" />
+
+            <Spinner
+                android:id="@+id/spin2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/Spin_entries"
+                android:foreground="@drawable/roundshape2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.09"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/TT1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/semester1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/TT2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/semester2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/TT3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/semester3"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/TT4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/semester4"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/TT5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/semester5"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/TT6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/semester6"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/T7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.09"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/M11"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_1_8"
+                android:drawingCacheQuality="high"
+                android:onClick="MClick11"
+                android:text="@string/MCS_011"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/M21"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_2_8"
+                android:onClick="MClick21"
+                android:text="@string/MCS_021"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/M31"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_3_8"
+                android:onClick="MClick31"
+                android:text="@string/MCS_031"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/M41"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_4_8"
+                android:onClick="MClick41"
+                android:text="@string/MCS_041"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/M51"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_5_8"
+                android:onClick="MClick51"
+                android:text="@string/MCS_051"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/M61"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_6_8"
+                android:onClick="MClick61"
+                android:text="@string/MCSSP_060"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.09"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/M12"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_1_7"
+                android:onClick="MClick12"
+                android:text="@string/MCS_012"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/M22"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_2_7"
+                android:onClick="MClick22"
+                android:text="@string/MCS_022"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/M32"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_3_7"
+                android:onClick="MClick32"
+                android:text="@string/MCS_032"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/M42"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_4_7"
+                android:onClick="MClick42"
+                android:text="@string/MCS_042"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/M52"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_5_7"
+                android:onClick="MClick52"
+                android:text="@string/MCS_052"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/M62"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#d208d9"
+                android:onClick="MClick62"
+                android:text=" "
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000"
+                android:visibility="invisible" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.09"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/M13"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_1_6"
+                android:onClick="MClick13"
+                android:text="@string/MCS_013"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/M23"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_2_6"
+                android:onClick="MClick23"
+                android:text="@string/MCS_023"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/M33"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_3_6"
+                android:onClick="MClick33"
+                android:text="@string/MCS_033"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/M43"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_4_6"
+                android:onClick="MClick43"
+                android:text="@string/MCS_043"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/M53"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_5_6"
+                android:onClick="MClick53"
+                android:text="@string/MCS_053"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/M63"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#f548be"
+                android:onClick="MClick63"
+                android:text=" "
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000"
+                android:visibility="invisible" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.09"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/M14"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_1_5"
+                android:onClick="MClick14"
+                android:text="@string/MCS_014"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/M24"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_2_5"
+                android:onClick="MClick24"
+                android:text="@string/MCS_024"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/M34"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_3_5"
+                android:onClick="MClick34"
+                android:text="@string/MCS_034"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/M44"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_4_5"
+                android:onClick="MClick44"
+                android:text="@string/MCS_044"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/M54"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_5_5"
+                android:baselineAligned="false"
+                android:onClick="MClick54"
+                android:text="@string/MCSL_054"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/M64"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#f56cc8"
+                android:onClick="MClick64"
+                android:text=" "
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000"
+                android:visibility="invisible" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.09"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/M15"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_1_4"
+                android:onClick="MClick15"
+                android:text="@string/MCS_015"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/M25"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_2_4"
+                android:onClick="MClick25"
+                android:text="@string/MCSL_025"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/M35"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_3_4"
+                android:onClick="MClick35"
+                android:text="@string/MCS_035"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/M45"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_4_4"
+                android:onClick="MClick45"
+                android:text="@string/MCSL_045"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/M55"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_5_4"
+                android:onClick="MClick55"
+                android:text="@string/MCSE_003"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_light"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@android:color/holo_red_dark"
+                android:visibility="invisible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.09"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/M16"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_1_3"
+                android:onClick="MClick16"
+                android:text="@string/MCSL_016"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@android:color/black"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/M26"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#fbec77"
+                android:onClick="MClick26"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/M36"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_3_3"
+                android:onClick="MClick36"
+                android:text="@string/MCSL_036"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/M46"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#9de1e2"
+                android:onClick="MClick46"
+                android:text=" "
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/M56"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_5_3"
+                android:onClick="MClick56"
+                android:text="@string/MCSE_004"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_light"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@android:color/holo_red_dark"
+                android:visibility="invisible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.09"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/M17"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_1_2"
+                android:onClick="MClick17"
+                android:text="@string/MCSL_017"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@android:color/black"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/M27"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#faef9d"
+                android:onClick="MClick27"
+                android:paddingLeft="2dp"
+                android:paddingTop="2dp"
+                android:paddingRight="2dp"
+                android:paddingBottom="2dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/M37"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#87fc9b"
+                android:onClick="MClick37"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/M47"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#b1f2eb"
+                android:onClick="MClick47"
+                android:text=" "
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/M57"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_5_2"
+                android:onClick="MClick57"
+                android:text="@string/MCS_011"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <Button
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_light"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@android:color/holo_red_dark"
+                android:visibility="invisible" />
+        </TableRow>
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+
