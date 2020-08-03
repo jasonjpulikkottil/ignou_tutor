@@ -127,19 +127,19 @@
                     android:padding="5dp"
                     android:text="@string/login.button.register"
                     android:textColor="@color/colorText" />
+                <com.google.android.gms.common.SignInButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true" >
+
+                </com.google.android.gms.common.SignInButton>
 
             </LinearLayout>
 
-            <com.google.android.gms.common.SignInButton
-                android:id="@+id/google"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="40dp" />
+
 
         </RelativeLayout>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
 
 </merge>
