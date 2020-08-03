@@ -143,13 +143,6 @@ public class Main extends AppCompatActivity implements View.OnClickListener  {
                 startActivity(k);
                 return true;
 
-            case R.id.action_web:
-
-                Intent l = new Intent(Main.this, WebActivity.class);
-                String txt2 = "http://jdotslab.ga";
-                l.putExtra(TOKEN4, txt2);
-                startActivity(l);
-                return true;
 
             default:
                 return super.onOptionsItemSelected(item);
@@ -371,8 +364,7 @@ public class Main extends AppCompatActivity implements View.OnClickListener  {
             Button opt_5_1 = findViewById(R.id.optButton_5_1);
             opt_5_1.setOnClickListener(this);
 
-            Button opt_5_2 = findViewById(R.id.optButton_5_2);
-            opt_5_2.setOnClickListener(this);
+
 
             //
 
@@ -469,6 +461,7 @@ public class Main extends AppCompatActivity implements View.OnClickListener  {
                 @Override
                 public void onExpansionChanged(ExpansionLayout expansionLayout, boolean expanded) {
                     ButtonSound();
+
                 }
             });
             ExpansionLayout expansionLayout6 = findViewById(R.id.expansion_6);
@@ -497,7 +490,7 @@ public class Main extends AppCompatActivity implements View.OnClickListener  {
                     }
                 }
             });
-
+            expansionLayout5.setVisibility(View.GONE);
             final ExpansionLayoutCollection expansionLayoutCollection = new ExpansionLayoutCollection();
             expansionLayoutCollection.add((ExpansionLayout) findViewById(R.id.expansion_1));
             expansionLayoutCollection.add((ExpansionLayout) findViewById(R.id.expansion_2));
@@ -816,17 +809,12 @@ switch (v.getId()) {
 
          case (R.id.optButton_5_1):
              i = new Intent(Main.this, WebActivity.class);
-             txt1 = "http://jdotslab.ga/ignou/bca";
+             txt1 = "https://github.com/jdotslab/IGNOU_Tutor/tree/master/asssignments";
              i.putExtra(TOKEN4, txt1);
              startActivity(i);
              break;
 
-         case (R.id.optButton_5_2):
-             i = new Intent(Main.this, WebActivity.class);
-             txt1 = "http://jdotslab.ga/ignou/mca";
-             i.putExtra(TOKEN4, txt1);
-             startActivity(i);
-             break;
+
 
          case (R.id.optButton_6_1):
              i = new Intent(Main.this, WebActivity.class);

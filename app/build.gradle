@@ -6,8 +6,8 @@ android {
         applicationId "com.jdots.ignou"
         minSdkVersion 17
         targetSdkVersion 29
-        versionCode 19
-        versionName "2.8"
+        versionCode 20
+        versionName "2.9"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -33,16 +33,16 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.android.material:material:1.1.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.github.bumptech.glide:glide:3.7.0'
-    implementation 'com.google.android.gms:play-services-auth:17.0.0'
-    implementation 'com.google.firebase:firebase-auth:19.2.0'
-    implementation 'com.google.firebase:firebase-config:19.1.0'
-    implementation 'com.google.firebase:firebase-database:19.2.0'
-    implementation 'com.google.firebase:firebase-messaging:20.1.0'
-    implementation 'com.google.firebase:firebase-analytics:17.2.2'
-    implementation 'com.google.firebase:firebase-storage:19.1.0'
+    implementation 'com.google.android.gms:play-services-auth:18.1.0'
+    implementation 'com.google.firebase:firebase-auth:19.3.2'
+    implementation 'com.google.firebase:firebase-config:19.2.0'
+    implementation 'com.google.firebase:firebase-database:19.3.1'
+    implementation 'com.google.firebase:firebase-messaging:20.2.4'
+    implementation 'com.google.firebase:firebase-analytics:17.4.4'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
     implementation 'com.google.firebase:firebase-invites:17.0.0'
     implementation 'com.google.firebase:firebase-crash:16.2.1'
     implementation 'com.afollestad.material-dialogs:core:0.9.1.0'
@@ -53,7 +53,7 @@ dependencies {
     implementation 'androidx.browser:browser:1.2.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
-    implementation 'androidx.preference:preference:1.1.0'
+    implementation 'androidx.preference:preference:1.1.1'
     implementation 'androidx.mediarouter:mediarouter:1.1.0'
     implementation 'androidx.multidex:multidex:2.0.1'
     implementation 'com.github.khirr:Android-Privacy-Policy:1.0.1'
@@ -63,8 +63,8 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation 'com.github.javiersantos:AppUpdater:2.7'
     implementation 'com.github.Angtrim:Android-Five-Stars-Library:v3.1'
-    implementation 'com.google.android.material:material:1.0.0'
-    implementation 'com.google.android.gms:play-services-ads:18.3.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'com.google.android.gms:play-services-ads:19.3.0'
     
 	implementation 'com.facebook.android:audience-network-sdk:5.6.0'
 	implementation 'com.facebook.android:facebook-android-sdk:5.13.0'
@@ -81,6 +81,7 @@ dependencies {
 	implementation 'com.github.myinnos:AppIconNameChanger:1.0.7'
 
     implementation 'com.github.delight-im:Android-AdvancedWebView:v3.0.0'
+    implementation 'com.android.support:multidex:1.0.3'
 
     testImplementation 'junit:junit:4.12'
     implementation project(':emoticon')

@@ -130,7 +130,8 @@
                 <com.google.android.gms.common.SignInButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true" >
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/google">
 
                 </com.google.android.gms.common.SignInButton>
 
