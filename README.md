@@ -1,9 +1,25 @@
-# Firebase Chat Demo
+# IGNOU Tutor
+# Developed by Jason J Pulikkottil
 
-This application allows you to send and receive messages in real-time using Firebase services.
 
-# Getting Started 
+[Download App From Google Play](https://play.google.com/store/apps/details?id=com.jdots.ignou)
 
-FirebaseChatDemo requires Firebase in order to authenticate users and store data. You can [sign up](https://console.firebase.google.com) here for a free account.
-After signing up and creating a new project add the *google-services.json* file inside *./app* folder.
+![App](/app/src/main/res/mipmap-xxxhdpi/icon_launcher.png)
 
+Application for Indira Gandhi National Open University students.<br/>
+It includes syllabus, study materials, and question papers of various courses of IGNOU.<br/>
+IGNOU Tutor provides access to assignment answers if available.<br/>
+Many of the features of this app works offline too.<br/>
+
+Contents :  <br/>
+
+* Syllabus and question papers of courses
+* Study materials
+* Notes
+* IGNOU links
+* Solved assignments for BCA and MCA
+* Forms
+* Prospectus
+* Youtube classes
+* Add and edit text notes
+* Chat
