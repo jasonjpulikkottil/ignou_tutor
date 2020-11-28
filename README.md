@@ -23,5 +23,3 @@ Contents :  <br/>
 * Add and edit text notes
 * Chat
 
-
-Developed by Jason J Pulikkottil
