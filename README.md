@@ -1,5 +1,4 @@
 # IGNOU Tutor
-# Developed by Jason J Pulikkottil
 
 
 [Download App From Google Play](https://play.google.com/store/apps/details?id=com.jdots.ignou)
@@ -23,3 +22,6 @@ Contents :  <br/>
 * Youtube classes
 * Add and edit text notes
 * Chat
+
+
+Developed by Jason J Pulikkottil
