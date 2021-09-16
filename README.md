@@ -1,7 +1,7 @@
 # IGNOU Tutor
 
 
-[Download App From Google Play](https://play.google.com/store/apps/details?id=com.jdots.ignou)
+[Download App](https://m.apkpure.com/ignou-tutor/com.jdots.ignou)
 
 ![App](/app/src/main/res/mipmap-xxxhdpi/icon_launcher.png)
 
