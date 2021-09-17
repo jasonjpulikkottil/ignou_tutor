@@ -1,7 +1,7 @@
 # IGNOU Tutor
 
 
-[Download App](https://m.apkpure.com/ignou-tutor/com.jdots.ignou)
+[Download App](https://steprimo.com/android/us/app/com.jdots.ignou/IGNOU-Tutor/)
 
 ![App](/app/src/main/res/mipmap-xxxhdpi/icon_launcher.png)
 
